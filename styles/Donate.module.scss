@@ -1,0 +1,78 @@
+.headingOne {
+    text-align: center;
+    color: white;
+}
+
+.container {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    align-items: center;
+    border-radius: .5rem;
+}
+
+.headingFive {
+    text-align: center;
+    color: rgb(211, 211, 211);
+}
+
+.social {
+    margin: 1rem 0 0 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    li {
+        display: inline-block;
+        border-radius: 6px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-color: black;
+        background-position: center;
+        background-size: 100% 100%;
+        margin: 0 5px
+    }
+    li a {
+        display: block;
+        width: 40px;
+        height: 40px
+    }
+    li.facebook {
+        background-color: #fff;
+        background: url("../public/icons/facebook.svg") no-repeat;
+    }
+    li.twitter {
+        background-color: #1da1f2;
+        background-image: url("../public/icons/twitter.svg");
+        background-size: 70% 70%
+    }
+    li.pinterest {
+        background-color: #bd081c;
+        background-image: url("../public/icons/pinterest.svg");
+        background-size: 75% 75%
+    }
+    li.stumbleupon {
+        background-color: #eb4924;
+        background-image: url('../public/icons/stumbleupon.svg');
+        background-size: 75% 75%
+    }
+    li.tumblr {
+        background-color: #36465d;
+        background-image: url("../public/icons/tumblr.svg");
+        background-size: 70% 70%
+    }
+    li.linkedin {
+        background-color: #fff;
+        background-image: url("../public/icons/linkedin.svg")
+    }
+    li.digg {
+        background-color: #000;
+        background-image: url("../public/icons/digg.svg");
+        background-size: 70% 70%;
+        box-shadow: inset 0 0 0 2px rgba(255, 255, 255, .4)
+    }
+    li.reddit {
+        background-color: #b8d4ec;
+        background-image: url("../public/icons/reddit-colored.svg");
+        background-size: 80% 80%
+    }
+}

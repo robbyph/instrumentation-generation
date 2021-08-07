@@ -1,0 +1,26 @@
+.container {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin: 1rem 10rem;
+    align-items: center;
+    border-radius: .5rem;
+}
+
+.formControlOverride {
+    margin: .5rem
+}
+
+.formCheckOverride {
+    margin-bottom: .5rem;
+}
+
+.formOverride {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    background-color: #eeeeee;
+    border-radius: .5rem;
+    padding: 1.2rem;
+}

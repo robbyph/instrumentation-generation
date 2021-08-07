@@ -1,0 +1,1589 @@
+[{
+        "name": "Death Metal",
+        "description": "A variety of extreme metal typically characterized by blastbeats, heavily distorted vocals and disgustingly heavy riffs",
+        "instruments": [{
+                "name": "Distorted Vocals",
+                "description": "Screamed/growled vocals",
+                "image": "images/instruments/distortedvocals.png",
+                "youtube": "https://www.youtube.com/watch?v=hCFBrQWYe3o",
+                "wikipedia": "https://en.wikipedia.org/wiki/Death_growl",
+                "tags": {
+                    "hornbostelsachs": "aerophone",
+                    "common": "vocal",
+                    "voices": "monophonic",
+                    "origin": "n/a",
+                    "timeframe": "n/a"
+                }
+            },
+            {
+                "name": "Electric Bass Guitar",
+                "description": "A low register plucked string instrument",
+                "image": "images/instruments/ElectricBass.png",
+                "youtube": "https://www.youtube.com/watch?v=ONw0q2ZhEXg",
+                "wikipedia": "https://en.wikipedia.org/wiki/Bass_guitar",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Drum Kit",
+                "description": "A collection of percussion instruments operated by a single player",
+                "image": "images/instruments/drumkit.png",
+                "youtube": "https://www.youtube.com/watch?v=fu8Iq1q73gY",
+                "wikipedia": "https://en.wikipedia.org/wiki/Drum_kit",
+                "tags": {
+                    "hornbostelsachs": "membranophone",
+                    "common": "percussion",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Distorted Electric Guitar",
+                "description": "An electric guitar with a very crunchy and distorted tone",
+                "image": "images/instruments/distortedguitar.png",
+                "youtube": "https://www.youtube.com/watch?v=JKSvAdl-TCA",
+                "wikipedia": "https://en.wikipedia.org/wiki/Electric_guitar",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Distorted Electric Guitar",
+                "description": "An electric guitar with a very crunchy and distorted tone",
+                "image": "images/instruments/distortedguitar.png",
+                "youtube": "https://www.youtube.com/watch?v=JKSvAdl-TCA",
+                "wikipedia": "https://en.wikipedia.org/wiki/Electric_guitar",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            }
+
+        ]
+    },
+    {
+        "name": "Power Metal",
+        "description": "A variety of heavy metal characterized by it's uplifting, faster and lighter sound, when compared to extreme metal",
+        "instruments": [{
+                "name": "Clean Tenor Vocals",
+                "description": "A Male or Female singing cleanly",
+                "image": "images/instruments/mixedchoir.png",
+                "youtube": "",
+                "wikipedia": "",
+                "tags": {
+                    "hornbostelsachs": "aerophone",
+                    "common": "vocal",
+                    "voices": "monophonic",
+                    "origin": "n/a",
+                    "timeframe": "n/a"
+                }
+            },
+            {
+                "name": "Synth Lead",
+                "description": "A synthesizer tone that is usually monophonic with a bold and harmonically rich sound with high sustain to cut through a mix",
+                "image": "images/instruments/synth.png",
+                "youtube": "https://www.youtube.com/watch?v=pa99dscG5rg",
+                "wikipedia": "https://en.wikipedia.org/wiki/Synthesizer",
+                "tags": {
+                    "hornbostelsachs": "electrophone",
+                    "common": "electronic",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Electric Bass Guitar",
+                "description": "A low register plucked string instrument",
+                "image": "images/instruments/ElectricBass.png",
+                "youtube": "https://www.youtube.com/watch?v=ONw0q2ZhEXg",
+                "wikipedia": "https://en.wikipedia.org/wiki/Bass_guitar",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Drum Kit",
+                "description": "A collection of percussion instruments operated by a single player",
+                "image": "images/instruments/drumkit.png",
+                "youtube": "https://www.youtube.com/watch?v=fu8Iq1q73gY",
+                "wikipedia": "https://en.wikipedia.org/wiki/Drum_kit",
+                "tags": {
+                    "hornbostelsachs": "membranophone",
+                    "common": "percussion",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Distorted Electric Guitar",
+                "description": "An electric guitar with a very crunchy and distorted tone",
+                "image": "images/instruments/distortedguitar.png",
+                "youtube": "https://www.youtube.com/watch?v=JKSvAdl-TCA",
+                "wikipedia": "https://en.wikipedia.org/wiki/Electric_guitar",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Distorted Electric Guitar",
+                "description": "An electric guitar with a very crunchy and distorted tone",
+                "image": "images/instruments/distortedguitar.png",
+                "youtube": "https://www.youtube.com/watch?v=JKSvAdl-TCA",
+                "wikipedia": "https://en.wikipedia.org/wiki/Electric_guitar",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            }
+        ]
+    },
+    {
+        "name": "Stoner Metal",
+        "description": "A variety of doom metal characterized by it's slow to mid tempo, fuzzy guitar tone, clean(er) vocals and bass-heavy production",
+        "instruments": [{
+                "name": "Clean Tenor Vocals",
+                "description": "A Male or Female singing cleanly",
+                "image": "images/instruments/mixedchoir.png",
+                "youtube": "",
+                "wikipedia": "",
+                "tags": {
+                    "hornbostelsachs": "aerophone",
+                    "common": "vocal",
+                    "voices": "monophonic",
+                    "origin": "n/a",
+                    "timeframe": "n/a"
+                }
+            },
+            {
+                "name": "Drum Kit",
+                "description": "A collection of percussion instruments operated by a single player",
+                "image": "images/instruments/drumkit.png",
+                "youtube": "https://www.youtube.com/watch?v=fu8Iq1q73gY",
+                "wikipedia": "https://en.wikipedia.org/wiki/Drum_kit",
+                "tags": {
+                    "hornbostelsachs": "membranophone",
+                    "common": "percussion",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Sample",
+                "description": "A reused portion of an already existing recording, used musically, such as with a song sample; or for thematic effect, such as with a movie sample",
+                "image": "images/instruments/sample.png",
+                "youtube": "https://www.youtube.com/watch?v=bFCcOJ-5NKE",
+                "wikipedia": "https://en.wikipedia.org/wiki/Sampling_(music)",
+                "tags": {
+                    "hornbostelsachs": "electrophone",
+                    "common": "electronic",
+                    "voices": "n/a",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Fuzz Electric Guitar",
+                "description": "An electric guitar with a fuzzy tone",
+                "image": "images/instruments/fuzzguitar.png",
+                "youtube": "https://www.youtube.com/watch?v=dLlyZpe8vbY",
+                "wikipedia": "https://en.wikipedia.org/wiki/Electric_guitar",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Fuzz Electric Guitar",
+                "description": "An electric guitar with a fuzzy tone",
+                "image": "images/instruments/fuzzguitar.png",
+                "youtube": "https://www.youtube.com/watch?v=dLlyZpe8vbY",
+                "wikipedia": "https://en.wikipedia.org/wiki/Electric_guitar",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Electric Bass Guitar",
+                "description": "A low register plucked string instrument",
+                "image": "images/instruments/ElectricBass.png",
+                "youtube": "https://www.youtube.com/watch?v=ONw0q2ZhEXg",
+                "wikipedia": "https://en.wikipedia.org/wiki/Bass_guitar",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            }
+        ]
+    },
+    {
+        "name": "Nu Metal",
+        "description": "A variety of rock/metal that mashes together every popular genre from the 90s. Characterized by heavy syncopation, electronic elements and the use of rapping",
+        "instruments": [{
+                "name": "Drum Kit",
+                "description": "A collection of percussion instruments operated by a single player",
+                "image": "images/instruments/drumkit.png",
+                "youtube": "https://www.youtube.com/watch?v=fu8Iq1q73gY",
+                "wikipedia": "https://en.wikipedia.org/wiki/Drum_kit",
+                "tags": {
+                    "hornbostelsachs": "membranophone",
+                    "common": "percussion",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Electric Bass Guitar",
+                "description": "A low register plucked string instrument",
+                "image": "images/instruments/ElectricBass.png",
+                "youtube": "https://www.youtube.com/watch?v=ONw0q2ZhEXg",
+                "wikipedia": "https://en.wikipedia.org/wiki/Bass_guitar",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Sample",
+                "description": "A reused portion of an already existing recording, used musically, such as with a song sample; or for thematic effect, such as with a movie sample",
+                "image": "images/instruments/sample.png",
+                "youtube": "https://www.youtube.com/watch?v=bFCcOJ-5NKE",
+                "wikipedia": "https://en.wikipedia.org/wiki/Sampling_(music)",
+                "tags": {
+                    "hornbostelsachs": "electrophone",
+                    "common": "electronic",
+                    "voices": "n/a",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Turn Table",
+                "description": "A record player modified by DJs to use as a musical instrument",
+                "image": "images/instruments/turntable.png",
+                "youtube": "https://www.youtube.com/watch?v=WybPqYhg8pI",
+                "wikipedia": "https://en.wikipedia.org/wiki/Turntablism",
+                "tags": {
+                    "hornbostelsachs": "electrophone",
+                    "common": "electronic",
+                    "voices": "monophonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "7 String Electric Guitar",
+                "description": "An electric guitar with 7 strings, typically played with a distorted tone, but not exclusively",
+                "image": "images/instruments/7stringguitar.png",
+                "youtube": "https://www.youtube.com/watch?v=CxGnANYHcK0",
+                "wikipedia": "https://en.wikipedia.org/wiki/Seven-string_guitar",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Clean Tenor Male Vocals",
+                "description": "A Male singing cleanly in the highest tradiitonal male vocal register",
+                "image": "images/instruments/malevocals.png",
+                "youtube": "",
+                "wikipedia": "",
+                "tags": {
+                    "hornbostelsachs": "aerophone",
+                    "common": "vocal",
+                    "voices": "monophonic",
+                    "origin": "n/a",
+                    "timeframe": "n/a"
+                }
+            },
+            {
+                "name": "Rapping",
+                "description": "Spoken or chanted rhyming lyrics. The components of rap include lyrics, \"flow\" (rhythm, rhyme), and \"delivery\" (cadence, tone)",
+                "image": "images/instruments/rapping.png",
+                "youtube": "https://www.youtube.com/watch?v=izgsppAKtjE",
+                "wikipedia": "https://en.wikipedia.org/wiki/Rapping",
+                "tags": {
+                    "hornbostelsachs": "aerophone",
+                    "common": "vocal",
+                    "voices": "monophonic",
+                    "origin": "n/a",
+                    "timeframe": "n/a"
+                }
+            }
+        ]
+    },
+    {
+        "name": "Jeff Mangum Mode",
+        "description": "Best known for founding one of the greatest Indie Folk bands of all time, Neutral Milk Hotel, his fuzzy twist on Indie Folk is characterized by it's lo-fi quality and unusual instrumentation",
+        "instruments": [{
+                "name": "Steel String Acoustic Guitar",
+                "description": "A mid to high register plucked string instrument with steel strings",
+                "image": "images/instruments/acousticguitar.png",
+                "youtube": "https://www.youtube.com/watch?v=D4Y52QYm540",
+                "wikipedia": "https://en.wikipedia.org/wiki/Acoustic_guitar",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Electric Bass Guitar",
+                "description": "A low register plucked string instrument",
+                "image": "images/instruments/ElectricBass.png",
+                "youtube": "https://www.youtube.com/watch?v=ONw0q2ZhEXg",
+                "wikipedia": "https://en.wikipedia.org/wiki/Bass_guitar",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Electric Organ",
+                "description": "Also known as a Hammond Organ, uses spinning magnets called 'tonewheels' to create sound",
+                "image": "images/instruments/keyboard.png",
+                "youtube": "https://www.youtube.com/watch?v=Pi_gwED-gQw",
+                "wikipedia": "https://en.wikipedia.org/wiki/Electric_organ",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "keyboard",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Drum Kit",
+                "description": "A collection of percussion instruments operated by a single player",
+                "image": "images/instruments/drumkit.png",
+                "youtube": "https://www.youtube.com/watch?v=fu8Iq1q73gY",
+                "wikipedia": "https://en.wikipedia.org/wiki/Drum_kit",
+                "tags": {
+                    "hornbostelsachs": "membranophone",
+                    "common": "percussion",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+
+            {
+                "name": "Clean Tenor Male Vocals",
+                "description": "A Male singing cleanly in the highest tradiitonal male vocal register",
+                "image": "images/instruments/malevocals.png",
+                "youtube": "",
+                "wikipedia": "",
+                "tags": {
+                    "hornbostelsachs": "aerophone",
+                    "common": "vocal",
+                    "voices": "monophonic",
+                    "origin": "n/a",
+                    "timeframe": "n/a"
+                }
+            },
+            {
+                "name": "Musical Saw",
+                "description": "A hand saw, used as a musical instrument with a bow, capable of creating ethereal sounds",
+                "image": "images/instruments/saw.png",
+                "youtube": "https://www.youtube.com/watch?v=PtPoGwIDZDc",
+                "wikipedia": "https://en.wikipedia.org/wiki/Musical_saw",
+                "tags": {
+                    "hornbostelsachs": "idiophone",
+                    "common": "percussion",
+                    "voices": "monophonic",
+                    "origin": "north american",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Accordion",
+                "description": "A unique keyboard instrument that produces sound by opening and closing valves using a keyboard and buttons while pumping a bellows",
+                "image": "images/instruments/accordion.png",
+                "youtube": "https://www.youtube.com/watch?v=71NCmhT1lhI",
+                "wikipedia": "https://en.wikipedia.org/wiki/Accordion",
+                "tags": {
+                    "hornbostelsachs": "aerophone",
+                    "common": "keyboard",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "renaissance"
+                }
+            },
+            {
+                "name": "Mellophone",
+                "description": "Mid ranged brass instrument, sometimes used in place of french horns",
+                "image": "images/instruments/mellophone.png",
+                "youtube": "https://www.youtube.com/watch?v=LVsChSsribA",
+                "wikipedia": "https://en.wikipedia.org/wiki/Mellophone",
+                "tags": {
+                    "hornbostelsachs": "aerophone",
+                    "common": "brass",
+                    "voices": "monophomic",
+                    "origin": "europe",
+                    "timeframe": "renaissance"
+                }
+            }
+        ]
+    },
+    {
+        "name": "Bluegrass",
+        "description": "American folk music that developed in appalachia, traditionally only played on acoustic string instruments",
+        "instruments": [{
+                "name": "Steel String Acoustic Guitar",
+                "description": "A mid to high register plucked string instrument with steel strings",
+                "image": "images/instruments/acousticguitar.png",
+                "youtube": "https://www.youtube.com/watch?v=D4Y52QYm540",
+                "wikipedia": "https://en.wikipedia.org/wiki/Acoustic_guitar",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Clean Tenor Vocals",
+                "description": "A Male or Female singing cleanly",
+                "image": "images/instruments/mixedchoir.png",
+                "youtube": "",
+                "wikipedia": "",
+                "tags": {
+                    "hornbostelsachs": "aerophone",
+                    "common": "vocal",
+                    "voices": "monophonic",
+                    "origin": "n/a",
+                    "timeframe": "n/a"
+                }
+            },
+            {
+                "name": "Banjo",
+                "description": "A plucked string instrument with a membrane resonation chamber",
+                "image": "images/instruments/banjo.png",
+                "youtube": "https://www.youtube.com/watch?v=7VMyKo7DOs0",
+                "wikipedia": "https://en.wikipedia.org/wiki/Banjo",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+
+            {
+                "name": "Mandolin",
+                "description": "A plucked string instrument with four courses tuned in perfect fifths",
+                "image": "images/instruments/mandolin.png",
+                "youtube": "https://www.youtube.com/watch?v=HYa9qdtxevg",
+                "wikipedia": "https://en.wikipedia.org/wiki/Mandolin",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Double Bass",
+                "description": "A low ranged wooden string instrument, AKA Upright Bass",
+                "image": "images/instruments/doublebass.png",
+                "youtube": "https://www.youtube.com/watch?v=nUUVSxZ4ohI",
+                "wikipedia": "https://en.wikipedia.org/wiki/Double_bass",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "renaissance"
+                }
+            },
+            {
+                "name": "Violin",
+                "description": "A high pitched wooden string instrument, also known as a fiddle",
+                "image": "images/instruments/violin.png",
+                "youtube": "https://www.youtube.com/watch?v=zgaQFLUdUL0",
+                "wikipedia": "https://en.wikipedia.org/wiki/Violin",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "renaissance"
+                }
+            }
+        ]
+    },
+    {
+        "name": "String Quartet",
+        "description": "A musical ensemble made up of four players, 2 violinists, viola player and cellist",
+        "instruments": [{
+                "name": "Violin",
+                "description": "A high pitched wooden string instrument, also known as a fiddle",
+                "image": "images/instruments/violin.png",
+                "youtube": "https://www.youtube.com/watch?v=zgaQFLUdUL0",
+                "wikipedia": "https://en.wikipedia.org/wiki/Violin",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "renaissance"
+                }
+            },
+            {
+                "name": "Violin",
+                "description": "A high pitched wooden string instrument, also known as a fiddle",
+                "image": "images/instruments/violin.png",
+                "youtube": "https://www.youtube.com/watch?v=zgaQFLUdUL0",
+                "wikipedia": "https://en.wikipedia.org/wiki/Violin",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "renaissance"
+                }
+            },
+            {
+                "name": "Cello",
+                "description": "A mid to low ranged wooden string instrument",
+                "image": "images/instruments/cello.png",
+                "youtube": "https://www.youtube.com/watch?v=RcqzPoMza7c",
+                "wikipedia": "https://en.wikipedia.org/wiki/Cello",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "renaissance"
+                }
+            },
+            {
+                "name": "Viola",
+                "description": "A mid ranged wooden string instrument",
+                "image": "images/instruments/viola.png",
+                "youtube": "https://www.youtube.com/watch?v=XierDLeUiYg",
+                "wikipedia": "https://en.wikipedia.org/wiki/Viola",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "renaissance"
+                }
+            }
+        ]
+    },
+    {
+        "name": "Celtic Music",
+        "description": "Folk music from Ireland and Scotland",
+        "instruments": [{
+                "name": "Steel String Acoustic Guitar",
+                "description": "A mid to high register plucked string instrument with steel strings",
+                "image": "images/instruments/acousticguitar.png",
+                "youtube": "https://www.youtube.com/watch?v=D4Y52QYm540",
+                "wikipedia": "https://en.wikipedia.org/wiki/Acoustic_guitar",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Tin Whistle",
+                "description": "Also known as a penny whistle, a simple wind instrument with a high pitch sound",
+                "image": "images/instruments/tinwhistle.png",
+                "youtube": "https://www.youtube.com/watch?v=buh8SWJwI1Y",
+                "wikipedia": "https://en.wikipedia.org/wiki/Tin_whistle",
+                "tags": {
+                    "hornbostelsachs": "aerophone",
+                    "common": "wind",
+                    "voices": "monophonic",
+                    "origin": "n/a",
+                    "timeframe": "antiquity"
+                }
+            },
+            {
+                "name": "Clean Tenor Vocals",
+                "description": "A Male or Female singing cleanly",
+                "image": "images/instruments/mixedchoir.png",
+                "youtube": "",
+                "wikipedia": "",
+                "tags": {
+                    "hornbostelsachs": "aerophone",
+                    "common": "vocal",
+                    "voices": "monophonic",
+                    "origin": "n/a",
+                    "timeframe": "n/a"
+                }
+            },
+            {
+                "name": "Banjo",
+                "description": "A plucked string instrument with a membrane resonation chamber",
+                "image": "images/instruments/banjo.png",
+                "youtube": "https://www.youtube.com/watch?v=7VMyKo7DOs0",
+                "wikipedia": "https://en.wikipedia.org/wiki/Banjo",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+
+            {
+                "name": "Mandolin",
+                "description": "A plucked string instrument with four courses tuned in perfect fifths",
+                "image": "images/instruments/mandolin.png",
+                "youtube": "https://www.youtube.com/watch?v=HYa9qdtxevg",
+                "wikipedia": "https://en.wikipedia.org/wiki/Mandolin",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Harp",
+                "description": "A stringed musical instrument that has a number of individual strings running at an angle to its soundboard",
+                "image": "images/instruments/harp.png",
+                "youtube": "https://www.youtube.com/watch?v=P2Xdb1ljd3g",
+                "wikipedia": "https://en.wikipedia.org/wiki/Harp",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "antiquity"
+                }
+            },
+            {
+                "name": "Bagpipes",
+                "description": "A woodwind instrument which uses a constant reservoir of air in a bag to feed reeds and create sound",
+                "image": "images/instruments/bagpipes.png",
+                "youtube": "https://www.youtube.com/watch?v=Nul-fRaj8F4",
+                "wikipedia": "https://en.wikipedia.org/wiki/Bagpipes",
+                "tags": {
+                    "hornbostelsachs": "aerophone",
+                    "common": "wind",
+                    "voices": "homophonic",
+                    "origin": "europe",
+                    "timeframe": "antiquity"
+                }
+            },
+            {
+                "name": "Accordion",
+                "description": "A unique keyboard instrument that produces sound by opening and closing valves using a keyboard and buttons while pumping a bellows",
+                "image": "images/instruments/accordion.png",
+                "youtube": "https://www.youtube.com/watch?v=71NCmhT1lhI",
+                "wikipedia": "https://en.wikipedia.org/wiki/Accordion",
+                "tags": {
+                    "hornbostelsachs": "aerophone",
+                    "common": "keyboard",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "renaissance"
+                }
+            }
+
+        ]
+    },
+    {
+        "name": "Symphony Orchestra",
+        "description": "A large instrumental ensemble typical of classical music",
+        "instruments": [{
+                "name": "String Section",
+                "description": "A section of instruments usually consisting of first and second violins, violas, cellos, and double basses",
+                "image": "images/instruments/stringsection.png",
+                "youtube": "https://www.youtube.com/watch?v=MP2_6OLummA",
+                "wikipedia": "https://en.wikipedia.org/wiki/Double_bass",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "renaissance"
+                }
+            },
+            {
+                "name": "Brass Section",
+                "description": "A section of brass instruments usually consisting of trumpets, horns, trombones, and tubas",
+                "image": "images/instruments/brasssection.png",
+                "youtube": "https://www.youtube.com/watch?v=yE0aSxziNdY",
+                "wikipedia": "https://en.wikipedia.org/wiki/Brass_section",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "renaissance"
+                }
+            },
+            {
+                "name": "Wind Section",
+                "description": "A section of instruments usually consisting of flutes, oboes, bassoons, clarinets and occasionally some auxlillary instruments",
+                "image": "images/instruments/windsection.png",
+                "youtube": "https://www.youtube.com/watch?v=KEt1Mm8sSkA",
+                "wikipedia": "https://en.wikipedia.org/wiki/Woodwind_section",
+                "tags": {
+                    "hornbostelsachs": "aerophone",
+                    "common": "wind",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "renaissance"
+                }
+            },
+            {
+                "name": "Percussion Section",
+                "description": "A section of instruments consisting of timpani as well as various pitched and unpitched percussion",
+                "image": "images/instruments/percsection.png",
+                "youtube": "https://www.youtube.com/watch?v=LaXgEHBYT3c",
+                "wikipedia": "https://en.wikipedia.org/wiki/Percussion_section",
+                "tags": {
+                    "hornbostelsachs": "membranophone",
+                    "common": "percussion",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "renaissance"
+                }
+            },
+            {
+                "name": "Piano",
+                "description": "An acoustic keyboard instrument",
+                "image": "images/instruments/keyboard.png",
+                "youtube": "https://www.youtube.com/watch?v=cGYyOY4XaFs",
+                "wikipedia": "https://en.wikipedia.org/wiki/Piano",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "keyboard",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "renaissance"
+                }
+            },
+            {
+                "name": "Harp",
+                "description": "A stringed musical instrument that has a number of individual strings running at an angle to its soundboard",
+                "image": "images/instruments/harp.png",
+                "youtube": "https://www.youtube.com/watch?v=P2Xdb1ljd3g",
+                "wikipedia": "https://en.wikipedia.org/wiki/Harp",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "antiquity"
+                }
+            },
+            {
+                "name": "Mixed Choir",
+                "description": "A choir of both males and females singing",
+                "image": "images/instruments/mixedchoir.png",
+                "youtube": "https://www.youtube.com/watch?v=D-_H3Rj1ywU",
+                "wikipedia": "https://en.wikipedia.org/wiki/Choir",
+                "tags": {
+                    "hornbostelsachs": "aerophone",
+                    "common": "vocal",
+                    "voices": "polyphomic",
+                    "origin": "n/a",
+                    "timeframe": "n/a"
+                }
+            }
+        ]
+    },
+    {
+        "name": "Outlaw Country",
+        "description": "A variety of country music centered around outlaw lifestyle and characterized by it's opposition to what artists percieved as the disingenuous \"Nashville Sound\"",
+        "instruments": [{
+                "name": "Clean Tenor Vocals",
+                "description": "A Male or Female singing cleanly",
+                "image": "images/instruments/mixedchoir.png",
+                "youtube": "",
+                "wikipedia": "",
+                "tags": {
+                    "hornbostelsachs": "aerophone",
+                    "common": "vocal",
+                    "voices": "monophonic",
+                    "origin": "n/a",
+                    "timeframe": "n/a"
+                }
+            },
+            {
+                "name": "Clean Electric Guitar",
+                "description": "An electric guitar with a clean tone",
+                "image": "images/instruments/cleanguitar.png",
+                "youtube": "https://www.youtube.com/watch?v=pB1lotlwago",
+                "wikipedia": "https://en.wikipedia.org/wiki/Electric_guitar",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Steel String Acoustic Guitar",
+                "description": "A mid to high register plucked string instrument with steel strings",
+                "image": "images/instruments/acousticguitar.png",
+                "youtube": "https://www.youtube.com/watch?v=D4Y52QYm540",
+                "wikipedia": "https://en.wikipedia.org/wiki/Acoustic_guitar",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Pedal Steel Guitar",
+                "description": "A steel guitar that is layed horizontal and has many pedals and levers. It is capable of unlimited glissandi and can sometimes sound like a human voice.",
+                "image": "images/instruments/pedalsteel.png",
+                "youtube": "https://www.youtube.com/watch?v=ON1SDaBvomQ",
+                "wikipedia": "https://en.wikipedia.org/wiki/Pedal_steel_guitar",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Violin",
+                "description": "A high pitched wooden string instrument, also known as a fiddle",
+                "image": "images/instruments/violin.png",
+                "youtube": "https://www.youtube.com/watch?v=zgaQFLUdUL0",
+                "wikipedia": "https://en.wikipedia.org/wiki/Violin",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "renaissance"
+                }
+            },
+            {
+                "name": "Resonator Guitar",
+                "description": "AKA a Dobro, an acoustic guitar that produces sound by conducting vibrations into metal cones instead of the guitars soundboard, typically played slide but not exclusively",
+                "image": "images/instruments/resonatorguitar.png",
+                "youtube": "https://www.youtube.com/watch?v=mdx42zDniTo",
+                "wikipedia": "https://en.wikipedia.org/wiki/Resonator_guitar",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Harmonica",
+                "description": "An small wind instrument played by using the mouth to direct air into the reed",
+                "image": "images/instruments/harmonica.png",
+                "youtube": "https://www.youtube.com/watch?v=Mx51iT_KJ6Q",
+                "wikipedia": "https://en.wikipedia.org/wiki/Harmonica",
+                "tags": {
+                    "hornbostelsachs": "aerophone",
+                    "common": "wind",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Drum Kit",
+                "description": "A collection of percussion instruments operated by a single player",
+                "image": "images/instruments/drumkit.png",
+                "youtube": "https://www.youtube.com/watch?v=fu8Iq1q73gY",
+                "wikipedia": "https://en.wikipedia.org/wiki/Drum_kit",
+                "tags": {
+                    "hornbostelsachs": "membranophone",
+                    "common": "percussion",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            }
+        ]
+    },
+    {
+        "name": "Pop Music",
+        "description": "Music made to dominate the charts with it's catchy hooks and verse chorus style. Instrumentation can vary widely, so here's one I heard on the radio recently",
+        "instruments": [{
+                "name": "Drum Machine",
+                "description": "An electronic instrument used to create artificial percussion",
+                "image": "images/instruments/drummachine.png",
+                "youtube": "https://www.youtube.com/watch?v=SykBI6Prbi8",
+                "wikipedia": "https://en.wikipedia.org/wiki/Drum_machine",
+                "tags": {
+                    "hornbostelsachs": "electrophone",
+                    "common": "electronic",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "String Section",
+                "description": "A section of instruments usually consisting of first and second violins, violas, cellos, and double basses",
+                "image": "images/instruments/stringsection.png",
+                "youtube": "https://www.youtube.com/watch?v=MP2_6OLummA",
+                "wikipedia": "https://en.wikipedia.org/wiki/Double_bass",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "renaissance"
+                }
+            },
+            {
+                "name": "Piano",
+                "description": "An acoustic keyboard instrument",
+                "image": "images/instruments/keyboard.png",
+                "youtube": "https://www.youtube.com/watch?v=cGYyOY4XaFs",
+                "wikipedia": "https://en.wikipedia.org/wiki/Piano",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "keyboard",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "renaissance"
+                }
+            },
+            {
+                "name": "Synth Bass",
+                "description": "A synthesizer tone, usually monophonic, usually built with a simple waveform to ensure a strong fundamental frequency.",
+                "image": "images/instruments/synth.png",
+                "youtube": "https://www.youtube.com/watch?v=WJPO1OTZQdc",
+                "wikipedia": "https://en.wikipedia.org/wiki/Synthesizer",
+                "tags": {
+                    "hornbostelsachs": "electrophone",
+                    "common": "electronic",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Synth Lead",
+                "description": "A synthesizer tone that is usually monophonic with a bold and harmonically rich sound with high sustain to cut through a mix",
+                "image": "images/instruments/synth.png",
+                "youtube": "https://www.youtube.com/watch?v=pa99dscG5rg",
+                "wikipedia": "https://en.wikipedia.org/wiki/Synthesizer",
+                "tags": {
+                    "hornbostelsachs": "electrophone",
+                    "common": "electronic",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Clean Tenor Female Vocals",
+                "description": "A Female singing cleanly in the highest tradiitonal male vocal register",
+                "image": "images/instruments/femalevocals.png",
+                "youtube": "",
+                "wikipedia": "",
+                "tags": {
+                    "hornbostelsachs": "aerophone",
+                    "common": "vocal",
+                    "voices": "monophonic",
+                    "origin": "n/a",
+                    "timeframe": "n/a"
+                }
+            }
+        ]
+    },
+    {
+        "name": "Bardcore",
+        "description": "AKA Tavernwave, is a microgenre consisting of popular songs remade with medieval instruments, as well as original music that is played with medieval instruments with modern rythyms, harmonies and melodies",
+        "instruments": [{
+                "name": "Lute",
+                "description": "A high pitched, stringed musical instrument that can have a varied amount of courses",
+                "image": "images/instruments/lute.png",
+                "youtube": "https://www.youtube.com/watch?v=_qCFKMJ_NL4",
+                "wikipedia": "https://en.wikipedia.org/wiki/Lute",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "medieval"
+                }
+            },
+            {
+                "name": "Hurdy Gurdy",
+                "description": "An instrument that generates sound by a hand cranked wheel rubbing against the strings, with the melody operated by a keyboard",
+                "image": "images/instruments/hurdygurdy.png",
+                "youtube": "https://www.youtube.com/watch?v=gYJg9cLk1us",
+                "wikipedia": "https://en.wikipedia.org/wiki/Hurdy-gurdy",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "keyboard",
+                    "voices": "homophonic",
+                    "origin": "europe",
+                    "timeframe": "medieval"
+                }
+            },
+            {
+                "name": "Tambourine",
+                "description": "A small drum with small metal jingles attached to it",
+                "image": "images/instruments/tambourine.png",
+                "youtube": "https://youtu.be/-lJctvybAJ8?t=916",
+                "wikipedia": "https://en.wikipedia.org/wiki/Tambourine",
+                "tags": {
+                    "hornbostelsachs": "idiophone",
+                    "common": "percussion",
+                    "voices": "monophonic",
+                    "origin": "unknown",
+                    "timeframe": "ancient"
+                }
+            },
+            {
+                "name": "Tenor Drum",
+                "description": "A mid pitched percussion instrument",
+                "image": "images/instruments/tenordrum.png",
+                "youtube": "https://www.youtube.com/watch?v=dKBfWaxbgLM",
+                "wikipedia": "https://en.wikipedia.org/wiki/Tenor_drum",
+                "tags": {
+                    "hornbostelsachs": "membranophone",
+                    "common": "percussion",
+                    "voices": "monophonic",
+                    "origin": "europe",
+                    "timeframe": "medieval"
+                }
+            },
+            {
+                "name": "Flute",
+                "description": "A high pitched wind instrument. Also, one of the oldest human instruments.",
+                "image": "images/instruments/flute.png",
+                "youtube": "https://www.youtube.com/watch?v=N5dZNFinTkA",
+                "wikipedia": "https://en.wikipedia.org/wiki/Flute",
+                "tags": {
+                    "hornbostelsachs": "aerophone",
+                    "common": "wind",
+                    "voices": "monophonic",
+                    "origin": "n/a",
+                    "timeframe": "ancient"
+                }
+            },
+            {
+                "name": "Violin",
+                "description": "A high pitched wooden string instrument, also known as a fiddle",
+                "image": "images/instruments/violin.png",
+                "youtube": "https://www.youtube.com/watch?v=zgaQFLUdUL0",
+                "wikipedia": "https://en.wikipedia.org/wiki/Violin",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "renaissance"
+                }
+            }
+        ]
+    },
+    {
+        "name": "Vomit Inducing Corporate Music",
+        "description": "You know it when you hear it. The type of music that just screams disingenuity and pandering. When you hear this you know someone is trying to sell you something.",
+        "instruments": [{
+                "name": "Ukelele",
+                "description": "A high pitched plucked string instrument with four nylon strings",
+                "image": "images/instruments/ukelele.png",
+                "youtube": "https://www.youtube.com/watch?v=RNjq0kzYhVE",
+                "wikipedia": "https://en.wikipedia.org/wiki/Ukulele",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Glockenspiel",
+                "description": "A set of pitched metal plates that are struck to create melodic percussion",
+                "image": "images/instruments/glockenspiel.png",
+                "youtube": "https://youtu.be/-lJctvybAJ8?t=293",
+                "wikipedia": "https://en.wikipedia.org/wiki/Glockenspiel",
+                "tags": {
+                    "hornbostelsachs": "idiophone",
+                    "common": "percussion",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "renaissance"
+                }
+            },
+            {
+                "name": "Mixed Choir",
+                "description": "A choir of both males and females singing",
+                "image": "images/instruments/mixedchoir.png",
+                "youtube": "https://www.youtube.com/watch?v=D-_H3Rj1ywU",
+                "wikipedia": "https://en.wikipedia.org/wiki/Choir",
+                "tags": {
+                    "hornbostelsachs": "aerophone",
+                    "common": "vocal",
+                    "voices": "polyphomic",
+                    "origin": "n/a",
+                    "timeframe": "n/a"
+                }
+            },
+            {
+                "name": "Drum Kit",
+                "description": "A collection of percussion instruments operated by a single player",
+                "image": "images/instruments/drumkit.png",
+                "youtube": "https://www.youtube.com/watch?v=fu8Iq1q73gY",
+                "wikipedia": "https://en.wikipedia.org/wiki/Drum_kit",
+                "tags": {
+                    "hornbostelsachs": "membranophone",
+                    "common": "percussion",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Electric Bass Guitar",
+                "description": "A low register plucked string instrument",
+                "image": "images/instruments/ElectricBass.png",
+                "youtube": "https://www.youtube.com/watch?v=ONw0q2ZhEXg",
+                "wikipedia": "https://en.wikipedia.org/wiki/Bass_guitar",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Piano",
+                "description": "An acoustic keyboard instrument",
+                "image": "images/instruments/keyboard.png",
+                "youtube": "https://www.youtube.com/watch?v=cGYyOY4XaFs",
+                "wikipedia": "https://en.wikipedia.org/wiki/Piano",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "keyboard",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "renaissance"
+                }
+            }
+        ]
+    },
+    {
+        "name": "Arena Rock",
+        "description": "Rock music composed to be radio friendly and commercially oriented, with inoffensive timbres and anthematic choruses",
+        "instruments": [{
+                "name": "Drum Kit",
+                "description": "A collection of percussion instruments operated by a single player",
+                "image": "images/instruments/drumkit.png",
+                "youtube": "https://www.youtube.com/watch?v=fu8Iq1q73gY",
+                "wikipedia": "https://en.wikipedia.org/wiki/Drum_kit",
+                "tags": {
+                    "hornbostelsachs": "membranophone",
+                    "common": "percussion",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+
+            {
+                "name": "Clean Tenor Male Vocals",
+                "description": "A Male singing cleanly in the highest tradiitonal male vocal register",
+                "image": "images/instruments/malevocals.png",
+                "youtube": "",
+                "wikipedia": "",
+                "tags": {
+                    "hornbostelsachs": "aerophone",
+                    "common": "vocal",
+                    "voices": "monophonic",
+                    "origin": "n/a",
+                    "timeframe": "n/a"
+                }
+            },
+            {
+                "name": "Electric Bass Guitar",
+                "description": "A low register plucked string instrument",
+                "image": "images/instruments/ElectricBass.png",
+                "youtube": "https://www.youtube.com/watch?v=ONw0q2ZhEXg",
+                "wikipedia": "https://en.wikipedia.org/wiki/Bass_guitar",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Overdriven Electric Guitar",
+                "description": "An electric guitar with a slightly dirty overdriven tone",
+                "image": "images/instruments/overdriveguitar.png",
+                "youtube": "https://www.youtube.com/watch?v=VWOunsplyz0",
+                "wikipedia": "https://en.wikipedia.org/wiki/Electric_guitar",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Synth Keys",
+                "description": "A synthesizer tone emulating the sound of pianos and organs, always polyphonic. Usually simple wave forms.",
+                "image": "images/instruments/synth.png",
+                "youtube": "https://www.youtube.com/watch?v=zuvbfYvwca4",
+                "wikipedia": "https://en.wikipedia.org/wiki/Synthesizer",
+                "tags": {
+                    "hornbostelsachs": "electrophone",
+                    "common": "electronic",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Piano",
+                "description": "An acoustic keyboard instrument",
+                "image": "images/instruments/keyboard.png",
+                "youtube": "https://www.youtube.com/watch?v=cGYyOY4XaFs",
+                "wikipedia": "https://en.wikipedia.org/wiki/Piano",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "keyboard",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "renaissance"
+                }
+            }
+        ]
+    },
+    {
+        "name": "Emo Rap",
+        "description": "A fusion genre that cobines hip hop beats and rapping with instrumentals and lyrics common in emo music",
+        "instruments": [{
+                "name": "Overdriven Electric Guitar",
+                "description": "An electric guitar with a slightly dirty overdriven tone",
+                "image": "images/instruments/overdriveguitar.png",
+                "youtube": "https://www.youtube.com/watch?v=VWOunsplyz0",
+                "wikipedia": "https://en.wikipedia.org/wiki/Electric_guitar",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Sample",
+                "description": "A reused portion of an already existing recording, used musically, such as with a song sample; or for thematic effect, such as with a movie sample",
+                "image": "images/instruments/sample.png",
+                "youtube": "https://www.youtube.com/watch?v=bFCcOJ-5NKE",
+                "wikipedia": "https://en.wikipedia.org/wiki/Sampling_(music)",
+                "tags": {
+                    "hornbostelsachs": "electrophone",
+                    "common": "electronic",
+                    "voices": "n/a",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Drum Machine",
+                "description": "An electronic instrument used to create artificial percussion",
+                "image": "images/instruments/drummachine.png",
+                "youtube": "https://www.youtube.com/watch?v=SykBI6Prbi8",
+                "wikipedia": "https://en.wikipedia.org/wiki/Drum_machine",
+                "tags": {
+                    "hornbostelsachs": "electrophone",
+                    "common": "electronic",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Rapping",
+                "description": "Spoken or chanted rhyming lyrics. The components of rap include lyrics, \"flow\" (rhythm, rhyme), and \"delivery\" (cadence, tone).",
+                "image": "images/instruments/rapping.png",
+                "youtube": "https://www.youtube.com/watch?v=izgsppAKtjE",
+                "wikipedia": "https://en.wikipedia.org/wiki/Rapping",
+                "tags": {
+                    "hornbostelsachs": "aerophone",
+                    "common": "vocal",
+                    "voices": "monophonic",
+                    "origin": "n/a",
+                    "timeframe": "n/a"
+                }
+            },
+            {
+                "name": "Synth Bass",
+                "description": "A synthesizer tone, usually monophonic, usually built with a simple waveform to ensure a strong fundamental frequency.",
+                "image": "images/instruments/synth.png",
+                "youtube": "https://www.youtube.com/watch?v=WJPO1OTZQdc",
+                "wikipedia": "https://en.wikipedia.org/wiki/Synthesizer",
+                "tags": {
+                    "hornbostelsachs": "electrophone",
+                    "common": "electronic",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Synth Plucks",
+                "description": "A synthesizer tone with quick attack, decay and release, emulating the sound of a pizz strings. Like bells, but harmonically simpler and shorter release. ",
+                "image": "images/instruments/synth.png",
+                "youtube": "https://www.youtube.com/watch?v=zOCKsmwQ3-k",
+                "wikipedia": "https://en.wikipedia.org/wiki/Synthesizer",
+                "tags": {
+                    "hornbostelsachs": "electrophone",
+                    "common": "electronic",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            }
+        ]
+    },
+    {
+        "name": "d e a t h  g r i p s",
+        "description": "Experimental hip hop group with influences from industrial, punk, electronic and noise",
+        "instruments": [{
+                "name": "Rapping",
+                "description": "Spoken or chanted rhyming lyrics. The components of rap include lyrics, \"flow\" (rhythm, rhyme), and \"delivery\" (cadence, tone).",
+                "image": "images/instruments/rapping.png",
+                "youtube": "https://www.youtube.com/watch?v=izgsppAKtjE",
+                "wikipedia": "https://en.wikipedia.org/wiki/Rapping",
+                "tags": {
+                    "hornbostelsachs": "aerophone",
+                    "common": "vocal",
+                    "voices": "monophonic",
+                    "origin": "n/a",
+                    "timeframe": "n/a"
+                }
+            },
+            {
+                "name": "Drum Kit",
+                "description": "A collection of percussion instruments operated by a single player",
+                "image": "images/instruments/drumkit.png",
+                "youtube": "https://www.youtube.com/watch?v=fu8Iq1q73gY",
+                "wikipedia": "https://en.wikipedia.org/wiki/Drum_kit",
+                "tags": {
+                    "hornbostelsachs": "membranophone",
+                    "common": "percussion",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Synth Pad",
+                "description": "A synthesizer tone with a long attack and release and high sustain, often emulating the sound of a bowed instrument or choir.",
+                "image": "images/instruments/synth.png",
+                "youtube": "https://www.youtube.com/watch?v=vZp44iDCcuA",
+                "wikipedia": "https://en.wikipedia.org/wiki/Synthesizer",
+                "tags": {
+                    "hornbostelsachs": "electrophone",
+                    "common": "electronic",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Synth Stab",
+                "description": "A synthesizer tone that is basically a short attack-short release version of Synth Brass. Think the big synths chords on Thriller.",
+                "image": "images/instruments/synth.png",
+                "youtube": "https://www.youtube.com/watch?v=q0wsMfj68C0",
+                "wikipedia": "https://en.wikipedia.org/wiki/Synthesizer",
+                "tags": {
+                    "hornbostelsachs": "electrophone",
+                    "common": "electronic",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Sample",
+                "description": "A reused portion of an already existing recording, used musically, such as with a song sample; or for thematic effect, such as with a movie sample",
+                "image": "images/instruments/sample.png",
+                "youtube": "https://www.youtube.com/watch?v=bFCcOJ-5NKE",
+                "wikipedia": "https://en.wikipedia.org/wiki/Sampling_(music)",
+                "tags": {
+                    "hornbostelsachs": "electrophone",
+                    "common": "electronic",
+                    "voices": "n/a",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Overdriven Electric Guitar",
+                "description": "An electric guitar with a slightly dirty overdriven tone",
+                "image": "images/instruments/overdriveguitar.png",
+                "youtube": "https://www.youtube.com/watch?v=VWOunsplyz0",
+                "wikipedia": "https://en.wikipedia.org/wiki/Electric_guitar",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            },
+            {
+                "name": "Turn Table",
+                "description": "A record player modified by DJs to use as a musical instrument",
+                "image": "images/instruments/turntable.png",
+                "youtube": "https://www.youtube.com/watch?v=WybPqYhg8pI",
+                "wikipedia": "https://en.wikipedia.org/wiki/Turntablism",
+                "tags": {
+                    "hornbostelsachs": "electrophone",
+                    "common": "electronic",
+                    "voices": "monophonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            }
+        ]
+    },
+    {
+        "name": "Under The Sea",
+        "description": "A beautiful timbre evoking the sense of being below the surface of the wide open sea.",
+        "instruments": [{
+                "name": "Wind Section",
+                "description": "A section of instruments usually consisting of flutes, oboes, bassoons, clarinets and occasionally some auxlillary instruments",
+                "image": "images/instruments/windsection.png",
+                "youtube": "https://www.youtube.com/watch?v=KEt1Mm8sSkA",
+                "wikipedia": "https://en.wikipedia.org/wiki/Woodwind_section",
+                "tags": {
+                    "hornbostelsachs": "aerophone",
+                    "common": "wind",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "renaissance"
+                }
+            },
+            {
+                "name": "Double Bass",
+                "description": "A low ranged wooden string instrument, AKA Upright Bass",
+                "image": "images/instruments/doublebass.png",
+                "youtube": "https://www.youtube.com/watch?v=nUUVSxZ4ohI",
+                "wikipedia": "https://en.wikipedia.org/wiki/Double_bass",
+                "tags": {
+                    "hornbostelsachs": "chordophone",
+                    "common": "stringed",
+                    "voices": "polyphonic",
+                    "origin": "europe",
+                    "timeframe": "renaissance"
+                }
+            },
+            {
+                "name": "Timpani",
+                "description": "Also known as Kettle Drums, they are sets of pitched drums",
+                "image": "images/instruments/timpani.png",
+                "youtube": "https://www.youtube.com/watch?v=40k3AAbA7tM",
+                "wikipedia": "https://en.wikipedia.org/wiki/Timpani",
+                "tags": {
+                    "hornbostelsachs": "membraphone",
+                    "common": "percussion",
+                    "voices": "monophonic",
+                    "origin": "europe",
+                    "timeframe": "antiquity"
+                }
+            },
+            {
+                "name": "Synth Pad",
+                "description": "A synthesizer tone with a long attack and release and high sustain, often emulating the sound of a bowed instrument or choir.",
+                "image": "images/instruments/synth.png",
+                "youtube": "https://www.youtube.com/watch?v=vZp44iDCcuA",
+                "wikipedia": "https://en.wikipedia.org/wiki/Synthesizer",
+                "tags": {
+                    "hornbostelsachs": "electrophone",
+                    "common": "electronic",
+                    "voices": "polyphonic",
+                    "origin": "north america",
+                    "timeframe": "modern"
+                }
+            }
+        ]
+    },
+    {
+        "name": "",
+        "description": "",
+        "instruments": []
+    },
+    {
+        "name": "",
+        "description": "",
+        "instruments": []
+    }
+
+
+
+]
