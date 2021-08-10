@@ -9,9 +9,17 @@
     margin: 1.5rem 10rem;
     align-items: center;
     border-radius: .5rem;
+    text-align: center;
 }
 
 .headingFive {
     text-align: center;
     color: rgb(211, 211, 211);
+}
+
+.list {
+    margin: 1rem 0 0 0;
+    padding: 0;
+    list-style-position: inside;
+    text-align: center;
 }
