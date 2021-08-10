@@ -42,7 +42,7 @@ const TemplateModal = ({onClose, templates, onConfirm}) => {
                             } 
                         </ButtonGroup> 
                     </Col>
-                    <Col style={{marginTop: '1rem', height: '45rem'}}>
+                    <Col style={{marginTop: '1rem', height: '45rem', overflowY: 'auto'}}>
                         <h3 align='center'>{selectedTemplate.name}</h3>
                         <h6 align='center'>{selectedTemplate.description}</h6>
                         <TemplateInstrumentList instruments={selectedTemplate.instruments} cardSize='small'/>
