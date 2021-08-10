@@ -1,7 +1,6 @@
 import InstrumentCard from './InstrumentCard'
 import styles from '../styles/InstrumentList.module.scss'
 import {CardDeck} from 'react-bootstrap'
-import PropTypes  from 'prop-types'
 
 
 const InstrumentList = ({instruments, onDel, onLoc, onShuf, onRep, onRepButClick, setRepInstrumentID}) => {

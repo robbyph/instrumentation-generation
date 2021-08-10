@@ -15,18 +15,22 @@ const feedback = () => {
                     Found a broken link? Have you found inaccurate info in one of the instrument descriptions? Do you think that one of the instruments is tagged incorrectly? Technical glitch? Send me an email and I'll look into it! Or, if you'd rather, open a pull request on the github page!
                     <br />
                 </p>
-                <p className={styles.p}>Also! If you see an instrument that you think should be added, please let me know and i will add it to the list!"</p>
+                <p className={styles.p}>Also! If you know an instrument that you think should be added, please let me know!"</p>
                 <Form>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="name@example.com" />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                <Form.Label>Example textarea</Form.Label>
-                <Form.Control as="textarea" rows={3} />
-            </Form.Group>
-            <Button>Send</Button>
-            </Form>
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                        <Form.Label>Your Email</Form.Label>
+                        <Form.Control type="email" placeholder="name@example.com" />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                        <Form.Label>Subject</Form.Label>
+                        <Form.Control type="textarea" />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                        <Form.Label>Comments, Questions and/or Concerns</Form.Label>
+                        <Form.Control as="textarea" rows={5} />
+                    </Form.Group>
+                    <Button>Send</Button>
+                </Form>
             </div>
             
         </div>

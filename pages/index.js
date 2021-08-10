@@ -11,7 +11,6 @@ import InstrumentModal from '../components/Modals/InstrumentModal'
 import ReplacementModal from '../components/Modals/ReplacementModal'
 import TemplateModal from '../components/Modals/TemplateModal'
 import { NextSeo, SoftwareAppJsonLd } from 'next-seo'
-import Navigation from '../components/Navigation'
 
 export default function Home() {
     
@@ -107,7 +106,8 @@ export default function Home() {
         if (myInstruments.length <= 0) {
             generateNewList(min, max);
         }else {
-            pushAlert(closeAlert, "New List Warning", "Generating a new list will erase all unlocked instruments. Would you like to continue?", "danger", generateNewList, undefined, false)
+            
+            pushAlert(closeAlert, "New List Warning", "Generating a new list will erase all unlocked instruments. Would you like to continue?", "danger", () => {generateNewList(min, max)}, undefined, false)
         }  
     }
 
@@ -216,6 +216,8 @@ export default function Home() {
         }])
 
         setKeyInc(keyInc + 1)
+
+        console.log(methodToExecute)
     }
 
     const closeAlert = (id) => {
