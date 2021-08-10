@@ -38,14 +38,14 @@ const donate = () => {
             <div className={styles.container}>
                 <h5 style={{textAlign: 'center'}}>Share the project with your friends!</h5>
                     <ul className={styles.social}>
-                        <li className={styles.facebook}><a href="https://www.facebook.com/sharer.php?u=http://instrumentationgeneration.com" target="_blank" rel="nofollow external noopener"></a></li>
-                        <li className={styles.twitter}><a href="https://twitter.com/intent/tweet?url=http://instrumentationgeneration.com&amp;text=Instrumentation Generation" target="_blank" rel="nofollow external noopener"></a></li>
-                        <li className={styles.pinterest}><a href="https://pinterest.com/pin/create/bookmarklet/?url=http://instrumentationgeneration.com&amp;description=Instrumentation Generation" target="_blank" rel="nofollow external noopener"></a></li>
-                        <li className={styles.linkedin}><a href="https://www.linkedin.com/shareArticle?url=http://instrumentationgeneration.com&amp;title=Instrumentation Generation" target="_blank" rel="nofollow external noopener"></a></li>
-                        <li className={styles.reddit}><a href="https://reddit.com/submit?url=http://instrumentationgeneration.com&amp;title=Instrumentation Generation" target="_blank" rel="nofollow external noopener"></a></li>
-                        <li className={styles.stumbleupon}><a href="http://www.stumbleupon.com/submit?url=http://instrumentationgeneration.com&amp;title=Instrumentation Generation" target="_blank" rel="nofollow external noopener"></a></li>
-                        <li className={styles.tumblr}><a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=http://instrumentationgeneration.com&amp;title=Instrumentation Generation" target="_blank" rel="nofollow external noopener"></a></li>
-                        <li className={styles.digg}><a href="http://digg.com/submit?url=http://instrumentationgeneration.com&amp;title=Instrumentation Generation" target="_blank" rel="nofollow external noopener"></a></li>
+                        <li className={styles.facebook}><a href="https://www.facebook.com/sharer.php?u=http://instrumentationgeneration.com" target="_blank" rel="nofollow external noopener noreferrer"></a></li>
+                        <li className={styles.twitter}><a href="https://twitter.com/intent/tweet?url=http://instrumentationgeneration.com&amp;text=Instrumentation Generation" target="_blank" rel="nofollow external noopener noreferrer"></a></li>
+                        <li className={styles.pinterest}><a href="https://pinterest.com/pin/create/bookmarklet/?url=http://instrumentationgeneration.com&amp;description=Instrumentation Generation" target="_blank" rel="nofollow external noopener noreferrer"></a></li>
+                        <li className={styles.linkedin}><a href="https://www.linkedin.com/shareArticle?url=http://instrumentationgeneration.com&amp;title=Instrumentation Generation" target="_blank" rel="nofollow external noopener noreferrer"></a></li>
+                        <li className={styles.reddit}><a href="https://reddit.com/submit?url=http://instrumentationgeneration.com&amp;title=Instrumentation Generation" target="_blank" rel="nofollow external noopener noreferrer"></a></li>
+                        <li className={styles.stumbleupon}><a href="http://www.stumbleupon.com/submit?url=http://instrumentationgeneration.com&amp;title=Instrumentation Generation" target="_blank" rel="nofollow external noopener noreferrer"></a></li>
+                        <li className={styles.tumblr}><a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=http://instrumentationgeneration.com&amp;title=Instrumentation Generation" target="_blank" rel="nofollow external noopener noreferrer"></a></li>
+                        <li className={styles.digg}><a href="http://digg.com/submit?url=http://instrumentationgeneration.com&amp;title=Instrumentation Generation" target="_blank" rel="nofollow external noopener noreferrer"></a></li>
                     </ul>
             </div>
             </Col>
