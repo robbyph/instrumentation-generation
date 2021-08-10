@@ -13,8 +13,8 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
     return (
         <div className={styles.container} id="paramsDiv">
             <Container fluid >
-                <Row className='offset-3'>
-                    <Col align="center" className='col-8'>
+                <Row>
+                    <Col align="center" md={{ span: 6, offset: 3}}>
                         <Form className={styles.formOverride}>
                             <Form.Label>Start with a Template</Form.Label>
                             <Button style={{marginTop: '.5rem'}} onClick={() => {onTemplateModal()}}>Templates</Button>

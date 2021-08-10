@@ -16,7 +16,9 @@ const Navigation = ({currentPage}) => {
 
     return (
         <div >
-            <Navbar bg='dark' variant="dark">
+            <Navbar collapseOnSelect expand="md" bg='dark' variant="dark">
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="container-fluid">
                     <Link href="/" passHref>
                         {currentPage === '/' ? <Nav.Link className="active">Home</Nav.Link> : <Nav.Link>Home</Nav.Link>}
@@ -45,6 +47,7 @@ const Navigation = ({currentPage}) => {
                         <Button className={styles.btnOverride} variant="dark" style={{color: 'white'}}>More Tools Coming Soon!<br/>Click here to join the mailing list!</Button> 
                     </NavDropdown> 
                 </Nav>
+                </Navbar.Collapse>
             </Navbar>
 
         </div>
