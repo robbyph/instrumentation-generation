@@ -6,7 +6,7 @@ import {CardDeck} from 'react-bootstrap'
 const InstrumentList = ({instruments, onDel, onLoc, onShuf, onRep, onRepButClick, setRepInstrumentID}) => {
     
     return (
-            <CardDeck key={1} className={styles.container} style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center'}}>
+            <CardDeck key={1} className={styles.container} style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
                 {instruments.map((instrument, i) => (
                     <InstrumentCard
                         key={i} 
