@@ -1,6 +1,7 @@
-import {Modal, Button, Form, ButtonGroup, Row, Col} from 'react-bootstrap'
+import {Modal, Button, Form, Navbar, Nav, ButtonGroup, Row, Col} from 'react-bootstrap'
 import {useState} from 'react'
 import TemplateInstrumentList from '../TemplateComponents/TemplateInstrumentList'
+import styles from '../../styles/TemplateModal.module.scss'
 
 const TemplateModal = ({onClose, templates, onConfirm}) => {
     const [selectedTemplate, setSelectedTemplate] = useState(templates[0])    
@@ -30,17 +31,19 @@ const TemplateModal = ({onClose, templates, onConfirm}) => {
             </Modal.Header>
             <Modal.Body style={{paddingTop: 0, paddingBottom: 0}}>
                 <Row>
-                    <Col className='col-2' style={{height: '48rem', overflowY: 'auto', padding:0}}>
-                        <ButtonGroup vertical style={{width: '100%'}}>
+                    <Col lg={2} md={3}  className={styles.column}>
+                        <Navbar expand='md' style={{width:'100%', padding: 0}}>
+                        <Nav className='flex-column' vertical style={{width: '100%'}}>
                             {templates.map((template, i) => {
                                 if(template === selectedTemplate){
-                                    return <Button className='active' style={{padding: '.75rem'}} key={i} onClick={() => {findTemplateByName(template.name)}}>{template.name}</Button>
+                                    return <Button className='active' style={{padding: '.75rem', width: '100%', borderRadius: 0}} key={i} onClick={() => {findTemplateByName(template.name)}}>{template.name}</Button>
                                 }else{
-                                    return <Button style={{padding: '.75rem'}} key={i} onClick={() => {findTemplateByName(template.name)}}>{template.name}</Button>
+                                    return <Button style={{padding: '.75rem', width: '100%', borderRadius: 0}} key={i} onClick={() => {findTemplateByName(template.name)}}>{template.name}</Button>
                                 }
                             })
                             } 
-                        </ButtonGroup> 
+                        </Nav> 
+                        </Navbar>
                     </Col>
                     <Col style={{marginTop: '1rem', height: '45rem', overflowY: 'auto'}}>
                         <h3 align='center'>{selectedTemplate.name}</h3>

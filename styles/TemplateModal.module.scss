@@ -1,0 +1,11 @@
+.column {
+    height: 48rem !important;
+    overflow-y: scroll;
+    padding: 0
+}
+
+@media (max-width: 768px) {
+    .column {
+        height: 10rem !important;
+    }
+}
