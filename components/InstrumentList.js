@@ -8,26 +8,26 @@ const InstrumentList = ({instruments, onDel, onLoc, onShuf, onRep, onRepButClick
     return (
             <Row key={1} className={styles.container} style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-start' }}>
                 {instruments.map((instrument, i) => (
-                    <Col className={styles.properCol}>
-                    <InstrumentCard
-                        key={i} 
-                        id={i}
-                        instr = {instrument}
-                        name={instrument.name} 
-                        description={instrument.description}
-                        imagePath={instrument.image}
-                        wikiLink={instrument.wikipedia}
-                        tubeLink={instrument.youtube}
-                        onDelete = {onDel}
-                        isLocked = {instrument.locked}
-                        onLock = {onLoc}
-                        onShuffle = {onShuf}
-                        onReplace = {onRep}
-                        onRepButtonClick = {onRepButClick}
-                        setReplacementInstrumentID = {setRepInstrumentID}
-                        style={{flex: 1}}>
-                            
-                    </InstrumentCard>
+                    <Col key={i} className={styles.properCol}>
+                        <InstrumentCard
+                            key={i} 
+                            id={i}
+                            instr = {instrument}
+                            name={instrument.name} 
+                            description={instrument.description}
+                            imagePath={instrument.image}
+                            wikiLink={instrument.wikipedia}
+                            tubeLink={instrument.youtube}
+                            onDelete = {onDel}
+                            isLocked = {instrument.locked}
+                            onLock = {onLoc}
+                            onShuffle = {onShuf}
+                            onReplace = {onRep}
+                            onRepButtonClick = {onRepButClick}
+                            setReplacementInstrumentID = {setRepInstrumentID}
+                            style={{flex: 1}}>
+                                
+                        </InstrumentCard>
                     </Col>
                 )) }
                
