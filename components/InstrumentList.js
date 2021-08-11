@@ -1,6 +1,6 @@
 import InstrumentCard from './InstrumentCard'
 import styles from '../styles/InstrumentList.module.scss'
-import {CardDeck, Row, Col} from 'react-bootstrap'
+import { Row, Col} from 'react-bootstrap'
 
 
 const InstrumentList = ({instruments, onDel, onLoc, onShuf, onRep, onRepButClick, setRepInstrumentID}) => {

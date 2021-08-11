@@ -35,21 +35,20 @@ const TemplateInstrumentList = ({instruments, cardSize}) => {
 
     return (
             <Row key={1} className={styles.container} style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-start'}}>
-
                 {instruments.map((instrument, i) => (
                     <Col key={i} className={styles.properCol}>
-                    <TemplateInstrumentCard
-                        key={i} 
-                        id={i}
-                        instr = {instrument}
-                        name={instrument.name} 
-                        description={instrument.description}
-                        imagePath={instrument.image}
-                        wikiLink={instrument.wikipedia}
-                        tubeLink={instrument.youtube}
-                        cardSize={cardSize}
-                        style={{flex: 1}}>
-                    </TemplateInstrumentCard>
+                        <TemplateInstrumentCard
+                            key={i} 
+                            id={i}
+                            instr = {instrument}
+                            name={instrument.name} 
+                            description={instrument.description}
+                            imagePath={instrument.image}
+                            wikiLink={instrument.wikipedia}
+                            tubeLink={instrument.youtube}
+                            cardSize={cardSize}
+                            style={{flex: 1}}>
+                        </TemplateInstrumentCard>
                     </Col>
                 )) }
             </Row>
