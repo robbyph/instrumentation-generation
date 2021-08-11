@@ -1,17 +1,17 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
-//Theme colors
-$theme-colors:( "dark": #000, "light": #fff, "primary": #11a8ff, "secondary": #839796, "info": #325b72, "success": #4db482, "warning": #ffcf5f, "danger": #f44336);
-//Navbar stuff
-$navbar-dark-color: #fff;
-$dropdown-padding-y: 0;
-$dropdown-border-radius:0;
-$navbar-dark-active-color: rgb(153, 153, 153);
-//Body
-$body-bg: $primary;
-//Buttons
-.btn:focus {
-    box-shadow: none !important;
-}
-
-//Keep at bottom
-@import '~bootstrap/scss/bootstrap.scss'
+    @import "../node_modules/bootstrap/scss/bootstrap";
+    //Theme colors
+    $theme-colors:( "dark": #000, "light": #fff, "primary": #11a8ff, "secondary": #839796, "info": #325b72, "success": #4db482, "warning": #ffcf5f, "danger": #f44336);
+    //Navbar stuff
+    $navbar-dark-color: #fff;
+    $dropdown-padding-y: 0;
+    $dropdown-border-radius:0;
+    $navbar-dark-active-color: rgb(153, 153, 153);
+    //Body
+    $body-bg: $primary;
+    //Buttons
+    .btn:focus {
+        box-shadow: none !important;
+    }
+    
+    //Keep at bottom
+    @import '~bootstrap/scss/bootstrap.scss'

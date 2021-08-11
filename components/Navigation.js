@@ -39,12 +39,12 @@ const Navigation = ({currentPage}) => {
                         {currentPage === '/feedback' ? <Nav.Link className="active">Feedback</Nav.Link> : <Nav.Link>Feedback</Nav.Link>}
                     </Link>
                     <NavDropdown 
-                    className="ml-auto"
-                    title="Compositional Toolkit"
-                    show={show}
-                    onMouseEnter={showDropdown} 
-                    onMouseLeave={hideDropdown}>
-                        <Button className={styles.btnOverride} variant="dark" style={{color: 'white'}}>More Tools Coming Soon!<br/>Click here to join the mailing list!</Button> 
+                        className='ml-auto'
+                        title="Compositional Toolkit"
+                        show={show}
+                        onMouseEnter={showDropdown} 
+                        onMouseLeave={hideDropdown}>
+                            <Button className={styles.btnOverride} variant="dark" style={{color: 'white'}}>More Tools Coming Soon!<br/>Click here to join the mailing list!</Button> 
                     </NavDropdown> 
                 </Nav>
                 </Navbar.Collapse>

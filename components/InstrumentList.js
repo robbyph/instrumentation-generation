@@ -1,13 +1,14 @@
 import InstrumentCard from './InstrumentCard'
 import styles from '../styles/InstrumentList.module.scss'
-import {CardDeck} from 'react-bootstrap'
+import {CardDeck, Row, Col} from 'react-bootstrap'
 
 
 const InstrumentList = ({instruments, onDel, onLoc, onShuf, onRep, onRepButClick, setRepInstrumentID}) => {
     
     return (
-            <CardDeck key={1} className={styles.container} style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
+            <Row key={1} className={styles.container} style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-start' }}>
                 {instruments.map((instrument, i) => (
+                    <Col className={styles.properCol}>
                     <InstrumentCard
                         key={i} 
                         id={i}
@@ -27,8 +28,10 @@ const InstrumentList = ({instruments, onDel, onLoc, onShuf, onRep, onRepButClick
                         style={{flex: 1}}>
                             
                     </InstrumentCard>
+                    </Col>
                 )) }
-            </CardDeck>
+               
+            </Row>
     )
 }
 

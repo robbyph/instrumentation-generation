@@ -1,12 +1,12 @@
-import {Card, Button, ButtonGroup, ButtonToolbar} from 'react-bootstrap'
+import {Card, Button, ButtonGroup, Col} from 'react-bootstrap'
 import styles from '../styles/InstrumentCard.module.scss'
 import {useState} from 'react'
 
 const InstrumentCard = ({id, name, description, imagePath, wikiLink, tubeLink, onDelete, isLocked, onLock, onShuffle, setReplacementInstrumentID, onRepButtonClick}) => {
     
     return (
-            <Card style={{minWidth: '18rem', flexGrow: 0, margin:'1rem', minHeight:'32rem'}}>
-                
+            
+            <Card style={{minWidth: '16rem', flexGrow: 1, margin:'1rem', minHeight:'32rem'}}>
                 <div>
                     <button id="lockButton" onClick={() => {onLock(id)}} className={isLocked ? styles.btnOverrideLocked : styles.btnOverride}>{isLocked ? "🔒" : "🔓"}</button>
                     <button id="shuffleButton" autoFocus={true} onClick={()=> {onShuffle(id)}} className={styles.btnOverrideShuffle} style={{float: "right"}}><span>🔀</span></button>
