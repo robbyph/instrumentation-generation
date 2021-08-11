@@ -11,7 +11,9 @@ const InstrumentCard = ({id, name, description, imagePath, wikiLink, tubeLink, o
                     <button id="lockButton" onClick={() => {onLock(id)}} className={isLocked ? styles.btnOverrideLocked : styles.btnOverride}>{isLocked ? "🔒" : "🔓"}</button>
                     <button id="shuffleButton" autoFocus={true} onClick={()=> {onShuffle(id)}} className={styles.btnOverrideShuffle} style={{float: "right"}}><span>🔀</span></button>
                 </div>
-                <Card.Img variant="top" src={imagePath} style={{padding:'1rem', maxHeight: '10rem', height:'100%', objectFit: 'contain'}} />
+                <div>
+                <Card.Img variant="top" src={imagePath} style={{padding:'1rem', minHeight: '10rem', maxHeight: '10rem', height:'100%', objectFit: 'contain'}} />
+                </div>
                 <Card.Body style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
                     <div>
                     <Card.Title>{name}</Card.Title>
