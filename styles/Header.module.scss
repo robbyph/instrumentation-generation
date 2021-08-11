@@ -5,3 +5,9 @@
         background-position: 52%;
         height: 15vmax;
     }
+    
+    @media (max-width: 768px) {
+        .container {
+            height: 25vmax;
+        }
+    }
