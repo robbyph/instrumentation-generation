@@ -25,17 +25,12 @@
     padding: 1.2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .container {
         background-color: #fff;
         padding: 1.5rem;
         margin: 1rem 1rem;
         align-items: center;
         border-radius: .5rem;
-    }
-    .formOverride {
-        justify-content: flex-start;
-        margin: .5rem;
-        padding: 2rem
     }
 }
