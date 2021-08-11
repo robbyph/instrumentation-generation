@@ -4,7 +4,7 @@ const TemplateInstrumentCard = ({id, name, description, imagePath, wikiLink, tub
     
 
     return (
-            <Card style={{minWidth: '11rem', flexGrow: 0, margin:'1rem', minHeight: '16rem'}}>
+            <Card style={{minWidth: '11rem', flexGrow: 1, margin:'1rem', minHeight: '16rem'}}>
                 <Card.Img variant="top" src={imagePath} style={{padding:'1rem', maxHeight: '10rem', height:'100%', objectFit: 'contain'}} />
                 <Card.Body style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
                     <Card.Title>{name}</Card.Title>

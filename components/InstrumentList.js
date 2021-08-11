@@ -26,7 +26,6 @@ const InstrumentList = ({instruments, onDel, onLoc, onShuf, onRep, onRepButClick
                             onRepButtonClick = {onRepButClick}
                             setReplacementInstrumentID = {setRepInstrumentID}
                             style={{flex: 1}}>
-                                
                         </InstrumentCard>
                     </Col>
                 )) }
