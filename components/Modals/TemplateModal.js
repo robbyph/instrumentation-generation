@@ -45,7 +45,7 @@ const TemplateModal = ({onClose, templates, onConfirm}) => {
                         </Nav> 
                         </Navbar>
                     </Col>
-                    <Col style={{marginTop: '1rem', height: '45rem', overflowY: 'scrollable'}}>
+                    <Col style={{marginTop: '1rem', height: '45rem', overflowY: 'auto'}}>
                         <h3 align='center'>{selectedTemplate.name}</h3>
                         <h6 align='center'>{selectedTemplate.description}</h6>
                         <TemplateInstrumentList instruments={selectedTemplate.instruments} cardSize='small'/>
