@@ -254,13 +254,14 @@ export default function Home() {
     }
     const replaceInstrument = (oldInstrumentID, newInstrument) => {
         oldInstrumentID = oldInstrumentID.ogInstId
-        console.log(oldInstrumentID, newInstrument)
         var tempInstruments = [...myInstruments]
-        console.log(tempInstruments)
-        tempInstruments[oldInstrumentID] = newInstrument
-        console.log(tempInstruments)
-        setMyInstruments(tempInstruments)
-        console.log(myInstruments)
+        if(tempInstruments[oldInstrumentID].locked){
+            pushAlert(closeAlert, "Lock Warning", "This instrument is locked. Please unlock it to replace it.", "danger", undefined, undefined, true)
+        }else{
+            tempInstruments[oldInstrumentID] = newInstrument
+            setMyInstruments(tempInstruments)
+        }
+        
     }
     //#endregion
 
