@@ -23,3 +23,13 @@
     list-style-position: inside;
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .container {
+        background-color: #fff;
+        padding: 1.5rem;
+        margin: 1rem 1rem;
+        align-items: center;
+        border-radius: .5rem;
+    }
+}
