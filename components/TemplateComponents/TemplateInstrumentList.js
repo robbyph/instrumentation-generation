@@ -1,6 +1,6 @@
 import TemplateInstrumentCard from './TemplateInstrumentCard'
-import styles from '../../styles/InstrumentList.module.scss'
-import {CardDeck} from 'react-bootstrap'
+import styles from '../../styles/TemplateInstrumentList.module.scss'
+import {Row, Col} from 'react-bootstrap'
 
 
 const TemplateInstrumentList = ({instruments, cardSize}) => {
@@ -34,8 +34,9 @@ const TemplateInstrumentList = ({instruments, cardSize}) => {
 
 
     return (
-            <CardDeck key={1} className={styles.container} style={{display: 'flex', flexDirection: 'row'}}>
+            <Row key={1} className={styles.container} style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-start'}}>
                 {instruments.map((instrument, i) => (
+                    <Col key={i} className={styles.properCol}>
                     <TemplateInstrumentCard
                         key={i} 
                         id={i}
@@ -48,8 +49,9 @@ const TemplateInstrumentList = ({instruments, cardSize}) => {
                         cardSize={cardSize}
                         style={{flex: 1}}>
                     </TemplateInstrumentCard>
+                    </Col>
                 )) }
-            </CardDeck>
+            </Row>
     )
 }
 
