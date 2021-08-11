@@ -55,3 +55,20 @@
         content: '- '
     }
 }
+
+@media (max-width: 768px) {
+    .container {
+        background-color: #fff;
+        padding: 1.5rem;
+        margin: 1rem 1rem;
+        align-items: center;
+        border-radius: .5rem;
+    }
+    .headingOne {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .changeItem {
+        margin: 1rem
+    }
+}
