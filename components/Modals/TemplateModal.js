@@ -26,7 +26,7 @@ const TemplateModal = ({onClose, templates, onConfirm}) => {
 
     return (
         <Container fluid>
-        <Modal size='xl' show={true} onHide={onClose} keyboard={false}>
+        <Modal className={styles.templateModal} size='xl' show={true} onHide={onClose} keyboard={false}>
             <Modal.Header closeButton>
                 <Modal.Title>Templates</Modal.Title>
             </Modal.Header>
@@ -46,7 +46,7 @@ const TemplateModal = ({onClose, templates, onConfirm}) => {
                         </Nav> 
                         </Navbar>
                     </Col>
-                    <Col style={{marginTop: '1rem', height: '45rem', overflowY: 'auto'}}>
+                    <Col id={styles.instrumentPanel} style={{marginTop: '1rem', height: '45rem', overflowY: 'auto'}}>
                         <h3 align='center'>{selectedTemplate.name}</h3>
                         <h6 align='center'>{selectedTemplate.description}</h6>
                         <TemplateInstrumentList instruments={selectedTemplate.instruments}/>

@@ -8,4 +8,9 @@
     .column {
         height: 10rem !important;
     }
+    #instrumentPanel {
+        height: 25rem !important;
+    }
 }
+
+@media (max-width: 576px) {}
