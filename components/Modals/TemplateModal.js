@@ -26,13 +26,13 @@ const TemplateModal = ({onClose, templates, onConfirm}) => {
 
     return (
         <Container fluid>
-        <Modal size='xl' show={true} onHide={onClose} keyboard={false} >
+        <Modal size='xl' show={true} onHide={onClose} keyboard={false}>
             <Modal.Header closeButton>
                 <Modal.Title>Templates</Modal.Title>
             </Modal.Header>
             <Modal.Body style={{paddingTop: 0, paddingBottom: 0}}>
                 <Row>
-                    <Col lg={2} md={3}  className={styles.column}>
+                    <Col lg={2} md={3} className={styles.column}>
                         <Navbar expand='md' style={{width:'100%', padding: 0}}>
                         <Nav className='flex-column' vertical='true' style={{width: '100%'}}>
                             {templates.map((template, i) => {
