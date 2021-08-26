@@ -2,10 +2,12 @@ import LibraryInstrumentCard from './LibraryInstrumentCard'
 import styles from '../../styles/InstrumentList.module.scss'
 import {CardDeck} from 'react-bootstrap'
 import instrumentData from '../data/instruments.json'
+import { useEffect, useState } from 'react'
 
 const LibraryInstrumentList = () => {
-    
-    var instruments = [];
+    //var instruments = [];
+    const [instruments, setInstruments] = useState([])
+
     function shuffle(array) {
         var currentIndex = array.length,  randomIndex;
       
@@ -24,8 +26,10 @@ const LibraryInstrumentList = () => {
         return array;
       }
 
-      var newInstruments = [...instrumentData]
-      instruments = shuffle(newInstruments)
+      useEffect(() => {
+        var newInstruments = [...instrumentData]
+        setInstruments(shuffle(newInstruments))
+      }, []);
 
     return (
             <CardDeck key={1} className={styles.container} style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
