@@ -28,7 +28,7 @@ const LibraryInstrumentList = () => {
       instruments = shuffle(newInstruments)
 
     return (
-            <CardDeck key={1} className={styles.container} style={{display: 'flex', flexDirection: 'row'}}>
+            <CardDeck key={1} className={styles.container} style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
                 {instruments.map((instrument, i) => (
                     <LibraryInstrumentCard
                         key={i} 
