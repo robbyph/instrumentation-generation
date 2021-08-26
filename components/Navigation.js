@@ -14,6 +14,8 @@ const Navigation = ({currentPage}) => {
         setShow(false);
     }
 
+    
+
     return (
         <div >
             <Navbar collapseOnSelect expand="md" bg='dark' variant="dark">
@@ -38,14 +40,16 @@ const Navigation = ({currentPage}) => {
                     <Link href="/feedback" passHref>
                         {currentPage === '/feedback' ? <Nav.Link className="active">Feedback</Nav.Link> : <Nav.Link>Feedback</Nav.Link>}
                     </Link>
+                    <div className={styles.naviDropdown}
+                        id="navigationDropdown" style={{margin: '0'}}>
                     <NavDropdown 
-                        className='ml-auto'
                         title="Compositional Toolkit"
                         show={show}
                         onMouseEnter={showDropdown} 
                         onMouseLeave={hideDropdown}>
                             <Button className={styles.btnOverride} variant="dark" style={{color: 'white'}}>More Tools Coming Soon!<br/>Click here to join the mailing list!</Button> 
                     </NavDropdown> 
+                    </div>
                 </Nav>
                 </Navbar.Collapse>
             </Navbar>

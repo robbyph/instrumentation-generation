@@ -1,0 +1,29 @@
+
+                        <button onclick="showTemplatePreview(6)" class="templateBtn">Jazz Big Band</button><br>
+                        <button onclick="showTemplatePreview(7)" class="templateBtn">Arena Rock</button><br>
+                        <button onclick="showTemplatePreview(8)" class="templateBtn">J Pop</button><br>
+                        <button onclick="showTemplatePreview(9)" class="templateBtn">Bossa Nova</button><br>
+                        <button onclick="showTemplatePreview(10)" class="templateBtn">Fantasy Movie Track</button><br>
+                        <button onclick="showTemplatePreview(23)" class="templateBtn">Mick Gordon Mode</button><br>
+                        <button onclick="showTemplatePreview(11)" class="templateBtn">Retro Game Track</button><br>
+                        <button onclick="showTemplatePreview(13)" class="templateBtn">Swiss Folk Band</button><br>
+                        <button onclick="showTemplatePreview(14)" class="templateBtn">Sci Fi Soundtrack</button><br>
+                        <button onclick="showTemplatePreview(15)" class="templateBtn">Electronic Dance Music</button><br>
+                        <button onclick="showTemplatePreview(16)" class="templateBtn">Ambient Music</button><br>
+                        <button onclick="showTemplatePreview(17)" class="templateBtn">New Wave</button><br>
+                        <button onclick="showTemplatePreview(18)" class="templateBtn">Vomit Inducing Corporate Music</button><br>
+                        <button onclick="showTemplatePreview(19)" class="templateBtn">Trap</button><br>
+                        <button onclick="showTemplatePreview(20)" class="templateBtn">Synthwave</button><br>
+                        <button onclick="showTemplatePreview(22)" class="templateBtn">Jamaica Mode</button><br>
+                        <button onclick="showTemplatePreview(24)" class="templateBtn">Crossover Thrash</button><br>
+                        <button onclick="showTemplatePreview(24)" class="templateBtn">d e a t h  g r i ps</button><br>
+
+Jug Band:
+Singing
+Washtub Bass
+Spoons
+Jug
+Washboard
+Guitar
+Banjo
+Violin
