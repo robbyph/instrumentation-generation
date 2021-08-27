@@ -170,6 +170,12 @@ export default function Home() {
             //do nothing
         }
     }
+
+    function checkClear(){
+        if (myInstruments.length > 0) {
+            pushAlert(closeAlert, "Clear List Warning", "Clearing your list will erase all unlocked instruments. Would you like to continue?", "warning", () => {clearList()}, undefined, false)
+        }
+    }
     //#endregion
     
     //#region Instrument Shuffling
@@ -312,7 +318,7 @@ export default function Home() {
         {showTemplateModal ? <TemplateModal onClose={closeTemplateModal} templates={templates} onConfirm={addTemplate} /> :  ''}
         {alerts.length > 0 ? <Alerts alerts={alerts} onClosing={closeAlert} /> : ''}
         <h1 className={styles.headingOne}>Parameters</h1>
-        <ParameterList onRandomList={randomListOfInstruments} onNewList={addNewInstruments} onClear={clearList} onDupesCheck={toggleDupesChecked} onInstrumentModal={openInstrumentModal} onTemplateModal={openTemplateModal} pushAlert={pushAlert}></ParameterList>
+        <ParameterList onRandomList={randomListOfInstruments} onNewList={addNewInstruments} onClear={checkClear} onDupesCheck={toggleDupesChecked} onInstrumentModal={openInstrumentModal} onTemplateModal={openTemplateModal} pushAlert={pushAlert}></ParameterList>
         <h1 className={styles.headingOne}>Instrument List</h1>
         <InstrumentList instruments = {myInstruments} onDel= {deleteInstrument} onLoc={toggleInstrumentLock} onShuf={instrumentShuffle} onRepButClick={openReplacementModal} setRepInstrumentID={setReplacementInstrumentID} ></InstrumentList>
     </div>
