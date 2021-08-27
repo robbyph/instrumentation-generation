@@ -16,11 +16,11 @@ const Alerts = ({alerts, onClosing}) => {
             {alert.buttonless ? '' : 
             <ButtonToolbar>
                 <ButtonGroup style={{margin:'.5rem .5rem .5rem 0'}}>
-                    <Button variant={alert.alertVariant} onClick={()=> {alert.methodToExecute != undefined ? alert.methodToExecute : onClosing(alert.key)}}>{alert.buttonText != undefined ? alert.buttonText : 'OK'}</Button>
+                    <Button variant={alert.alertVariant} onClick={() => { alert.methodToExecute != undefined  ? (alert.methodToExecute(), onClosing(alert.key)): onClosing(alert.key); }}> {alert.buttonText != undefined ? alert.buttonText : 'OK'}</Button>                
                 </ButtonGroup>
                 <ButtonGroup style={{margin:'.5rem'}}>
                     <Button variant={alert.alertVariant} onClick={() => onClosing(alert.key)}>Close</Button>
-            </ButtonGroup>
+                </ButtonGroup>
             </ButtonToolbar>}
         </Alert>
         ))}
