@@ -106,7 +106,6 @@ export default function Home() {
         if (myInstruments.length <= 0) {
             generateNewList(min, max);
         }else {
-            
             pushAlert(closeAlert, "New List Warning", "Generating a new list will erase all unlocked instruments. Would you like to continue?", "danger", () => {generateNewList(min, max)}, undefined, false)
         }  
     }
@@ -121,6 +120,14 @@ export default function Home() {
             max = Math.floor(max)
             var instrAmount = Math.floor(Math.random() * (max - min + 1) + min);
             var newInstruments = []
+            
+            //check for locked instruments
+            myInstruments.forEach(element => {
+                if (element.locked === true) {
+                    newInstruments.push(element);
+                }
+            });
+
             for (var i = 0; i < instrAmount; i++) { //Generate a new instrument for every instrumentRequested instrument
                 newInstruments.push(getNewInstrument(newInstruments));
             }
