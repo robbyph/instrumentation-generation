@@ -2324,5 +2324,20 @@
             "origin": "north america",
             "timeframe": "modern"
         }
+    },
+
+    {
+        "name": "Orchestral Hit",
+        "description": "AKA Orchestral Stab, is a synth sound made by layering different orchestral instruments playing a single staccato note/chord.",
+        "image": "images/instruments/synth.png",
+        "youtube": "https://www.youtube.com/watch?v=8A1Aj1_EF9Y",
+        "wikipedia": "https://en.wikipedia.org/wiki/Orchestra_hit",
+        "tags": {
+            "hornbostelsachs": "electrophone",
+            "common": "electronic",
+            "voices": "polyphonic",
+            "origin": "north america",
+            "timeframe": "modern"
+        }
     }
 ]
