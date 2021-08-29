@@ -6,7 +6,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Acoustic_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "europe",
             "timeframe": "modern"
@@ -21,7 +21,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Classical_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "europe",
             "timeframe": "modern"
@@ -36,7 +36,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Flamenco_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "europe",
             "timeframe": "modern"
@@ -51,7 +51,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Bass_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "north america",
             "timeframe": "modern"
@@ -246,7 +246,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Violin",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "europe",
             "timeframe": "renaissance"
@@ -261,7 +261,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Violin",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "europe",
             "timeframe": "renaissance"
@@ -276,7 +276,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Viola",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "europe",
             "timeframe": "renaissance"
@@ -291,7 +291,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Viola",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "europe",
             "timeframe": "renaissance"
@@ -306,7 +306,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Cello",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "europe",
             "timeframe": "renaissance"
@@ -321,7 +321,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Cello",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "europe",
             "timeframe": "renaissance"
@@ -336,7 +336,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Double_bass",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "europe",
             "timeframe": "renaissance"
@@ -351,7 +351,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Double_bass",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "europe",
             "timeframe": "renaissance"
@@ -366,7 +366,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Double_bass",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "europe",
             "timeframe": "renaissance"
@@ -381,7 +381,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Guitar_synthesizer",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "north america",
             "timeframe": "modern"
@@ -396,7 +396,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Acoustic_bass_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "north america",
             "timeframe": "modern"
@@ -411,7 +411,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Harp",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "north america",
             "timeframe": "antiquity"
@@ -426,7 +426,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Lute",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "europe",
             "timeframe": "medieval"
@@ -441,7 +441,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Oud",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "asia",
             "timeframe": "medieval"
@@ -456,7 +456,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Baroque_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "europe",
             "timeframe": "renaissance"
@@ -471,7 +471,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Theorbo",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "europe",
             "timeframe": "renaissance"
@@ -486,7 +486,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Semi-acoustic_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "north america",
             "timeframe": "modern"
@@ -1357,7 +1357,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Brass_section",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "brass",
             "voices": "polyphonic",
             "origin": "europe",
             "timeframe": "renaissance"
@@ -1627,7 +1627,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Banjo",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "north america",
             "timeframe": "modern"
@@ -1642,7 +1642,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Mandolin",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "europe",
             "timeframe": "modern"
@@ -1657,7 +1657,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Ukulele",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "north america",
             "timeframe": "modern"
@@ -1672,7 +1672,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Sitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "asia",
             "timeframe": "medieval"
@@ -1687,7 +1687,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Zither",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "europe",
             "timeframe": "antiquity"
@@ -1852,7 +1852,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Lyre",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "europe",
             "timeframe": "antiquity"
@@ -1867,7 +1867,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Resonator_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "north america",
             "timeframe": "modern"
@@ -1882,7 +1882,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Pedal_steel_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "north america",
             "timeframe": "modern"
@@ -1897,7 +1897,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Hammered_dulcimer",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "europe",
             "timeframe": "medieval"
@@ -1912,7 +1912,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Appalachian_dulcimer",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "north america",
             "timeframe": "modern"
@@ -1927,7 +1927,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Twelve-string_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "north america",
             "timeframe": "modern"
@@ -1942,7 +1942,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Electric_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "north america",
             "timeframe": "modern"
@@ -1957,7 +1957,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Electric_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "north america",
             "timeframe": "modern"
@@ -1972,7 +1972,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Electric_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "north america",
             "timeframe": "modern"
@@ -1987,7 +1987,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Electric_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "north america",
             "timeframe": "modern"
@@ -2002,7 +2002,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Seven-string_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "north america",
             "timeframe": "modern"
@@ -2017,7 +2017,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Eight-string_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "north america",
             "timeframe": "modern"
@@ -2032,7 +2032,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Nine-string_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "north america",
             "timeframe": "modern"
@@ -2092,7 +2092,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Guqin",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "common": "stringed",
+            "common": "string",
             "voices": "polyphonic",
             "origin": "asia",
             "timeframe": "ancient"
