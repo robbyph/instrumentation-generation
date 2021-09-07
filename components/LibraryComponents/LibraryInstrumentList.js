@@ -1,6 +1,6 @@
 import LibraryInstrumentCard from './LibraryInstrumentCard'
 import styles from '../../styles/InstrumentList.module.scss'
-import {CardDeck} from 'react-bootstrap'
+import {Row, Col} from 'react-bootstrap'
 import instrumentData from '../data/instruments.json'
 import { useEffect, useState } from 'react'
 
@@ -32,9 +32,10 @@ const LibraryInstrumentList = () => {
       }, []);
 
     return (
-            <CardDeck key={1} className={styles.container} style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
-                {instruments.map((instrument, i) => (
-                    <LibraryInstrumentCard
+        <Row key={1} className={styles.container} style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-start' }}>
+        {instruments.map((instrument, i) => (
+            <Col key={i} className={styles.properCol}>
+                <LibraryInstrumentCard
                         key={i} 
                         id={i}
                         instr = {instrument}
@@ -45,8 +46,10 @@ const LibraryInstrumentList = () => {
                         tubeLink={instrument.youtube}
                         style={{flex: 1}}>
                     </LibraryInstrumentCard>
-                )) }
-            </CardDeck>
+            </Col>
+        )) }
+       
+    </Row>
     )
 }
 
