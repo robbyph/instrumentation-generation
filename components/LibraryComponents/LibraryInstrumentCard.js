@@ -5,7 +5,7 @@ const LibraryInstrumentCard = ({id, name, description, imagePath, wikiLink, tube
     
 
     return (
-            <Card style={{minWidth: '16rem', flexGrow: 1, margin:'1rem', minHeight: '25rem'}}>
+            <Card style={{minWidth: '16rem', flexGrow: 1, margin:'1rem', minHeight: '25rem', maxHeight:'25rem'}}>
                 <Card.Img variant="top" src={imagePath} style={{padding:'1rem', maxHeight: '10rem', height:'100%', objectFit: 'contain'}} />
                 <Card.Body style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
                     <div>
