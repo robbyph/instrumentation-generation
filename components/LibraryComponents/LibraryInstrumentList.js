@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react'
 const LibraryInstrumentList = () => {
     //var instruments = [];
     const [instruments, setInstruments] = useState([])
+    const [sortingOption, setSortingOptions] = useState('')
 
     function shuffle(array) {
         var currentIndex = array.length,  randomIndex;
