@@ -1,8 +1,12 @@
 import styles from '../styles/Library.module.scss'
 import LibraryInstrumentList from '../components/LibraryComponents/LibraryInstrumentList'
 import { NextSeo } from 'next-seo'
+import { useEffect, useState } from 'react'
+
 
 const library = () => {
+    const [sortingOption, setSortingOptions] = useState('')
+    
     return (
         <div>
             <NextSeo 
