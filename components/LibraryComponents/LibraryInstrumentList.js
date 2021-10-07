@@ -4,10 +4,11 @@ import {Row, Col} from 'react-bootstrap'
 import instrumentData from '../data/instruments.json'
 import { useEffect, useState } from 'react'
 
-const LibraryInstrumentList = () => {
+const LibraryInstrumentList = (sortOption) => {
     //var instruments = [];
     const [instruments, setInstruments] = useState([])
 
+    console.log(sortOption.sortOption)
 
     function shuffle(array) {
         var currentIndex = array.length,  randomIndex;
@@ -29,7 +30,16 @@ const LibraryInstrumentList = () => {
 
       useEffect(() => {
         var newInstruments = [...instrumentData]
-        setInstruments(shuffle(newInstruments))
+        if (sortOption === '0') {
+            setInstruments(shuffle(newInstruments))
+        }else if (sortOption === '1') {
+            setInstruments(newInstruments.sort((a, b) => a.name.localeCompare(b.name)))
+        }else if (sortOption === '2') {
+            setInstruments(newInstruments.sort().reverse())
+        }else{
+            setInstruments(shuffle(newInstruments))
+        }
+        
       }, []);
 
     return (
