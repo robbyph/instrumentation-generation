@@ -7,8 +7,6 @@ import { useEffect, useState } from 'react'
 const library = () => {
     const [sortingOption, setSortingOption] = useState('0')
 
-    console.log('sorting option:' + sortingOption)
-    
     return (
         <div>
             <NextSeo 

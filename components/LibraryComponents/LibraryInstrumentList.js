@@ -7,8 +7,9 @@ import { useEffect, useState } from 'react'
 const LibraryInstrumentList = (sortOption) => {
     //var instruments = [];
     const [instruments, setInstruments] = useState([])
+    var sorting = sortOption.sortOption;
 
-    //console.log('Option: ' + sortOption.sortOption)
+    console.log(sorting)
 
     function shuffle(array) {
         var currentIndex = array.length,  randomIndex;
@@ -30,17 +31,18 @@ const LibraryInstrumentList = (sortOption) => {
 
       useEffect(() => {
         var newInstruments = [...instrumentData]
-        if (sortOption.sortOption === '0') {
+        console.log('Option: ' + sorting) 
+        if (sorting === '0') {
             setInstruments(shuffle(newInstruments))
-        }else if (sortOption.sortOption === '1') {
+        }else if (sorting === '1') {
             setInstruments(newInstruments.sort((a, b) => a.name.localeCompare(b.name)))
-        }else if (sortOption.sortOption === '2') {
+        }else if (sorting === '2') {
             setInstruments(newInstruments.sort((a, b) => a.name.localeCompare(b.name)).reverse())
         }else{
             setInstruments(shuffle(newInstruments))
         }
         
-      }, []);
+      }, [sorting]);
 
     return (
         <Row key={1} className={styles.container} style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-start' }}>
