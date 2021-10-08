@@ -7,3 +7,16 @@
     text-align: center;
     color: rgb(211, 211, 211);
 }
+
+.sortSelect{
+    float: right;
+    margin-right:2rem;
+}
+
+@media (max-width: 768px) {
+    .sortSelect{
+        float: none;
+        display: block;
+margin: 0 auto;
+    }
+}
