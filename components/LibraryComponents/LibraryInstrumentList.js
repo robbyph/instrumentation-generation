@@ -8,7 +8,7 @@ const LibraryInstrumentList = (sortOption) => {
     //var instruments = [];
     const [instruments, setInstruments] = useState([])
 
-    console.log('Option: ' + sortOption.sortOption)
+    //console.log('Option: ' + sortOption.sortOption)
 
     function shuffle(array) {
         var currentIndex = array.length,  randomIndex;
@@ -36,7 +36,6 @@ const LibraryInstrumentList = (sortOption) => {
             setInstruments(newInstruments.sort((a, b) => a.name.localeCompare(b.name)))
         }else if (sortOption.sortOption === '2') {
             setInstruments(newInstruments.sort((a, b) => a.name.localeCompare(b.name)).reverse())
-            console.log(instruments)
         }else{
             setInstruments(shuffle(newInstruments))
         }

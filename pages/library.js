@@ -5,7 +5,9 @@ import { useEffect, useState } from 'react'
 
 
 const library = () => {
-    const [sortingOption, setSortingOption] = useState('2')
+    const [sortingOption, setSortingOption] = useState('0')
+
+    console.log('sorting option:' + sortingOption)
     
     return (
         <div>
@@ -15,8 +17,8 @@ const library = () => {
                 />
                 <h1 className={styles.headingOne}>The Instrument Library</h1>
                 <h5 className={styles.headingFive}>Browse all instruments included in Instrumentation Generation</h5>
-                <select className={styles.sortSelect} onChange={(e) => setSortingOption([...e.target.value])}>
-                    <option selected value ="0">Random</option> 
+                <select className={styles.sortSelect} onChange={(e) => setSortingOption(e.target.value)}>
+                    <option defaultValue value ="0">Random</option> 
                     <option value="1">A - Z</option>
                     <option value="2">Z - A</option>
                 </select>

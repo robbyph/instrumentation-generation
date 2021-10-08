@@ -10,13 +10,13 @@
 
 .sortSelect{
     float: right;
-    margin-right:2rem;
+    margin-right:5%;
 }
 
 @media (max-width: 768px) {
     .sortSelect{
         float: none;
         display: block;
-margin: 0 auto;
+        margin: 0 auto;
     }
 }
