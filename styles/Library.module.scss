@@ -8,15 +8,16 @@
     color: rgb(211, 211, 211);
 }
 
-.sortSelect{
-    float: right;
-    margin-right:5%;
+.custom-select#sortingSelect{
+    width: 5% !important;
+    float: right !important;
+    margin-right:5% !important;
 }
 
-@media (max-width: 768px) {
-    .sortSelect{
-        float: none;
-        display: block;
-        margin: 0 auto;
+@media (max-width: 768px) { 
+    .custom-select#sortingSelect{
+        float: none !important;
+        display: block !important;
+        margin: 0 auto !important;
     }
 }

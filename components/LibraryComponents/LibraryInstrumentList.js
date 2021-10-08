@@ -31,7 +31,6 @@ const LibraryInstrumentList = (sortOption) => {
 
       useEffect(() => {
         var newInstruments = [...instrumentData]
-        console.log('Option: ' + sorting) 
         if (sorting === '0') {
             setInstruments(shuffle(newInstruments))
         }else if (sorting === '1') {

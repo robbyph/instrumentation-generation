@@ -1,4 +1,5 @@
     @import "../node_modules/bootstrap/scss/bootstrap";
+
     //Theme colors
     $theme-colors:( "dark": #000, "light": #fff, "primary": #11a8ff, "secondary": #839796, "info": #325b72, "success": #4db482, "warning": #ffcf5f, "danger": #f44336);
     //Navbar stuff
@@ -11,6 +12,20 @@
     //Buttons
     .btn:focus {
         box-shadow: none !important;
+    }
+
+    .custom-select#sortingSelect{
+        width: 15%;
+        float: right;
+        margin-right:5%;
+    }
+
+    @media (max-width: 768px) {
+        .custom-select#sortingSelect{
+            float: none;
+            display: block;
+            margin: 0 auto;
+        }
     }
     
     //Keep at bottom
