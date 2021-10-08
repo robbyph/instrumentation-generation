@@ -8,7 +8,7 @@ const LibraryInstrumentList = (sortOption) => {
     //var instruments = [];
     const [instruments, setInstruments] = useState([])
 
-    console.log(sortOption.sortOption)
+    console.log('Option: ' + sortOption.sortOption)
 
     function shuffle(array) {
         var currentIndex = array.length,  randomIndex;
@@ -30,12 +30,13 @@ const LibraryInstrumentList = (sortOption) => {
 
       useEffect(() => {
         var newInstruments = [...instrumentData]
-        if (sortOption === '0') {
+        if (sortOption.sortOption === '0') {
             setInstruments(shuffle(newInstruments))
-        }else if (sortOption === '1') {
+        }else if (sortOption.sortOption === '1') {
             setInstruments(newInstruments.sort((a, b) => a.name.localeCompare(b.name)))
-        }else if (sortOption === '2') {
-            setInstruments(newInstruments.sort().reverse())
+        }else if (sortOption.sortOption === '2') {
+            setInstruments(newInstruments.sort((a, b) => a.name.localeCompare(b.name)).reverse())
+            console.log(instruments)
         }else{
             setInstruments(shuffle(newInstruments))
         }

@@ -6,7 +6,7 @@ import {Row, Col, Container} from 'react-bootstrap'
 
 
 const library = () => {
-    const [sortingOption, setSortingOption] = useState('1')
+    const [sortingOption, setSortingOption] = useState('2')
     
     return (
         <div>
