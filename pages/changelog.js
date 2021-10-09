@@ -18,6 +18,14 @@ const changelog = () => {
                             <li className={styles.listItem}>Initial Application Version</li>
                         </ul>
                     </div>
+                    <div className={styles.changeItem} style={{paddingTop: 0}}>
+                        <h4 className={styles.headingFour}>Version 0.6</h4>
+                        <p className={styles.itemDate}>October 9th 2021</p>
+                        <ul className={styles.changes}>
+                            <li className={styles.listItem}>Added sorting to library and modals</li>
+                            <li className={styles.listItem}>Updated CSS</li>
+                        </ul>
+                    </div>
                 </div>
 
         </div>
