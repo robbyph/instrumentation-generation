@@ -33,7 +33,6 @@ const library = () => {
 
                     <Row style={{marginTop: '1rem'}}>
                         <Col>
-                            <Form>
                                 <Row>
                                     <Col xl={{span: 4, offset: 4}}>
                                         <Button variant="outline-light" style={{width: '100%'}} onClick={() => setOpen(!open)} aria-controls="example-collapse-text" aria-expanded={open}><span style={{float:'left'}}>{open ? '▲' : '▼' }</span>Filtering</Button>
@@ -60,7 +59,6 @@ const library = () => {
                                         </div>
                                     </Col>
                                 </Row>
-                            </Form>
                         </Col>
                     </Row>
     
