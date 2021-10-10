@@ -23,6 +23,8 @@ const changelog = () => {
                         <p className={styles.itemDate}>October 9th 2021</p>
                         <ul className={styles.changes}>
                             <li className={styles.listItem}>Added sorting to library and modals</li>
+                            <li className={styles.listItem}>Added filtering to library and modals</li>
+                            <li className={styles.listItem}>Added filter based instrument generation</li>
                             <li className={styles.listItem}>Updated CSS</li>
                         </ul>
                     </div>
