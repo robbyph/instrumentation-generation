@@ -19,19 +19,7 @@
         color: rgb(238, 211, 211);
     }
 
-    .custom-select#sortingSelect{
-        width: 15%;
-        float: right;
-        margin-right:5%;
-    }
-
-    @media (max-width: 768px) {
-        .custom-select#sortingSelect{
-            float: none;
-            display: block;
-            margin: 0 auto;
-        }
-    }
+    
     
     //Keep at bottom
     @import '~bootstrap/scss/bootstrap.scss'
