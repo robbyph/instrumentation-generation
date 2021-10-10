@@ -8,16 +8,14 @@
     color: rgb(211, 211, 211);
 }
 
-.custom-select#sortingSelect{
-    width: 5% !important;
-    float: right !important;
-    margin-right:5% !important;
+.sortButton{
+    margin-right:2rem !important;
+    margin-top: 0 !important;
 }
 
 @media (max-width: 768px) { 
-    .custom-select#sortingSelect{
-        float: none !important;
-        display: block !important;
-        margin: 0 auto !important;
+    .sortButton{
+        margin-right: 0 !important;
+        margin-top: 1rem !important;
     }
 }

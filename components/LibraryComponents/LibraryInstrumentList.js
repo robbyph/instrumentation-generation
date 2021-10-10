@@ -9,7 +9,6 @@ const LibraryInstrumentList = (sortOption) => {
     const [instruments, setInstruments] = useState([])
     var sorting = sortOption.sortOption;
 
-    console.log(sorting)
 
     function shuffle(array) {
         var currentIndex = array.length,  randomIndex;

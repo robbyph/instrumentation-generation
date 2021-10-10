@@ -3,6 +3,7 @@ import LibraryInstrumentList from '../components/LibraryComponents/LibraryInstru
 import { NextSeo } from 'next-seo'
 import { useEffect, useState } from 'react'
 import {Form, Container, Col, Row, Collapse, Button} from 'react-bootstrap'
+import DropdownChecklist from '../components/DropdownChecklist'
 
 
 const library = () => {
@@ -40,29 +41,17 @@ const library = () => {
                                             <Row style={{marginTop: '1rem'}}>
                                             <Col>
                                                 <h5 style={{textAlign: 'center', color: 'white'}}>Category Filtering: </h5>
-                                                <Form.Control as="select" multiple style={{borderRadius: '.5rem'}}>
-                                                    <option selected value='contemporary'>Contemporary</option>
-                                                    <option selected value='orchestral'>Orchestral</option>
-                                                    <option selected value='traditional'>Traditional</option>
-                                                    <option selected value='vocal'>Vocal</option>
-                                                </Form.Control>
+                                                <DropdownChecklist checkOptions={[{label: 'Contemporary', checked: true}, {label: 'Orchestral', checked: true}, {label: 'Traditional', checked: true}, {label: 'Vocal', checked: true}]}></DropdownChecklist>
                                             </Col>
                                             <Col>
-                                            <h5 style={{textAlign: 'center', color: 'white'}}>Family Filtering: </h5>
-                                                <Form.Control as="select" multiple style={{borderRadius: '.5rem'}}>
-                                                    <option selected value='string'>String</option>
-                                                    <option selected value='percussion'>Percussion</option>
-                                                    <option selected value='brass'>Brass</option>
-                                                    <option selected value='wind'>Wind</option>
-                                                    <option selected value='electronic' >Electronic</option>
-                                                    <option selected value='keyboard'>Keyboard</option>
-                                                </Form.Control>
+                                                <h5 style={{textAlign: 'center', color: 'white'}}>Family Filtering: </h5>
+                                                <DropdownChecklist checkOptions={[{label: 'String', checked: true}, {label: 'Percussion', checked: true}, {label: 'Brass', checked: true}, {label: 'Wind', checked: true}, {label: 'Electronic', checked: true}, {label: 'Keyboard', checked: true}]}></DropdownChecklist>
                                             </Col>
                                             </Row>
                                         </Collapse>
                                     </Col>
                                     <Col xl={{span: 2, offset: 2}}>
-                                        <div style={{marginRight: '2rem'}}>
+                                        <div className={styles.sortButton}>
                                             <select className="custom-select" id='sortingSelect' onChange={(e) => setSortingOption(e.target.value)}>
                                             <option defaultValue value ="0">Random</option> 
                                             <option value="1">A - Z</option>
@@ -74,7 +63,7 @@ const library = () => {
                             </Form>
                         </Col>
                     </Row>
-                    <br/>
+    
             </Container>
 
             <LibraryInstrumentList sortOption={sortingOption} />
