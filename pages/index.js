@@ -138,9 +138,6 @@ export default function Home() {
     function tagBasedGeneration (num, category, family) {
         var newInstruments = []
 
-        console.log(category)
-        console.log(family)    
-
         allInstruments.forEach(instrument => {
             if (category === 'vocal') {
                 if (instrument.tags.category === category && instrument.tags.family === 'vocal') {
@@ -153,8 +150,9 @@ export default function Home() {
             }
             
         });
-        var newMyInstruments = [...myInstruments]
 
+        var newMyInstruments = [...myInstruments]
+        
         for (let index = 0; index < num; index++) {
             var newInstrument = newInstruments[Math.floor(Math.random()*newInstruments.length)];
             newInstrument.locked = false;
