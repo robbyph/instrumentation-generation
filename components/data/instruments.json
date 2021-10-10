@@ -688,7 +688,7 @@
 
     {
         "name": "Bagpipes",
-        "description": "A woodwind instrument which uses a constant reservoir of air in a bag to feed reeds and create sound",
+        "description": "A wind instrument which uses a constant reservoir of air in a bag to feed reeds and create sound",
         "image": "images/instruments/bagpipes.png",
         "youtube": "https://www.youtube.com/watch?v=Nul-fRaj8F4",
         "wikipedia": "https://en.wikipedia.org/wiki/Bagpipes",
@@ -704,7 +704,7 @@
 
     {
         "name": "Oboe",
-        "description": "A mid ranged woodwind instrument",
+        "description": "A mid ranged wind instrument",
         "image": "images/instruments/oboe.png",
         "youtube": "https://www.youtube.com/watch?v=QNBsgfh4UMY",
         "wikipedia": "https://en.wikipedia.org/wiki/Oboe",
@@ -720,7 +720,7 @@
 
     {
         "name": "Oboe Section",
-        "description": "A section of mid ranged woodwind instruments",
+        "description": "A section of mid ranged wind instruments",
         "image": "images/instruments/oboesection.png",
         "youtube": "https://www.youtube.com/watch?v=QNBsgfh4UMY",
         "wikipedia": "https://en.wikipedia.org/wiki/Oboe",
@@ -976,7 +976,7 @@
     },
 
     {
-        "name": "Wind Section",
+        "name": "wind Section",
         "description": "A section of instruments usually consisting of flutes, oboes, bassoons, clarinets and occasionally some auxlillary instruments",
         "image": "images/instruments/windsection.png",
         "youtube": "https://www.youtube.com/watch?v=KEt1Mm8sSkA",

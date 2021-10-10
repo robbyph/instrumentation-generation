@@ -142,9 +142,16 @@ export default function Home() {
         console.log(family)    
 
         allInstruments.forEach(instrument => {
-            if (instrument.tags.category === category && instrument.tags.family === family) {
-                newInstruments.push(instrument)
+            if (category === 'vocal') {
+                if (instrument.tags.category === category && instrument.tags.family === 'vocal') {
+                    newInstruments.push(instrument)
+                }                
+            }else{
+                if (instrument.tags.category === category && instrument.tags.family === family) {
+                    newInstruments.push(instrument)
+                }
             }
+            
         });
         var newMyInstruments = [...myInstruments]
 

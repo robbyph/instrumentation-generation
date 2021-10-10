@@ -68,14 +68,13 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
                                     <Form.Control disabled={categoryState != 'vocal' ? false : true} className={styles.formControlOverride} placeholder="Family" as="select" value={familyState} onChange={(e) => setFamilyState(e.target.value)}>
                                         <option value='string'>String</option>
                                         <option value='percussion'>Percussion</option>
-                                        <option value='brass'>Brass</option>
-                                        <option value='woodwind'>Woodwind</option>
-                                        <option value='electronic' disabled={categoryState != 'traditional' ? false : true}>Electronic</option>
-                                        <option value='vocal'>Vocal</option>
-                                        <option value='keyboard'>Keyboard</option>
+                                        <option value='brass' disabled={categoryState != 'contemporary' && categoryState != 'traditional' ? false : true}>Brass</option>
+                                        <option value='wind'>Wind</option>
+                                        <option value='electronic' disabled={categoryState != 'traditional' && categoryState != 'orchestral' ? false : true}>Electronic</option>
+                                        <option value='keyboard' disabled={categoryState != 'orchestral' ? false : true}>Keyboard</option>
                                     </Form.Control>
                             </Col></Row>
-                            <Row><Col><Button onClick={() => {onTagGen(tagGenNum, categoryState, familyState)}}>Generate {tagGenNum} {categoryState} {familyState} instrument{tagGenNum != 1 ? 's' : ''}</Button></Col></Row>
+                            <Row><Col><Button onClick={() => {onTagGen(tagGenNum, categoryState, familyState)}}>Generate {tagGenNum} {categoryState} {categoryState != 'vocal' ? familyState : ''} instrument{tagGenNum != 1 ? 's' : ''}</Button></Col></Row>
                         </Form>
                     </Col>
                     <Col align="center" style={{marginBottom: '1rem', minWidth: '18rem'}}>
