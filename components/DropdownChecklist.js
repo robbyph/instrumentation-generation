@@ -10,22 +10,22 @@ const DropdownChecklist = (checkOptions, returnChecksState) => {
 
     function setCheck(id){
         var newArray = [...checks]
-        var newElement = newArray[id];
+        var newElement = checks[id];
         newElement.checked = (!newElement.checked)
         newArray[id] = newElement;
-        setChecks(newArray)
+        console.log(newElement)
     }
     
     return (
         <Form className={styles.checkMenu}>
             {checks.map((checkItem, i) => (
                  <Form.Check
-                 key={i}
-                 id={i}
-                 type='checkbox'
-                 label={checkItem.label}
-                 defaultChecked={checkItem.checked}
-                 onChange={setCheck(i)}
+                    key={i}
+                    id={i}
+                    type='checkbox'
+                    label={checkItem.label}
+                    defaultChecked={checkItem.checked}
+                    onChange={setCheck(i)}
                 ></Form.Check>
             )) }
         </Form>
