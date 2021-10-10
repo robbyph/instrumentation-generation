@@ -134,6 +134,28 @@ export default function Home() {
             setMyInstruments(newInstruments)
         }
     }
+
+    function tagBasedGeneration (num, category, family) {
+        var newInstruments = []
+
+        console.log(category)
+        console.log(family)    
+
+        allInstruments.forEach(instrument => {
+            if (instrument.tags.category === category && instrument.tags.family === family) {
+                newInstruments.push(instrument)
+            }
+        });
+        var newMyInstruments = [...myInstruments]
+
+        for (let index = 0; index < num; index++) {
+            var newInstrument = newInstruments[Math.floor(Math.random()*newInstruments.length)];
+            newInstrument.locked = false;
+            newMyInstruments.push(newInstrument);              
+        }
+
+        setMyInstruments(newMyInstruments)
+    }
     //#endregion
     
     //#region Instrument Deletion/Clearing
@@ -318,7 +340,7 @@ export default function Home() {
         {showTemplateModal ? <TemplateModal onClose={closeTemplateModal} templates={templates} onConfirm={addTemplate} /> :  ''}
         {alerts.length > 0 ? <Alerts alerts={alerts} onClosing={closeAlert} /> : ''}
         <h1 className={styles.headingOne}>Parameters</h1>
-        <ParameterList onRandomList={randomListOfInstruments} onNewList={addNewInstruments} onClear={checkClear} onDupesCheck={toggleDupesChecked} onInstrumentModal={openInstrumentModal} onTemplateModal={openTemplateModal} pushAlert={pushAlert}></ParameterList>
+        <ParameterList onRandomList={randomListOfInstruments} onNewList={addNewInstruments} onClear={checkClear} onDupesCheck={toggleDupesChecked} onInstrumentModal={openInstrumentModal} onTemplateModal={openTemplateModal} pushAlert={pushAlert} onTagGen={tagBasedGeneration}></ParameterList>
         <h1 className={styles.headingOne}>Instrument List</h1>
         <InstrumentList instruments = {myInstruments} onDel= {deleteInstrument} onLoc={toggleInstrumentLock} onShuf={instrumentShuffle} onRepButClick={openReplacementModal} setRepInstrumentID={setReplacementInstrumentID} ></InstrumentList>
     </div>

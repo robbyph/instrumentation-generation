@@ -2,13 +2,14 @@ import { Button, Row, Col, Container, Form } from "react-bootstrap"
 import styles from "../styles/ParameterList.module.scss"
 import {useState} from 'react'
 
-const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstrumentModal, onTemplateModal, pushAlert}) => {
+const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstrumentModal, onTemplateModal, onTagGen}) => {
     
     const [newListState, setNewListState] = useState('')
     const [minNumberState, setMinNumberState] = useState('')
     const [maxNumberState, setMaxNumberState] = useState('')
-    const [categoryState, setCategoryState] = useState(0)
-    const [familyState, setFamilyState] = useState(0)
+    const [categoryState, setCategoryState] = useState('contemporary')
+    const [familyState, setFamilyState] = useState('string')
+    const [tagGenNum, setTagGenNum] = useState('1')
 
     return (
         <div className={styles.container} id="paramsDiv">
@@ -50,27 +51,31 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
                     </Col>
                     <Col align="center" style={{marginBottom: '1rem', minWidth: '18rem'}}>
                         <Form className={styles.formOverride}>
-                            <Row><Col><Form.Label>Generate random instruments by category and family</Form.Label></Col></Row>
-                            <Row><Col>
-                                <Form.Control  className={styles.formControlOverride} placeholder="Category" as="select">
-                                    <option>Contemporary</option>
-                                    <option>Orchestral</option>
-                                    <option>Traditional</option>
-                                    <option>Vocal</option>
-                                </Form.Control>
+                            <Row><Col><Form.Label>Generate a random instrument by category and family</Form.Label></Col></Row>
+                            <Row>
+                                <Col xl={3}>
+                                    <Form.Control onKeyPress={(event) => {if (!/[0-9]/.test(event.key)) {event.preventDefault();}}} className={styles.formControlOverride} type="number" placeholder="#" min="1" value={tagGenNum} onChange={(e) => setTagGenNum(e.target.value)}></Form.Control>
                                 </Col>
-                                <Col>
-                                <Form.Control  className={styles.formControlOverride} placeholder="Family" as="select">
-                                    <option>String</option>
-                                    <option>Percussion</option>
-                                    <option>Brass</option>
-                                    <option>Woodwind</option>
-                                    <option>Electronic</option>
-                                    <option>Vocal</option>
-                                    <option>Keyboard</option>
-                                </Form.Control>
+                                <Col xl={5}>
+                                    <Form.Control className={styles.formControlOverride} placeholder="Category" as="select" value={categoryState} onChange={(e) => setCategoryState(e.target.value)}>
+                                        <option value='contemporary'>Contemporary</option>
+                                        <option value='orchestral'>Orchestral</option>
+                                        <option value='traditional'>Traditional</option>
+                                        <option value='vocal'>Vocal</option>
+                                    </Form.Control>
+                                </Col>
+                                <Col xl={4}>
+                                    <Form.Control disabled={categoryState != 'vocal' ? false : true} className={styles.formControlOverride} placeholder="Family" as="select" value={familyState} onChange={(e) => setFamilyState(e.target.value)}>
+                                        <option value='string'>String</option>
+                                        <option value='percussion'>Percussion</option>
+                                        <option value='brass'>Brass</option>
+                                        <option value='woodwind'>Woodwind</option>
+                                        <option value='electronic' disabled={categoryState != 'traditional' ? false : true}>Electronic</option>
+                                        <option value='vocal'>Vocal</option>
+                                        <option value='keyboard'>Keyboard</option>
+                                    </Form.Control>
                             </Col></Row>
-                            <Row><Col><Button onClick={() => {return}}>Generate new {} {}</Button></Col></Row>
+                            <Row><Col><Button onClick={() => {onTagGen(tagGenNum, categoryState, familyState)}}>Generate {tagGenNum} {categoryState} {familyState} instrument{tagGenNum != 1 ? 's' : ''}</Button></Col></Row>
                         </Form>
                     </Col>
                     <Col align="center" style={{marginBottom: '1rem', minWidth: '18rem'}}>
