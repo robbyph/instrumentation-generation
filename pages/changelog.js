@@ -16,6 +16,8 @@ const changelog = () => {
                         <p className={styles.itemDate}>August 6th 2021</p>
                         <ul className={styles.changes}>
                             <li className={styles.listItem}>Initial Application Version</li>
+                            <li className={styles.listItem}>Over 150 Instruments</li>
+                            <li className={styles.listItem}>Dozens of Templates</li>
                         </ul>
                     </div>
                     <div className={styles.changeItem} style={{paddingTop: 0}}>

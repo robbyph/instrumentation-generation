@@ -7,8 +7,8 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
     const [newListState, setNewListState] = useState('')
     const [minNumberState, setMinNumberState] = useState('')
     const [maxNumberState, setMaxNumberState] = useState('')
-    
-  
+    const [categoryState, setCategoryState] = useState(0)
+    const [familyState, setFamilyState] = useState(0)
 
     return (
         <div className={styles.container} id="paramsDiv">
@@ -48,7 +48,31 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
                             <Button onClick={() => {onInstrumentModal()}}>Select Instrument</Button>
                         </Form>
                     </Col>
-
+                    <Col align="center" style={{marginBottom: '1rem', minWidth: '18rem'}}>
+                        <Form className={styles.formOverride}>
+                            <Row><Col><Form.Label>Generate random instruments by category and family</Form.Label></Col></Row>
+                            <Row><Col>
+                                <Form.Control  className={styles.formControlOverride} placeholder="Category" as="select">
+                                    <option>Contemporary</option>
+                                    <option>Orchestral</option>
+                                    <option>Traditional</option>
+                                    <option>Vocal</option>
+                                </Form.Control>
+                                </Col>
+                                <Col>
+                                <Form.Control  className={styles.formControlOverride} placeholder="Family" as="select">
+                                    <option>String</option>
+                                    <option>Percussion</option>
+                                    <option>Brass</option>
+                                    <option>Woodwind</option>
+                                    <option>Electronic</option>
+                                    <option>Vocal</option>
+                                    <option>Keyboard</option>
+                                </Form.Control>
+                            </Col></Row>
+                            <Row><Col><Button onClick={() => {return}}>Generate new {} {}</Button></Col></Row>
+                        </Form>
+                    </Col>
                     <Col align="center" style={{marginBottom: '1rem', minWidth: '18rem'}}>
                         <Form className={styles.formOverride}>
                             <Form.Label>Other Parameters</Form.Label>
