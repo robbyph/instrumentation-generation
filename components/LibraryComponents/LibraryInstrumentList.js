@@ -55,21 +55,22 @@ const LibraryInstrumentList = ({sortOption, categoryFilterOptions, familyFilterO
             }
         });
 
+        if (sorting === '1') {
+            setInstruments(newInstruments.sort((a, b) => a.name.localeCompare(b.name)))
+        }else if (sorting === '2') {
+            setInstruments(newInstruments.sort((a, b) => a.name.localeCompare(b.name)).reverse())
+        }
+
+
         setInstruments(newInstruments)
         
-      }, [categoryFilterOptions, familyFilterOptions])
+      }, [sorting, categoryFilterOptions, familyFilterOptions])
 
 
       useEffect(() => {
         var newInstruments = [...instruments];
 
         if (sorting === '0') {
-            setInstruments(shuffle(newInstruments))
-        }else if (sorting === '1') {
-            setInstruments(newInstruments.sort((a, b) => a.name.localeCompare(b.name)))
-        }else if (sorting === '2') {
-            setInstruments(newInstruments.sort((a, b) => a.name.localeCompare(b.name)).reverse())
-        }else{
             setInstruments(shuffle(newInstruments))
         }
         
