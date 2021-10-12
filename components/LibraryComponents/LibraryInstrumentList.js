@@ -27,7 +27,7 @@ const LibraryInstrumentList = ({sortOption, categoryFilterOptions, familyFilterO
       }
 
       useEffect(()=>{       
-        var newInstruments = [...instruments];
+        var newInstruments = [...instrumentData];
 
         //Do filtering for categories
         categoryFilterOptions.forEach(category => { //go through each categor
