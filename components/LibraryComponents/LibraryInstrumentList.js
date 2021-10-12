@@ -26,15 +26,37 @@ const LibraryInstrumentList = ({sortOption, categoryFilterOptions, familyFilterO
         return array;
       }
 
-      function filterInstruments(){
-        var newInstruments = [...instruments];
-        newInstruments.forEach(instrument => {
-            
-        });
-      }
 
       useEffect(() => {
-        var newInstruments = [...instrumentData]
+
+        var newInstruments = [...instrumentData];
+
+        //Do filtering for categories
+        categoryFilterOptions.forEach(category => { //go through each categor
+            if (category.checked === false) { //if the given category is unselected, we want to go through each instrument and remove the ones with that tag
+                
+                for(var i = newInstruments.length - 1; i >= 0; i--) { //iterate each instrument backwards since we're removing stuffs
+                    var instrument = newInstruments[i]
+                    if (instrument.tags.category == category.label.toLowerCase()) { //try to match the category we're looking for with the category of the instrument
+                        newInstruments.splice(i, 1) //remove it if that's the case
+                    }
+                 }
+            }
+        });
+
+        //Do filtering for families
+        familyFilterOptions.forEach(family => { //go through each categor
+            if (family.checked === false) { //if the given category is unselected, we want to go through each instrument and remove the ones with that tag
+                
+                for(var i = newInstruments.length - 1; i >= 0; i--) { //iterate each instrument backwards since we're removing stuffs
+                    var instrument = newInstruments[i]
+                    if (instrument.tags.family == family.label.toLowerCase()) { //try to match the category we're looking for with the category of the instrument
+                        newInstruments.splice(i, 1) //remove it if that's the case
+                    }
+                 }
+            }
+        });
+        
         if (sorting === '0') {
             setInstruments(shuffle(newInstruments))
         }else if (sorting === '1') {
@@ -45,9 +67,7 @@ const LibraryInstrumentList = ({sortOption, categoryFilterOptions, familyFilterO
             setInstruments(shuffle(newInstruments))
         }
         
-      }, [sorting]); 
-      
-      filterInstruments();//we wanna filter our instruments on run
+      }, [sorting, categoryFilterOptions, familyFilterOptions]); 
 
     return (
         <Row key={1} className={styles.container} style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-start' }}>
