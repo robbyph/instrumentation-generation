@@ -7,7 +7,9 @@ import { useEffect, useState } from 'react'
 const LibraryInstrumentList = ({sortOption, categoryFilterOptions, familyFilterOptions}) => {
     const [instruments, setInstruments] = useState([...instrumentData])
     var sorting = sortOption;
-    const shuffledInstruments = '';
+    const [alreadyRandomized, setAlreadyRandomized] = useState(false);
+    const [randomizedList, setRandomizedList] = useState([]);
+
 
     function shuffle(array) {
         var currentIndex = array.length,  randomIndex;
@@ -28,7 +30,12 @@ const LibraryInstrumentList = ({sortOption, categoryFilterOptions, familyFilterO
       }
 
       useEffect(()=>{       
-        var newInstruments = [...instrumentData];
+        if (alreadyRandomized) {
+            var newInstruments = [...randomizedList];
+        }else{
+            var newInstruments = [...instrumentData];      
+        }
+        
 
         //Do filtering for categories
         categoryFilterOptions.forEach(category => { //go through each categor
@@ -56,11 +63,17 @@ const LibraryInstrumentList = ({sortOption, categoryFilterOptions, familyFilterO
             }
         });
 
-        if (sorting === '0') {
-            setInstruments(shuffle(newInstruments))
+        console.log(alreadyRandomized)
+        if (sorting === '0' && alreadyRandomized === false) {
+            var shuffledList = shuffle(newInstruments);
+            setAlreadyRandomized(true);
+            setInstruments(shuffledList);
+            setRandomizedList(shuffledList);
         }else if (sorting === '1') {
+            setAlreadyRandomized(false);
             setInstruments(newInstruments.sort((a, b) => a.name.localeCompare(b.name)))
         }else if (sorting === '2') {
+            setAlreadyRandomized(false);
             setInstruments(newInstruments.sort((a, b) => a.name.localeCompare(b.name)).reverse())
         }
 
