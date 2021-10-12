@@ -3,17 +3,16 @@ import styles from '../styles/DropdownChecklist.module.scss'
 import {useState, useEffect } from 'react'
 
 
-const DropdownChecklist = (checkOptions, returnChecksState) => {
-    const [checks, setChecks] = useState([...checkOptions.checkOptions]);
-
-    console.log(checks)
+const DropdownChecklist = ({checkOptions, returnChecksState}) => {
+    const [checks, setChecks] = useState([...checkOptions]); 
 
     function setCheck(id){
         var newArray = [...checks]
         var newElement = checks[id];
         newElement.checked = (!newElement.checked)
         newArray[id] = newElement;
-        console.log(newElement)
+        setChecks(newArray);
+        returnChecksState(checks);
     }
     
     return (
@@ -25,7 +24,7 @@ const DropdownChecklist = (checkOptions, returnChecksState) => {
                     type='checkbox'
                     label={checkItem.label}
                     defaultChecked={checkItem.checked}
-                    onChange={setCheck(i)}
+                    onClick={() => {setCheck(i)}}
                 ></Form.Check>
             )) }
         </Form>

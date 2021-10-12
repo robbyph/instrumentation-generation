@@ -8,6 +8,9 @@ import DropdownChecklist from '../components/DropdownChecklist'
 
 const library = () => {
     const [sortingOption, setSortingOption] = useState('0')
+    const [familyFilterOptions, setFamilyFilterOptions] = useState([{label: 'String', checked: true}, {label: 'Percussion', checked: true}, {label: 'Brass', checked: true}, {label: 'Wind', checked: true}, {label: 'Electronic', checked: true}, {label: 'Keyboard', checked: true}])
+    const [categoryFilterOptions, setCategoryFilterOptions] = useState([{label: 'Contemporary', checked: true}, {label: 'Orchestral', checked: true}, {label: 'Traditional', checked: true}, {label: 'Vocal', checked: true}])
+
     const [open, setOpen] = useState(false);
 
     return (
@@ -40,11 +43,11 @@ const library = () => {
                                             <Row style={{marginTop: '1rem'}}>
                                             <Col>
                                                 <h5 style={{textAlign: 'center', color: 'white'}}>Category Filtering: </h5>
-                                                <DropdownChecklist checkOptions={[{label: 'Contemporary', checked: true}, {label: 'Orchestral', checked: true}, {label: 'Traditional', checked: true}, {label: 'Vocal', checked: true}]}></DropdownChecklist>
+                                                <DropdownChecklist checkOptions={categoryFilterOptions} returnChecksState={setCategoryFilterOptions}></DropdownChecklist>
                                             </Col>
-                                            <Col>
+                                            <Col> 
                                                 <h5 style={{textAlign: 'center', color: 'white'}}>Family Filtering: </h5>
-                                                <DropdownChecklist checkOptions={[{label: 'String', checked: true}, {label: 'Percussion', checked: true}, {label: 'Brass', checked: true}, {label: 'Wind', checked: true}, {label: 'Electronic', checked: true}, {label: 'Keyboard', checked: true}]}></DropdownChecklist>
+                                                <DropdownChecklist checkOptions={familyFilterOptions} returnChecksState={setFamilyFilterOptions}></DropdownChecklist>
                                             </Col>
                                             </Row>
                                         </Collapse>
@@ -52,9 +55,9 @@ const library = () => {
                                     <Col xl={{span: 2, offset: 2}}>
                                         <div className={styles.sortButton}>
                                             <select className="custom-select" id='sortingSelect' onChange={(e) => setSortingOption(e.target.value)}>
-                                            <option defaultValue value ="0">Random</option> 
-                                            <option value="1">A - Z</option>
-                                            <option value="2">Z - A</option>
+                                                <option defaultValue value ="0">Random</option> 
+                                                <option value="1">A - Z</option>
+                                                <option value="2">Z - A</option>
                                             </select>
                                         </div>
                                     </Col>
@@ -64,7 +67,7 @@ const library = () => {
     
             </Container>
 
-            <LibraryInstrumentList sortOption={sortingOption} />
+            <LibraryInstrumentList sortOption={sortingOption} categoryFilterOptions={categoryFilterOptions} familyFilterOptions={familyFilterOptions}/>
         </div>
     )
 }

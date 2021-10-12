@@ -4,11 +4,9 @@ import {Row, Col} from 'react-bootstrap'
 import instrumentData from '../data/instruments.json'
 import { useEffect, useState } from 'react'
 
-const LibraryInstrumentList = (sortOption) => {
-    //var instruments = [];
+const LibraryInstrumentList = ({sortOption, categoryFilterOptions, familyFilterOptions}) => {
     const [instruments, setInstruments] = useState([])
-    var sorting = sortOption.sortOption;
-
+    var sorting = sortOption;
 
     function shuffle(array) {
         var currentIndex = array.length,  randomIndex;
@@ -28,6 +26,13 @@ const LibraryInstrumentList = (sortOption) => {
         return array;
       }
 
+      function filterInstruments(){
+        var newInstruments = [...instruments];
+        newInstruments.forEach(instrument => {
+            
+        });
+      }
+
       useEffect(() => {
         var newInstruments = [...instrumentData]
         if (sorting === '0') {
@@ -40,7 +45,9 @@ const LibraryInstrumentList = (sortOption) => {
             setInstruments(shuffle(newInstruments))
         }
         
-      }, [sorting]);
+      }, [sorting]); 
+      
+      filterInstruments();//we wanna filter our instruments on run
 
     return (
         <Row key={1} className={styles.container} style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-start' }}>
