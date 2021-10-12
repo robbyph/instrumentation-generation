@@ -63,7 +63,6 @@ const LibraryInstrumentList = ({sortOption, categoryFilterOptions, familyFilterO
             }
         });
 
-        console.log(alreadyRandomized)
         if (sorting === '0' && alreadyRandomized === false) {
             var shuffledList = shuffle(newInstruments);
             setAlreadyRandomized(true);
