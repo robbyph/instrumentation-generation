@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react'
 const LibraryInstrumentList = ({sortOption, categoryFilterOptions, familyFilterOptions}) => {
     const [instruments, setInstruments] = useState([...instrumentData])
     var sorting = sortOption;
+    const shuffledInstruments = '';
 
     function shuffle(array) {
         var currentIndex = array.length,  randomIndex;
@@ -60,7 +61,6 @@ const LibraryInstrumentList = ({sortOption, categoryFilterOptions, familyFilterO
         }else if (sorting === '2') {
             setInstruments(newInstruments.sort((a, b) => a.name.localeCompare(b.name)).reverse())
         }
-
 
         setInstruments(newInstruments)
         
