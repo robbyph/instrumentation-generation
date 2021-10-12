@@ -2,7 +2,7 @@ import { Button, Row, Col, Container, Form } from "react-bootstrap"
 import styles from "../styles/ParameterList.module.scss"
 import {useState} from 'react'
 
-const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstrumentModal, onTemplateModal, onTagGen}) => {
+const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstrumentModal, onTemplateModal, onTagGen, onExport, onImport        }) => {
     
     const [newListState, setNewListState] = useState('')
     const [minNumberState, setMinNumberState] = useState('')
@@ -81,7 +81,11 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
                         <Form className={styles.formOverride}>
                             <Form.Label>Other Parameters</Form.Label>
                             <Form.Check onChange={onDupesCheck} className={styles.formCheckOverride} label="No Duplicates?" id="noDupes"/>
-                            <Button type="button" variant="warning" onClick={onClear}>Clear List</Button>
+                            <Row>
+                                <Col xl={4}><Button style={{height: '100%'}} type="button" variant="warning" onClick={onClear}>Clear List</Button></Col>
+                                <Col xl={4}><Button style={{height: '100%'}} type="button" variant="secondary" onClick={onExport}>Export list</Button></Col>
+                                <Col xl={4}><Button style={{height: '100%'}} type="button" variant="secondary" onClick={onImport}>Import list</Button></Col>
+                            </Row>
                         </Form>
                     </Col>
                 </Row>
