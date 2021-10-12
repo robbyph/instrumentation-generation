@@ -5,7 +5,7 @@ import instrumentData from '../data/instruments.json'
 import { useEffect, useState } from 'react'
 
 const LibraryInstrumentList = ({sortOption, categoryFilterOptions, familyFilterOptions}) => {
-    const [instruments, setInstruments] = useState([])
+    const [instruments, setInstruments] = useState([...instrumentData])
     var sorting = sortOption;
 
     function shuffle(array) {
@@ -26,10 +26,8 @@ const LibraryInstrumentList = ({sortOption, categoryFilterOptions, familyFilterO
         return array;
       }
 
-
-      useEffect(() => {
-
-        var newInstruments = [...instrumentData];
+      useEffect(()=>{       
+        var newInstruments = [...instruments];
 
         //Do filtering for categories
         categoryFilterOptions.forEach(category => { //go through each categor
@@ -56,7 +54,15 @@ const LibraryInstrumentList = ({sortOption, categoryFilterOptions, familyFilterO
                  }
             }
         });
+
+        setInstruments(newInstruments)
         
+      }, [categoryFilterOptions, familyFilterOptions])
+
+
+      useEffect(() => {
+        var newInstruments = [...instruments];
+
         if (sorting === '0') {
             setInstruments(shuffle(newInstruments))
         }else if (sorting === '1') {
@@ -67,7 +73,7 @@ const LibraryInstrumentList = ({sortOption, categoryFilterOptions, familyFilterO
             setInstruments(shuffle(newInstruments))
         }
         
-      }, [sorting, categoryFilterOptions, familyFilterOptions]); 
+      }, [sorting]); 
 
     return (
         <Row key={1} className={styles.container} style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-start' }}>
