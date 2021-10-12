@@ -56,7 +56,9 @@ const LibraryInstrumentList = ({sortOption, categoryFilterOptions, familyFilterO
             }
         });
 
-        if (sorting === '1') {
+        if (sorting === '0') {
+            setInstruments(shuffle(newInstruments))
+        }else if (sorting === '1') {
             setInstruments(newInstruments.sort((a, b) => a.name.localeCompare(b.name)))
         }else if (sorting === '2') {
             setInstruments(newInstruments.sort((a, b) => a.name.localeCompare(b.name)).reverse())
@@ -67,14 +69,14 @@ const LibraryInstrumentList = ({sortOption, categoryFilterOptions, familyFilterO
       }, [sorting, categoryFilterOptions, familyFilterOptions])
 
 
-      useEffect(() => {
-        var newInstruments = [...instruments];
+    //   useEffect(() => {
+    //     var newInstruments = [...instruments];
 
-        if (sorting === '0') {
-            setInstruments(shuffle(newInstruments))
-        }
+    //     if (sorting === '0') {
+    //         setInstruments(shuffle(newInstruments))
+    //     }
         
-      }, [sorting]); 
+    //   }, [sorting]); 
 
     return (
         <Row key={1} className={styles.container} style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-start' }}>
