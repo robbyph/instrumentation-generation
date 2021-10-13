@@ -7,11 +7,9 @@ function MyApp({ Component, pageProps }) {
   
   
     return (
-    <CookiesProvider>
         <Layout>
             <Component {...pageProps} />
         </Layout>
-    </CookiesProvider>
   )
 }
 
