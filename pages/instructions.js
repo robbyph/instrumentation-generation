@@ -32,6 +32,7 @@ const instructions = () => {
                     <li><a href="https://www.dskmusic.com/">DSK</a> offers dozens of free instruments.</li>
                 </ul>
                 <p style={{marginTop: '1rem'}}>P.S. Don't forget to check and see what, if any, free instruments come with your Digital Audio Workstation!</p>
+                <p style={{marginTop: '1rem'}}>P.S.S. Be cautious not to get too caught up in collecting plugins. Just get what you need and make some music.</p>
             </div>
             <h1 className={styles.headingOne}>Brief Instructions</h1>
             <div className={styles.container}>
