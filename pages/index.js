@@ -337,26 +337,26 @@ export default function Home({data}) {
     }
     //#endregion
 
-    // //on load, if a cookie is present, use those instruments to pre populate the instrument list
-    // useEffect(()=>{
-    //     try{
-    //         var newInstruments = JSON.parse(data.userInstrumentList);
-    //         setMyInstruments(newInstruments)
+    //on load, if a cookie is present, use those instruments to pre populate the instrument list
+    useEffect(()=>{
+        try{
+            var newInstruments = JSON.parse(data.userInstrumentList);
+            setMyInstruments(newInstruments)
 
-    //     }catch (err){
-    //         console.log(err)
-    //     }
+        }catch (err){
+            console.log(err)
+        }
 
-    // }, [])
+    }, [])
 
-    // //anytime myInstruments is changed, we set the cookie properly
-    // useEffect(()=>{
-    //     try{
-    //         setCookie("userInstrumentList", JSON.stringify(myInstruments), {path: "/", maxAge: 36000, sameSite: true})
-    //     }catch (err){
-    //         console.log(er)
-    //     }
-    // }, [myInstruments])
+    //anytime myInstruments is changed, we set the cookie properly
+    useEffect(()=>{
+        try{
+            setCookie("userInstrumentList", JSON.stringify(myInstruments), {path: "/", maxAge: 36000, sameSite: true})
+        }catch (err){
+            console.log(er)
+        }
+    }, [myInstruments])
 
 
     return (
