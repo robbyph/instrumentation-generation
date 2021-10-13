@@ -344,7 +344,11 @@ export default function Home({data}) {
 
     //anytime myInstruments is changed, we set the cookie properly
     useEffect(()=>{
-        setCookie("userInstrumentList", JSON.stringify(myInstruments), {path: "/", maxAge: 36000, sameSite: true})
+        try{
+            setCookie("userInstrumentList", JSON.stringify(myInstruments), {path: "/", maxAge: 36000, sameSite: true})
+        }catch (err){
+            console.log(er)
+        }
     }, [myInstruments])
 
 
