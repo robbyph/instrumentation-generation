@@ -43,13 +43,11 @@ export default function Home({data}) {
                 notDupe = true;
                 
                 newInstruments.map(instrument => {
-                    console.log(newInst.name, instrument.name)
                     if (newInst.name == instrument.name) {
                         notDupe = false;
                     }
                 });
                 myInstruments.map(instrument => {
-                    console.log(newInst.name, instrument.name)
                     if (newInst.name == instrument.name) {
                         notDupe = false;
                     }
@@ -59,7 +57,6 @@ export default function Home({data}) {
     
             return newInst;
         }else{
-            console.log(newInst.locked)
             return newInstrument()
         }
     }
@@ -260,8 +257,6 @@ export default function Home({data}) {
         }])
 
         setKeyInc(keyInc + 1)
-
-        console.log(methodToExecute)
     }
 
     const closeAlert = (id) => {
@@ -319,7 +314,6 @@ export default function Home({data}) {
         setShowTemplateModal(false);
     }
     const addTemplate = (template) => {
-        template.instruments.map((instrument) => {console.log(instrument.locked)})
         setMyInstruments(template.instruments)
         
     }
@@ -354,7 +348,7 @@ export default function Home({data}) {
         try{
             setCookie("userInstrumentList", JSON.stringify(myInstruments), {path: "/", maxAge: 36000, sameSite: true})
         }catch (err){
-            console.log(er)
+            console.log(err)
         }
     }, [myInstruments])
 
