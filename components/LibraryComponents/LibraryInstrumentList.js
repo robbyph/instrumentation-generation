@@ -1,12 +1,15 @@
 import LibraryInstrumentCard from './LibraryInstrumentCard'
 import styles from '../../styles/InstrumentList.module.scss'
-import {CardDeck} from 'react-bootstrap'
+import {Row, Col} from 'react-bootstrap'
 import instrumentData from '../data/instruments.json'
 import { useEffect, useState } from 'react'
 
-const LibraryInstrumentList = () => {
-    //var instruments = [];
-    const [instruments, setInstruments] = useState([])
+const LibraryInstrumentList = ({sortOption, categoryFilterOptions, familyFilterOptions}) => {
+    const [instruments, setInstruments] = useState([...instrumentData])
+    var sorting = sortOption;
+    const [alreadyRandomized, setAlreadyRandomized] = useState(false);
+    const [randomizedList, setRandomizedList] = useState([]);
+
 
     function shuffle(array) {
         var currentIndex = array.length,  randomIndex;
@@ -26,15 +29,72 @@ const LibraryInstrumentList = () => {
         return array;
       }
 
-      useEffect(() => {
-        var newInstruments = [...instrumentData]
-        setInstruments(shuffle(newInstruments))
-      }, []);
+      useEffect(()=>{       
+        if (alreadyRandomized) {
+            var newInstruments = [...randomizedList];
+        }else{
+            var newInstruments = [...instrumentData];      
+        }
+        
+
+        //Do filtering for categories
+        categoryFilterOptions.forEach(category => { //go through each categor
+            if (category.checked === false) { //if the given category is unselected, we want to go through each instrument and remove the ones with that tag
+                
+                for(var i = newInstruments.length - 1; i >= 0; i--) { //iterate each instrument backwards since we're removing stuffs
+                    var instrument = newInstruments[i]
+                    if (instrument.tags.category == category.label.toLowerCase()) { //try to match the category we're looking for with the category of the instrument
+                        newInstruments.splice(i, 1) //remove it if that's the case
+                    }
+                 }
+            }
+        });
+
+        //Do filtering for families
+        familyFilterOptions.forEach(family => { //go through each categor
+            if (family.checked === false) { //if the given category is unselected, we want to go through each instrument and remove the ones with that tag
+                
+                for(var i = newInstruments.length - 1; i >= 0; i--) { //iterate each instrument backwards since we're removing stuffs
+                    var instrument = newInstruments[i]
+                    if (instrument.tags.family == family.label.toLowerCase()) { //try to match the category we're looking for with the category of the instrument
+                        newInstruments.splice(i, 1) //remove it if that's the case
+                    }
+                 }
+            }
+        });
+
+        if (sorting === '0' && alreadyRandomized === false) {
+            var shuffledList = shuffle(newInstruments);
+            setAlreadyRandomized(true);
+            setInstruments(shuffledList);
+            setRandomizedList(shuffledList);
+        }else if (sorting === '1') {
+            setAlreadyRandomized(false);
+            setInstruments(newInstruments.sort((a, b) => a.name.localeCompare(b.name)))
+        }else if (sorting === '2') {
+            setAlreadyRandomized(false);
+            setInstruments(newInstruments.sort((a, b) => a.name.localeCompare(b.name)).reverse())
+        }
+
+        setInstruments(newInstruments)
+        
+      }, [sorting, categoryFilterOptions, familyFilterOptions])
+
+
+    //   useEffect(() => {
+    //     var newInstruments = [...instruments];
+
+    //     if (sorting === '0') {
+    //         setInstruments(shuffle(newInstruments))
+    //     }
+        
+    //   }, [sorting]); 
 
     return (
-            <CardDeck key={1} className={styles.container} style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
-                {instruments.map((instrument, i) => (
-                    <LibraryInstrumentCard
+        <Row key={1} className={styles.container} style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-start' }}>
+        {instruments.map((instrument, i) => (
+            <Col key={i} className={styles.properCol}>
+                <LibraryInstrumentCard
                         key={i} 
                         id={i}
                         instr = {instrument}
@@ -45,8 +105,10 @@ const LibraryInstrumentList = () => {
                         tubeLink={instrument.youtube}
                         style={{flex: 1}}>
                     </LibraryInstrumentCard>
-                )) }
-            </CardDeck>
+            </Col>
+        )) }
+       
+    </Row>
     )
 }
 

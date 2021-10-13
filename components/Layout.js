@@ -12,6 +12,8 @@ const Layout = ({children}) => {
 
     return (
         <>
+                    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
         <Navigation currentPage={curPage()}></Navigation>
         <div>
             <main>

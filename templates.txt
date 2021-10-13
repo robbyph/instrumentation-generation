@@ -17,6 +17,15 @@
                         <button onclick="showTemplatePreview(22)" class="templateBtn">Jamaica Mode</button><br>
                         <button onclick="showTemplatePreview(24)" class="templateBtn">Crossover Thrash</button><br>
                         <button onclick="showTemplatePreview(24)" class="templateBtn">d e a t h  g r i ps</button><br>
+             
+Folk Metal:
+2 Distortion Guitar
+Distorted Vocals
+Clean Vocals
+Flute
+Violin
+Drum Kit
+Electric Bass
 
 Jug Band:
 Singing
@@ -27,3 +36,10 @@ Washboard
 Guitar
 Banjo
 Violin
+
+Witcher:
+Hurdy Gurdy
+Mandolin
+Djembe
+Violin
+Darbuka
