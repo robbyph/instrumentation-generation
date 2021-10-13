@@ -388,11 +388,9 @@ export default function Home({data}) {
   )
 }
 
-export const getStaticProps = async ({req, res}) => {
+Home.getStaticProps = async ({req, res}) => {
 
     const data = parseCookies(req)
-
-    console.log(data)
   
     if (res) {
      if (Object.keys(data).length === 0 && data.constructor === Object) {
