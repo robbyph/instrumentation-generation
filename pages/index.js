@@ -12,7 +12,7 @@ import ReplacementModal from '../components/Modals/ReplacementModal'
 import TemplateModal from '../components/Modals/TemplateModal'
 import { NextSeo, SoftwareAppJsonLd } from 'next-seo'
 import { useCookies } from "react-cookie"
-import { parseCookies } from "../helpers/"
+import { parseCookies } from "../helpers/index.js"
 
 export default function Home({data}) {
     
@@ -388,20 +388,22 @@ export default function Home({data}) {
   )
 }
 
-// Home.getInitialProps = async ({req, res}) => {
+Home.getInitialProps = async ({req, res}) => {
 
-//     const data = parseCookies(req)
+    const data = parseCookies(req)
+
+    console.log(data)
   
-//     if (res) {
-//      if (Object.keys(data).length === 0 && data.constructor === Object) {
-//        res.writeHead(301, { Location: "/" })
-//        res.end()
-//      }
-//    }
+    if (res) {
+     if (Object.keys(data).length === 0 && data.constructor === Object) {
+       res.writeHead(301, { Location: "/" })
+       res.end()
+     }
+   }
    
-//    return {
-//      data: data && data,
-//    }
+   return {
+     data: data && data,
+   }
 
-// }
+}
 
