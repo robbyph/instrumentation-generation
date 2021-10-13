@@ -337,7 +337,7 @@ export default function Home({data}) {
     }
     //#endregion
 
-    //if a cookie is present, use those instruments to pre populate the instrument list
+    //on load, if a cookie is present, use those instruments to pre populate the instrument list
     useEffect(()=>{
         setMyInstruments(JSON.parse(data.userInstrumentList))
     }, [])
