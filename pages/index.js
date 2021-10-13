@@ -340,11 +340,13 @@ export default function Home({data}) {
     //on load, if a cookie is present, use those instruments to pre populate the instrument list
     useEffect(()=>{
         try{
-            setMyInstruments(JSON.parse(data.userInstrumentList))
+            var newInstruments = JSON.parse(data.userInstrumentList);
+            setMyInstruments(newInstruments)
 
         }catch (err){
             console.log(err)
         }
+
     }, [])
 
     //anytime myInstruments is changed, we set the cookie properly
