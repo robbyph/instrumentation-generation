@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import ParameterList from '../components/ParameterList'
 import InstrumentList from '../components/InstrumentList'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import instrumentData from '../components/data/instruments.json'
 import templateData from '../components/data/templates.json'
 import Alerts from '../components/Alerts'
@@ -11,8 +11,10 @@ import InstrumentModal from '../components/Modals/InstrumentModal'
 import ReplacementModal from '../components/Modals/ReplacementModal'
 import TemplateModal from '../components/Modals/TemplateModal'
 import { NextSeo, SoftwareAppJsonLd } from 'next-seo'
+import { useCookies } from "react-cookie"
+import { parseCookies } from "../helpers/"
 
-export default function Home() {
+export default function Home({data}) {
     
     //#region Variables
     const allInstruments = instrumentData
@@ -26,6 +28,7 @@ export default function Home() {
     const [showReplacementModal, setShowReplacementModal] = useState(false)
     const [showTemplateModal, setShowTemplateModal] = useState(false)
     const [replacementInstrumentID, setReplacementInstrumentID] = useState(0)
+    const [cookie, setCookie] = useCookies(["userInstrumentList"])
 
     //#endregion
 
@@ -96,6 +99,7 @@ export default function Home() {
             })
             setMyInstruments(tempInstruments)
         }
+
     }
 
     //#endregion
@@ -331,9 +335,17 @@ export default function Home() {
     function importJSON(event){
 
     }
-
     //#endregion
 
+    //if a cookie is present, use those instruments to pre populate the instrument list
+    useEffect(()=>{
+        setMyInstruments(JSON.parse(data.userInstrumentList))
+    }, [])
+
+    //anytime myInstruments is changed, we set the cookie properly
+    useEffect(()=>{
+        setCookie("userInstrumentList", JSON.stringify(myInstruments), {path: "/", maxAge: 36000, sameSite: true})
+    }, [myInstruments])
 
 
     return (
@@ -365,4 +377,20 @@ export default function Home() {
   )
 }
 
+Home.getInitialProps = async ({req, res}) => {
+
+    const data = parseCookies(req)
+  
+    if (res) {
+     if (Object.keys(data).length === 0 && data.constructor === Object) {
+       res.writeHead(301, { Location: "/" })
+       res.end()
+     }
+   }
+   
+   return {
+     data: data && data,
+   }
+
+}
 

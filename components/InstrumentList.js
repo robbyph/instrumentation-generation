@@ -1,9 +1,11 @@
 import InstrumentCard from './InstrumentCard'
 import styles from '../styles/InstrumentList.module.scss'
 import { Row, Col} from 'react-bootstrap'
+import { useCookies } from 'react-cookie'
 
 
 const InstrumentList = ({instruments, onDel, onLoc, onShuf, onRep, onRepButClick, setRepInstrumentID}) => {
+    
     
     return (
             <Row key={1} className={styles.container} style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-start' }}>
