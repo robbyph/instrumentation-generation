@@ -388,7 +388,7 @@ export default function Home({data}) {
   )
 }
 
-Home.getStaticProps = async ({req, res}) => {
+Home.geInitialProps = async ({req, res}) => {
 
     const data = parseCookies(req)
   
