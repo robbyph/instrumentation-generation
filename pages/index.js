@@ -12,7 +12,7 @@ import ReplacementModal from '../components/Modals/ReplacementModal'
 import TemplateModal from '../components/Modals/TemplateModal'
 import { NextSeo, SoftwareAppJsonLd } from 'next-seo'
 import { useCookies } from "react-cookie"
-import { parseCookies } from "../helpers/index.js"
+import { parseCookies } from "../helpers/index"
 
 export default function Home({data}) {
     
