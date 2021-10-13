@@ -388,7 +388,7 @@ export default function Home({data}) {
   )
 }
 
-Home.getInitialProps = async ({req, res}) => {
+Home.getServerSideProps = async ({req, res}) => {
 
     const data = parseCookies(req)
 
