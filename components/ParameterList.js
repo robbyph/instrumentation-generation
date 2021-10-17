@@ -51,7 +51,7 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
                             <Button onClick={() => {onInstrumentModal()}}>Select Instrument</Button>
                         </Form>
                     </Col>
-                    <Col align="center" style={{marginBottom: '1rem', minWidth: '18rem'}}>
+                    <Col align="center" style={{marginBottom: '1rem', minWidth: '30rem'}}>
                         <Form className={styles.formOverride}>
                             <Row><Col><Form.Label>Generate a random instrument by category and family</Form.Label></Col></Row>
                             <Row>
@@ -91,9 +91,6 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
                                         <input type="file" accept='.instrgen'  ref={fileInput} hidden/>
                                         Import list
                                     </Button>
-                                    <Form>
-                                        <Form.File></Form.File>
-                                    </Form>
                                 </Col>
                             </Row>
                         </Form>
