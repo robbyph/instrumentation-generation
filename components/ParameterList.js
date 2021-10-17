@@ -1,8 +1,8 @@
 import { Button, Row, Col, Container, Form } from "react-bootstrap"
 import styles from "../styles/ParameterList.module.scss"
-import {useState} from 'react'
+import {useState, useRef} from 'react'
 
-const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstrumentModal, onTemplateModal, onTagGen, onExport, onImport        }) => {
+const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstrumentModal, onTemplateModal, onTagGen, onExport, onImport}) => {
     
     const [newListState, setNewListState] = useState('')
     const [minNumberState, setMinNumberState] = useState('')
@@ -10,6 +10,8 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
     const [categoryState, setCategoryState] = useState('contemporary')
     const [familyState, setFamilyState] = useState('string')
     const [tagGenNum, setTagGenNum] = useState('1')
+    const fileInput = useRef(null)
+
 
     return (
         <div className={styles.container} id="paramsDiv">
@@ -84,7 +86,15 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
                             <Row>
                                 <Col xl={4}><Button style={{height: '100%'}} type="button" variant="warning" onClick={onClear}>Clear List</Button></Col>
                                 <Col xl={4}><Button style={{height: '100%'}} type="button" variant="secondary" onClick={onExport}>Export list</Button></Col>
-                                <Col xl={4}><Button style={{height: '100%'}} type="button" variant="secondary" onClick={onImport}>Import list</Button></Col>
+                                <Col xl={4}>
+                                    <Button style={{height: '100%'}} type="button" variant="secondary" onClick={()=> {fileInput.current.click()}} onChange={(e)=> {getFileInput(e.target.value)}}>
+                                        <input type="file" accept='.instrgen'  ref={fileInput} hidden/>
+                                        Import list
+                                    </Button>
+                                    <Form>
+                                        <Form.File></Form.File>
+                                    </Form>
+                                </Col>
                             </Row>
                         </Form>
                     </Col>

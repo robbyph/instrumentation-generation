@@ -13,6 +13,7 @@ import TemplateModal from '../components/Modals/TemplateModal'
 import { NextSeo, SoftwareAppJsonLd } from 'next-seo'
 import { useCookies } from "react-cookie"
 import { parseCookies } from "../helpers/index"
+import download from 'downloadjs'
 
 export default function Home({data}) {
     
@@ -322,12 +323,16 @@ export default function Home({data}) {
     //#region Export and Import
 
     function exportJSON(event)  {
-        const blob = new Blob([myInstruments], {type: 'application/json'})
-        const jsonOutput = URL.createObjectURL(blob);
+        if (myInstruments.length < 1) {
+            pushAlert(closeAlert, 'Empty List Error', 'You cannot export an empty list!', 'warning', undefined, undefined, true)
+        }else{
+            download(Buffer.from(JSON.stringify(myInstruments), 'base64'), "MyInstrumentationGenerationList.instrgen")
+        }
     }
 
-    function importJSON(event){
-
+    function importJSON(input){
+        var newList = JSON.parse(input.value.replace("C:\\fakepath\\", ""))
+        console.log(newList)
     }
     //#endregion
 
