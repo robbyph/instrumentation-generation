@@ -326,13 +326,16 @@ export default function Home({data}) {
         if (myInstruments.length < 1) {
             pushAlert(closeAlert, 'Empty List Error', 'You cannot export an empty list!', 'warning', undefined, undefined, true)
         }else{
-            download(Buffer.from(JSON.stringify(myInstruments), 'base64'), "MyInstrumentationGenerationList.instrgen")
+            download(Buffer.from(JSON.stringify(myInstruments)).toString('base64'), "MyInstrumentationGenerationList.instrgen")
+            //download(JSON.stringify(myInstruments), "MyInstrumentationGenerationList.instrgen")
         }
     }
 
     function importJSON(input){
-        var newList = JSON.parse(input.value.replace("C:\\fakepath\\", ""))
-        console.log(newList)
+        console.log('importJSON input: ', input)
+        if (input.length > 0) {
+            setMyInstruments([...input])
+        }
     }
     //#endregion
 

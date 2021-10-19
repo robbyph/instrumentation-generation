@@ -10,7 +10,20 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
     const [categoryState, setCategoryState] = useState('contemporary')
     const [familyState, setFamilyState] = useState('string')
     const [tagGenNum, setTagGenNum] = useState('1')
-    const fileInput = useRef(null)
+
+    const getFileInput = e =>{
+
+            const fileReader = new FileReader();
+            fileReader.readAsText(e.target.files[0], "UTF-8");
+            var tempLoad = null;
+            fileReader.onload = e => {
+                onImport(JSON.parse(Buffer.from(e.target.result, 'base64').toString('utf-8')))
+            };
+            
+            
+    };
+        
+    
 
 
     return (
@@ -87,8 +100,8 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
                                 <Col xl={4}><Button style={{height: '100%'}} type="button" variant="warning" onClick={onClear}>Clear List</Button></Col>
                                 <Col xl={4}><Button style={{height: '100%'}} type="button" variant="secondary" onClick={onExport}>Export list</Button></Col>
                                 <Col xl={4}>
-                                    <Button style={{height: '100%'}} type="button" variant="secondary" onClick={()=> {fileInput.current.click()}} onChange={(e)=> {getFileInput(e.target.value)}}>
-                                        <input type="file" accept='.instrgen'  ref={fileInput} hidden/>
+                                    <Button style={{height: '100%'}} type="button" variant="secondary" onChange={getFileInput}>
+                                        <input type="file" accept='.instrgen' />
                                         Import list
                                     </Button>
                                 </Col>
