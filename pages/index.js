@@ -349,14 +349,11 @@ export default function Home({data}) {
                 for (let j = 0; j < allInstruments.length; j++) { //For each instrument in our database
                     const allInstrumentsInstrument = allInstruments[j];
 
-                    //if(importedInstrument.name===allInstrumentsInstrument.name){console.log(_.omit(importedInstrument, ['locked', 'id']), allInstrumentsInstrument)}
-
                     //If our data from our imported instrument matches atleast one instrument from the data
                     var _ = require('lodash');
                     if (_.isEqual(_.omit(importedInstrument, ['locked', 'id']), allInstrumentsInstrument)) {
                         thisElementValid = true;
                     } 
-
                 }
                 if (!thisElementValid) {
                    isValid = false; 
