@@ -13,6 +13,11 @@ const library = () => {
 
     const [open, setOpen] = useState(false);
 
+    const resetAllChecks = () => {
+        setFamilyFilterOptions([{label: 'String', checked: true}, {label: 'Percussion', checked: true}, {label: 'Brass', checked: true}, {label: 'Wind', checked: true}, {label: 'Electronic', checked: true}, {label: 'Keyboard', checked: true}])
+        setCategoryFilterOptions([{label: 'Contemporary', checked: true}, {label: 'Orchestral', checked: true}, {label: 'Traditional', checked: true}, {label: 'Vocal', checked: true}])
+    }
+
     return (
         <div>
                 <NextSeo 
@@ -40,6 +45,7 @@ const library = () => {
                                     <Col xl={{span: 4, offset: 4}}>
                                         <Button variant="outline-light" style={{width: '100%'}} onClick={() => setOpen(!open)} aria-controls="example-collapse-text" aria-expanded={open}><span style={{float:'left'}}>{open ? '▲' : '▼' }</span>Filtering</Button>
                                         <Collapse in={open}>
+                                            <div>
                                             <Row style={{marginTop: '1rem'}}>
                                             <Col>
                                                 <h5 style={{textAlign: 'center', color: 'white'}}>Category Filtering: </h5>
@@ -50,6 +56,12 @@ const library = () => {
                                                 <DropdownChecklist checkOptions={familyFilterOptions} returnChecksState={setFamilyFilterOptions}></DropdownChecklist>
                                             </Col>
                                             </Row>
+                                            <Row >
+                                                <Col xl={{span: 4, offset: 4}}>
+                                                    <Button style={{width: '100%'}} onClick={() => {resetAllChecks(); console.log('clicked')}}>Reset Filter</Button>
+                                                </Col>
+                                            </Row>
+                                            </div>
                                         </Collapse>
                                     </Col>
                                     <Col xl={{span: 2, offset: 2}}>

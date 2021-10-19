@@ -1,4 +1,4 @@
-import { Form } from 'react-bootstrap'
+import { Form, Button } from 'react-bootstrap'
 import styles from '../styles/DropdownChecklist.module.scss'
 import {useState, useEffect } from 'react'
 
@@ -18,6 +18,7 @@ const DropdownChecklist = ({checkOptions, returnChecksState}) => {
     return (
         <Form className={styles.checkMenu}>
             {checks.map((checkItem, i) => (
+                console.log(checkItem.checked),
                  <Form.Check
                     key={i}
                     id={i}
@@ -28,6 +29,8 @@ const DropdownChecklist = ({checkOptions, returnChecksState}) => {
                 ></Form.Check>
             )) }
         </Form>
+
+        
 
         
     )
