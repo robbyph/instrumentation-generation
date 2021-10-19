@@ -17,7 +17,7 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
             fileReader.readAsText(e.target.files[0], "UTF-8");
             var tempLoad = null;
             fileReader.onload = e => {
-                onImport(JSON.parse(Buffer.from(e.target.result, 'base64').toString('utf-8')))
+                onImport(e.target.result)
             };
     };
         

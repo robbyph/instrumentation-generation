@@ -332,9 +332,44 @@ export default function Home({data}) {
     }
 
     function importJSON(input){
-        console.log('importJSON input: ', input)
+        
         if (input.length > 0) {
-            setMyInstruments([...input])
+            var isValid = true;
+            try {
+                input=JSON.parse(Buffer.from(input, 'base64').toString('utf-8'))
+            } catch (error) {
+                isValid=false;
+                console.log(error)
+            }
+
+            if (isValid === true) {
+            for (let i = 0; i < input.length; i++) { //For each imported instrument
+                const importedInstrument = input[i];
+                var thisElementValid = false;
+                for (let j = 0; j < allInstruments.length; j++) { //For each instrument in our database
+                    const allInstrumentsInstrument = allInstruments[j];
+
+                    if(importedInstrument.name===allInstrumentsInstrument.name){console.log(_.omit(importedInstrument, ['locked', 'id']), allInstrumentsInstrument)}
+
+                    //If our data from our imported instrument matches atleast one instrument from the data
+                    var _ = require('lodash');
+                    if (_.isEqual(_.omit(importedInstrument, ['locked', 'id']), allInstrumentsInstrument)) {
+                        thisElementValid = true;
+                    } 
+
+                }
+                if (!thisElementValid) {
+                   isValid = false; 
+                }
+            }
+            }
+
+            if (isValid) {
+                setMyInstruments([...input])
+            }else{
+                pushAlert(closeAlert, 'Damaged File Error', 'Your file is unreadable, and cannot be imported. The file may have been altered or damaged!', 'warning', undefined, undefined, true)
+            }
+            
         }
     }
     //#endregion
