@@ -12,7 +12,7 @@ const feedback = () => {
             <h1 className={styles.headingOne}>Feedback</h1>
             <div className={styles.container}>
                 <p className={styles.p}>
-                    Found a broken link? Have you found inaccurate info in one of the instrument descriptions? Do you think that one of the instruments is tagged incorrectly? Technical glitch? Send me an email and I'll look into it! Or, if you'd rather, open a pull request on the github page!
+                    Found a broken link? Have you found inaccurate info in one of the instrument descriptions? Do you think that one of the instruments is tagged incorrectly? Technical glitch? Need help fixing a corrupted instrument list? Send me an email and I'll look into it! Or, if you'd rather, open a pull request on the github page!
                     <br />
                 </p>
                 <p className={styles.p}>Also! If you know an instrument that you think should be added, please let me know!"</p>
