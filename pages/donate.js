@@ -72,8 +72,8 @@ const donate = () => {
             
                 <h1 className={styles.headingOne}>Donate</h1>   
                 <div className={styles.container}>
-                <h5 style={{textAlign: 'center'}}>If you like the website and find it useful, i also have the option of donating via Kofi!</h5> 
-                <h6 style={{textAlign: 'center', textDecoration: 'underline'}}>Kofi integration Coming Soon!</h6>
+                <h5 style={{textAlign: 'center'}}>If you like the website and find it useful, i also have the option of donating via Kofi! Anything is greatly appreciated!</h5> 
+                <iframe id='kofiframe' src='https://ko-fi.com/robbyhoover/?hidefeed=true&widget=true&embed=true&preview=true' style={{border: 'none', width:'100%', padding:'4px', background:'#f9f9f9', marginBottom: 0}} height='712' title='robbyhoover'></iframe>
                 </div>
                 </Col>
             </Row>
