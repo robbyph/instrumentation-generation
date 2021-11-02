@@ -30,6 +30,16 @@ const changelog = () => {
                             <li className={styles.listItem}>Updated CSS</li>
                         </ul>
                     </div>
+                    <div className={styles.changeItem} style={{paddingTop: 0}}>
+                        <h4 className={styles.headingFour}>Version 0.7</h4>
+                        <p className={styles.itemDate}>November 11th 2021</p>
+                        <ul className={styles.changes}>
+                            <li className={styles.listItem}>Added sorting to library and modals</li>
+                            <li className={styles.listItem}>Added filtering to library and modals</li>
+                            <li className={styles.listItem}>Added tag based instrument generation</li>
+                            <li className={styles.listItem}>Updated CSS</li>
+                        </ul>
+                    </div>
                 </div>
 
         </div>
