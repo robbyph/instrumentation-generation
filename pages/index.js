@@ -141,27 +141,54 @@ export default function Home({data}) {
         var newInstruments = []
 
         allInstruments.forEach(instrument => {
-            if (category === 'vocal') {
-                if (instrument.tags.category === category && instrument.tags.family === 'vocal') {
-                    newInstruments.push(instrument)
-                }                
+            if(dupesChecked){ //If no duplicates is checked, don't let it give a duplicate instrument
+                var notDupe = true;
+                
+                myInstruments.map(existingInstrument => {
+                    if (instrument.name == existingInstrument.name) {
+                        notDupe = false;
+                    }
+                });
+        
+                if (notDupe) {
+                    if (category === 'vocal') {
+                        if (instrument.tags.category === category && instrument.tags.family === 'vocal') {
+                            newInstruments.push(instrument)
+                        }                
+                    }else{
+                        if (instrument.tags.category === category && instrument.tags.family === family) {
+                            newInstruments.push(instrument)
+                        }
+                    }
+                }
+                
             }else{
-                if (instrument.tags.category === category && instrument.tags.family === family) {
-                    newInstruments.push(instrument)
+                if (category === 'vocal') {
+                    if (instrument.tags.category === category && instrument.tags.family === 'vocal') {
+                        newInstruments.push(instrument)
+                    }                
+                }else{
+                    if (instrument.tags.category === category && instrument.tags.family === family) {
+                        newInstruments.push(instrument)
+                    }
                 }
             }
             
         });
 
-        var newMyInstruments = [...myInstruments]
+        if (newInstruments.length < 1) {
+            pushAlert(closeAlert, "Invalid Input Warning", "When 'No Duplicates' is checked, you cannot insert more instruments than are available.", "warning", undefined, undefined, true)
+        }else{
+            var newMyInstruments = [...myInstruments]
         
-        for (let index = 0; index < num; index++) {
-            var newInstrument = newInstruments[Math.floor(Math.random()*newInstruments.length)];
-            newInstrument.locked = false;
-            newMyInstruments.push(newInstrument);              
-        }
+            for (let index = 0; index < num; index++) {
+                var newInstrument = newInstruments[Math.floor(Math.random()*newInstruments.length)];
+                newInstrument.locked = false;
+                newMyInstruments.push(newInstrument);              
+            }
 
-        setMyInstruments(newMyInstruments)
+            setMyInstruments(newMyInstruments)
+        }
     }
     //#endregion
     
@@ -315,8 +342,23 @@ export default function Home({data}) {
         setShowTemplateModal(false);
     }
     const addTemplate = (template) => {
-        setMyInstruments(template.instruments)
+        var newInstruments = []
+
+        template.map(templateI =>{
+            allInstruments.map(masterI => {
+                if (templateI.name === masterI.name) {
+                    newInstruments.push(masterI)
+                }
+            })
+        })
+
+        newInstruments.map(instrument =>{
+            instrument.locked = false;
+        })
+
+        console.log(newInstruments)
         
+        setMyInstruments(newInstruments)
     }
     //#endregion
 
@@ -332,7 +374,7 @@ export default function Home({data}) {
     }
 
     function importJSON(input){
-        
+
         if (input.length > 0) {
             var isValid = true;
             try {
@@ -341,6 +383,8 @@ export default function Home({data}) {
                 isValid=false;
                 console.log(error)
             }
+
+            console.log(input)
 
             if (isValid === true) {
             for (let i = 0; i < input.length; i++) { //For each imported instrument
@@ -412,7 +456,7 @@ export default function Home({data}) {
             />
         {showInstrumentModal ? <InstrumentModal onClose={closeInstrumentModal} instruments={allInstruments} onConfirm={addModalInstrument} /> :  ''}
         {showReplacementModal ? <ReplacementModal onClose={closeReplacementModal} instruments={allInstruments} onConfirm={replaceInstrument} ogInstId={replacementInstrumentID} /> :  ''}
-        {showTemplateModal ? <TemplateModal onClose={closeTemplateModal} templates={templates} onConfirm={addTemplate} /> :  ''}
+        {showTemplateModal ? <TemplateModal onClose={closeTemplateModal} templates={templates} onConfirm={addTemplate} allInstruments={allInstruments}/> :  ''}
         {alerts.length > 0 ? <Alerts alerts={alerts} onClosing={closeAlert} /> : ''}
         <h1 className={styles.headingOne}>Parameters</h1>
         <ParameterList onRandomList={randomListOfInstruments} onNewList={addNewInstruments} onClear={checkClear} onDupesCheck={toggleDupesChecked} onInstrumentModal={openInstrumentModal} onTemplateModal={openTemplateModal} pushAlert={pushAlert} onTagGen={tagBasedGeneration} onExport={exportJSON} onImport={importJSON}></ParameterList>

@@ -6,7 +6,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Acoustic_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "string",
             "voices": "polyphonic",
             "origin": "north america",
@@ -22,7 +22,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Classical_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "string",
             "voices": "polyphonic",
             "origin": "europe",
@@ -38,7 +38,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Flamenco_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "string",
             "voices": "polyphonic",
             "origin": "europe",
@@ -54,7 +54,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Bass_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "string",
             "voices": "polyphonic",
             "origin": "north america",
@@ -70,75 +70,11 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Drum_kit",
         "tags": {
             "hornbostelsachs": "membranophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "percussion",
             "voices": "polyphonic",
             "origin": "north america",
             "timeframe": "modern"
-        }
-    },
-
-    {
-        "name": "Clean Tenor Male Vocals",
-        "description": "A Male singing cleanly in the highest tradiitonal male vocal register",
-        "image": "images/instruments/malevocals.png",
-        "youtube": "",
-        "wikipedia": "",
-        "tags": {
-            "hornbostelsachs": "aerophone",
-            "category":"vocal",
-            "family": "vocal",
-            "voices": "monophonic",
-            "origin": "n/a",
-            "timeframe": "n/a"
-        }
-    },
-
-    {
-        "name": "Clean Tenor Female Vocals",
-        "description": "A Female singing cleanly in the highest tradiitonal male vocal register",
-        "image": "images/instruments/femalevocals.png",
-        "youtube": "",
-        "wikipedia": "",
-        "tags": {
-            "hornbostelsachs": "aerophone",
-            "category":"vocal",
-            "family": "vocal",
-            "voices": "monophonic",
-            "origin": "n/a",
-            "timeframe": "n/a"
-        }
-    },
-
-    {
-        "name": "Clean Tenor Vocals",
-        "description": "A Male or Female singing cleanly",
-        "image": "images/instruments/mixedchoir.png",
-        "youtube": "",
-        "wikipedia": "",
-        "tags": {
-            "hornbostelsachs": "aerophone",
-            "category":"vocal",
-            "family": "vocal",
-            "voices": "monophonic",
-            "origin": "n/a",
-            "timeframe": "n/a"
-        }
-    },
-
-    {
-        "name": "Throat Singing",
-        "description": "Also known as Overtone Singing, a style used in many traditional cultures",
-        "image": "images/instruments/throatsinging.png",
-        "youtube": "https://www.youtube.com/watch?v=7zZainT9v6Q",
-        "wikipedia": "https://en.wikipedia.org/wiki/Overtone_singing",
-        "tags": {
-            "hornbostelsachs": "aerophone",
-            "category":"vocal",
-            "family": "vocal",
-            "voices": "monophonic",
-            "origin": "Mongolia",
-            "timeframe": "n/a"
         }
     },
 
@@ -150,7 +86,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Piano",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "keyboard",
             "voices": "polyphonic",
             "origin": "europe",
@@ -162,11 +98,11 @@
         "name": "Drum Machine",
         "description": "An electronic instrument used to create artificial percussion",
         "image": "images/instruments/drummachine.png",
-        "youtube": "https://www.youtube.com/watch?v=SykBI6Prbi8",
+        "youtube": "https://www.youtube.com/watch?v=FNWoxY84IZw",
         "wikipedia": "https://en.wikipedia.org/wiki/Drum_machine",
         "tags": {
             "hornbostelsachs": "electrophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "electronic",
             "voices": "polyphonic",
             "origin": "north america",
@@ -182,7 +118,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Theremin",
         "tags": {
             "hornbostelsachs": "electrophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "electronic",
             "voices": "monophonic",
             "origin": "europe",
@@ -192,13 +128,13 @@
 
     {
         "name": "Sample",
-        "description": "A reused portion of an already existing recording, used musically, such as with a song sample; or for thematic effect, such as with a movie sample",
+        "description": "A reused portion of an already existing recording, used musically, such as with a song sample/instrument sample; or for thematic effect, such as with a movie sample",
         "image": "images/instruments/sample.png",
         "youtube": "https://www.youtube.com/watch?v=bFCcOJ-5NKE",
         "wikipedia": "https://en.wikipedia.org/wiki/Sampling_(music)",
         "tags": {
             "hornbostelsachs": "electrophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "electronic",
             "voices": "n/a",
             "origin": "north america",
@@ -214,7 +150,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Turntablism",
         "tags": {
             "hornbostelsachs": "electrophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "electronic",
             "voices": "monophonic",
             "origin": "north america",
@@ -230,7 +166,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Continuum_Fingerboard",
         "tags": {
             "hornbostelsachs": "electrophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "electronic",
             "voices": "polyphonic",
             "origin": "north america",
@@ -246,7 +182,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Caj%C3%B3n",
         "tags": {
             "hornbostelsachs": "idiophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "percussion",
             "voices": "monophonic",
             "origin": "south america",
@@ -262,7 +198,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Violin",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "string",
             "voices": "polyphonic",
             "origin": "europe",
@@ -278,7 +214,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Violin",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "string",
             "voices": "polyphonic",
             "origin": "europe",
@@ -294,7 +230,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Viola",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "string",
             "voices": "polyphonic",
             "origin": "europe",
@@ -310,7 +246,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Viola",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "string",
             "voices": "polyphonic",
             "origin": "europe",
@@ -326,7 +262,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Cello",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "string",
             "voices": "polyphonic",
             "origin": "europe",
@@ -342,7 +278,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Cello",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "string",
             "voices": "polyphonic",
             "origin": "europe",
@@ -358,7 +294,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Double_bass",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "string",
             "voices": "polyphonic",
             "origin": "europe",
@@ -374,7 +310,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Double_bass",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "string",
             "voices": "polyphonic",
             "origin": "europe",
@@ -390,7 +326,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Double_bass",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "string",
             "voices": "polyphonic",
             "origin": "europe",
@@ -406,7 +342,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Guitar_synthesizer",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "string",
             "voices": "polyphonic",
             "origin": "north america",
@@ -422,7 +358,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Acoustic_bass_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "string",
             "voices": "polyphonic",
             "origin": "north america",
@@ -438,7 +374,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Harp",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "string",
             "voices": "polyphonic",
             "origin": "north america",
@@ -454,7 +390,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Lute",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "string",
             "voices": "polyphonic",
             "origin": "europe",
@@ -470,7 +406,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Oud",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "string",
             "voices": "polyphonic",
             "origin": "asia",
@@ -486,7 +422,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Baroque_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "string",
             "voices": "polyphonic",
             "origin": "europe",
@@ -502,7 +438,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Theorbo",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "string",
             "voices": "polyphonic",
             "origin": "europe",
@@ -518,7 +454,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Semi-acoustic_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "string",
             "voices": "polyphonic",
             "origin": "north america",
@@ -529,12 +465,12 @@
     {
         "name": "Pipe Organ",
         "description": "An instrument that produces sound by pushing air through pipes, selected by a keyboard",
-        "image": "images/instruments/pipeorgan.png",
+        "image": "images/instruments/organ.png",
         "youtube": "https://www.youtube.com/watch?v=JeB3JnKp8To",
         "wikipedia": "https://en.wikipedia.org/wiki/Pipe_organ",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "keyboard",
             "voices": "polyphonic",
             "origin": "europe",
@@ -550,7 +486,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Celesta",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "keyboard",
             "voices": "polyphonic",
             "origin": "europe",
@@ -566,7 +502,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Harpsichord",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "keyboard",
             "voices": "polyphonic",
             "origin": "europe",
@@ -582,7 +518,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Hurdy-gurdy",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "keyboard",
             "voices": "homophonic",
             "origin": "europe",
@@ -598,7 +534,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Harmonica",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "wind",
             "voices": "polyphonic",
             "origin": "europe",
@@ -607,14 +543,14 @@
     },
 
     {
-        "name": "Flute",
-        "description": "A high pitched wind instrument. Also, one of the oldest human instruments.",
+        "name": "Concert Flute",
+        "description": "The most common type of flute, a high pitched wind instrument. Derived from one of the oldest human instruments, but made of metal instead of wood.",
         "image": "images/instruments/flute.png",
         "youtube": "https://www.youtube.com/watch?v=N5dZNFinTkA",
         "wikipedia": "https://en.wikipedia.org/wiki/Flute",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "wind",
             "voices": "monophonic",
             "origin": "n/a",
@@ -630,7 +566,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Flute",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "wind",
             "voices": "monophonic",
             "origin": "n/a",
@@ -646,7 +582,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Piccolo",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "wind",
             "voices": "monophonic",
             "origin": "n/a",
@@ -662,7 +598,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Pan_flute",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "wind",
             "voices": "polyphonic",
             "origin": "n/a",
@@ -678,7 +614,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Ocarina",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "wind",
             "voices": "monophonic",
             "origin": "n/a",
@@ -694,7 +630,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Bagpipes",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "wind",
             "voices": "homophonic",
             "origin": "europe",
@@ -710,7 +646,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Oboe",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "wind",
             "voices": "monophonic",
             "origin": "europe",
@@ -726,7 +662,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Oboe",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "wind",
             "voices": "monophonic",
             "origin": "europe",
@@ -742,7 +678,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Cor_anglais",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "wind",
             "voices": "monophonic",
             "origin": "europe",
@@ -758,7 +694,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Bass_oboe",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "wind",
             "voices": "monophonic",
             "origin": "europe",
@@ -774,7 +710,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Clarinet",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "wind",
             "voices": "monophonic",
             "origin": "europe",
@@ -790,7 +726,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Clarinet",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "wind",
             "voices": "monophonic",
             "origin": "europe",
@@ -806,7 +742,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Basset_horn",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "wind",
             "voices": "monophonic",
             "origin": "europe",
@@ -823,7 +759,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Bassoon",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "wind",
             "voices": "monophonic",
             "origin": "europe",
@@ -839,7 +775,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Bassoon",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "wind",
             "voices": "monophonic",
             "origin": "europe",
@@ -855,7 +791,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Mellotron",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "keyboard",
             "voices": "polyphonic",
             "origin": "europe",
@@ -871,7 +807,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Rhodes_piano",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "keyboard",
             "voices": "polyphonic",
             "origin": "north america",
@@ -887,7 +823,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Electric_organ",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "keyboard",
             "voices": "polyphonic",
             "origin": "north america",
@@ -903,7 +839,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Clavichord",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "keyboard",
             "voices": "polyphonic",
             "origin": "europe",
@@ -919,7 +855,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Pump_organ",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "keyboard",
             "voices": "polyphonic",
             "origin": "europe",
@@ -935,7 +871,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Keyboard_glockenspiel",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "keyboard",
             "voices": "polyphonic",
             "origin": "europe",
@@ -951,7 +887,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Regal_(instrument)",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "keyboard",
             "voices": "polyphonic",
             "origin": "europe",
@@ -967,7 +903,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Accordion",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "keyboard",
             "voices": "polyphonic",
             "origin": "europe",
@@ -983,7 +919,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Woodwind_section",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "wind",
             "voices": "polyphonic",
             "origin": "europe",
@@ -999,7 +935,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Alto_saxophone",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "wind",
             "voices": "monophonic",
             "origin": "europe",
@@ -1015,7 +951,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Tenor_saxophone",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "wind",
             "voices": "monophonic",
             "origin": "europe",
@@ -1031,91 +967,11 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Baritone_saxophone",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "wind",
             "voices": "monophonic",
             "origin": "europe",
             "timeframe": "modern"
-        }
-    },
-
-    {
-        "name": "Male Choir",
-        "description": "A choir of males singing",
-        "image": "images/instruments/malechoir.png",
-        "youtube": "https://www.youtube.com/watch?v=M8FMugHHLWk",
-        "wikipedia": "https://en.wikipedia.org/wiki/Men%27s_chorus",
-        "tags": {
-            "hornbostelsachs": "aerophone",
-            "category":"vocal",
-            "family": "vocal",
-            "voices": "polyphonic",
-            "origin": "n/a",
-            "timeframe": "n/a"
-        }
-    },
-
-    {
-        "name": "Female Choir",
-        "description": "A choir of females singing",
-        "image": "images/instruments/femalechoir.png",
-        "youtube": "https://www.youtube.com/watch?v=Fli0e40JYtk",
-        "wikipedia": "https://en.wikipedia.org/wiki/Choir",
-        "tags": {
-            "hornbostelsachs": "aerophone",
-            "category":"vocal",
-            "family": "vocal",
-            "voices": "polyphomic",
-            "origin": "n/a",
-            "timeframe": "n/a"
-        }
-    },
-
-    {
-        "name": "Childrens Choir",
-        "description": "A choir of children singing",
-        "image": "images/instruments/childrenschoir.png",
-        "youtube": "https://www.youtube.com/watch?v=hslq_r6tExQ",
-        "wikipedia": "https://en.wikipedia.org/wiki/Choir",
-        "tags": {
-            "hornbostelsachs": "aerophone",
-            "category":"vocal",
-            "family": "vocal",
-            "voices": "polyphomic",
-            "origin": "n/a",
-            "timeframe": "n/a"
-        }
-    },
-
-    {
-        "name": "Child Vocals",
-        "description": "A children singing",
-        "image": "images/instruments/childvocals.png",
-        "youtube": "https://www.youtube.com/watch?v=nHCU-wo51sU",
-        "wikipedia": "https://en.wikipedia.org/wiki/Boy_soprano",
-        "tags": {
-            "hornbostelsachs": "aerophone",
-            "category":"vocal",
-            "family": "vocal",
-            "voices": "monophonic",
-            "origin": "n/a",
-            "timeframe": "n/a"
-        }
-    },
-
-    {
-        "name": "Mixed Choir",
-        "description": "A choir of both males and females singing",
-        "image": "images/instruments/mixedchoir.png",
-        "youtube": "https://www.youtube.com/watch?v=D-_H3Rj1ywU",
-        "wikipedia": "https://en.wikipedia.org/wiki/Choir",
-        "tags": {
-            "hornbostelsachs": "aerophone",
-            "category":"vocal",
-            "family": "vocal",
-            "voices": "polyphomic",
-            "origin": "n/a",
-            "timeframe": "n/a"
         }
     },
 
@@ -1127,7 +983,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Mark_tree",
         "tags": {
             "hornbostelsachs": "Idiophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "percussion",
             "voices": "polyphomic",
             "origin": "north america",
@@ -1143,7 +999,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Timpani",
         "tags": {
             "hornbostelsachs": "membraphone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "percussion",
             "voices": "monophonic",
             "origin": "europe",
@@ -1159,7 +1015,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Musical_saw",
         "tags": {
             "hornbostelsachs": "idiophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "percussion",
             "voices": "monophonic",
             "origin": "north american",
@@ -1175,7 +1031,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Snare_drum",
         "tags": {
             "hornbostelsachs": "membranophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "percussion",
             "voices": "monophonic",
             "origin": "europe",
@@ -1191,7 +1047,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Tenor_drum",
         "tags": {
             "hornbostelsachs": "membranophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "percussion",
             "voices": "monophonic",
             "origin": "europe",
@@ -1207,7 +1063,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Bass_drum",
         "tags": {
             "hornbostelsachs": "membranophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "percussion",
             "voices": "monophonic",
             "origin": "europe",
@@ -1223,43 +1079,11 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Cymbal",
         "tags": {
             "hornbostelsachs": "idiophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "percussion",
             "voices": "monophonic",
             "origin": "europe",
             "timeframe": "ancient"
-        }
-    },
-
-    {
-        "name": "Distorted Choir",
-        "description": "A choir of screamed and growled vocals",
-        "image": "images/instruments/distortedchoir.png",
-        "youtube": "https://www.youtube.com/watch?v=Zx55zOYnlEg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Choir",
-        "tags": {
-            "hornbostelsachs": "aerophone",
-            "category":"vocal",
-            "family": "vocal",
-            "voices": "polyphomic",
-            "origin": "n/a",
-            "timeframe": "n/a"
-        }
-    },
-
-    {
-        "name": "Distorted Vocals",
-        "description": "Screamed/growled vocals",
-        "image": "images/instruments/distortedvocals.png",
-        "youtube": "https://www.youtube.com/watch?v=hCFBrQWYe3o",
-        "wikipedia": "https://en.wikipedia.org/wiki/Death_growl",
-        "tags": {
-            "hornbostelsachs": "aerophone",
-            "category":"vocal",
-            "family": "vocal",
-            "voices": "monophonic",
-            "origin": "n/a",
-            "timeframe": "n/a"
         }
     },
 
@@ -1271,7 +1095,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/French_horn",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "brass",
             "voices": "monophomic",
             "origin": "europe",
@@ -1287,7 +1111,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/French_horn",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "brass",
             "voices": "monophomic",
             "origin": "europe",
@@ -1303,7 +1127,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Trumpet",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "brass",
             "voices": "monophomic",
             "origin": "europe",
@@ -1319,7 +1143,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Trumpet",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "brass",
             "voices": "monophomic",
             "origin": "europe",
@@ -1335,7 +1159,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Trumpet",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "brass",
             "voices": "monophomic",
             "origin": "europe",
@@ -1351,7 +1175,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Trombone",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "brass",
             "voices": "monophomic",
             "origin": "europe",
@@ -1367,7 +1191,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Trombone",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "brass",
             "voices": "monophomic",
             "origin": "europe",
@@ -1383,7 +1207,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Euphonium",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "brass",
             "voices": "monophomic",
             "origin": "europe",
@@ -1399,7 +1223,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Tuba",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "brass",
             "voices": "monophomic",
             "origin": "europe",
@@ -1415,7 +1239,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Tuba",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "brass",
             "voices": "monophomic",
             "origin": "europe",
@@ -1431,7 +1255,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Types_of_trombone#Bass_trombone",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "brass",
             "voices": "monophomic",
             "origin": "europe",
@@ -1447,7 +1271,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Brass_section",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "brass",
             "voices": "polyphonic",
             "origin": "europe",
@@ -1463,7 +1287,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Triangle_(musical_instrument)",
         "tags": {
             "hornbostelsachs": "idiophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "percussion",
             "voices": "monophonic",
             "origin": "europe",
@@ -1479,7 +1303,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Gong#Chau_gong_(Tam-tam)",
         "tags": {
             "hornbostelsachs": "idiophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "percussion",
             "voices": "monophonic",
             "origin": "asia",
@@ -1495,7 +1319,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Tambourine",
         "tags": {
             "hornbostelsachs": "idiophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "percussion",
             "voices": "monophonic",
             "origin": "unknown",
@@ -1511,7 +1335,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Woodblock_(instrument)",
         "tags": {
             "hornbostelsachs": "idiophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "percussion",
             "voices": "monophonic",
             "origin": "asia",
@@ -1527,7 +1351,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Glockenspiel",
         "tags": {
             "hornbostelsachs": "idiophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "percussion",
             "voices": "polyphonic",
             "origin": "europe",
@@ -1543,7 +1367,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Xylophone",
         "tags": {
             "hornbostelsachs": "idiophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "percussion",
             "voices": "polyphonic",
             "origin": "unknown",
@@ -1559,7 +1383,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Vibraphone",
         "tags": {
             "hornbostelsachs": "idiophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "percussion",
             "voices": "polyphonic",
             "origin": "north america",
@@ -1575,7 +1399,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Marimba",
         "tags": {
             "hornbostelsachs": "idiophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "percussion",
             "voices": "polyphonic",
             "origin": "south america",
@@ -1591,7 +1415,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Crotales",
         "tags": {
             "hornbostelsachs": "idiophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "percussion",
             "voices": "monophonic",
             "origin": "unknown",
@@ -1607,7 +1431,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Tubular_bells",
         "tags": {
             "hornbostelsachs": "idiophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "percussion",
             "voices": "polyphonic",
             "origin": "europe",
@@ -1623,7 +1447,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Flexatone",
         "tags": {
             "hornbostelsachs": "idiophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "percussion",
             "voices": "monophonic",
             "origin": "north america",
@@ -1639,7 +1463,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Waterphone",
         "tags": {
             "hornbostelsachs": "idiophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "percussion",
             "voices": "polyphonic",
             "origin": "north america",
@@ -1655,7 +1479,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Bell_tree",
         "tags": {
             "hornbostelsachs": "idiophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "percussion",
             "voices": "polyphonic",
             "origin": "north america",
@@ -1671,7 +1495,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Mbira",
         "tags": {
             "hornbostelsachs": "idiophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "percussion",
             "voices": "polyphonic",
             "origin": "africa",
@@ -1687,7 +1511,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Body_percussion",
         "tags": {
             "hornbostelsachs": "membranophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "percussion",
             "voices": "monophonic",
             "origin": "n/a",
@@ -1703,7 +1527,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Egg_shaker",
         "tags": {
             "hornbostelsachs": "idiophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "percussion",
             "voices": "monophonic",
             "origin": "n/a",
@@ -1719,7 +1543,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Maraca",
         "tags": {
             "hornbostelsachs": "idiophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "percussion",
             "voices": "monophonic",
             "origin": "n/a",
@@ -1735,7 +1559,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Banjo",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "string",
             "voices": "polyphonic",
             "origin": "north america",
@@ -1751,7 +1575,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Mandolin",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "string",
             "voices": "polyphonic",
             "origin": "europe",
@@ -1767,7 +1591,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Ukulele",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "string",
             "voices": "polyphonic",
             "origin": "north america",
@@ -1783,7 +1607,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Sitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "string",
             "voices": "polyphonic",
             "origin": "asia",
@@ -1799,7 +1623,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Zither",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "string",
             "voices": "polyphonic",
             "origin": "europe",
@@ -1815,7 +1639,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Bass_clarinet",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "wind",
             "voices": "monophonic",
             "origin": "europe",
@@ -1831,7 +1655,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Contrabass_clarinet",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "wind",
             "voices": "monophonic",
             "origin": "europe",
@@ -1847,7 +1671,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Contrabassoon",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "wind",
             "voices": "monophonic",
             "origin": "europe",
@@ -1863,7 +1687,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Carillon",
         "tags": {
             "hornbostelsachs": "idiophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "percussion",
             "voices": "polyphonic",
             "origin": "europe",
@@ -1879,7 +1703,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Fife_(instrument)",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "wind",
             "voices": "monophonic",
             "origin": "europe",
@@ -1895,7 +1719,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Alphorn",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "wind",
             "voices": "monophonic",
             "origin": "europe",
@@ -1911,7 +1735,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Cornett",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "wind",
             "voices": "monophonic",
             "origin": "europe",
@@ -1927,7 +1751,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Crumhorn",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "wind",
             "voices": "monophonic",
             "origin": "europe",
@@ -1943,7 +1767,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Tin_whistle",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "wind",
             "voices": "monophonic",
             "origin": "n/a",
@@ -1959,7 +1783,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Sheng_(instrument)",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "wind",
             "voices": "polyphonic",
             "origin": "asia",
@@ -1975,7 +1799,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Lyre",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "string",
             "voices": "polyphonic",
             "origin": "europe",
@@ -1991,7 +1815,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Resonator_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "string",
             "voices": "polyphonic",
             "origin": "north america",
@@ -2007,7 +1831,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Pedal_steel_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "string",
             "voices": "polyphonic",
             "origin": "north america",
@@ -2023,7 +1847,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Hammered_dulcimer",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "string",
             "voices": "polyphonic",
             "origin": "europe",
@@ -2039,7 +1863,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Appalachian_dulcimer",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "string",
             "voices": "polyphonic",
             "origin": "north america",
@@ -2055,7 +1879,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Twelve-string_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "string",
             "voices": "polyphonic",
             "origin": "north america",
@@ -2071,7 +1895,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Electric_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "string",
             "voices": "polyphonic",
             "origin": "north america",
@@ -2087,7 +1911,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Electric_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "string",
             "voices": "polyphonic",
             "origin": "north america",
@@ -2103,7 +1927,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Electric_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "string",
             "voices": "polyphonic",
             "origin": "north america",
@@ -2119,7 +1943,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Electric_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "string",
             "voices": "polyphonic",
             "origin": "north america",
@@ -2135,7 +1959,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Seven-string_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "string",
             "voices": "polyphonic",
             "origin": "north america",
@@ -2151,7 +1975,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Eight-string_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "string",
             "voices": "polyphonic",
             "origin": "north america",
@@ -2167,7 +1991,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Nine-string_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "string",
             "voices": "polyphonic",
             "origin": "north america",
@@ -2177,13 +2001,13 @@
 
     {
         "name": "Otamatone",
-        "description": "A very unique instrument that is played with one hand on the touchpad which effects pitch and one hand to control the \"mouth\" of the instrument to control timbre",
+        "description": "A  unique instrument played with one hand on the touchpad, effecting pitch and one hand controls the \"mouth\" of the instrument controlling timbre",
         "image": "images/instruments/otamatone.png",
         "youtube": "https://www.youtube.com/watch?v=yJCyDyUSQTM",
         "wikipedia": "https://en.wikipedia.org/wiki/Otamatone",
         "tags": {
             "hornbostelsachs": "electrophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "electronic",
             "voices": "monophonic",
             "origin": "asia",
@@ -2199,7 +2023,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Omnichord",
         "tags": {
             "hornbostelsachs": "electrophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "electronic",
             "voices": "polyphonic",
             "origin": "asia",
@@ -2215,7 +2039,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Stylophone",
         "tags": {
             "hornbostelsachs": "electrophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "electronic",
             "voices": "monophonic",
             "origin": "north america",
@@ -2231,7 +2055,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Guqin",
         "tags": {
             "hornbostelsachs": "chordophone",
-            "category":"traditional",
+            "category": "traditional",
             "family": "string",
             "voices": "polyphonic",
             "origin": "asia",
@@ -2247,13 +2071,15 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Synthesizer",
         "tags": {
             "hornbostelsachs": "electrophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "electronic",
             "voices": "polyphonic",
             "origin": "north america",
             "timeframe": "modern"
         }
     },
+
+
 
     {
         "name": "Synth Lead",
@@ -2263,7 +2089,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Synthesizer",
         "tags": {
             "hornbostelsachs": "electrophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "electronic",
             "voices": "polyphonic",
             "origin": "north america",
@@ -2279,7 +2105,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Synthesizer",
         "tags": {
             "hornbostelsachs": "electrophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "electronic",
             "voices": "polyphonic",
             "origin": "north america",
@@ -2295,7 +2121,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Synthesizer",
         "tags": {
             "hornbostelsachs": "electrophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "electronic",
             "voices": "polyphonic",
             "origin": "north america",
@@ -2311,7 +2137,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Synthesizer",
         "tags": {
             "hornbostelsachs": "electrophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "electronic",
             "voices": "polyphonic",
             "origin": "north america",
@@ -2327,7 +2153,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Synthesizer",
         "tags": {
             "hornbostelsachs": "electrophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "electronic",
             "voices": "polyphonic",
             "origin": "north america",
@@ -2343,7 +2169,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Synthesizer",
         "tags": {
             "hornbostelsachs": "electrophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "electronic",
             "voices": "polyphonic",
             "origin": "north america",
@@ -2359,29 +2185,11 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Synthesizer",
         "tags": {
             "hornbostelsachs": "electrophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "electronic",
             "voices": "polyphonic",
             "origin": "north america",
             "timeframe": "modern"
-        }
-    },
-
-
-
-    {
-        "name": "Rapping",
-        "description": "Spoken or chanted rhyming lyrics. The components of rap include lyrics, \"flow\" (rhythm, rhyme), and \"delivery\" (cadence, tone).",
-        "image": "images/instruments/rapping.png",
-        "youtube": "https://www.youtube.com/watch?v=izgsppAKtjE",
-        "wikipedia": "https://en.wikipedia.org/wiki/Rapping",
-        "tags": {
-            "hornbostelsachs": "aerophone",
-            "category":"vocal",
-            "family": "vocal",
-            "voices": "monophonic",
-            "origin": "n/a",
-            "timeframe": "n/a"
         }
     },
 
@@ -2393,7 +2201,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Mellophone",
         "tags": {
             "hornbostelsachs": "aerophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "brass",
             "voices": "monophomic",
             "origin": "europe",
@@ -2409,7 +2217,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Percussion_section",
         "tags": {
             "hornbostelsachs": "membranophone",
-            "category":"orchestral",
+            "category": "orchestral",
             "family": "percussion",
             "voices": "polyphonic",
             "origin": "europe",
@@ -2425,7 +2233,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Synthesizer",
         "tags": {
             "hornbostelsachs": "electrophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "electronic",
             "voices": "polyphonic",
             "origin": "north america",
@@ -2441,7 +2249,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Synthesizer",
         "tags": {
             "hornbostelsachs": "electrophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "electronic",
             "voices": "polyphonic",
             "origin": "north america",
@@ -2457,7 +2265,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Synthesizer",
         "tags": {
             "hornbostelsachs": "electrophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "electronic",
             "voices": "polyphonic",
             "origin": "north america",
@@ -2473,7 +2281,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Synthesizer",
         "tags": {
             "hornbostelsachs": "electrophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "electronic",
             "voices": "polyphonic",
             "origin": "north america",
@@ -2489,11 +2297,709 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Orchestra_hit",
         "tags": {
             "hornbostelsachs": "electrophone",
-            "category":"contemporary",
+            "category": "contemporary",
             "family": "electronic",
             "voices": "polyphonic",
             "origin": "north america",
             "timeframe": "modern"
+        }
+    },
+
+    {
+        "name": "Bouzouki",
+        "description": "Also spelled Buzuki, is a long necked lute type instrument popular in Greece and Ireland",
+        "image": "images/instruments/buzuki.png",
+        "youtube": "https://www.youtube.com/watch?v=-FJNiQaYbWE",
+        "wikipedia": "https://en.wikipedia.org/wiki/Bouzouki",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "traditional",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "europe",
+            "timeframe": "modern"
+        }
+    },
+
+    {
+        "name": "Nyckelharpa",
+        "description": "A traditional keyboard fiddle instrument from Sweden. Something of a cross between a violin and a hurdy gurdy.",
+        "image": "images/instruments/nyckelharpa.png",
+        "youtube": "https://www.youtube.com/watch?v=7sfBcWvVUbs",
+        "wikipedia": "https://en.wikipedia.org/wiki/Nyckelharpa",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "traditional",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "europe",
+            "timeframe": "medieval"
+        }
+    },
+
+    {
+        "name": "Lap Steel Guitar",
+        "description": "Also known as the Hawaiian guitar, a type of steel guitar without pedals that is typically played across the performer's lap.",
+        "image": "images/instruments/lapsteel.png",
+        "youtube": "https://www.youtube.com/watch?v=TjKdf9NJl4c",
+        "wikipedia": "https://en.wikipedia.org/wiki/Lap_steel_guitar",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "traditional",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "hawaii",
+            "timeframe": "modern"
+        }
+    },
+
+    {
+        "name": "Balalaika",
+        "description": "A traditional Russian string instrument with a distinctive triangular shape.",
+        "image": "images/instruments/balalaika.png",
+        "youtube": "https://www.youtube.com/watch?v=hH5znHQ9QRY",
+        "wikipedia": "https://www.youtube.com/watch?v=hH5znHQ9QRY",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "traditional",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "europe",
+            "timeframe": "renaissance"
+        }
+    },
+
+    {
+        "name": "Calliope",
+        "description": "Also known as a steam organ, is a gas powered keyboard organ that pushes gas through whistles.",
+        "image": "images/instruments/organ.png",
+        "youtube": "https://www.youtube.com/watch?v=Olnm66Uxy8U",
+        "wikipedia": "https://en.wikipedia.org/wiki/Calliope_(music)",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "traditional",
+            "family": "keyboard",
+            "voices": "polyphonic",
+            "origin": "europe",
+            "timeframe": "antiquity"
+        }
+    },
+
+    {
+        "name": "Kazoo",
+        "description": "A wind instrument with a \"buzzy \" timbre",
+        "image": "images/instruments/kazoo.png",
+        "youtube": "https://www.youtube.com/watch?v=oau9gtG5Om8",
+        "wikipedia": "https://en.wikipedia.org/wiki/Kazoo",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "traditional",
+            "family": "wind",
+            "voices": "monophonic",
+            "origin": "north america",
+            "timeframe": "modern"
+        }
+    },
+
+    {
+        "name": "Prepared Piano",
+        "description": "A piano that has had its sound altered by inserting screws, mutes, erasers, pencils and other objects on or between the strings.",
+        "image": "images/instruments/keyboard.png",
+        "youtube": "https://www.youtube.com/watch?v=kc3-C7Lnzh0",
+        "wikipedia": "https://en.wikipedia.org/wiki/Prepared_piano",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "contemporary",
+            "family": "keyboard",
+            "voices": "polyphonic",
+            "origin": "north america",
+            "timeframe": "modern"
+        }
+    },
+
+    {
+        "name": "Tack Piano",
+        "description": "A piano that has had its sound altered by installing tacks or nails onto the felt hammers. Often associated with rag time.",
+        "image": "images/instruments/keyboard.png",
+        "youtube": "https://www.youtube.com/watch?v=EEfsLzwTCxM",
+        "wikipedia": "https://en.wikipedia.org/wiki/Tack_piano",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "contemporary",
+            "family": "keyboard",
+            "voices": "polyphonic",
+            "origin": "north america",
+            "timeframe": "modern"
+        }
+    },
+
+    {
+        "name": "Honky Tonk Piano",
+        "description": "A piano that has had its sound altered by slightly detuning one or more strings of each key.",
+        "image": "images/instruments/keyboard.png",
+        "youtube": "https://www.youtube.com/watch?v=EEfsLzwTCxM",
+        "wikipedia": "https://en.wikipedia.org/wiki/Tack_piano",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "contemporary",
+            "family": "keyboard",
+            "voices": "polyphonic",
+            "origin": "north america",
+            "timeframe": "modern"
+        }
+    },
+
+    {
+        "name": "Wood Flute",
+        "description": "A high pitched wind instrument. Also, one of the oldest human instruments. Has a warmer sound than standard metal flutes. ",
+        "image": "images/instruments/flute.png",
+        "youtube": "https://www.youtube.com/watch?v=j0BsYId_kkY",
+        "wikipedia": "https://en.wikipedia.org/wiki/Flute",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "traditional",
+            "family": "wind",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "ancient"
+        }
+    },
+
+    {
+        "name": "Ghost Fiddle",
+        "description": "Also known as the Glass Harp or Angelic Organ, is a crystallophone instrument made up of upright wine glasses.",
+        "image": "images/instruments/ghostfiddle.png",
+        "youtube": "https://www.youtube.com/watch?v=QdoTdG_VNV4",
+        "wikipedia": "https://en.wikipedia.org/wiki/Glass_harp",
+        "tags": {
+            "hornbostelsachs": "idiophone",
+            "category": "traditional",
+            "family": "percussion",
+            "voices": "polyphonic",
+            "origin": "europe",
+            "timeframe": "renaissance"
+        }
+    },
+
+    {
+        "name": "Didgeridoo",
+        "description": "A wind instrument played using called circular breathing, developed by the Aboriginal peoples.",
+        "image": "images/instruments/didgeridoo.png",
+        "youtube": "https://www.youtube.com/watch?v=yG9ZX1FS20A",
+        "wikipedia": "https://en.wikipedia.org/wiki/Didgeridoo",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "traditional",
+            "family": "wind",
+            "voices": "monophonic",
+            "origin": "oceania",
+            "timeframe": "ancient"
+        }
+    },
+
+    {
+        "name": "Recorder",
+        "description": "A high pitched fipple flute, first documented in the middle ages, and popular in American primary school.",
+        "image": "images/instruments/recorder.png",
+        "youtube": "https://www.youtube.com/watch?v=XxE9aegz5hw",
+        "wikipedia": "https://en.wikipedia.org/wiki/Recorder_(musical_instrument)",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "traditional",
+            "family": "wind",
+            "voices": "monophonic",
+            "origin": "europe",
+            "timeframe": "medieval"
+        }
+    },
+
+    {
+        "name": "Shawm",
+        "description": "A medieval wind instrument, the precursor to the modern day Oboe.",
+        "image": "images/instruments/shawm.png",
+        "youtube": "https://www.youtube.com/watch?v=7KZwzFMefU8",
+        "wikipedia": "https://en.wikipedia.org/wiki/Shawm",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "traditional",
+            "family": "wind",
+            "voices": "monophonic",
+            "origin": "europe",
+            "timeframe": "medieval"
+        }
+    },
+
+    {
+        "name": "Bass Flute",
+        "description": "A concert flute pitched an octave below, usually played in flute choirs",
+        "image": "images/instruments/bassflute.png",
+        "youtube": "https://www.youtube.com/watch?v=VrliIv4I6ds",
+        "wikipedia": "https://en.wikipedia.org/wiki/Bass_flute",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "orchestral",
+            "family": "wind",
+            "voices": "monophonic",
+            "origin": "europe",
+            "timeframe": "modern"
+        }
+    },
+
+    {
+        "name": "Alto Flute",
+        "description": "A concert flute sounding a perfect fourth below the concert flute.",
+        "image": "images/instruments/altoflute.png",
+        "youtube": "https://www.youtube.com/watch?v=OGHMOWWOhJw",
+        "wikipedia": "https://en.wikipedia.org/wiki/Alto_flute",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "orchestral",
+            "family": "wind",
+            "voices": "monophonic",
+            "origin": "europe",
+            "timeframe": "modern"
+        }
+    },
+
+    {
+        "name": "Jews Harp",
+        "description": "Also known as the Jaw Harp, a very old instrument played using the mouth as a resonator",
+        "image": "images/instruments/jewsharp.png",
+        "youtube": "https://www.youtube.com/watch?v=_EZrhYg8O_U",
+        "wikipedia": "https://en.wikipedia.org/wiki/Jew's_harp",
+        "tags": {
+            "hornbostelsachs": "idiophone",
+            "category": "traditional",
+            "family": "percussion",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "ancient"
+        }
+    },
+
+    {
+        "name": "Bell",
+        "description": "A hollow metal cup that is striked to create percussion high and low",
+        "image": "images/instruments/bell.png",
+        "youtube": "https://www.youtube.com/watch?v=qgRz39JgqCc",
+        "wikipedia": "https://en.wikipedia.org/wiki/Bell#Usage_as_musical_instruments",
+        "tags": {
+            "hornbostelsachs": "idiophone",
+            "category": "traditional",
+            "family": "percussion",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "ancient"
+        }
+    },
+
+    {
+        "name": "Russian Guitar",
+        "description": "A nylon stringed acoustic guitar with 7 strings",
+        "image": "images/instruments/acousticguitar.png",
+        "youtube": "https://www.youtube.com/watch?v=QBJCdKPAfJE",
+        "wikipedia": "https://en.wikipedia.org/wiki/Russian_guitar",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "traditional",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "europe",
+            "timeframe": "renaissance"
+        }
+    },
+
+    {
+        "name": "Goblet Drum",
+        "description": "A family of high pitched percussion instruments, including the Djembe and Darbuka",
+        "image": "images/instruments/gobletdrum.png",
+        "youtube": "https://www.youtube.com/watch?v=FMs3LTtgwY8",
+        "wikipedia": "https://en.wikipedia.org/wiki/Goblet_drum",
+        "tags": {
+            "hornbostelsachs": "membranophone",
+            "category": "traditional",
+            "family": "percussion",
+            "voices": "monophonic",
+            "origin": "middle east",
+            "timeframe": "ancient"
+        }
+    },
+
+    {
+        "name": "Spoons",
+        "description": "A makeshift percussion instrument created by hitting two spoons together",
+        "image": "images/instruments/spoons.png",
+        "youtube": "https://www.youtube.com/watch?v=OOXB7348RPk",
+        "wikipedia": "https://en.wikipedia.org/wiki/Spoon_(musical_instrument)",
+        "tags": {
+            "hornbostelsachs": "idiophone",
+            "category": "traditional",
+            "family": "percussion",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "ancient"
+        }
+    },
+
+    {
+        "name": "Jug",
+        "description": "A makeshift percussion instrument created by buzzing the lips into a typically ceramic jug",
+        "image": "images/instruments/jug.png",
+        "youtube": "https://www.youtube.com/watch?v=ip5gXXHxMaE",
+        "wikipedia": "https://en.wikipedia.org/wiki/Jug_(instrument)",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "traditional",
+            "family": "wind",
+            "voices": "monophonic",
+            "origin": "north america",
+            "timeframe": "modern"
+        }
+    },
+
+    {
+        "name": "Washboard",
+        "description": "A makeshift percussion instrument created by striking a clothes washboard",
+        "image": "images/instruments/washboard.png",
+        "youtube": "https://www.youtube.com/watch?v=TAexBL5eToE",
+        "wikipedia": "https://en.wikipedia.org/wiki/Washboard_(musical_instrument)",
+        "tags": {
+            "hornbostelsachs": "idiophone",
+            "category": "traditional",
+            "family": "percussion",
+            "voices": "monophonic",
+            "origin": "north america",
+            "timeframe": "modern"
+        }
+    },
+
+    {
+        "name": "Washtub Bass",
+        "description": "A makeshift percussion instrument that uses a metal washtub as a resonator",
+        "image": "images/instruments/washtubbass.png",
+        "youtube": "https://www.youtube.com/watch?v=FPk12iuv-gQ",
+        "wikipedia": "https://en.wikipedia.org/wiki/Washtub_bass",
+        "tags": {
+            "hornbostelsachs": "chorodophone",
+            "category": "traditional",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "north america",
+            "timeframe": "modern"
+        }
+    },
+
+    {
+        "name": "Synth Arp",
+        "description": "A synthesizer which automatically arpeggiates any chord it's fed",
+        "image": "images/instruments/synth.png",
+        "youtube": "https://www.youtube.com/watch?v=XLZp0JSkY7g",
+        "wikipedia": "https://en.wikipedia.org/wiki/Synthesizer",
+        "tags": {
+            "hornbostelsachs": "electrophone",
+            "category": "contemporary",
+            "family": "electronic",
+            "voices": "polyphonic",
+            "origin": "north america",
+            "timeframe": "modern"
+        }
+    },
+
+    {
+        "name": "Saxophone Section",
+        "description": "An section containing various saxophones of different range",
+        "image": "images/instruments/saxophonesection.png",
+        "youtube": "https://www.youtube.com/watch?v=AZw2n90thHk",
+        "wikipedia": "https://en.wikipedia.org/wiki/Saxophone",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "contemporary",
+            "family": "wind",
+            "voices": "polyphonic",
+            "origin": "europe",
+            "timeframe": "modern"
+        }
+    },
+    {
+        "name": "Claves",
+        "description": "A pair of short wooden sticks that are struck together",
+        "image": "images/instruments/clave.png",
+        "youtube": "https://www.youtube.com/watch?v=BODYFCnWLC0",
+        "wikipedia": "https://en.wikipedia.org/wiki/Claves",
+        "tags": {
+            "hornbostelsachs": "idiophone",
+            "category": "traditional",
+            "family": "percussion",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "ancient"
+        }
+    },
+
+    {
+        "name": "Rozhok",
+        "description": "A Russian wooden trumpet, related to the Cornett and Shawm.",
+        "image": "images/instruments/shawm.png",
+        "youtube": "https://www.youtube.com/watch?v=9CVJnaqRyw8",
+        "wikipedia": "https://en.wikipedia.org/wiki/Rozhok",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "traditional",
+            "family": "wind",
+            "voices": "monophonic",
+            "origin": "europe",
+            "timeframe": "medieval"
+        }
+    },
+
+    {
+        "name": "Steelpan",
+        "description": "Also known as a Steel Drum, a chromatically pitched percussion instrument made from 55 gallon drums",
+        "image": "images/instruments/steelpan.png",
+        "youtube": "https://www.youtube.com/watch?v=Ne4eutIKH7Q",
+        "wikipedia": "https://en.wikipedia.org/wiki/Steelpan",
+        "tags": {
+            "hornbostelsachs": "idiophone",
+            "category": "traditional",
+            "family": "percussion",
+            "voices": "polyphonic",
+            "origin": "caribbean",
+            "timeframe": "colonial"
+        }
+    },
+
+    {
+        "name": "Güiro",
+        "description": "A percussion instrument comprised of a hollow goard with notches along the side which are scraped",
+        "image": "images/instruments/guiro.png",
+        "youtube": "https://www.youtube.com/watch?v=j8OAxEbCGKg",
+        "wikipedia": "https://en.wikipedia.org/wiki/G%C3%BCiro",
+        "tags": {
+            "hornbostelsachs": "idiophone",
+            "category": "traditional",
+            "family": "percussion",
+            "voices": "polyphonic",
+            "origin": "latin america",
+            "timeframe": "ancient"
+        }
+    },
+
+    {
+        "name": "Vocals",
+        "description": "Producing musical sounds with the human voice.",
+        "image": "images/instruments/mixedchoir.png",
+        "youtube": "https://www.youtube.com/watch?v=kdjYlrvVFNo",
+        "wikipedia": "https://en.wikipedia.org/wiki/Singing",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+
+    {
+        "name": "Female Singing",
+        "description": "A Female singing cleanly in the highest tradiitonal male vocal register",
+        "image": "images/instruments/femalevocals.png",
+        "youtube": "https://www.youtube.com/watch?v=kdjYlrvVFNo",
+        "wikipedia": "https://en.wikipedia.org/wiki/Singing",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+
+    {
+        "name": "Male Singing",
+        "description": "A Male or Female singing cleanly",
+        "image": "images/instruments/malevocals.png",
+        "youtube": "https://www.youtube.com/watch?v=Y2rDb4Ur2dw",
+        "wikipedia": "https://en.wikipedia.org/wiki/Singing",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+
+    {
+        "name": "Throat Singing",
+        "description": "Also known as Overtone Singing, a style used in many traditional cultures",
+        "image": "images/instruments/throatsinging.png",
+        "youtube": "https://www.youtube.com/watch?v=7zZainT9v6Q",
+        "wikipedia": "https://en.wikipedia.org/wiki/Overtone_singing",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "Mongolia",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Distorted Choir",
+        "description": "A choir of screamed, growled and pig squeal vocals",
+        "image": "images/instruments/distortedchoir.png",
+        "youtube": "https://www.youtube.com/watch?v=Zx55zOYnlEg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Choir",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "polyphomic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+
+    {
+        "name": "Distorted Vocals",
+        "description": "Screamed/growled/pig squeal vocals",
+        "image": "images/instruments/distortedvocals.png",
+        "youtube": "https://www.youtube.com/watch?v=hCFBrQWYe3o",
+        "wikipedia": "https://en.wikipedia.org/wiki/Screaming_(music)",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Male Choir",
+        "description": "A choir of males singing",
+        "image": "images/instruments/malechoir.png",
+        "youtube": "https://www.youtube.com/watch?v=M8FMugHHLWk",
+        "wikipedia": "https://en.wikipedia.org/wiki/Men%27s_chorus",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "polyphonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+
+    {
+        "name": "Female Choir",
+        "description": "A choir of females singing",
+        "image": "images/instruments/femalechoir.png",
+        "youtube": "https://www.youtube.com/watch?v=Fli0e40JYtk",
+        "wikipedia": "https://en.wikipedia.org/wiki/Choir",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "polyphomic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+
+    {
+        "name": "Childrens Choir",
+        "description": "A choir of children singing",
+        "image": "images/instruments/childrenschoir.png",
+        "youtube": "https://www.youtube.com/watch?v=hslq_r6tExQ",
+        "wikipedia": "https://en.wikipedia.org/wiki/Choir",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "polyphomic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+
+    {
+        "name": "Child Vocals",
+        "description": "A children singing",
+        "image": "images/instruments/childvocals.png",
+        "youtube": "https://www.youtube.com/watch?v=nHCU-wo51sU",
+        "wikipedia": "https://en.wikipedia.org/wiki/Boy_soprano",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+
+    {
+        "name": "Mixed Choir",
+        "description": "A choir of both males and females singing",
+        "image": "images/instruments/mixedchoir.png",
+        "youtube": "https://www.youtube.com/watch?v=D-_H3Rj1ywU",
+        "wikipedia": "https://en.wikipedia.org/wiki/Choir",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "polyphomic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Rapping",
+        "description": "Spoken or chanted rhyming lyrics. The components of rap include lyrics, \"flow\" (rhythm, rhyme), and \"delivery\" (cadence, tone).",
+        "image": "images/instruments/rapping.png",
+        "youtube": "https://www.youtube.com/watch?v=izgsppAKtjE",
+        "wikipedia": "https://en.wikipedia.org/wiki/Rapping",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Toasting",
+        "description": "Stemming from African tradition, a vocal style popular in the Caribbean, usually in a monotone melody, over a rhythm or beat.",
+        "image": "images/instruments/toasting.png",
+        "youtube": "https://www.youtube.com/watch?v=m71w9ulZZRw",
+        "wikipedia": "https://en.wikipedia.org/wiki/Toasting_(Jamaican_music)",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Shouted Vocals",
+        "description": "Simply musical yelling. Common in many heavier rock fusion and sub genres. Kind of a middle ground between singing and distorted vocals. Generally considered the least technically demanding.",
+        "image": "images/instruments/shouting.png",
+        "youtube": "https://www.youtube.com/watch?v=qRpTf27WtTMw",
+        "wikipedia": "https://en.wikipedia.org/wiki/Screaming_(music)#Hardcore_and_punk_rock",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
         }
     }
 ]

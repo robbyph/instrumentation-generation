@@ -7,6 +7,7 @@ const TemplateInstrumentList = ({instruments, cardSize}) => {
     
     
     function shuffle(array) {
+
         var currentIndex = array.length,  randomIndex;
       
         // While there remain elements to shuffle...
@@ -28,10 +29,9 @@ const TemplateInstrumentList = ({instruments, cardSize}) => {
 
       
       //On render
-      instruments = shuffle(instruments)
-      
-
-
+      if(instruments != null){
+        instruments = shuffle(instruments)
+      }
 
     return (
             <Row key={1} className={styles.container} style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center'}}>

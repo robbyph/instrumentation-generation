@@ -12,6 +12,7 @@ const instructions = () => {
             <div className={styles.container}>
                 <p>Instrumentation Generation is a tool for composers—the first tool in a planned compositional toolkit. Instrumentation Generation allows you to generate random groups of instruments, with varying parameters and templates to mix things up. Instrumentation Generation will generate you a list, and then you, the composer, are challenged to create some new piece of music, just using the given random instruments.</p>
                 <p>Not a composer? That's okay too! The tool is still fun to play with, and when that get's old, you can make your way to the Instrument Library and learn about new instruments through their descriptions, youtube links and wikipedia references.</p>
+                <p>The generator contains over 200 instruments and over 25 templates to start with!</p>
                 <p>If you would like to support the project, please check out the "support" section, and consider donating or purchasing the instrument icons for commercial and personal use! And if you come across an error of any kind, please let me know via the 'Feedback' page!</p>
             </div>
             <h1 className={styles.headingOne}>Where am i supposed to get all these instruments?</h1>

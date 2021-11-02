@@ -1,13 +1,14 @@
 import {Card, Button, ButtonGroup, ButtonToolbar} from 'react-bootstrap'
+import styles from '../../styles/InstrumentCard.module.scss'
 
 
 const LibraryInstrumentCard = ({id, name, description, imagePath, wikiLink, tubeLink}) => {
     
 
     return (
-            <Card style={{minWidth: '16rem', flexGrow: 1, margin:'1rem', minHeight: '25rem', maxHeight:'25rem'}}>
-                <Card.Img variant="top" src={imagePath} style={{padding:'1rem', maxHeight: '10rem', height:'100%', objectFit: 'contain'}} />
-                <Card.Body style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
+            <Card style={{minWidth: '16rem', flexGrow: 1, margin:'1rem', minHeight: '27rem', maxHeight:'27rem'}}>
+                <Card.Img variant="top" src={imagePath} style={{paddingTop:'.5rem', paddingLeft:'.5rem', paddingRight:'.5rem', minHeight: '10rem', maxHeight: '10rem', height:'100%', objectFit: 'contain'}} />
+                <Card.Body style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', marginBottom: '.5rem'}}>
                     <div>
                     <Card.Title>{name}</Card.Title>
                     <Card.Text>
