@@ -34,10 +34,10 @@ const changelog = () => {
                         <h4 className={styles.headingFour}>Version 0.7</h4>
                         <p className={styles.itemDate}>November 11th 2021</p>
                         <ul className={styles.changes}>
-                            <li className={styles.listItem}>Added sorting to library and modals</li>
-                            <li className={styles.listItem}>Added filtering to library and modals</li>
-                            <li className={styles.listItem}>Added tag based instrument generation</li>
-                            <li className={styles.listItem}>Updated CSS</li>
+                            <li className={styles.listItem}>Over 40 new instruments</li>
+                            <li className={styles.listItem}>Finished baseline templates</li>
+                            <li className={styles.listItem}>Messed with some styling</li>
+                            <li className={styles.listItem}>Hella bug fixes</li>
                         </ul>
                     </div>
                 </div>

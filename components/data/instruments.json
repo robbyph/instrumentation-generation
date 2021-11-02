@@ -2785,6 +2785,22 @@
     },
 
     {
+        "name": "Castanets",
+        "description": "A percussion instrument also known as 'Clackers' in which two concave shells are clicked together. An ancient cousin of the spoons.",
+        "image": "images/instruments/castanets.png",
+        "youtube": "https://www.youtube.com/watch?v=6GgNWIu5ep4",
+        "wikipedia": "https://en.wikipedia.org/wiki/Castanets",
+        "tags": {
+            "hornbostelsachs": "idiophone",
+            "category": "traditional",
+            "family": "percussion",
+            "voices": "polyphonic",
+            "origin": "n/a",
+            "timeframe": "ancient"
+        }
+    },
+
+    {
         "name": "Vocals",
         "description": "Producing musical sounds with the human voice.",
         "image": "images/instruments/mixedchoir.png",
@@ -2993,6 +3009,36 @@
         "image": "images/instruments/shouting.png",
         "youtube": "https://www.youtube.com/watch?v=qRpTf27WtTMw",
         "wikipedia": "https://en.wikipedia.org/wiki/Screaming_(music)#Hardcore_and_punk_rock",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Yodeling",
+        "description": "A long time European tradition, a form of singing which involves repeated and rapid changes of pitch between the low-pitch chest register and the high-pitch falsetto",
+        "image": "images/instruments/yodeling.png",
+        "youtube": "https://www.youtube.com/watch?v=vQhqikWnQCU",
+        "wikipedia": "https://en.wikipedia.org/wiki/Yodeling",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Yodeling Choir",
+        "description": "A choir of Yodeling singers",
+        "image": "images/instruments/yodelingchoir.png",
+        "youtube": "https://www.youtube.com/watch?v=XFTu0YvXGoE",
+        "wikipedia": "https://en.wikipedia.org/wiki/Yodeling",
         "tags": {
             "hornbostelsachs": "aerophone",
             "category": "vocal",

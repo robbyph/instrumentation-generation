@@ -6,17 +6,17 @@
     {
         "name": "Jeff Mangum Mode",
         "description": "Best known for founding one of the greatest Indie Folk bands of all time, Neutral Milk Hotel, his fuzzy twist on Indie Folk is characterized by it's lo-fi quality and unusual instrumentation",
-        "instruments": ["Steel String Acoustic Guitar", "Electric Organ", "Drum Kit", "Electric Bass Guitar", "Musical Saw", "Accordion", "Clean Sung Vocals", "Mellophone"]
+        "instruments": ["Steel String Acoustic Guitar", "Electric Organ", "Drum Kit", "Electric Bass Guitar", "Musical Saw", "Accordion", "Vocals", "Mellophone"]
     },
     {
         "name": "Bluegrass",
         "description": "American folk music that developed in appalachia, traditionally only played on acoustic string instruments",
-        "instruments": ["Steel String Acoustic Guitar", "Clean Sung Vocals", "Banjo", "Mandolin", "Double Bass", "Violin"]
+        "instruments": ["Steel String Acoustic Guitar", "Vocals", "Banjo", "Mandolin", "Double Bass", "Violin"]
     },
     {
         "name": "Power Metal",
         "description": "A variety of heavy metal characterized by it's uplifting, faster and lighter sound, when compared to extreme metal",
-        "instruments": ["Clean Sung Vocals", "Synth Lead", "Drum Kit", "Electric Bass Guitar", "Distorted Electric Guitar", "Distorted Electric Guitar", "Piano"]
+        "instruments": ["Vocals", "Synth Lead", "Drum Kit", "Electric Bass Guitar", "Distorted Electric Guitar", "Distorted Electric Guitar", "Piano"]
     },
     {
         "name": "Bardcore",
@@ -26,7 +26,7 @@
     {
         "name": "Symphony Orchestra",
         "description": "A large instrumental ensemble typical of classical and film music",
-        "instruments": ["String Section", "Brass Section", "Wind Section", "Percussion Section", "Piano", "Harp", "Mixed Choir", "Bouzouki"]
+        "instruments": ["String Section", "Brass Section", "Wind Section", "Percussion Section", "Piano", "Harp", "Mixed Choir"]
     },
     {
         "name": "Vomit Inducing Corporate Music",
@@ -41,7 +41,7 @@
     {
         "name": "Contemporary Pop",
         "description": "Music made to dominate the charts with it's catchy hooks and verse chorus style. Instrumentation can vary widely, so here's one I heard on the radio recently",
-        "instruments": ["Drum Machine", "String Section", "Piano", "Electric Bass Guitar", "Synth Bass", "Synth Lead", "Clean Sung Vocals"]
+        "instruments": ["Drum Machine", "String Section", "Piano", "Electric Bass Guitar", "Synth Bass", "Synth Lead", "Female Singing"]
     },
     {
         "name": "Nu Metal",
@@ -56,12 +56,12 @@
     {
         "name": "Celtic Music",
         "description": "Folk music from Ireland and Scotland",
-        "instruments": ["Steel String Acoustic Guitar", "Tin Whistle", "Clean Sung Vocals", "Banjo", "Mandolin", "Harp", "Bagpipes", "Bouzouki"]
+        "instruments": ["Steel String Acoustic Guitar", "Tin Whistle", "Vocals", "Banjo", "Mandolin", "Harp", "Bagpipes", "Bouzouki"]
     },
     {
         "name": "Outlaw Country",
         "description": "A variety of country music centered around outlaw lifestyle and characterized by it's opposition to what artists percieved as the disingenuous \"Nashville Sound\"",
-        "instruments": ["Clean Sung Vocals", "Clean Electric Guitar", "Steel String Acoustic Guitar", "Electric Bass Guitar", "Pedal Steel Guitar", "Violin", "Resonator Guitar", "Drum Kit"]
+        "instruments": ["Vocals", "Clean Electric Guitar", "Steel String Acoustic Guitar", "Electric Bass Guitar", "Pedal Steel Guitar", "Violin", "Resonator Guitar", "Drum Kit"]
     },
     {
         "name": "Under The Sea",
@@ -69,14 +69,19 @@
         "instruments": ["Wind Section", "Double Bass", "Timpani", "Synth Pad"]
     },
     {
+        "name": "Fantasy Soundtrack",
+        "description": "A large instrumental ensemble typical of fantasy film music",
+        "instruments": ["String Section", "Brass Section", "Wind Section", "Percussion Section", "Harpsichord", "Harp", "Mixed Choir", "Lute"]
+    },
+    {
         "name": "Stoner Metal",
         "description": "A variety of doom metal characterized by it's slow to mid tempo, fuzzy guitar tone, clean(er) vocals and bass-heavy production",
-        "instruments": ["Clean Sung Vocals", "Sample", "Drum Kit", "Electric Bass Guitar", "Fuzz Electric Guitar", "Fuzz Electric Guitar"]
+        "instruments": ["Vocals", "Sample", "Drum Kit", "Electric Bass Guitar", "Fuzz Electric Guitar", "Fuzz Electric Guitar"]
     },
     {
         "name": "Arena Rock",
         "description": "Rock music composed to be radio friendly and commercially oriented, with inoffensive timbres and anthematic choruses",
-        "instruments": ["Overdriven Electric Guitar", "Synth Keys", "Clean Sung Vocals", "Drum Kit", "Electric Bass Guitar", "Piano"]
+        "instruments": ["Overdriven Electric Guitar", "Synth Keys", "Male Singing", "Drum Kit", "Electric Bass Guitar", "Piano"]
     },
     {
         "name": "Emo Rap",
@@ -86,7 +91,7 @@
     {
         "name": "Folk Metal",
         "description": "A fusion genre that consists of heavy metal with additional folk instrumentation",
-        "instruments": ["Clean Sung Vocals", "Violin", "Drum Kit", "Electric Bass Guitar", "Distorted Electric Guitar", "Distorted Electric Guitar", "Flute"]
+        "instruments": ["Vocals", "Violin", "Drum Kit", "Electric Bass Guitar", "Distorted Electric Guitar", "Distorted Electric Guitar", "Flute"]
     },
     {
         "name": "d e a t h   g r i p s",
@@ -111,12 +116,17 @@
     {
         "name": "Witcher",
         "description": "I hate portals...",
-        "instruments": ["Hurdy Gurdy", "Mandolin", "Goblet Drum", "Violin", "Hammered Dulcimer", "Lute", "Zither"]
+        "instruments": ["Hurdy Gurdy", "Mandolin", "Goblet Drum", "Violin", "Hammered Dulcimer", "Lute", "Zither", "Female Choir"]
+    },
+    {
+        "name": "Swiss Folk Music",
+        "description": "Folk music from Switzerland",
+        "instruments": ["Alphorn", "Shawm", "Fife", "Hammered Dulcimer", "Yodeling", "Hurdy Gurdy", "Accordion", "Castanets"]
     },
     {
         "name": "Jug Band",
         "description": "A style of traditional American folk music that mixes convential and homemade instruments",
-        "instruments": ["Jug", "Washtub Bass", "Spoons", "Washboard", "Jews Harp", "Clean Sung Vocals", "Banjo", "Steel String Acoustic Guitar"]
+        "instruments": ["Jug", "Washtub Bass", "Spoons", "Washboard", "Jews Harp", "Vocals", "Banjo", "Steel String Acoustic Guitar"]
     },
     {
         "name": "EDM",
@@ -136,12 +146,12 @@
     {
         "name": "Synth Pop",
         "description": "A broad range of percussion focused electronic music",
-        "instruments": ["Drum Kit", "Clean Sung Vocals", "Synth Keys", "Synth Lead", "Electric Bass Guitar", "Overdriven Electric Guitar"]
+        "instruments": ["Drum Kit", "Vocals", "Synth Keys", "Synth Lead", "Electric Bass Guitar", "Overdriven Electric Guitar"]
     },
     {
         "name": "Bossa Nova",
         "description": "A style of samba developed in the late 1950s in Rio de Janeiro that is characterized by syncopation and unconventional chords",
-        "instruments": ["Classical Guitar", "Double Bass", "Piano", "Electric Organ", "Drum Kit", "Clean Sung Vocals", "Claves"]
+        "instruments": ["Classical Guitar", "Double Bass", "Piano", "Electric Organ", "Drum Kit", "Vocals", "Claves"]
     },
     {
         "name": "Ambient Music",
@@ -152,5 +162,10 @@
         "name": "Slavic Folk Music",
         "description": "The traditional music of the ethnic slavic peoples",
         "instruments": ["Russian Guitar", "Balalaika", "Zither", "Hurdy Gurdy", "Mandolin", "Accordion", "Tambourine", "Rozhok"]
+    },
+    {
+        "name": "Sci Fi Soundtrack",
+        "description": "A large instrumental ensemble typical of science fiction film music",
+        "instruments": ["String Section", "Brass Section", "Wind Section", "Percussion Section", "Synth Pad", "Orchestral Hit", "Synth Lead", "Synth Arp"]
     }
 ]

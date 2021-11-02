@@ -1,9 +1,3 @@
-                        <button onclick="showTemplatePreview(10)" class="templateBtn">Fantasy Movie Track</button><br>
-                        <button onclick="showTemplatePreview(14)" class="templateBtn">Sci Fi Soundtrack</button><br>
-                        <button onclick="showTemplatePreview(20)" class="templateBtn">Synthwave</button><br>
-             
-
-
 Carnathic Music:
 Clean Vocals
 Veena
@@ -22,14 +16,3 @@ Dilruba
 Wood Flute
 
 Mongolian Folk Music:
-
-
-Swiss Folk Music:
-Alphorn
-Shawm
-Fife
-Hammered Dulcimer
-Yodeling
-Hurdy Gurdy
-Accordion
-Castanets

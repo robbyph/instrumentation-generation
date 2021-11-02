@@ -7,6 +7,10 @@ import { CollectionPageJsonLd } from 'next-seo'
 const TemplateModal = ({onClose, templates, onConfirm, allInstruments}) => {
     const [selectedTemplate, setSelectedTemplate] = useState(templates[0])    
     
+    const onRandomTemplate = () =>{
+        setSelectedTemplate(templates[Math.floor(Math.random()*templates.length)]);
+}
+
     const findTemplateByName = (incomingTemplate) => {
         var newTemplate;
 
@@ -33,12 +37,15 @@ const TemplateModal = ({onClose, templates, onConfirm, allInstruments}) => {
         <Container fluid>
         <Modal className={styles.templateModal} size='xl' show={true} onHide={onClose} keyboard={false}>
             <Modal.Header closeButton>
-                <Modal.Title>Templates</Modal.Title>
+                <Row style={{width: '98%'}}>
+                    <Col xl={2}><Modal.Title>Templates</Modal.Title></Col>
+                    <Col style={{paddingTop: '.5rem'}} xl={{span: 1, offset: 9}} onClick={onRandomTemplate}><Button>Random</Button></Col>
+                </Row>
             </Modal.Header>
             <Modal.Body style={{paddingTop: 0, paddingBottom: 0}}>
                 <Row>
                     <Col lg={2} md={3} className={styles.column}>
-                        <Navbar expand='md' style={{width:'100%', padding: 0}}>
+                        <Navbar expand='xl' style={{width:'100%', padding: 0}}>
                         <Nav className='flex-column' vertical='true' style={{width: '100%'}}>
                             {templates.map((template, i) => {
                                 if(template.name === selectedTemplate.name){
