@@ -2799,7 +2799,66 @@
             "timeframe": "ancient"
         }
     },
-
+    {
+        "name": "Rattle",
+        "description": "A type of percussion instrument which produces a sound when shaken, a shaker on a stick if you wil",
+        "image": "images/instruments/maracas.png",
+        "youtube": "https://www.youtube.com/watch?v=cjkSrk3ac74",
+        "wikipedia": "https://en.wikipedia.org/wiki/Rattle_(percussion_instrument)",
+        "tags": {
+            "hornbostelsachs": "idiophone",
+            "category": "traditional",
+            "family": "percussion",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "ancient"
+        }
+    },
+    {
+        "name": "Morin Khuur",
+        "description": "Also known as the horsehead fiddle, is a traditional Mongolian bowed stringed instrument with a similar timbre to a violin",
+        "image": "images/instruments/morinkhuur.png",
+        "youtube": "https://www.youtube.com/watch?v=1L21VfI13sc",
+        "wikipedia": "https://en.wikipedia.org/wiki/Morin_khuur",
+        "tags": {
+            "hornbostelsachs": "chorodophone",
+            "category": "traditional",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "asia",
+            "timeframe": "ancient"
+        }
+    },
+    {
+        "name": "Hardanger fiddle",
+        "description": "A violin from Norway with the addition of four sympathetic strings",
+        "image": "images/instruments/violin.png",
+        "youtube": "https://www.youtube.com/watch?v=pZX0e65xMtw",
+        "wikipedia": "https://en.wikipedia.org/wiki/Hardanger_fiddle",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "traditional",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "europe",
+            "timeframe": "renaissance"
+        }
+    },
+    {
+        "name": "Frame Drum",
+        "description": "A drum that has a drumhead width greater than its depth. One of the most ancient musical instruments. Common frame drums include the Bodhran and Pandeiro.",
+        "image": "images/instruments/framedrum.png",
+        "youtube": "https://www.youtube.com/watch?v=rGW-CnHMawE",
+        "wikipedia": "https://en.wikipedia.org/wiki/Frame_drum",
+        "tags": {
+            "hornbostelsachs": "idiophone",
+            "category": "traditional",
+            "family": "percussion",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "ancient"
+        }
+    },
     {
         "name": "Vocals",
         "description": "Producing musical sounds with the human voice.",

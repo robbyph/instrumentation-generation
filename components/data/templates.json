@@ -56,7 +56,7 @@
     {
         "name": "Celtic Music",
         "description": "Folk music from Ireland and Scotland",
-        "instruments": ["Steel String Acoustic Guitar", "Tin Whistle", "Vocals", "Banjo", "Mandolin", "Harp", "Bagpipes", "Bouzouki"]
+        "instruments": ["Steel String Acoustic Guitar", "Tin Whistle", "Vocals", "Banjo", "Frame Drum", "Harp", "Bagpipes", "Bouzouki"]
     },
     {
         "name": "Outlaw Country",
@@ -137,6 +137,11 @@
         "name": "Rip and Tear",
         "description": "He wore the crown of the Night Sentinels, and those that tasted the bite of his sword named him... the Doom Slayer",
         "instruments": ["9 String Electric Guitar", "Drum Kit", "Drum Machine", "Synth Bass", "Synth Lead", "Synth Pad", "Synth Stab", "Sample"]
+    },
+    {
+        "name": "Mongolian Folk Music",
+        "description": "Folk music from Mongolia",
+        "instruments": ["Throat Singing", "Jews Harp", "Wood Flute", "Zither", "Tam-Tam", "Rattle", "Frame Drum", "Morin Khuur"]
     },
     {
         "name": "Big Band",

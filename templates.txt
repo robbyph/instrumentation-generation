@@ -5,6 +5,7 @@ Mridangam
 Wood Flute
 Tampuram
 Ghatam
+Frame Drum
 
 Hindustani Music:
 Clean Vocals
@@ -14,5 +15,3 @@ Dhol
 Harmonium
 Dilruba
 Wood Flute
-
-Mongolian Folk Music:
