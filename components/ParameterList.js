@@ -1,4 +1,4 @@
-import { Button, Row, Col, Container, Form } from "react-bootstrap"
+import { Button, Row, Col, Container, Form, ButtonGroup } from "react-bootstrap"
 import styles from "../styles/ParameterList.module.scss"
 import {useState, useRef} from 'react'
 
@@ -94,16 +94,14 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
                         <Form className={styles.formOverride}>
                             <Form.Label>Other Parameters</Form.Label>
                             <Form.Check onChange={onDupesCheck} className={styles.formCheckOverride} label="No Duplicates?" id="noDupes"/>
-                            <Row>
-                                <Col xl={4}><Button style={{height: '100%'}} type="button" variant="warning" onClick={onClear}>Clear List</Button></Col>
-                                <Col xl={4}><Button style={{height: '100%'}} type="button" variant="secondary" onClick={onExport}>Export list</Button></Col>
-                                <Col xl={4}>
-                                    <Button style={{height: '100%'}} type="button" variant="secondary" onClick={() => {hiddenFileInput.current.click()}}>
+                                <ButtonGroup>
+                                    <Button type="button" variant="warning" onClick={onClear}>Clear List</Button>
+                                    <Button type="button" variant="secondary" onClick={onExport}>Export list</Button>
+                                    <Button type="button" variant="secondary" onClick={() => {hiddenFileInput.current.click()}}>
                                         <input type="file" ref={hiddenFileInput} accept='.instrgen' onChange={getFileInput} hidden/>
                                         Import list
                                     </Button>
-                                </Col>
-                            </Row>
+                                </ButtonGroup>
                         </Form>
                     </Col>
                 </Row>
