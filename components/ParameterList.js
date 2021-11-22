@@ -86,8 +86,9 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
                                         <option value='electronic' disabled={categoryState != 'traditional' && categoryState != 'orchestral' ? false : true}>Electronic</option>
                                         <option value='keyboard' disabled={categoryState != 'orchestral' ? false : true}>Keyboard</option>
                                     </Form.Control>
-                            </Col></Row>
-                            <Row><Col><Button onClick={() => {onTagGen(tagGenNum, categoryState, familyState)}}>Generate {tagGenNum} {categoryState} {categoryState != 'vocal' ? familyState : ''} instrument{tagGenNum != 1 ? 's' : ''}</Button></Col></Row>
+                                </Col>
+                            </Row>
+                            <Row><Col style={{paddingRight: '.5rem'}}><Button style={{marginLeft: '.5rem'}} onClick={() => {onTagGen(tagGenNum, categoryState, familyState)}}>Generate {tagGenNum} {categoryState} {categoryState != 'vocal' ? familyState : ''} instrument{tagGenNum != 1 ? 's' : ''}</Button></Col></Row>
                         </Form>
                     </Col>
                     <Col align="center" style={{marginBottom: '1rem', minWidth: '18rem'}}>

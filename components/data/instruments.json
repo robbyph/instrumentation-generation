@@ -2846,7 +2846,7 @@
     },
     {
         "name": "Frame Drum",
-        "description": "A drum that has a drumhead width greater than its depth. One of the most ancient musical instruments. Common frame drums include the Bodhran and Pandeiro.",
+        "description": "A drum that has a drumhead width greater than its depth. An ancient musical instrument. Common frame drums include the Bodhran and Pandeiro.",
         "image": "images/instruments/framedrum.png",
         "youtube": "https://www.youtube.com/watch?v=rGW-CnHMawE",
         "wikipedia": "https://en.wikipedia.org/wiki/Frame_drum",
