@@ -62,7 +62,7 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
                             <Button onClick={() => {onInstrumentModal()}}>Select Instrument</Button>
                         </Form>
                     </Col>
-                    <Col align="center" style={{marginBottom: '1rem', minWidth: '30rem'}}>
+                    <Col xl={6} align="center" style={{marginBottom: '1rem', minWidth: '18rem'}}>
                         <Form className={styles.formOverride}>
                             <Row><Col><Form.Label>Generate a random instrument by category and family</Form.Label></Col></Row>
                             <Row>
