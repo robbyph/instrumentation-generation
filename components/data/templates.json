@@ -149,6 +149,11 @@
         "instruments": ["Trumpet Section", "Trombone Section", "Saxophone Section", "Clean Electric Guitar", "Piano", "Electric Bass Guitar", "Drum Kit", "Xylophone"]
     },
     {
+        "name": "Myrkur",
+        "description": "Traditional scandenvian instrumentation",
+        "instruments": ["Nyckelharpa", "Lyre", "Mandola", "Talharpa", "Classical Guitar", "Piano", "Violin", "Tambourine"]
+    },
+    {
         "name": "Synth Pop",
         "description": "A broad range of percussion focused electronic music",
         "instruments": ["Drum Kit", "Vocals", "Synth Keys", "Synth Lead", "Electric Bass Guitar", "Overdriven Electric Guitar"]

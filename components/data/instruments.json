@@ -1584,6 +1584,22 @@
     },
 
     {
+        "name": "Mandola",
+        "description": "What the viola is to the violin, the mandola is to the mandolin, tuned a 5th lower",
+        "image": "images/instruments/mandolin.png",
+        "youtube": "https://www.youtube.com/watch?v=HVN3Exhp8GY",
+        "wikipedia": "https://en.wikipedia.org/wiki/Mandola",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "traditional",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "europe",
+            "timeframe": "modern"
+        }
+    },
+
+    {
         "name": "Ukelele",
         "description": "A high pitched plucked string instrument with four nylon strings",
         "image": "images/instruments/ukelele.png",
