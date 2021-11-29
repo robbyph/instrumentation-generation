@@ -11,16 +11,6 @@
     margin: 1rem;
 }
 
-@media (max-width: 1400px) {
-    .properCol {
-        flex: 0 0 25%;
-        max-width: 25%;
-        position: relative;
-        width: 25%;
-        padding: 0;
-        margin: .6rem;
-    }
-}
 
 @media (max-width: 1200px) {
     .properCol {
