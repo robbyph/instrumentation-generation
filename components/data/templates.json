@@ -84,6 +84,11 @@
         "instruments": ["Overdriven Electric Guitar", "Synth Keys", "Male Singing", "Drum Kit", "Electric Bass Guitar", "Piano"]
     },
     {
+        "name": "La Planète Sauvage",
+        "description": "A Draag week is an Om lifetime...",
+        "instruments": ["Mellotron", "Harpsichord", "Wah Wah Guitar", "Drum Kit", "Electric Bass Guitar", "Marimba", "Theremin", "Recorder"]
+    },  
+    {
         "name": "Emo Rap",
         "description": "A fusion genre that cobines hip hop beats and rapping with instrumentals and lyrics common in emo music",
         "instruments": ["Overdriven Electric Guitar", "Sample", "Rapping", "Drum Machine", "Synth Bass", "Synth Plucks"]

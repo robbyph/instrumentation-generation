@@ -3122,5 +3122,20 @@
             "origin": "n/a",
             "timeframe": "n/a"
         }
+    },
+    {
+        "name": "Wah Wah Guitar",
+        "description": "An electric guitar using a wah wah effect",
+        "image": "images/instruments/fuzzguitar.png",
+        "youtube": "https://www.youtube.com/watch?v=qTbuDObjZoA",
+        "wikipedia": "https://en.wikipedia.org/wiki/Wah-wah_pedal",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "contemporary",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "north america",
+            "timeframe": "modern"
+        }
     }
 ]
