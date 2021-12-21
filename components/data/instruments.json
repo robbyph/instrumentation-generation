@@ -3137,5 +3137,20 @@
             "origin": "north america",
             "timeframe": "modern"
         }
+    },
+    {
+        "name": "Qanun",
+        "description": "A Middle Eastern string instrument. Contains 25 to 27 courses, with three strings per course. Capable of microtonality.",
+        "image": "images/instruments/hammereddulc.png",
+        "youtube": "https://www.youtube.com/watch?v=G5gpnO9RNzQ",
+        "wikipedia": "https://en.wikipedia.org/wiki/Qanun_(instrument)",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "traditional",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "middle east",
+            "timeframe": "antiquity"
+        }
     }
 ]
