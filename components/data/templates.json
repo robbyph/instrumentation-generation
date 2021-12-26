@@ -87,7 +87,7 @@
         "name": "La Planète Sauvage",
         "description": "A Draag week is an Om lifetime...",
         "instruments": ["Mellotron", "Harpsichord", "Wah Wah Guitar", "Drum Kit", "Electric Bass Guitar", "Marimba", "Theremin", "Recorder"]
-    },  
+    },
     {
         "name": "Emo Rap",
         "description": "A fusion genre that cobines hip hop beats and rapping with instrumentals and lyrics common in emo music",
@@ -102,6 +102,11 @@
         "name": "d e a t h   g r i p s",
         "description": "Experimental hip hop group with influences from industrial, punk, electronic and noise",
         "instruments": ["Overdriven Electric Guitar", "Sample", "Rapping", "Drum Kit", "Synth Pad", "Synth Stab", "Turn Table"]
+    },
+    {
+        "name": "Carnathic Music",
+        "description": "Indian Classical Music originating in the southern half of India",
+        "instruments": ["Vocals", "Veena", "Barrel Drum", "Wood Flute", "Tambura", "Ghatam", "Frame Drum"]
     },
     {
         "name": "Brass Quintet",

@@ -2862,7 +2862,7 @@
     },
     {
         "name": "Frame Drum",
-        "description": "A drum that has a drumhead width greater than its depth. An ancient musical instrument. Common frame drums include the Bodhran and Pandeiro.",
+        "description": "A drum with a drumhead wider than its depth. An ancient musical instrument. Common frame drums include the Bodhran, Kanjira and Pandeiro.",
         "image": "images/instruments/framedrum.png",
         "youtube": "https://www.youtube.com/watch?v=rGW-CnHMawE",
         "wikipedia": "https://en.wikipedia.org/wiki/Frame_drum",
@@ -3151,6 +3151,66 @@
             "voices": "polyphonic",
             "origin": "middle east",
             "timeframe": "antiquity"
+        }
+    },
+    {
+        "name": "Barrel Drum",
+        "description": "A type of drum characterized by its barrel shape with a bulge in the middle. These include the Mridangam, Dhol & Nagadō-daiko (taiko) among others.",
+        "image": "images/instruments/barreldrum.png",
+        "youtube": "https://www.youtube.com/watch?v=AI9RJbljBLw",
+        "wikipedia": "https://en.wikipedia.org/wiki/Barrel_drum",
+        "tags": {
+            "hornbostelsachs": "membranophone",
+            "category": "traditional",
+            "family": "percussion",
+            "voices": "polyphonic",
+            "origin": "n/a",
+            "timeframe": "antiquity"
+        }
+    },
+    {
+        "name": "Tambura",
+        "description": "Also Tanpura, a string instrument that provides a continuous drone to form a harmonic base for other instruments.",
+        "image": "images/instruments/tambura.png",
+        "youtube": "https://www.youtube.com/watch?v=rVeFX4O4zT0",
+        "wikipedia": "https://en.wikipedia.org/wiki/Tanpura",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "traditional",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "india",
+            "timeframe": "renaissance"
+        }
+    },
+    {
+        "name": "Ghatam",
+        "description": "Also Gharha and Madga, An ancient percussion instrument, being the same shape as an ordinary clay pot. Common in Carnatic Music.",
+        "image": "images/instruments/ghatam.png",
+        "youtube": "hhttps://www.youtube.com/watch?v=_fhtK4YtJ0c",
+        "wikipedia": "https://en.wikipedia.org/wiki/Ghatam",
+        "tags": {
+            "hornbostelsachs": "idiophone",
+            "category": "traditional",
+            "family": "percussion",
+            "voices": "monophonic",
+            "origin": "india",
+            "timeframe": "ancient"
+        }
+    },
+    {
+        "name": "Veena",
+        "description": "A lute like instrument common in Carnatic Music, named after the goddess Saraswati. ",
+        "image": "images/instruments/veena.png",
+        "youtube": "https://www.youtube.com/watch?v=jM9b2Qo5qwM",
+        "wikipedia": "https://en.wikipedia.org/wiki/Saraswati_veena",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "traditional",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "india",
+            "timeframe": "renaissance"
         }
     }
 ]
