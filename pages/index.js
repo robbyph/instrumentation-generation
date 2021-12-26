@@ -342,7 +342,18 @@ export default function Home({data}) {
         setShowTemplateModal(false);
     }
     const addTemplate = (template) => {
+        
+        if(myInstruments.length > 0){
+            pushAlert(closeAlert, "Template Warning", "Generating a template will erase all instruments. Would you like to continue?", "warning", () => {templatePop(template)}, undefined, false)
+        }else{
+            templatePop(template)
+        }
+    }
+
+    const templatePop = (template) => {
         var newInstruments = []
+
+        console.log(template)
 
         template.map(templateI =>{
             allInstruments.map(masterI => {
