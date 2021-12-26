@@ -18,6 +18,20 @@ const library = () => {
         setCategoryFilterOptions([{label: 'Contemporary', checked: true}, {label: 'Orchestral', checked: true}, {label: 'Traditional', checked: true}, {label: 'Vocal', checked: true}])
     }
 
+    const returnCheckedCategories = () =>{
+        var list = [];
+
+        categoryFilterOptions.map((checkbox)=>{
+            if(checkbox.checked){
+                list.push(checkbox.label)
+            }
+        })
+
+        return list;
+    }
+
+    console.log(returnCheckedCategories())
+
     return (
         <div>
                 <NextSeo 
@@ -49,11 +63,11 @@ const library = () => {
                                             <Row style={{marginTop: '1rem'}}>
                                             <Col>
                                                 <h5 style={{textAlign: 'center', color: 'white'}}>Category Filtering: </h5>
-                                                <DropdownChecklist checkOptions={categoryFilterOptions} returnChecksState={setCategoryFilterOptions}></DropdownChecklist>
+                                                <DropdownChecklist disabled={false} checkOptions={categoryFilterOptions} returnChecksState={setCategoryFilterOptions}></DropdownChecklist>
                                             </Col>
                                             <Col> 
                                                 <h5 style={{textAlign: 'center', color: 'white'}}>Family Filtering: </h5>
-                                                <DropdownChecklist checkOptions={familyFilterOptions} returnChecksState={setFamilyFilterOptions}></DropdownChecklist>
+                                                <DropdownChecklist disabled={(returnCheckedCategories() == 'Vocal' || returnCheckedCategories() == "") ? "disabled" : ""} checkOptions={familyFilterOptions} returnChecksState={setFamilyFilterOptions}></DropdownChecklist>
                                             </Col>
                                             </Row>
                                             <Row >

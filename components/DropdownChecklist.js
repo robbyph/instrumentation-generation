@@ -3,7 +3,7 @@ import styles from '../styles/DropdownChecklist.module.scss'
 import {useState, useEffect } from 'react'
 
 
-const DropdownChecklist = ({checkOptions, returnChecksState}) => {
+const DropdownChecklist = ({disabled, checkOptions, returnChecksState}) => {
     const [checks, setChecks] = useState([...checkOptions]); 
 
     function setCheck(id){
@@ -16,9 +16,9 @@ const DropdownChecklist = ({checkOptions, returnChecksState}) => {
     }
     
     return (
-        <Form className={styles.checkMenu}>
+        <Form  className={styles.checkMenu}>
+            <fieldset disabled={disabled}>
             {checks.map((checkItem, i) => (
-                console.log(checkItem.checked),
                  <Form.Check
                     key={i}
                     id={i}
@@ -28,6 +28,7 @@ const DropdownChecklist = ({checkOptions, returnChecksState}) => {
                     onClick={() => {setCheck(i)}}
                 ></Form.Check>
             )) }
+            </fieldset>
         </Form>
 
         
