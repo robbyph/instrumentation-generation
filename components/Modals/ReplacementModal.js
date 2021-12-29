@@ -53,8 +53,6 @@ const ReplacementModal = ({onClose, instruments, onConfirm, ogInstId}) => {
           setMyInstruments(shuffle(newInstruments))
           setSelectedInstrument(newInstruments[0])
       }
-      console.log(sortingOption)
-      console.log(myInstruments)
       
     }, [sortingOption]);
 

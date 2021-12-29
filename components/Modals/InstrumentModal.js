@@ -52,8 +52,6 @@ const InstrumentModal = ({onClose, instruments, onConfirm}) => {
           setMyInstruments(shuffle(newInstruments))
           setSelectedInstrument(newInstruments[0])
       }
-      console.log(sortingOption)
-      console.log(myInstruments)
       
     }, [sortingOption]);
 

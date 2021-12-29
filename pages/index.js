@@ -353,8 +353,6 @@ export default function Home({data}) {
     const templatePop = (template) => {
         var newInstruments = []
 
-        console.log(template)
-
         template.map(templateI =>{
             allInstruments.map(masterI => {
                 if (templateI.name === masterI.name) {
@@ -366,8 +364,6 @@ export default function Home({data}) {
         newInstruments.map(instrument =>{
             instrument.locked = false;
         })
-
-        console.log(newInstruments)
         
         setMyInstruments(newInstruments)
     }
@@ -395,7 +391,6 @@ export default function Home({data}) {
                 console.log(error)
             }
 
-            console.log(input)
 
             if (isValid === true) {
             for (let i = 0; i < input.length; i++) { //For each imported instrument
