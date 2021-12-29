@@ -169,6 +169,11 @@
         "instruments": ["Drum Kit", "Vocals", "Synth Keys", "Synth Lead", "Electric Bass Guitar", "Overdriven Electric Guitar"]
     },
     {
+        "name": "Hindustani Music",
+        "description": "Indian Classical Music originating in the northern half of India",
+        "instruments": ["Vocals", "Sitar", "Tabla", "Barrel Drum", "Harmonium", "Wood Flute", "Dilruba", "Sarod"]
+    },
+    {
         "name": "Bossa Nova",
         "description": "A style of samba developed in the late 1950s in Rio de Janeiro that is characterized by syncopation and unconventional chords",
         "instruments": ["Classical Guitar", "Double Bass", "Piano", "Electric Organ", "Drum Kit", "Vocals", "Claves"]

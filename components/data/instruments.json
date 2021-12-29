@@ -3212,5 +3212,50 @@
             "origin": "india",
             "timeframe": "renaissance"
         }
+    },
+    {
+        "name": "Tabla",
+        "description": "A pair of hand drums that are the principal percussion instrument in Hindustani music.",
+        "image": "images/instruments/tabla.png",
+        "youtube": "https://www.youtube.com/watch?v=r31oe7Sm0vI",
+        "wikipedia": "https://en.wikipedia.org/wiki/Tabla",
+        "tags": {
+            "hornbostelsachs": "membranophone",
+            "category": "traditional",
+            "family": "percussion",
+            "voices": "polyphonic",
+            "origin": "india",
+            "timeframe": "ancient"
+        }
+    },
+    {
+        "name": "Dilruba",
+        "description": "An Indian bowed instrument, with a sitar-like neck. Common in Hindustani Music.",
+        "image": "images/instruments/dilruba.png",
+        "youtube": "https://www.youtube.com/watch?v=hv0rjjIy0Xw",
+        "wikipedia": "https://en.wikipedia.org/wiki/Dilruba",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "traditional",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "india",
+            "timeframe": "renaissance"
+        }
+    },
+    {
+        "name": "Sarod",
+        "description": "An Indian string instrument, with a rich overtone texture. Common in Hindustani Music.",
+        "image": "images/instruments/sarod.png",
+        "youtube": "https://www.youtube.com/watch?v=aCz4tvuA8iU",
+        "wikipedia": "https://en.wikipedia.org/wiki/Sarod",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "traditional",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "india",
+            "timeframe": "ancient"
+        }
     }
 ]
