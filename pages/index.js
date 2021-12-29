@@ -382,16 +382,16 @@ export default function Home({data}) {
 
     function importJSON(input){
 
-        if (input.length > 0) {
-            var isValid = true;
-            try {
-                input=JSON.parse(Buffer.from(input, 'base64').toString('utf-8'))
-            } catch (error) {
-                isValid=false;
-                console.log(error)
-            }
+        var isValid = true;
+        try {
+            input=JSON.parse(Buffer.from(input, 'base64').toString('utf-8'))
+        } catch (error) {
+            isValid=false;
+            console.log(error)
+        }
 
-
+        if (input.length > 0 && (input != myInstruments)) {
+           
             if (isValid === true) {
             for (let i = 0; i < input.length; i++) { //For each imported instrument
                 const importedInstrument = input[i];
