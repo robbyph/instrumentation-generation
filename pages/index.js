@@ -23,7 +23,6 @@ export default function Home({data}) {
     const [myInstruments, setMyInstruments] = useState([])
     const [alerts, setAlerts] = useState([])
     const [keyInc, setKeyInc] = useState(0)
-    const [instrumentIDIncr, setInstrumentIDIncr] = useState(0)
     const [dupesChecked, setDupesChecked] = useState(false)
     const [showInstrumentModal, setShowInstrumentModal] = useState(false)
     const [showReplacementModal, setShowReplacementModal] = useState(false)
@@ -37,28 +36,38 @@ export default function Home({data}) {
 
     //getNewInstrument is a wrapper method for newInstrument that provides checking for duplicates and other parameters
     function getNewInstrument(newInstruments) {
-        var newInst = newInstrument();
+        var newInst;
+
         if(dupesChecked){ //If no duplicates is checked, don't let it give a duplicate instrument
-            var notDupe;
+            
+            
+            var notDupe;  //notDupe keeps track of if it's a duplicate or not
+
             do {
-                notDupe = true;
-                
+                newInst = newInstrument(); //pick a new instrument to try
+                notDupe = true; //defaults to not being a duplicate
+
+                //for each instrument in our list of instruments to be added, we compare the names against each other to try and find a duplicate
                 newInstruments.map(instrument => {
                     if (newInst.name == instrument.name) {
                         notDupe = false;
+                        console.log("Duplicate Found in New Instruments. " + newInst.name + " and " + instrument.name)
                     }
                 });
+
+                //for each instrument in our list of existing instruments, we compare the names against each other to try and find a duplicate
                 myInstruments.map(instrument => {
                     if (newInst.name == instrument.name) {
                         notDupe = false;
+                        console.log("Duplicate Found in Existing Instruments. " + newInst.name + " and " + instrument.name)
                     }
                 });
     
-            } while (notDupe === false);
+            } while (notDupe == false);
     
             return newInst;
         }else{
-            return newInstrument()
+            return newInstrument();
         }
     }
 
@@ -68,9 +77,7 @@ export default function Home({data}) {
 
         newInst = allInstruments[Math.floor(Math.random() * allInstruments.length)]; //pulls random object from allInstruments
         newInst = JSON.parse(JSON.stringify(newInst)); //deep clones the object
-        newInst.locked = false; //defaults it to locked
-        newInst.id = instrumentIDIncr; //gives it an id and increments the id pool
-        setInstrumentIDIncr(instrumentIDIncr + 1)
+        newInst.locked = false; //defaults it to unlocked
     
         return newInst;
     }
@@ -441,6 +448,8 @@ export default function Home({data}) {
             console.log(err)
         }
     }, [myInstruments])
+
+    console.log(dupesChecked)
 
 
     return (
