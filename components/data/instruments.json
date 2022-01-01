@@ -1457,7 +1457,7 @@
 
     {
         "name": "Waterphone",
-        "description": "A very unique percussion instrument that uses a resonator with a small amount of water in it and uses small metal rods around the rim of the bowl to create sound ",
+        "description": "A unique percussion instrument that uses a resonator with a small amount of water in it and uses small metal rods around the rim of the bowl to create sound.",
         "image": "images/instruments/waterphone.png",
         "youtube": "https://www.youtube.com/watch?v=foSJstDFDfg",
         "wikipedia": "https://en.wikipedia.org/wiki/Waterphone",
@@ -1825,7 +1825,7 @@
 
     {
         "name": "Resonator Guitar",
-        "description": "AKA a Dobro, an acoustic guitar that produces sound by conducting vibrations into metal cones instead of the guitars soundboard, typically played slide but not exclusively",
+        "description": "AKA a Dobro, an acoustic guitar that produces sound by conducting vibrations into metal cones instead of the soundboard, typically played slide but not only.",
         "image": "images/instruments/resonatorguitar.png",
         "youtube": "https://www.youtube.com/watch?v=mdx42zDniTo",
         "wikipedia": "https://en.wikipedia.org/wiki/Resonator_guitar",
