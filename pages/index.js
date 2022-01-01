@@ -51,7 +51,6 @@ export default function Home({data}) {
                 newInstruments.map(instrument => {
                     if (newInst.name == instrument.name) {
                         notDupe = false;
-                        console.log("Duplicate Found in New Instruments. " + newInst.name + " and " + instrument.name)
                     }
                 });
 
@@ -59,7 +58,6 @@ export default function Home({data}) {
                 myInstruments.map(instrument => {
                     if (newInst.name == instrument.name) {
                         notDupe = false;
-                        console.log("Duplicate Found in Existing Instruments. " + newInst.name + " and " + instrument.name)
                     }
                 });
     
@@ -88,8 +86,8 @@ export default function Home({data}) {
             pushAlert(closeAlert, "Invalid Input Warning", "Please input a number and ensure it's higher than 0", "warning", undefined, undefined, true)
         }else if(insCount > 1000){
             pushAlert(closeAlert, "Invalid Input Warning", "1000 Instruments per input is the limit", "warning", undefined, undefined, true)
-        }else if(dupesChecked && insCount > allInstruments.length){
-            pushAlert(closeAlert, "Invalid Input Warning", "When 'No Duplicates' is checked, you cannot insert more instruments than are available.", "warning", undefined, undefined, true)
+        }else if(dupesChecked && insCount > getUniqueInstrumentsRemaining()){
+            pushAlert(closeAlert, "Invalid Input Warning", "When 'No Duplicates' is checked, you cannot insert more instruments than are available. " + '[' + getUniqueInstrumentsRemaining() + ' Unique Instruments Available]', "warning", undefined, undefined, true)
         }
         else{
             var tempInstruments = ([...myInstruments]);
@@ -105,6 +103,14 @@ export default function Home({data}) {
             setMyInstruments(tempInstruments)
         }
 
+    }
+
+    const getUniqueInstrumentsRemaining = () => {
+        var tempInstruments = myInstruments.filter((v,i,a)=>a.findIndex(t=>(t.name===v.name))===i) //creates a new array that gets rid of all duplicates in my instruments 
+        var numOfUniqueInstRemaining = allInstruments.length - tempInstruments.length;
+        
+
+        return numOfUniqueInstRemaining;
     }
 
     //#endregion
