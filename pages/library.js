@@ -4,6 +4,8 @@ import { NextSeo } from 'next-seo'
 import { useEffect, useState } from 'react'
 import {Form, Container, Col, Row, Collapse, Button} from 'react-bootstrap'
 import DropdownChecklist from '../components/DropdownChecklist'
+import instrumentData from '../components/data/instruments.json'
+
 
 
 const library = () => {
@@ -50,6 +52,7 @@ const library = () => {
                     <Row>
                         <Col>
                             <h5 className={styles.headingFive}>Browse all instruments included in Instrumentation Generation</h5>
+                            <h5 className={styles.headingFive}>There are currently <strong>{instrumentData.length}</strong> instrument in the library</h5>
                         </Col>
                     </Row>
 
