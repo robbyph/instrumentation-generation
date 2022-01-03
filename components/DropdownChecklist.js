@@ -16,7 +16,7 @@ const DropdownChecklist = ({disabled, checkOptions, returnChecksState}) => {
     }
     
     return (
-        <Form  className={styles.checkMenu}>
+        <Form className={styles.checkMenu}>
             <fieldset disabled={disabled}>
             {checks.map((checkItem, i) => (
                  <Form.Check

@@ -14,6 +14,8 @@ import { NextSeo, SoftwareAppJsonLd } from 'next-seo'
 import { useCookies } from "react-cookie"
 import { parseCookies } from "../helpers/index"
 import download from 'downloadjs'
+import LZString from 'lz-string'
+
 
 export default function Home({data}) {
     
@@ -437,9 +439,21 @@ export default function Home({data}) {
     //on load, if a cookie is present, use those instruments to pre populate the instrument list
     useEffect(()=>{
         try{
-            var newInstruments = JSON.parse(data.userInstrumentList);
-            setMyInstruments(newInstruments)
+            var savedInstrumentData = data.userInstrumentList.split(',');
+            var newInstruments = [];
 
+            savedInstrumentData.map((instrument)=>{
+                allInstruments.map((inst2)=>{
+                    if (instrument == inst2.name) {
+                        var newInstr = inst2;
+                        inst2.locked = false;
+                        
+                        newInstruments.push(newInstr)
+                    }
+                })
+            })
+
+            setMyInstruments(newInstruments)
         }catch (err){
             console.log(err)
         }
@@ -448,14 +462,19 @@ export default function Home({data}) {
 
     //anytime myInstruments is changed, we set the cookie properly
     useEffect(()=>{
+        var instrList = []
+
+        myInstruments.map((instrument) =>{
+            instrList.push(instrument.name)
+        })
+        
         try{
-            setCookie("userInstrumentList", JSON.stringify(myInstruments), {path: "/", maxAge: 36000, sameSite: true})
+            setCookie("userInstrumentList", instrList.join(), {path: "/", maxAge: 36000, sameSite: true})
         }catch (err){
             console.log(err)
         }
     }, [myInstruments])
 
-    console.log(dupesChecked)
 
 
     return (
