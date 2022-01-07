@@ -104,9 +104,9 @@
         "instruments": ["Overdriven Electric Guitar", "Sample", "Rapping", "Drum Kit", "Synth Pad", "Synth Stab", "Turn Table"]
     },
     {
-        "name": "Carnathic Music",
+        "name": "Carnatic Music",
         "description": "Indian Classical Music originating in the southern half of India",
-        "instruments": ["Vocals", "Veena", "Barrel Drum", "Wood Flute", "Tambura", "Ghatam", "Frame Drum"]
+        "instruments": ["Vocals", "Veena", "Barrel Drum", "Wood Flute", "Tambura", "Ghatam", "Frame Drum", "Violin"]
     },
     {
         "name": "Brass Quintet",
