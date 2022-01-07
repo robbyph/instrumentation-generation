@@ -3257,5 +3257,20 @@
             "origin": "india",
             "timeframe": "ancient"
         }
+    },
+    {
+        "name": "Drone Zither",
+        "description": "A zither with a large number of drone strings with few melodic strings",
+        "image": "images/instruments/zither.png",
+        "youtube": "https://www.youtube.com/watch?v=zwifyh2WwPA",
+        "wikipedia": "https://en.wikipedia.org/wiki/Drone_zither",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "traditional",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "europe",
+            "timeframe": "medieval"
+        }
     }
 ]
