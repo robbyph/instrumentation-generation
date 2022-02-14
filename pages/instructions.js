@@ -1,5 +1,6 @@
 import { NextSeo } from 'next-seo'
 import styles from '../styles/Instructions.module.scss'
+import Link from 'next/dist/client/link'
 
 const instructions = () => {
     return (
@@ -20,20 +21,27 @@ const instructions = () => {
                 <p>If you're sitting here worried about the fact that you might not have your clavicord nor crumhorn nor your sitar nor sheng still laying around, then let me tell you not to worry!</p>
                 <p>When recording, or atleast sketching, with these instruments, you are more likely than not going to be using a virtual instrument (.vst, .vst3) within a digital audio workstation (DAW). There are a number of free and cheap ones (some that contain lots of instruments) that i will reccomend to you to get started!</p>
                 <ul className={styles.list}>
+                <li style={{listStyleType: 'none'}}><strong>General</strong></li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://labs.spitfireaudio.com/">Spitfire Labs</a> - Free</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.adsrsounds.com/product/software/air-music-tech-xpand2-all-in-one-workstation/">Xpand!2</a> - $14.99</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href='https://www.plogue.com/products/sforzando.html'>Sforzando</a> is a free soundfont player. Lots of soundfonts are hosted <a href="https://musical-artifacts.com/artifacts?tags=soundfont">here</a>.</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.dskmusic.com/">DSK</a> offers dozens of free instruments.</li>
+                    <li style={{listStyleType: 'none'}}><strong>Orchestral/Ensemble</strong></li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.kvraudio.com/product/fantasi-by-safwan-matni">Fantasi</a> - Free</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.spitfireaudio.com/shop/a-z/bbc-symphony-orchestra-discover">BBC Symphony Orchestra Discover</a> - Free with a wait (or $49 for instant)</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.orchestraltools.com/store/collections/45">Orchestral Tools Layers</a> - Free</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://projectsam.com/libraries/the-free-orchestra/">Project SAM The Free Orchestra</a> - Free</li>
+                    <li style={{listStyleType: 'none'}}><strong>Contemporary Instruments</strong></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://plugins4free.com/plugin/2848/">Keyzone Classic</a> - A free sample based Piano VST</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.powerdrumkit.com/">MTPowerDrumKit2</a> - Free</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.stltones.com/products/stl-ignite-emissary-plug-in-bundle">STL Emissary</a> - Free</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.kvraudio.com/product/synth1-by-daichi-laboratory-ichiro-toda">Synth 1</a> - Free</li>
-                    <li><a href="https://projectsam.com/libraries/the-free-orchestra/">Project SAM The Free Orchestra</a> - Free</li>
-                    <li><a href='https://www.plogue.com/products/sforzando.html'>Sforzando</a> is a free soundfont player. Lots of soundfonts are hosted <a href="https://musical-artifacts.com/artifacts?tags=soundfont">here</a>.</li>
-                    <li><a href="https://www.dskmusic.com/">DSK</a> offers dozens of free instruments.</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://decomposer.de/sitala/">Sitala</a> - Just a really solid drum plugin</li>
+
                 </ul>
-                <p style={{marginTop: '1rem'}}>P.S. Don't forget to check and see what, if any, free instruments come with your Digital Audio Workstation!</p>
+                <p style={{marginTop: '1rem'}}>P.S. Don't forget to check and see what, if any, free instruments come with your Digital Audio Workstation! They are usually pretty high quality!</p>
                 <p style={{marginTop: '1rem'}}>P.S.S. Be cautious not to get too caught up in collecting plugins. Just get what you need and make some music.</p>
+                <p style={{marginTop: '1rem'}}>If you're looking to invest in paid plugins, which are admittedly higher quality, check the <Link href="/recommendations">Recommended Plugin List</Link> for a full list of my suggested plugins!</p>
             </div>
             <h1 className={styles.headingOne}>Brief Instructions</h1>
             <div className={styles.container}>

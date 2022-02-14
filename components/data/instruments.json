@@ -1297,7 +1297,7 @@
 
     {
         "name": "Tam-Tam",
-        "description": "A type of gong that has an indefinite pitch, the type most familar to those in the west",
+        "description": "A type of flat faced gong that has an indefinite pitch, the type most familar to those in the west",
         "image": "images/instruments/tamtam.png",
         "youtube": "https://youtu.be/-lJctvybAJ8?t=439",
         "wikipedia": "https://en.wikipedia.org/wiki/Gong#Chau_gong_(Tam-tam)",
@@ -2467,7 +2467,7 @@
 
     {
         "name": "Wood Flute",
-        "description": "A high pitched wind instrument. Also, one of the oldest human instruments. Has a warmer sound than standard metal flutes. ",
+        "description": "A high pitched wind instrument. Also, one of the oldest human instruments. Has a warmer sound than standard metal flutes. Seen in most cultures.",
         "image": "images/instruments/flute.png",
         "youtube": "https://www.youtube.com/watch?v=j0BsYId_kkY",
         "wikipedia": "https://en.wikipedia.org/wiki/Flute",
@@ -3264,6 +3264,21 @@
         "image": "images/instruments/zither.png",
         "youtube": "https://www.youtube.com/watch?v=zwifyh2WwPA",
         "wikipedia": "https://en.wikipedia.org/wiki/Drone_zither",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "traditional",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "europe",
+            "timeframe": "medieval"
+        }
+    },
+    {
+        "name": "Cimbalom",
+        "description": "A hammered dulcimer modified for concert use with a pedal mechanism for dampening strings, a four octave range, and three to five strings per note.",
+        "image": "images/instruments/hammereddulc.png",
+        "youtube": "https://www.youtube.com/watch?v=ayAvzVdOJJY",
+        "wikipedia": "https://en.wikipedia.org/wiki/Hammered_dulcimer",
         "tags": {
             "hornbostelsachs": "chordophone",
             "category": "traditional",
