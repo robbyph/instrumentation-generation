@@ -12,7 +12,7 @@ const recommendations = () => {
                 title="About" 
                 description="A tool for composers to generate random groups of instruments to help jumpstart creativity."
             />
-            <h1 className={styles.headingOne}>Free Plugin Recommendations</h1>
+            <h1 className={styles.headingOne}>Free/Affordable Plugin Recommendations</h1>
             <div className={styles.container}>
                 <p>There's nothing wrong with using free plugins. Free plugins have been used to make the Stardew Valley OST, the Undertale OST and plenty more. All that matters is getting started. Free doesen't mean low quality either, i use plenty of these plugins in my everyday workflow!</p>
                 <ul className={styles.list}>
