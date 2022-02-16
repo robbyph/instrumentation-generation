@@ -28,10 +28,10 @@ const recommendations = () => {
                     <li><a target="_blank" rel="noopener noreferrer" href="https://projectsam.com/libraries/the-free-orchestra/">Project SAM The Free Orchestra</a> - Free</li>
                     <li style={{listStyleType: 'none'}}><strong>Contemporary Instruments</strong></li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://plugins4free.com/plugin/2848/">Keyzone Classic</a> - A free sample based Piano VST</li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.powerdrumkit.com/">MTPowerDrumKit2</a> - Free</li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.stltones.com/products/stl-ignite-emissary-plug-in-bundle">STL Emissary</a> - Free</li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.kvraudio.com/product/synth1-by-daichi-laboratory-ichiro-toda">Synth 1</a> - Free</li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://decomposer.de/sitala/">Sitala</a> - Just a really solid drum plugin</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.powerdrumkit.com/">MTPowerDrumKit2</a> - Free drum kit plugin</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.stltones.com/products/stl-ignite-emissary-plug-in-bundle">STL Emissary</a> - A super high quality guitar amp and cab simulator.</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.kvraudio.com/product/synth1-by-daichi-laboratory-ichiro-toda">Synth 1</a> - A very powerful synth for being free, with tons of community made preset packages.</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://decomposer.de/sitala/">Sitala</a> - Just a really solid drum machine plugin</li>
                 </ul>
                 <p style={{marginTop: '1rem'}}>P.S. Don't forget to check and see what, if any, free instruments come with your Digital Audio Workstation! They are usually pretty high quality!</p>
                 <p style={{marginTop: '1rem'}}>P.P.S. Be cautious not to get too caught up in collecting plugins. Just get what you need and make some music.</p>
@@ -52,7 +52,7 @@ const recommendations = () => {
                     <li><a target="_blank" rel="noopener noreferrer" href="https://plugins4free.com/plugin/2848/">Piano Teq</a> - A high quality keyboard instrument plugin which includes a variety of pianos, harpsichords, celestes, electric pianos and more.</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.spectrasonics.net/products/omnisphere/">Omnisphere 2</a> - My favorite Synth plugin of all time, and in my opinion, the most versatile</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://heavyocity.com/product/damage-2/">Damage 2</a> - The gold standard for hybrid percussion sounds</li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://line6.com/helix/helixnative.html">Helix Native</a> - Helix is my favorite guitar/bass amp modeling software. I use the Helix Floor when i play live and Helix Native to record. High quality and versatile.</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://line6.com/helix/helixnative.html">Helix Native</a> - Helix is my favorite guitar/bass amp and cab modeling software. I use the Helix Floor when i play live and Helix Native to record. High quality and versatile.</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.pluginboutique.com/product/4-Synth/1158-VirtualCZ">Virtual CZ</a> - Perfect for replicating that old school ROMpler style synth sound.</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://impactsoundworks.com/product/super-audio-cart/">Super Audio Cart</a> - Chiptune synth sounds ripped straight from old school video games.</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.e-phonic.com/drumatic.html#/">Drumatic 4</a> - A really dope 10 channel drum machine with a wide range of sounds.</li>
