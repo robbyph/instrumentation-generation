@@ -14,8 +14,7 @@ import { NextSeo, SoftwareAppJsonLd } from 'next-seo'
 import { useCookies } from "react-cookie"
 import { parseCookies } from "../helpers/index"
 import download from 'downloadjs'
-import LZString from 'lz-string'
-
+import NewsletterSubscribe from '../components/NewsletterSubscribe'
 
 export default function Home({data}) {
     
@@ -504,6 +503,7 @@ export default function Home({data}) {
         <ParameterList onRandomList={randomListOfInstruments} onNewList={addNewInstruments} onClear={checkClear} onDupesCheck={toggleDupesChecked} onInstrumentModal={openInstrumentModal} onTemplateModal={openTemplateModal} pushAlert={pushAlert} onTagGen={tagBasedGeneration} onExport={exportJSON} onImport={importJSON}></ParameterList>
         <h1 className={styles.headingOne}>Instrument List</h1>
         <InstrumentList instruments = {myInstruments} onDel= {deleteInstrument} onLoc={toggleInstrumentLock} onShuf={instrumentShuffle} onRepButClick={openReplacementModal} setRepInstrumentID={setReplacementInstrumentID} ></InstrumentList>
+        
     </div>
   )
 }

@@ -3,18 +3,27 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import styles from '../styles/Navigation.module.scss'
 import Link from 'next/link'
 import {useState} from 'react'
+import SubscriptionModal from './SubscriptionModal'
+
+
 
 
 const Navigation = ({currentPage}) => {
     const [show, setShow] = useState(false);
+    const [showSubscriptionModal, setShowSubscriptionModal] = useState(false)
+
     const showDropdown = (e)=>{
         setShow(!show);
     }
     const hideDropdown = e => {
         setShow(false);
     }
-
-    
+    const showModal = (e)=>{
+        setShowSubscriptionModal(true);
+    }
+    const hideModal = e => {
+        setShowSubscriptionModal(false);
+    }
 
     return (
         <div >
@@ -47,13 +56,13 @@ const Navigation = ({currentPage}) => {
                         show={show}
                         onMouseEnter={showDropdown} 
                         onMouseLeave={hideDropdown}>
-                            <Button className={styles.btnOverride} variant="dark" style={{color: 'white'}}>More Tools Coming Soon!<br/>Click here to join the mailing list!</Button> 
+                            <Button className={styles.btnOverride} variant="dark" style={{color: 'white'}} onClick={showModal}>More Tools Coming Soon!<br/>Click here to join the mailing list!</Button> 
                     </NavDropdown> 
                     </div>
                 </Nav>
                 </Navbar.Collapse>
             </Navbar>
-
+            {showSubscriptionModal ? <SubscriptionModal onClose={hideModal}/> :  ''}
         </div>
     )
 }
