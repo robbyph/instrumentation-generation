@@ -255,7 +255,9 @@ export default function Home({data}) {
         if (myInstruments[instrID].locked) {
             pushAlert(closeAlert, "Lock Warning", "This instrument is locked. Please unlock it to shuffle it.", "danger", undefined, undefined, true )
         } else {
-            myInstruments[instrID] = getNewInstrument([]);
+            var tempInstruments = [...myInstruments]
+            tempInstruments[instrID] = getNewInstrument([]);
+            setMyInstruments(tempInstruments)
         }
 
     }

@@ -60,7 +60,7 @@ const recommendations = () => {
 
                     <li style={{listStyleType: 'none'}}><strong>Traditional Instruments</strong></li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.bestservice.com/ethno_world_6_complete.html">Ethno World 6</a> - An incredibly comprehensive plugin featuring voices and instruments from around the globe!</li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.bestservice.com/era_ii_medieval_legends.html">ERA II Medieval Legends</a> - By far the most comprehensive library for medieval european instruments.</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.bestservice.com/era_ii_medieval_legends.html">ERA II Medieval Legends</a> - By far the most comprehensive library for medieval european instruments. Everything by Best Service is killer imo.</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.native-instruments.com/en/products/komplete/spotlight-collection/spotlight-collection/">Native Instruments Spotlight Collection</a> - A collection of instruments from <OverlayTrigger
                         overlay={(props) => (
                             <Tooltip {...props}>
