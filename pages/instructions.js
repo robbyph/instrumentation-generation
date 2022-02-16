@@ -22,21 +22,21 @@ const instructions = () => {
                 <p>When recording, or atleast sketching, with these instruments, you are more likely than not going to be using a virtual instrument (.vst, .vst3) within a digital audio workstation (DAW). There are a number of free and cheap ones (some that contain lots of instruments) that i will reccomend to you to get started!</p>
                 <ul className={styles.list}>
                 <li style={{listStyleType: 'none'}}><strong>General</strong></li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://labs.spitfireaudio.com/">Spitfire Labs</a> - Free</li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.adsrsounds.com/product/software/air-music-tech-xpand2-all-in-one-workstation/">Xpand!2</a> - $14.99</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://labs.spitfireaudio.com/">Spitfire Labs</a> - A collection of free high quality instruments. I especially reccomend the lap steel, tape orchestra and atmospheres, but they are all fantastic.</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.adsrsounds.com/product/software/air-music-tech-xpand2-all-in-one-workstation/">Xpand!2</a> - Another large collection of virtual instruments. Not super realistic or anything, but has quite a lot of charm.</li>
                     <li><a target="_blank" rel="noopener noreferrer" href='https://www.plogue.com/products/sforzando.html'>Sforzando</a> is a free soundfont player. Lots of soundfonts are hosted <a href="https://musical-artifacts.com/artifacts?tags=soundfont">here</a>.</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.dskmusic.com/">DSK</a> offers dozens of free instruments.</li>
                     <li style={{listStyleType: 'none'}}><strong>Orchestral/Ensemble</strong></li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.kvraudio.com/product/fantasi-by-safwan-matni">Fantasi</a> - Free</li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.spitfireaudio.com/shop/a-z/bbc-symphony-orchestra-discover">BBC Symphony Orchestra Discover</a> - Free with a wait (or $49 for instant)</li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.orchestraltools.com/store/collections/45">Orchestral Tools Layers</a> - Free</li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://projectsam.com/libraries/the-free-orchestra/">Project SAM The Free Orchestra</a> - Free</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.kvraudio.com/product/fantasi-by-safwan-matni">Fantasi</a> - A small collection of free orchestal like virtual instruments.</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.spitfireaudio.com/shop/a-z/bbc-symphony-orchestra-discover">BBC Symphony Orchestra Discover</a> - Free with a wait (or $49 for instant), the free version of what is in my opinion, the best orchestral plugin out there.</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.orchestraltools.com/store/collections/45">Orchestral Tools Layers</a> - A really simple instrument that makes it easy for even beginners to add orchestral elements to their compositions.</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://projectsam.com/libraries/the-free-orchestra/">Project SAM The Free Orchestra</a> - An incredibly high quality of cinemaic music sounds.</li>
                     <li style={{listStyleType: 'none'}}><strong>Contemporary Instruments</strong></li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://plugins4free.com/plugin/2848/">Keyzone Classic</a> - A free sample based Piano VST</li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.powerdrumkit.com/">MTPowerDrumKit2</a> - Free</li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.stltones.com/products/stl-ignite-emissary-plug-in-bundle">STL Emissary</a> - Free</li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.kvraudio.com/product/synth1-by-daichi-laboratory-ichiro-toda">Synth 1</a> - Free</li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://decomposer.de/sitala/">Sitala</a> - Just a really solid drum plugin</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.powerdrumkit.com/">MTPowerDrumKit2</a> - Free drum kit plugin</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.stltones.com/products/stl-ignite-emissary-plug-in-bundle">STL Emissary</a> - A super high quality guitar amp and cab simulator.</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.kvraudio.com/product/synth1-by-daichi-laboratory-ichiro-toda">Synth 1</a> - A very powerful synth for being free, with tons of community made preset packages.</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://decomposer.de/sitala/">Sitala</a> - Just a really solid drum machine plugin</li>
 
                 </ul>
                 <p style={{marginTop: '1rem'}}>P.S. Don't forget to check and see what, if any, free instruments come with your Digital Audio Workstation! They are usually pretty high quality!</p>

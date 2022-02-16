@@ -17,15 +17,15 @@ const recommendations = () => {
                 <p>There's nothing wrong with using free plugins. Free plugins have been used to make the Stardew Valley OST, the Undertale OST and plenty more. All that matters is getting started. Free doesen't mean low quality either, i use plenty of these plugins in my everyday workflow!</p>
                 <ul className={styles.list}>
                     <li style={{listStyleType: 'none'}}><strong>General</strong></li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://labs.spitfireaudio.com/">Spitfire Labs</a> - Free</li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.adsrsounds.com/product/software/air-music-tech-xpand2-all-in-one-workstation/">Xpand!2</a> - $14.99</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://labs.spitfireaudio.com/">Spitfire Labs</a> - A collection of free high quality instruments. I especially reccomend the lap steel, tape orchestra and atmospheres, but they are all fantastic.</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.adsrsounds.com/product/software/air-music-tech-xpand2-all-in-one-workstation/">Xpand!2</a> - Another large collection of virtual instruments. Not super realistic or anything, but has quite a lot of charm.</li>
                     <li><a target="_blank" rel="noopener noreferrer" href='https://www.plogue.com/products/sforzando.html'>Sforzando</a> is a free soundfont player. Lots of soundfonts are hosted <a href="https://musical-artifacts.com/artifacts?tags=soundfont">here</a>.</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.dskmusic.com/">DSK</a> offers dozens of free instruments.</li>
                     <li style={{listStyleType: 'none'}}><strong>Orchestral/Ensemble</strong></li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.kvraudio.com/product/fantasi-by-safwan-matni">Fantasi</a> - Free</li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.spitfireaudio.com/shop/a-z/bbc-symphony-orchestra-discover">BBC Symphony Orchestra Discover</a> - Free with a wait (or $49 for instant)</li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.orchestraltools.com/store/collections/45">Orchestral Tools Layers</a> - Free</li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://projectsam.com/libraries/the-free-orchestra/">Project SAM The Free Orchestra</a> - Free</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.kvraudio.com/product/fantasi-by-safwan-matni">Fantasi</a> - A small collection of free orchestal like virtual instruments.</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.spitfireaudio.com/shop/a-z/bbc-symphony-orchestra-discover">BBC Symphony Orchestra Discover</a> - Free with a wait (or $49 for instant), the free version of what is in my opinion, the best orchestral plugin out there.</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.orchestraltools.com/store/collections/45">Orchestral Tools Layers</a> - A really simple instrument that makes it easy for even beginners to add orchestral elements to their compositions.</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://projectsam.com/libraries/the-free-orchestra/">Project SAM The Free Orchestra</a> - An incredibly high quality of cinemaic music sounds.</li>
                     <li style={{listStyleType: 'none'}}><strong>Contemporary Instruments</strong></li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://plugins4free.com/plugin/2848/">Keyzone Classic</a> - A free sample based Piano VST</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.powerdrumkit.com/">MTPowerDrumKit2</a> - Free drum kit plugin</li>
@@ -78,6 +78,7 @@ const recommendations = () => {
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.strezov-sampling.com/products/view/rhodope2.html">Tropar</a> - An authentic Orthodox choir. Perfect for your latin chants.</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.strezov-sampling.com/products/view/rhodope2.html">Rhodope 2</a> - Ethnic Bulgarian Choir</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.fluffyaudio.com/shop/dominus-choir-pro/">Dominus Choir</a> - A unique choir plugin that allows you to build phrases, having complete control over what the choir is actually saying.</li>
+                    <hr style={{height: '0px', visibility:'hidden', margin: '.1rem'}} />
                     <li style={{listStyleType: 'none'}}><em>Strezov also has a much, much cheaper <a href="https://www.strezov-sampling.com/products/view/choir-essentials.html">Choir Essentials Plugin</a> that takes selections from many of these for beginners who don't need the options overload or don't have the funds.</em></li>
                     <br />    
                     <p><em>Note: Many of these plugins may require <a target="_blank" rel="noopener noreferrer" href="https://www.native-instruments.com/en/products/komplete/samplers/kontakt-6/">Kontakt</a> to play them.</em></p>
