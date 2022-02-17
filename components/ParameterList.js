@@ -40,13 +40,13 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
         console.log(cat)
 
         if (cat == 'contemporary'){
-            index = Math.floor(Math.random() * 4);
+            index = Math.floor(Math.random() * 5);
             fams = ['string', 'percussion', 'wind', 'electronic', 'keyboard']
         }else if (cat == 'orchestral'){
-            index = Math.floor(Math.random() * 3);
+            index = Math.floor(Math.random() * 4);
             fams = ['string', 'percussion', 'brass', 'wind']
         }else if (cat == 'traditional'){
-            index = Math.floor(Math.random() * 3);
+            index = Math.floor(Math.random() * 4);
             fams = ['string', 'percussion', 'wind', 'keyboard']
         } 
 
