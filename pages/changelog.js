@@ -40,6 +40,17 @@ const changelog = () => {
                             <li className={styles.listItem}>Hella bug fixes</li>
                         </ul>
                     </div>
+                    <div className={styles.changeItem} style={{paddingTop: 0}}>
+                        <h4 className={styles.headingFour}>Version 0.8</h4>
+                        <p className={styles.itemDate}>February 16th 2022</p>
+                        <ul className={styles.changes}>
+                            <li className={styles.listItem}>A litany of bug fixes, new instruments and templates</li>
+                            <li className={styles.listItem}>Added subscription form</li>
+                            <li className={styles.listItem}>Added feedback form</li>
+                            <li className={styles.listItem}>QOL improvements</li>
+                            <li className={styles.listItem}>Text formatting overhaul</li>
+                        </ul>
+                    </div>
                 </div>
 
         </div>
