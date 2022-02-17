@@ -21,8 +21,6 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
             };
     };
         
-    
-
 
     return (
         <div className={styles.container} id="paramsDiv">
@@ -95,14 +93,14 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
                         <Form className={styles.formOverride}>
                             <Form.Label>Other Parameters</Form.Label>
                             <Form.Check onChange={onDupesCheck} className={styles.formCheckOverride} label="No Duplicates?" id="noDupes"/>
-                                <ButtonGroup>
-                                    <Button type="button" variant="warning" onClick={onClear}>Clear List</Button>
-                                    <Button type="button" variant="secondary" onClick={onExport}>Export list</Button>
-                                    <Button type="button" variant="secondary" onClick={() => {hiddenFileInput.current.click()}}>
-                                        <input type="file" ref={hiddenFileInput} accept='.instrgen' onChange={getFileInput} hidden/>
-                                        Import list
-                                    </Button>
-                                </ButtonGroup>
+                            <ButtonGroup>
+                                <Button type="button" variant="warning" onClick={onClear}>Clear List</Button>
+                                <Button type="button" variant="secondary" onClick={onExport}>Export list</Button>
+                                <Button type="button" variant="secondary" onClick={() => {hiddenFileInput.current.click()}}>
+                                    <input type="file" ref={hiddenFileInput} accept='.instrgen' onChange={getFileInput} hidden/>
+                                    Import list
+                                </Button>
+                            </ButtonGroup>
                         </Form>
                     </Col>
                 </Row>

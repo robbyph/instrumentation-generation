@@ -14,26 +14,24 @@ const DropdownChecklist = ({disabled, checkOptions, returnChecksState}) => {
         setChecks(newArray);
         returnChecksState(checks);
     }
+
+    console.log(checks)
     
     return (
         <Form className={styles.checkMenu}>
             <fieldset disabled={disabled}>
             {checks.map((checkItem, i) => (
-                 <Form.Check
+                <Form.Check
                     key={i}
                     id={i}
                     type='checkbox'
                     label={checkItem.label}
-                    defaultChecked={checkItem.checked}
-                    onClick={() => {setCheck(i)}}
+                    checked={checkItem.checked}
+                    onChange={() => {setCheck(i)}}
                 ></Form.Check>
             )) }
             </fieldset>
         </Form>
-
-        
-
-        
     )
 }
 
