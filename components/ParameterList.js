@@ -1,6 +1,6 @@
 import { Button, Row, Col, Container, Form, ButtonGroup } from "react-bootstrap"
 import styles from "../styles/ParameterList.module.scss"
-import {useState, useRef} from 'react'
+import {useState, useEffect, useRef} from 'react'
 
 const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstrumentModal, onTemplateModal, onTagGen, onExport, onImport}) => {
     
@@ -9,7 +9,7 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
     const [maxNumberState, setMaxNumberState] = useState('')
     const [categoryState, setCategoryState] = useState('contemporary')
     const [familyState, setFamilyState] = useState('string')
-    const [tagGenNum, setTagGenNum] = useState('1')
+    const [tagGenNum, setTagGenNum] = useState(`1`)
     const hiddenFileInput = useRef(null);
 
     const getFileInput = e =>{
@@ -20,6 +20,50 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
                 onImport(e.target.result)
             };
     };
+
+    const setInitCatsAndFams = (cat, fam) => {
+        setCategoryState(cat)
+        setFamilyState(fam)
+    }
+
+    const getRandomCat = () =>{
+        var index = Math.floor(Math.random() * 3);
+        var cats = ['contemporary', 'orchestral', 'traditional']
+
+        return cats[index]
+    }
+
+    const getRandomFam = (cat) =>{
+        var index = 0;
+        var fams = []
+
+        console.log(cat)
+
+        if (cat == 'contemporary'){
+            index = Math.floor(Math.random() * 4);
+            fams = ['string', 'percussion', 'wind', 'electronic', 'keyboard']
+        }else if (cat == 'orchestral'){
+            index = Math.floor(Math.random() * 3);
+            fams = ['string', 'percussion', 'brass', 'wind']
+        }else if (cat == 'traditional'){
+            index = Math.floor(Math.random() * 3);
+            fams = ['string', 'percussion', 'wind', 'keyboard']
+        } 
+
+        console.log(fams[index])
+        return fams[index]
+    }
+
+
+    useEffect(()=>{
+        var cat = getRandomCat()
+        var fam = getRandomFam(cat)
+
+        setInitCatsAndFams(cat, fam)
+    }, [])
+
+
+    //console.log(categoryState, familyState)
         
 
     return (
