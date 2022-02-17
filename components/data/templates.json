@@ -164,6 +164,11 @@
         "instruments": ["Nyckelharpa", "Lyre", "Mandola", "Talharpa", "Classical Guitar", "Piano", "Violin", "Tambourine"]
     },
     {
+        "name": "The Last Airbender",
+        "description": "Water... Earth... Fire... Air...",
+        "instruments": ["Kalimba", "Wood Flute", "Goblet Drum", "String Section", "Tam-Tam", "Guzheng", "Erhu", "Pipa"]
+    },
+    {
         "name": "Synth Pop",
         "description": "A broad range of percussion focused electronic music",
         "instruments": ["Drum Kit", "Vocals", "Synth Keys", "Synth Lead", "Electric Bass Guitar", "Overdriven Electric Guitar"]

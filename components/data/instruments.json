@@ -1891,7 +1891,7 @@
         "name": "12 String Guitar",
         "description": "An electric or acoustic guitar with each of its 6 strings replaced with a 2 string course, making each string produce 2 notes an octave apart",
         "image": "images/instruments/12stringguitar.png",
-        "youtube": "https://www.youtube.com/watch?v=EAYA8q_jVXI",
+        "youtube": "https://www.youtube.com/watch?v=ALYgHV1SUq0",
         "wikipedia": "https://en.wikipedia.org/wiki/Twelve-string_guitar",
         "tags": {
             "hornbostelsachs": "chordophone",
@@ -3286,6 +3286,66 @@
             "voices": "polyphonic",
             "origin": "europe",
             "timeframe": "medieval"
+        }
+    },
+    {
+        "name": "12 String Acoustic Guitar",
+        "description": "A steel string acoustic guitar with two strings for each course instead of one.",
+        "image": "images/instruments/acousticguitar.png",
+        "youtube": "https://www.youtube.com/watch?v=EAYA8q_jVXI",
+        "wikipedia": "https://en.wikipedia.org/wiki/Twelve-string_guitar",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "contemporary",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "north america",
+            "timeframe": "modern"
+        }
+    },
+    {
+        "name": "Guzheng",
+        "description": "A Chinese plucked zither, typically tuned to a major pentatonic scale. Related to the koto.",
+        "image": "images/instruments/hammereddulc.png",
+        "youtube": "https://www.youtube.com/watch?v=ujzMHLac404",
+        "wikipedia": "https://en.wikipedia.org/wiki/Guzheng",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "traditional",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "china",
+            "timeframe": "ancient"
+        }
+    },
+    {
+        "name": "Erhu",
+        "description": "A Chinese two-stringed bowed spike fiddle. Similar to the Mroin Khuur",
+        "image": "images/instruments/morinkhuur.png",
+        "youtube": "https://www.youtube.com/watch?v=dhic2cE57iM",
+        "wikipedia": "https://en.wikipedia.org/wiki/Erhu",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "traditional",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "china",
+            "timeframe": "ancient"
+        }
+    },
+    {
+        "name": "Pipa",
+        "description": "A traditional Chinese lute. One of the most popular Chinese instruments.",
+        "image": "images/instruments/pipa.png",
+        "youtube": "https://www.youtube.com/watch?v=ksiM1wRcutQ",
+        "wikipedia": "https://en.wikipedia.org/wiki/Pipa",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "traditional",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "china",
+            "timeframe": "ancient"
         }
     }
 ]
