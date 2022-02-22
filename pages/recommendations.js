@@ -35,6 +35,7 @@ const recommendations = () => {
                 </ul>
                 <p style={{marginTop: '1rem'}}>P.S. Don't forget to check and see what, if any, free instruments come with your Digital Audio Workstation! They are usually pretty high quality!</p>
                 <p style={{marginTop: '1rem'}}>P.P.S. Be cautious not to get too caught up in collecting plugins. Just get what you need and make some music.</p>
+                <p style={{marginTOp: '1rem'}}>Check out <a href='https://www.afreestudio.com/'>'A Free Studio'</a> for a really cool guide on budget music making!</p>
             </div>
             <h1 className={styles.headingOne}>Paid Plugin Recommendations</h1>
             <div className={styles.container}>
@@ -60,7 +61,7 @@ const recommendations = () => {
 
                     <li style={{listStyleType: 'none'}}><strong>Traditional Instruments</strong></li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.bestservice.com/ethno_world_6_complete.html">Ethno World 6</a> - An incredibly comprehensive plugin featuring voices and instruments from around the globe!</li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.bestservice.com/era_ii_medieval_legends.html">ERA II Medieval Legends</a> - By far the most comprehensive library for medieval european instruments. Everything by Best Service is killer imo.</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.bestservice.com/era_ii_medieval_legends.html">ERA II Medieval Legends</a> - By far the most comprehensive library for medieval european instruments. Everything by Best Service is killer imo, especially their ERA series.</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.native-instruments.com/en/products/komplete/spotlight-collection/spotlight-collection/">Native Instruments Spotlight Collection</a> - A collection of instruments from <OverlayTrigger
                         overlay={(props) => (
                             <Tooltip {...props}>
@@ -77,11 +78,12 @@ const recommendations = () => {
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.strezov-sampling.com/products/view/sc-ultimate.html">Storm Choir</a> - A powerful and haunting chamber choir. Think Dark Souls or Halo style choirs.</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.strezov-sampling.com/products/view/rhodope2.html">Tropar</a> - An authentic Orthodox choir. Perfect for your latin chants.</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.strezov-sampling.com/products/view/rhodope2.html">Rhodope 2</a> - Ethnic Bulgarian Choir</li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.fluffyaudio.com/shop/dominus-choir-pro/">Dominus Choir</a> - A unique choir plugin that allows you to build phrases, having complete control over what the choir is actually saying.</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.fluffyaudio.com/shop/dominus-choir-pro/">Dominus Choir</a> - A unique choir plugin that allows you to build phrases, having complete control over what the choir is actually saying. <a href="https://cinesamples.com/product/voxos-epic-choirs">Voxos</a> also has a pretty robust phrasebuilder.</li>
                     <hr style={{height: '0px', visibility:'hidden', margin: '.1rem'}} />
                     <li style={{listStyleType: 'none'}}><em>Strezov also has a much, much cheaper <a href="https://www.strezov-sampling.com/products/view/choir-essentials.html">Choir Essentials Plugin</a> that takes selections from many of these for beginners who don't need the options overload or don't have the funds.</em></li>
                     <br />    
                     <p><em>Note: Many of these plugins may require <a target="_blank" rel="noopener noreferrer" href="https://www.native-instruments.com/en/products/komplete/samplers/kontakt-6/">Kontakt</a> to play them.</em></p>
+                    <p>If you are feeling overwhelmed by the amount of plugins out there, bundles like <a href="https://www.native-instruments.com/en/catalog/komplete/">Kontakt Komplete</a> or <a href="https://www.soundsonline.com/composercloud">EastWest ComposerCloud</a> are also good options if you are in that price range.</p>
                 </ul>
             </div>
         </>

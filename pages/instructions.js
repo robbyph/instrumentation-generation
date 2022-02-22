@@ -41,7 +41,9 @@ const instructions = () => {
                 </ul>
                 <p style={{marginTop: '1rem'}}>P.S. Don't forget to check and see what, if any, free instruments come with your Digital Audio Workstation! They are usually pretty high quality!</p>
                 <p style={{marginTop: '1rem'}}>P.S.S. Be cautious not to get too caught up in collecting plugins. Just get what you need and make some music.</p>
+                <p style={{marginTOp: '1rem'}}>Check out <a href='https://www.afreestudio.com/'>'A Free Studio'</a> for a really cool guide on budget music production and the software you'll need!</p>
                 <p style={{marginTop: '1rem'}}>If you're looking to invest in paid plugins, which are admittedly higher quality, check the <Link href="/recommendations">Recommended Plugin List</Link> for a full list of my suggested plugins!</p>
+                
             </div>
             <h1 className={styles.headingOne}>Brief Instructions</h1>
             <div className={styles.container}>
