@@ -36,6 +36,7 @@ const recommendations = () => {
                 <p style={{marginTop: '1rem'}}>P.S. Don't forget to check and see what, if any, free instruments come with your Digital Audio Workstation! They are usually pretty high quality!</p>
                 <p style={{marginTop: '1rem'}}>P.P.S. Be cautious not to get too caught up in collecting plugins. Just get what you need and make some music.</p>
                 <p style={{marginTOp: '1rem'}}>Check out <a href='https://www.afreestudio.com/'>'A Free Studio'</a> for a really cool guide on budget music making!</p>
+                <p style={{marginTOp: '1rem'}}>In addition, <a href='https://plugins4free.com/'>Plugins4Free</a> is host to hundreds of great free plugins.</p>
             </div>
             <h1 className={styles.headingOne}>Paid Plugin Recommendations</h1>
             <div className={styles.container}>

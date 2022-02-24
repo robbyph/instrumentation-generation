@@ -1057,7 +1057,7 @@
 
     {
         "name": "Bass Drum",
-        "description": "A low pitched percussion instrument",
+        "description": "A low pitched percussion instrument, a type of cylindrical drum",
         "image": "images/instruments/bassdrum.png",
         "youtube": "https://www.youtube.com/watch?v=6bk8zCO829M",
         "wikipedia": "https://en.wikipedia.org/wiki/Bass_drum",
