@@ -58,7 +58,7 @@ const recommendations = () => {
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.pluginboutique.com/product/4-Synth/1158-VirtualCZ">Virtual CZ</a> - Perfect for replicating that old school ROMpler style synth sound.</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://impactsoundworks.com/product/super-audio-cart/">Super Audio Cart</a> - Chiptune synth sounds ripped straight from old school video games.</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.e-phonic.com/drumatic.html#/">Drumatic 4</a> - A really dope 10 channel drum machine with a wide range of sounds.</li>
-
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.toontrack.com/product/ezdrummer-2/">EZDrummer 2</a> - The best drum kit vst out there IMO. The expansion kits are also really great, my favorite is the 'Drumkit From Hell' metal kit.</li>
 
                     <li style={{listStyleType: 'none'}}><strong>Traditional Instruments</strong></li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://www.bestservice.com/ethno_world_6_complete.html">Ethno World 6</a> - An incredibly comprehensive plugin featuring voices and instruments from around the globe!</li>
