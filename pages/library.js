@@ -6,7 +6,8 @@ import {Form, Container, Col, Row, Collapse, Button} from 'react-bootstrap'
 import DropdownChecklist from '../components/DropdownChecklist'
 import instrumentData from '../components/data/instruments.json'
 
-
+const DEFAULT_FAMILY_CHECKS = [{label: 'String', checked: true}, {label: 'Percussion', checked: true}, {label: 'Brass', checked: true}, {label: 'Wind', checked: true}, {label: 'Electronic', checked: true}, {label: 'Keyboard', checked: true}]
+const DEFAULT_CATEGORY_CHECKS = [{label: 'Contemporary', checked: true}, {label: 'Orchestral', checked: true}, {label: 'Traditional', checked: true}, {label: 'Vocal', checked: true}]
 
 const library = () => {
     const [sortingOption, setSortingOption] = useState('0')
@@ -16,9 +17,19 @@ const library = () => {
     const [open, setOpen] = useState(false);
 
     const resetAllChecks = () => {
-        setFamilyFilterOptions([{label: 'String', checked: true}, {label: 'Percussion', checked: true}, {label: 'Brass', checked: true}, {label: 'Wind', checked: true}, {label: 'Electronic', checked: true}, {label: 'Keyboard', checked: true}])
-        setCategoryFilterOptions([{label: 'Contemporary', checked: true}, {label: 'Orchestral', checked: true}, {label: 'Traditional', checked: true}, {label: 'Vocal', checked: true}])
-    }
+    setCategoryFilterOptions(
+      categoryFilterOptions.map((option) => ({
+        label: option.label,
+        checked: true,
+      }))
+    );
+    setFamilyFilterOptions(
+        familyFilterOptions.map((option) => ({
+          label: option.label,
+          checked: true,
+        }))
+      );
+  };
 
     const returnCheckedCategories = () =>{
         var list = [];
@@ -75,7 +86,7 @@ const library = () => {
                                             </Row>
                                             <Row >
                                                 <Col xl={{span: 4, offset: 4}}>
-                                                    <Button style={{width: '100%'}} onClick={() => {resetAllChecks(); console.log('clicked')}}>Reset Filter</Button>
+                                                    <Button style={{width: '100%'}} onClick={() => {resetAllChecks();}}>Reset Filter</Button>
                                                 </Col>
                                             </Row>
                                             </div>
