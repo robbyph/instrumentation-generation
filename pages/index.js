@@ -482,7 +482,7 @@ export default function Home({data}) {
     <div>
         <NextSeo 
             title="Instrumentation Generation" 
-            description="A tool for composers to generate random groups of instruments to help jumpstart creativity."
+            description="A tool for composers to randomly generate groups of instruments to help jumpstart creativity, as well as learn about new instruments."
             openGraph={{
                 images: [
                     {
