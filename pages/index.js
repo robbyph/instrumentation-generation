@@ -5,6 +5,9 @@ import ParameterList from '../components/ParameterList'
 import InstrumentList from '../components/InstrumentList'
 import { useState, useEffect } from 'react'
 import instrumentData from '../components/data/instruments.json'
+import simpleVocalData from '../components/data/simpleVocals.json'
+import defaultVocalData from '../components/data/defaultVocals.json'
+import complexGenerationData from '../components/data/complexGenData.json'
 import templateData from '../components/data/templates.json'
 import Alerts from '../components/Alerts'
 import InstrumentModal from '../components/Modals/InstrumentModal'
@@ -15,11 +18,15 @@ import { useCookies } from "react-cookie"
 import { parseCookies } from "../helpers/index"
 import download from 'downloadjs'
 import NewsletterSubscribe from '../components/NewsletterSubscribe'
+import { round } from 'lodash'
 
 export default function Home({data}) {
     
     //#region Variables
     const allInstruments = instrumentData
+    const basicVocalData = simpleVocalData
+    const defVocalData = defaultVocalData
+    const complexGenData = complexGenerationData
     const templates = templateData
     const [myInstruments, setMyInstruments] = useState([])
     const [alerts, setAlerts] = useState([])
@@ -30,6 +37,7 @@ export default function Home({data}) {
     const [showTemplateModal, setShowTemplateModal] = useState(false)
     const [replacementInstrumentID, setReplacementInstrumentID] = useState(0)
     const [cookie, setCookie] = useCookies(["userInstrumentList"])
+    const [vocalComplexityState, setVocalComplexityState] = useState('default')
 
     //#endregion
 
@@ -204,6 +212,154 @@ export default function Home({data}) {
             setMyInstruments(newMyInstruments)
         }
     }
+
+    function generateComplexVocalInstruments(){
+        //Generation Options
+        var instrumentSize = ['Solo', 'Small Group Of', 'Large Group of'] //maybe change gang to ensemble of
+        var sex = ['Male', 'Female', 'Mixed Gender']
+        var maleRange = ['Countertenor', 'Tenor', 'Baritone', 'Bass', 'Falsetto', 'Oktavist', 'Boy']
+        var femaleRange = ['Soprano', 'Mezzo-Soprano', 'Contralto', 'Girl']
+        var articulations = ['Singing', 'Opera Singing', 'Screaming', 'Chanting', 'Humming', 'Growling', 'Shouting', 'Pig Squealling', 'Raspy Singing', 'Throat Singing', 'Beatboxing', 'Rapping', 'Scatting', 'Toasting', 'Doing Vocal Percussion', 'Yodeling']
+
+        const groupChanceOfMultipleRanges = .99
+
+
+        var mySize = ''
+        var mySex = ''
+        var myRanges = []
+        var myArticulation = ''
+
+        //Generation and shit
+
+        var results = []
+
+        for (let index = 0; index < 40; index++) {
+
+
+            mySize = ''
+            mySex = ''
+            myRanges = []
+            myArticulation = ''
+
+
+            //Size Gen
+            mySize = instrumentSize[Math.round(Math.random() * 2)]
+           
+            //Sex Gen
+            if (mySize == 'Solo'){
+                mySex = sex[round(Math.random() * 1)]
+            }else{
+                mySex = sex[round(Math.random() * 2)]
+            }
+            
+            //Range Gen
+            if (mySize == 'Solo'){ //If it's a soloist
+                if (mySex == 'Male') {
+                    myRanges.push(maleRange[Math.round(Math.random() * 6)])
+                }else if (mySex == 'Female') {
+                    myRanges.push(femaleRange[Math.round(Math.random() * 3)])
+            }}else { //If it's an ensemble of some kind
+                if (Math.random() < groupChanceOfMultipleRanges) {//random chance for multiple ranges
+                    if (mySex == 'Male') {
+                        var firstRange = maleRange[Math.round(Math.random() * 6)]
+                        myRanges.push(firstRange)
+                        var newRange = 0
+                        do{
+                            newRange = maleRange[Math.round(Math.random() * 6)]
+                        }while(newRange == firstRange)
+                        myRanges.push(newRange)
+                    }else if (mySex == 'Female') {
+                        var firstRange = femaleRange[Math.round(Math.random() * 3)]
+                        myRanges.push(firstRange)
+                        var newRange = 0
+                        do{
+                            newRange = femaleRange[Math.round(Math.random() * 3)]
+                        }while(newRange == firstRange)
+                        myRanges.push(newRange)
+                    }else{
+                        myRanges.push(maleRange[Math.round(Math.random() * 6)])
+                        myRanges.push(femaleRange[Math.round(Math.random() * 3)])
+                    }
+                }else{//if we don't have multiple ranges, then just give it one of each, except for if it's a mixed choir, then it doesen't matter lol
+                    if (mySex == 'Male') {
+                        myRanges.push(maleRange[Math.round(Math.random() * 6)])
+                    }else if (mySex == 'Female') {
+                        myRanges.push(femaleRange[Math.round(Math.random() * 3)])
+                    }else{
+                        myRanges.push(maleRange[Math.round(Math.random() * 6)])
+                        myRanges.push(femaleRange[Math.round(Math.random() * 3)])
+                    }
+                }
+                
+            }
+
+            //Articulation Gen
+            myArticulation = articulations[Math.round(Math.random() * 15)]
+
+            results.push({
+                name: `${mySize} ${getRangesFormat(myRanges, mySize, false)} ${myArticulation}`,
+                description:`A ${mySize.toLowerCase()} ${mySex == 'Mixed Gender'?'men and women':mySex.toLowerCase()}${getVocalGenDescSuffix(mySize, mySex)} ${myArticulation.toLowerCase()} in the ${getRangesFormat(myRanges, mySize, true).toLowerCase()} range${myRanges.length <= 1 ?'.':'s.'}`
+                //, image: complexGenData.filter(x => x.name == `${mySize} ${myArticulation}`)[0].image
+            })
+        }
+
+        
+
+        return results
+    }
+
+    function getVocalGenDescSuffix(size, sex){
+        if (size == 'Solo') {
+            return ''
+        }else{
+            if (sex == 'Mixed Gender') {
+                return ''
+            }else{
+                return 's'
+            }
+        }
+    }
+
+    function getRangesFormat(ranges, size, noLetterSAtEnd){
+        var formattedReturn = ''
+
+        ranges.map((range, i)=>{
+            if (size == 'Solo') {//If theres only 1 range
+                if(ranges.length <= 1){
+                    formattedReturn += range
+                }else{
+                    formattedReturn += (range + ' and ')
+                }
+                
+            }else{//If there's multiple
+                if (i >= ranges.length - 1) { //if we're at the last item
+                    if (noLetterSAtEnd){
+                        formattedReturn += (range)
+                    }else{
+                        formattedReturn += (range + 's')
+                    }
+                }else{ //if we aren't
+                    if (range == 'Bass') {
+                        if (noLetterSAtEnd){
+                            formattedReturn += (range + ' and ')
+                        }else{
+                            formattedReturn += (range + 'es and ')
+                        }
+                    }else{
+                        if (noLetterSAtEnd){
+                            formattedReturn += (range + ' and ')
+                        }else{
+                            formattedReturn += (range + 's and ')
+                        }
+                        
+                    }
+                }
+            }
+            })
+
+        return formattedReturn
+    }
+
     //#endregion
     
     //#region Instrument Deletion/Clearing
@@ -437,6 +593,29 @@ export default function Home({data}) {
     }
     //#endregion
 
+    function getAllInstruments(){
+        var finalList = []
+        switch (vocalComplexityState) {
+            case 'default':
+                finalList = allInstruments.concat(defVocalData)
+                break;
+            case 'basic':
+                finalList = allInstruments.concat(basicVocalData)
+                break;
+            case 'complex':
+                var tempList = [...allInstruments]
+                var genList = generateComplexVocalInstruments()
+                tempList = tempList.concat(genList)
+                finalList = tempList;
+                break;
+            default: finalList = allInstruments
+                break;
+        }
+        return finalList
+    }
+
+
+
     //on load, if a cookie is present, use those instruments to pre populate the instrument list
     useEffect(()=>{
         try{
@@ -495,12 +674,12 @@ export default function Home({data}) {
                 site_name: "Instrumentation Generation"
             }}
             />
-        {showInstrumentModal ? <InstrumentModal onClose={closeInstrumentModal} instruments={allInstruments} onConfirm={addModalInstrument} /> :  ''}
+        {showInstrumentModal ? <InstrumentModal onClose={closeInstrumentModal} instruments={getAllInstruments()} onConfirm={addModalInstrument} /> :  ''}
         {showReplacementModal ? <ReplacementModal onClose={closeReplacementModal} instruments={allInstruments} onConfirm={replaceInstrument} ogInstId={replacementInstrumentID} /> :  ''}
         {showTemplateModal ? <TemplateModal onClose={closeTemplateModal} templates={templates} onConfirm={addTemplate} allInstruments={allInstruments}/> :  ''}
         {alerts.length > 0 ? <Alerts alerts={alerts} onClosing={closeAlert} /> : ''}
         <h1 className={styles.headingOne}>Parameters</h1>
-        <ParameterList onRandomList={randomListOfInstruments} onNewList={addNewInstruments} onClear={checkClear} onDupesCheck={toggleDupesChecked} onInstrumentModal={openInstrumentModal} onTemplateModal={openTemplateModal} pushAlert={pushAlert} onTagGen={tagBasedGeneration} onExport={exportJSON} onImport={importJSON}></ParameterList>
+        <ParameterList onRandomList={randomListOfInstruments} onNewList={addNewInstruments} onClear={checkClear} onDupesCheck={toggleDupesChecked} onInstrumentModal={openInstrumentModal} onTemplateModal={openTemplateModal} pushAlert={pushAlert} onTagGen={tagBasedGeneration} onExport={exportJSON} onImport={importJSON} onVocalComplexChange={setVocalComplexityState} vocalComplexityState={vocalComplexityState}></ParameterList>
         <h1 className={styles.headingOne}>Instrument List</h1>
         <InstrumentList instruments = {myInstruments} onDel= {deleteInstrument} onLoc={toggleInstrumentLock} onShuf={instrumentShuffle} onRepButClick={openReplacementModal} setRepInstrumentID={setReplacementInstrumentID} ></InstrumentList>
         

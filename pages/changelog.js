@@ -11,37 +11,8 @@ const changelog = () => {
             />
             <h1 className={styles.headingOne} style={{marginBottom: '1rem'}}>Changelog</h1>
                 <div id={styles.changeList} className={styles.container} style={{paddingTop: '.5rem'}}>
-                    <div className={styles.changeItem} style={{paddingTop: 0}}>
-                        <h4 className={styles.headingFour}>Version 0.5</h4>
-                        <p className={styles.itemDate}>August 6th 2021</p>
-                        <ul className={styles.changes}>
-                            <li className={styles.listItem}>Initial Application Version</li>
-                            <li className={styles.listItem}>Over 150 Instruments</li>
-                            <li className={styles.listItem}>Dozens of Templates</li>
-                        </ul>
-                    </div>
-                    <div className={styles.changeItem} style={{paddingTop: 0}}>
-                        <h4 className={styles.headingFour}>Version 0.6</h4>
-                        <p className={styles.itemDate}>October 9th 2021</p>
-                        <ul className={styles.changes}>
-                            <li className={styles.listItem}>Added sorting to library and modals</li>
-                            <li className={styles.listItem}>Added filtering to library and modals</li>
-                            <li className={styles.listItem}>Added tag based instrument generation</li>
-                            <li className={styles.listItem}>Updated CSS</li>
-                        </ul>
-                    </div>
-                    <div className={styles.changeItem} style={{paddingTop: 0}}>
-                        <h4 className={styles.headingFour}>Version 0.7</h4>
-                        <p className={styles.itemDate}>November 11th 2021</p>
-                        <ul className={styles.changes}>
-                            <li className={styles.listItem}>Over 40 new instruments</li>
-                            <li className={styles.listItem}>Finished baseline templates</li>
-                            <li className={styles.listItem}>Messed with some styling</li>
-                            <li className={styles.listItem}>Hella bug fixes</li>
-                        </ul>
-                    </div>
-                    <div className={styles.changeItem} style={{paddingTop: 0}}>
-                        <h4 className={styles.headingFour}>Version 0.8</h4>
+                <div className={styles.changeItem} style={{paddingTop: 0}}>
+                        <h4 className={styles.headingFour}><strong>Beta: </strong>Version 0.8</h4>
                         <p className={styles.itemDate}>February 16th 2022</p>
                         <ul className={styles.changes}>
                             <li className={styles.listItem}>A litany of bug fixes, new instruments and templates</li>
@@ -51,6 +22,37 @@ const changelog = () => {
                             <li className={styles.listItem}>Text formatting overhaul</li>
                         </ul>
                     </div>
+                    <div className={styles.changeItem} style={{paddingTop: 0}}>
+                        <h4 className={styles.headingFour}><strong>Beta: </strong>Version 0.7</h4>
+                        <p className={styles.itemDate}>November 11th 2021</p>
+                        <ul className={styles.changes}>
+                            <li className={styles.listItem}>Over 40 new instruments</li>
+                            <li className={styles.listItem}>Finished baseline templates</li>
+                            <li className={styles.listItem}>Messed with some styling</li>
+                            <li className={styles.listItem}>Hella bug fixes</li>
+                        </ul>
+                    </div>
+                    <div className={styles.changeItem} style={{paddingTop: 0}}>
+                        <h4 className={styles.headingFour}><strong>Beta: </strong>Version 0.6</h4>
+                        <p className={styles.itemDate}>October 9th 2021</p>
+                        <ul className={styles.changes}>
+                            <li className={styles.listItem}>Added sorting to library and modals</li>
+                            <li className={styles.listItem}>Added filtering to library and modals</li>
+                            <li className={styles.listItem}>Added tag based instrument generation</li>
+                            <li className={styles.listItem}>Updated CSS</li>
+                        </ul>
+                    </div>
+                    <div className={styles.changeItem} style={{paddingTop: 0}}>
+                        <h4 className={styles.headingFour}><strong>Beta: </strong>Version 0.5</h4>
+                        <p className={styles.itemDate}>August 6th 2021</p>
+                        <ul className={styles.changes}>
+                            <li className={styles.listItem}>Initial Application Version</li>
+                            <li className={styles.listItem}>Over 150 Instruments</li>
+                            <li className={styles.listItem}>Dozens of Templates</li>
+                        </ul>
+                    </div>
+                    
+                    
                 </div>
 
         </div>

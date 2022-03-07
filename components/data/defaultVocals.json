@@ -1,0 +1,201 @@
+[{
+        "name": "Female Singing",
+        "description": "A Female singing cleanly.",
+        "image": "images/instruments/femalevocals.png",
+        "youtube": "https://www.youtube.com/watch?v=kdjYlrvVFNo",
+        "wikipedia": "https://en.wikipedia.org/wiki/Singing",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+
+    {
+        "name": "Male Singing",
+        "description": "A Male singing cleanly",
+        "image": "images/instruments/malevocals.png",
+        "youtube": "https://www.youtube.com/watch?v=Y2rDb4Ur2dw",
+        "wikipedia": "https://en.wikipedia.org/wiki/Singing",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Throat Singing",
+        "description": "Also known as Overtone Singing, a style used in many traditional cultures",
+        "image": "images/instruments/throatsinging.png",
+        "youtube": "https://www.youtube.com/watch?v=7zZainT9v6Q",
+        "wikipedia": "https://en.wikipedia.org/wiki/Overtone_singing",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "Mongolia",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Male Choir",
+        "description": "A choir of males singing",
+        "image": "images/instruments/malechoir.png",
+        "youtube": "https://www.youtube.com/watch?v=M8FMugHHLWk",
+        "wikipedia": "https://en.wikipedia.org/wiki/Men%27s_chorus",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "polyphonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+
+    {
+        "name": "Female Choir",
+        "description": "A choir of females singing",
+        "image": "images/instruments/femalechoir.png",
+        "youtube": "https://www.youtube.com/watch?v=Fli0e40JYtk",
+        "wikipedia": "https://en.wikipedia.org/wiki/Choir",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "polyphomic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+
+    {
+        "name": "Childrens Choir",
+        "description": "A choir of children singing",
+        "image": "images/instruments/childrenschoir.png",
+        "youtube": "https://www.youtube.com/watch?v=hslq_r6tExQ",
+        "wikipedia": "https://en.wikipedia.org/wiki/Choir",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "polyphomic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+
+    {
+        "name": "Child Vocals",
+        "description": "A children singing",
+        "image": "images/instruments/childvocals.png",
+        "youtube": "https://www.youtube.com/watch?v=nHCU-wo51sU",
+        "wikipedia": "https://en.wikipedia.org/wiki/Boy_soprano",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+
+    {
+        "name": "Mixed Choir",
+        "description": "A choir of both males and females singing",
+        "image": "images/instruments/mixedchoir.png",
+        "youtube": "https://www.youtube.com/watch?v=D-_H3Rj1ywU",
+        "wikipedia": "https://en.wikipedia.org/wiki/Choir",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "polyphomic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Rapping",
+        "description": "Spoken or chanted rhyming lyrics. The components of rap include lyrics, \"flow\" (rhythm, rhyme), and \"delivery\" (cadence, tone).",
+        "image": "images/instruments/rapping.png",
+        "youtube": "https://www.youtube.com/watch?v=izgsppAKtjE",
+        "wikipedia": "https://en.wikipedia.org/wiki/Rapping",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Toasting",
+        "description": "Stemming from African tradition, a vocal style popular in the Caribbean, usually in a monotone melody, over a rhythm or beat.",
+        "image": "images/instruments/toasting.png",
+        "youtube": "https://www.youtube.com/watch?v=m71w9ulZZRw",
+        "wikipedia": "https://en.wikipedia.org/wiki/Toasting_(Jamaican_music)",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Shouted Vocals",
+        "description": "Musical yelling. Common in heavier rock fusion/subgenres. A middle ground between singing and distorted vocals and considered the least technically demanding.",
+        "image": "images/instruments/shouting.png",
+        "youtube": "https://www.youtube.com/watch?v=qRpTf27WtTMw",
+        "wikipedia": "https://en.wikipedia.org/wiki/Screaming_(music)#Hardcore_and_punk_rock",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Yodeling",
+        "description": "A long time European tradition, a form of singing which involves repeated and rapid changes of pitch between the low-pitch chest register and the high-pitch falsetto",
+        "image": "images/instruments/yodeling.png",
+        "youtube": "https://www.youtube.com/watch?v=vQhqikWnQCU",
+        "wikipedia": "https://en.wikipedia.org/wiki/Yodeling",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Yodeling Choir",
+        "description": "A choir of Yodeling singers",
+        "image": "images/instruments/yodelingchoir.png",
+        "youtube": "https://www.youtube.com/watch?v=XFTu0YvXGoE",
+        "wikipedia": "https://en.wikipedia.org/wiki/Yodeling",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    }
+]

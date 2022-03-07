@@ -1,8 +1,8 @@
-import { Button, Row, Col, Container, Form, ButtonGroup } from "react-bootstrap"
+import { Button, Row, Col, Container, Form, ButtonGroup, Collapse } from 'react-bootstrap'
 import styles from "../styles/ParameterList.module.scss"
 import {useState, useEffect, useRef} from 'react'
 
-const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstrumentModal, onTemplateModal, onTagGen, onExport, onImport}) => {
+const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstrumentModal, onTemplateModal, onTagGen, onExport, onImport, onVocalComplexChange, vocalComplexityState}) => {
     
     const [newListState, setNewListState] = useState('')
     const [minNumberState, setMinNumberState] = useState('')
@@ -11,6 +11,7 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
     const [familyState, setFamilyState] = useState('string')
     const [tagGenNum, setTagGenNum] = useState(`1`)
     const hiddenFileInput = useRef(null);
+    const [open, setOpen] = useState(false);
 
     const getFileInput = e =>{
             const fileReader = new FileReader();
@@ -104,7 +105,7 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
                             <Button onClick={() => {onInstrumentModal()}}>Select Instrument</Button>
                         </Form>
                     </Col>
-                    <Col xl={6} align="center" style={{marginBottom: '1rem', minWidth: '18rem'}}>
+                    <Col className={styles.maxHeightContainer} xl={6} align="center" style={{marginBottom: '1rem', minWidth: '18rem'}}>
                         <Form className={styles.formOverride}>
                             <Row><Col><Form.Label>Generate a random instrument by category and family</Form.Label></Col></Row>
                             <Row>
@@ -133,18 +134,40 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
                             <Row><Col style={{paddingRight: '.5rem'}}><Button style={{marginLeft: '.5rem'}} onClick={() => {onTagGen(tagGenNum, categoryState, familyState)}}>Generate {tagGenNum} {categoryState} {categoryState != 'vocal' ? familyState : ''} instrument{tagGenNum != 1 ? 's' : ''}</Button></Col></Row>
                         </Form>
                     </Col>
-                    <Col align="center" style={{marginBottom: '1rem', minWidth: '18rem'}}>
+                    <Col align="center" style={{marginBottom: '1rem'}}>
                         <Form className={styles.formOverride}>
                             <Form.Label>Other Parameters</Form.Label>
-                            <Form.Check onChange={onDupesCheck} className={styles.formCheckOverride} label="No Duplicates?" id="noDupes"/>
-                            <ButtonGroup>
-                                <Button type="button" variant="warning" onClick={onClear}>Clear List</Button>
-                                <Button type="button" variant="secondary" onClick={onExport}>Export list</Button>
-                                <Button type="button" variant="secondary" onClick={() => {hiddenFileInput.current.click()}}>
-                                    <input type="file" ref={hiddenFileInput} accept='.instrgen' onChange={getFileInput} hidden/>
-                                    Import list
-                                </Button>
-                            </ButtonGroup>
+                            <Row>
+                                <Col>
+                                    <Form.Check onChange={onDupesCheck} className={styles.formCheckOverride} label="No Duplicates?" id="noDupes"/>
+                                    <ButtonGroup>
+                                        <Button type="button" variant="warning" onClick={onClear}>Clear List</Button>
+                                        <Button type="button" variant="secondary" onClick={onExport}>Export list</Button>
+                                        <Button type="button" variant="secondary" onClick={() => {hiddenFileInput.current.click()}}>
+                                            <input type="file" ref={hiddenFileInput} accept='.instrgen' onChange={getFileInput} hidden/>
+                                            Import list
+                                        </Button>
+                                    </ButtonGroup>
+                                    <br/>
+                                    <Button variant="outline-dark" style={{width: '100%', marginTop: '1rem'}} onClick={() => setOpen(!open)} aria-controls="example-collapse-text" aria-expanded={open}><span style={{float:'left'}}>{open ? '▲' : '▼' }</span>Advanced Options</Button>
+                                    <Collapse in={open} >
+                                            <div>
+                                            <Row style={{marginTop: '1rem'}}>
+                                                <Col>
+                                                <div>
+                                                    <Form.Label>Vocal Gen Complexity</Form.Label>
+                                                    <Form.Control disabled={!open} className={styles.formControlOverride} placeholder="Default" as="select" value={vocalComplexityState} onChange={(e) => onVocalComplexChange(e.target.value)}>
+                                                        <option value='default'>Default</option>
+                                                        <option value='basic'>Basic</option>
+                                                        <option value='complex'>Complex</option>
+                                                    </Form.Control>
+                                                </div>
+                                                </Col>
+                                            </Row>
+                                            </div>
+                                        </Collapse>
+                                </Col>
+                            </Row>
                         </Form>
                     </Col>
                 </Row>

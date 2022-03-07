@@ -19,6 +19,8 @@ const InstrumentModal = ({onClose, instruments, onConfirm}) => {
         setSelectedInstrument(newInstrument)
     }
 
+    console.log(instruments)
+
     function shuffle(array) {
       var currentIndex = array.length,  randomIndex;
     
@@ -71,10 +73,10 @@ const InstrumentModal = ({onClose, instruments, onConfirm}) => {
                 </select>
                 <br/><br/>
           <Form.Control value={selectedInstrument.name} onChange={(e) => findInstrumentByName(e.target.value)} as="select">
-            {myInstruments.map((instrument, i) => {
+            {myInstruments.length > 0 ? myInstruments.map((instrument, i) => {
                 return <option key={i}>{instrument.name}</option>
             })
-            } 
+            : ''} 
           </Form.Control>
           <img className={"d-block w-100"} src={'../' + selectedInstrument.image} alt={selectedInstrument.name} style={{padding:'1rem', maxHeight: '10rem', height:'100%', objectFit: 'contain', marginTop: '1rem'}}/>
         </Modal.Body>

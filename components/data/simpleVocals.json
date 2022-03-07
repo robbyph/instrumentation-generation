@@ -1,0 +1,62 @@
+[{
+        "name": "Vocals",
+        "description": "Producing musical sounds with the human voice.",
+        "image": "images/instruments/mixedchoir.png",
+        "youtube": "https://www.youtube.com/watch?v=-3iE4IStfRs",
+        "wikipedia": "https://en.wikipedia.org/wiki/Singing",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Distorted Choir",
+        "description": "A choir of screamed, growled and pig squeal vocals",
+        "image": "images/instruments/distortedchoir.png",
+        "youtube": "https://www.youtube.com/watch?v=Zx55zOYnlEg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Choir",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "polyphomic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Distorted Vocals",
+        "description": "Screamed/growled/pig squeal vocals",
+        "image": "images/instruments/distortedvocals.png",
+        "youtube": "https://www.youtube.com/watch?v=hCFBrQWYe3o",
+        "wikipedia": "https://en.wikipedia.org/wiki/Screaming_(music)",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+
+    {
+        "name": "Choir",
+        "description": "A choir of males, females or maybe even children singing",
+        "image": "images/instruments/mixedchoir.png",
+        "youtube": "https://www.youtube.com/watch?v=D-_H3Rj1ywU",
+        "wikipedia": "https://en.wikipedia.org/wiki/Choir",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "polyphomic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    }
+]

@@ -42,9 +42,6 @@ const library = () => {
 
         return list;
     }
-
-    console.log(returnCheckedCategories())
-
     return (
         <div>
                 <NextSeo 
