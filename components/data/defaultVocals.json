@@ -2,7 +2,7 @@
         "name": "Female Singing",
         "description": "A Female singing cleanly.",
         "image": "images/instruments/femalevocals.png",
-        "youtube": "https://www.youtube.com/watch?v=kdjYlrvVFNo",
+        "youtube": "https://www.youtube.com/watch?v=MGmPwhWA7tM",
         "wikipedia": "https://en.wikipedia.org/wiki/Singing",
         "tags": {
             "hornbostelsachs": "aerophone",
@@ -78,7 +78,7 @@
 
     {
         "name": "Childrens Choir",
-        "description": "A choir of children singing",
+        "description": "A choir of boys and girls singing",
         "image": "images/instruments/childrenschoir.png",
         "youtube": "https://www.youtube.com/watch?v=hslq_r6tExQ",
         "wikipedia": "https://en.wikipedia.org/wiki/Choir",
@@ -91,13 +91,59 @@
             "timeframe": "n/a"
         }
     },
+    {
+        "name": "Girls Choir",
+        "description": "A choir of girls singing",
+        "image": "images/instruments/girlschoir.png",
+        "youtube": "https://www.youtube.com/watch?v=ZNd_ZlGIG2M",
+        "wikipedia": "https://en.wikipedia.org/wiki/Women%27s_choir",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "polyphomic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Boys Choir",
+        "description": "A choir of boys singing",
+        "image": "images/instruments/boyschoir.png",
+        "youtube": "https://www.youtube.com/watch?v=SQadcm_dwEM",
+        "wikipedia": "https://en.wikipedia.org/wiki/Boys%27_choir",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "polyphomic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
 
     {
-        "name": "Child Vocals",
-        "description": "A children singing",
-        "image": "images/instruments/childvocals.png",
+        "name": "Boy Vocals",
+        "description": "A boy singing",
+        "image": "images/instruments/boyvocals.png",
         "youtube": "https://www.youtube.com/watch?v=nHCU-wo51sU",
         "wikipedia": "https://en.wikipedia.org/wiki/Boy_soprano",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+
+    {
+        "name": "Girl Vocals",
+        "description": "A girl singing",
+        "image": "images/instruments/girlvocals.png",
+        "youtube": "https://www.youtube.com/watch?v=qDqTBlKU4CE",
+        "wikipedia": "https://en.wikipedia.org/wiki/Women%27s_choir",
         "tags": {
             "hornbostelsachs": "aerophone",
             "category": "vocal",

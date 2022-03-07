@@ -2,10 +2,12 @@ import LibraryInstrumentCard from './LibraryInstrumentCard'
 import styles from '../../styles/InstrumentList.module.scss'
 import {Row, Col} from 'react-bootstrap'
 import instrumentData from '../data/instruments.json'
+import simpleVocalData from '../data/simpleVocals.json'
+import defaultVocalData from '../data/defaultVocals.json'
 import { useEffect, useState } from 'react'
 
 const LibraryInstrumentList = ({sortOption, categoryFilterOptions, familyFilterOptions}) => {
-    const [instruments, setInstruments] = useState([...instrumentData])
+    const [instruments, setInstruments] = useState([...instrumentData].concat(simpleVocalData).concat(defaultVocalData))
     var sorting = sortOption;
     const [alreadyRandomized, setAlreadyRandomized] = useState(false);
     const [randomizedList, setRandomizedList] = useState([]);
@@ -33,7 +35,7 @@ const LibraryInstrumentList = ({sortOption, categoryFilterOptions, familyFilterO
         if (alreadyRandomized) {
             var newInstruments = [...randomizedList];
         }else{
-            var newInstruments = [...instrumentData];      
+            var newInstruments = [...instrumentData].concat(simpleVocalData).concat(defaultVocalData);      
         }
         
 

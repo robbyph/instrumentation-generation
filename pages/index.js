@@ -82,7 +82,7 @@ export default function Home({data}) {
     const newInstrument = () => {
         var newInst;
 
-        newInst = allInstruments[Math.floor(Math.random() * allInstruments.length)]; //pulls random object from allInstruments
+        newInst = getAllInstruments()[Math.floor(Math.random() * getAllInstruments().length)]; //pulls random object from allInstruments
         newInst = JSON.parse(JSON.stringify(newInst)); //deep clones the object
         newInst.locked = false; //defaults it to unlocked
     
@@ -116,7 +116,7 @@ export default function Home({data}) {
 
     const getUniqueInstrumentsRemaining = () => {
         var tempInstruments = myInstruments.filter((v,i,a)=>a.findIndex(t=>(t.name===v.name))===i) //creates a new array that gets rid of all duplicates in my instruments 
-        var numOfUniqueInstRemaining = allInstruments.length - tempInstruments.length;
+        var numOfUniqueInstRemaining = getAllInstruments().length - tempInstruments.length;
         
 
         return numOfUniqueInstRemaining;
@@ -162,7 +162,7 @@ export default function Home({data}) {
     function tagBasedGeneration (num, category, family) {
         var newInstruments = []
 
-        allInstruments.forEach(instrument => {
+        getAllInstruments().forEach(instrument => {
             if(dupesChecked){ //If no duplicates is checked, don't let it give a duplicate instrument
                 var notDupe = true;
                 
@@ -526,7 +526,7 @@ export default function Home({data}) {
         var newInstruments = []
 
         template.map(templateI =>{
-            allInstruments.map(masterI => {
+            getAllInstruments().map(masterI => {
                 if (templateI.name === masterI.name) {
                     newInstruments.push(masterI)
                 }
@@ -568,8 +568,8 @@ export default function Home({data}) {
             for (let i = 0; i < input.length; i++) { //For each imported instrument
                 const importedInstrument = input[i];
                 var thisElementValid = false;
-                for (let j = 0; j < allInstruments.length; j++) { //For each instrument in our database
-                    const allInstrumentsInstrument = allInstruments[j];
+                for (let j = 0; j < getAllInstruments().length; j++) { //For each instrument in our database
+                    const allInstrumentsInstrument = getAllInstruments()[j];
 
                     //If our data from our imported instrument matches atleast one instrument from the data
                     var _ = require('lodash');
@@ -623,7 +623,7 @@ export default function Home({data}) {
             var newInstruments = [];
 
             savedInstrumentData.map((instrument)=>{
-                allInstruments.map((inst2)=>{
+                getAllInstruments().map((inst2)=>{
                     if (instrument == inst2.name) {
                         var newInstr = inst2;
                         inst2.locked = false;
@@ -675,8 +675,8 @@ export default function Home({data}) {
             }}
             />
         {showInstrumentModal ? <InstrumentModal onClose={closeInstrumentModal} instruments={getAllInstruments()} onConfirm={addModalInstrument} /> :  ''}
-        {showReplacementModal ? <ReplacementModal onClose={closeReplacementModal} instruments={allInstruments} onConfirm={replaceInstrument} ogInstId={replacementInstrumentID} /> :  ''}
-        {showTemplateModal ? <TemplateModal onClose={closeTemplateModal} templates={templates} onConfirm={addTemplate} allInstruments={allInstruments}/> :  ''}
+        {showReplacementModal ? <ReplacementModal onClose={closeReplacementModal} instruments={getAllInstruments()} onConfirm={replaceInstrument} ogInstId={replacementInstrumentID} /> :  ''}
+        {showTemplateModal ? <TemplateModal onClose={closeTemplateModal} templates={templates} onConfirm={addTemplate} allInstruments={getAllInstruments()}/> :  ''}
         {alerts.length > 0 ? <Alerts alerts={alerts} onClosing={closeAlert} /> : ''}
         <h1 className={styles.headingOne}>Parameters</h1>
         <ParameterList onRandomList={randomListOfInstruments} onNewList={addNewInstruments} onClear={checkClear} onDupesCheck={toggleDupesChecked} onInstrumentModal={openInstrumentModal} onTemplateModal={openTemplateModal} pushAlert={pushAlert} onTagGen={tagBasedGeneration} onExport={exportJSON} onImport={importJSON} onVocalComplexChange={setVocalComplexityState} vocalComplexityState={vocalComplexityState}></ParameterList>
