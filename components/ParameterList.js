@@ -95,8 +95,8 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
                     <Col align="center" style={{marginBottom: '1rem' , minWidth: '18rem'}}>
                         <Form className={styles.formOverride}>
                             <Form.Label>Add a random group of new instruments</Form.Label>
-                            <Form.Control onKeyPress={(event) => {if (!/[0-9]/.test(event.key)) {event.preventDefault();}}} className={styles.formControlOverride} type="number" placeholder="Amount of Instruments" min="0" value={newListState} onChange={(e) => setNewListState(e.target.value)}/>
-                            <Button type="button" onClick={() => {onNewList(newListState); setNewListState('')}}>Generate Random Instrument(s)</Button>
+                            <Form.Control onKeyPress={(event) => {if (!/[0-9]/.test(event.key)) {event.preventDefault();}}} className={styles.formControlOverride} type="number" placeholder="Amount of Instruments" min="1" value={newListState} onChange={(e) => setNewListState(e.target.value)}/>
+                            <Button type="button" onClick={() => {onNewList(newListState); setNewListState('')}}>Generate Random Instrument{newListState != 1?'s':''}</Button>
                         </Form>
                     </Col>
                     <Col align="center" style={{marginBottom: '1rem', minWidth: '18rem'}}>
