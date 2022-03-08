@@ -219,7 +219,7 @@ export default function Home({data}) {
         var sex = ['Male', 'Female', 'Mixed Gender']
         var maleRange = ['Countertenor', 'Tenor', 'Baritone', 'Bass', 'Falsetto', 'Oktavist', 'Boy']
         var femaleRange = ['Soprano', 'Mezzo-Soprano', 'Contralto', 'Girl']
-        var articulations = ['Singing', 'Opera Singing', 'Screaming', 'Chanting', 'Humming', 'Growling', 'Shouting', 'Pig Squealling', 'Raspy Singing', 'Throat Singing', 'Beatboxing', 'Rapping', 'Scatting', 'Toasting', 'Doing Vocal Percussion', 'Yodeling']
+        var articulations = ['Singing', 'Opera Singing', 'Screaming', 'Chanting', 'Humming', 'Growling', 'Shouting', 'Pig Squealling', 'Whistling', 'Raspy Singing', 'Throat Singing', 'Beatboxing', 'Rapping', 'Scatting', 'Toasting', 'Doing Vocal Percussion', 'Yodeling']
 
         const groupChanceOfMultipleRanges = .99
 
@@ -233,7 +233,7 @@ export default function Home({data}) {
 
         var results = []
 
-        for (let index = 0; index < 40; index++) {
+        for (let index = 0; index < 31; index++) {
 
 
             mySize = ''
@@ -294,7 +294,7 @@ export default function Home({data}) {
             }
 
             //Articulation Gen
-            myArticulation = articulations[Math.round(Math.random() * 15)]
+            myArticulation = articulations[Math.round(Math.random() * 16)]
 
             results.push({
                 name: `${mySize} ${getRangesFormat(myRanges, mySize, false)} ${myArticulation}`,

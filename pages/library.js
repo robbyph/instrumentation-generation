@@ -62,7 +62,7 @@ const library = () => {
                     <Row>
                         <Col>
                             <h5 className={styles.headingFive}>Browse all instruments included in Instrumentation Generation</h5>
-                            <h5 className={styles.headingFive}>There are currently <strong>{instrumentData.length + defaultVocalData.length + simpleVocalData.length}</strong> instruments in the library</h5>
+                            <h5 className={styles.headingFive}>There are currently <strong>{instrumentData.length + defaultVocalData.length}</strong> instruments in the library</h5>
                         </Col>
                     </Row>
 

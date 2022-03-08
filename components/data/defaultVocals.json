@@ -30,6 +30,21 @@
         }
     },
     {
+        "name": "Crooning",
+        "description": "A Male singing in a very smooth style with a high dynamic range",
+        "image": "images/instruments/malevocals.png",
+        "youtube": "https://www.youtube.com/watch?v=ZEcqHA7dbwM",
+        "wikipedia": "https://en.wikipedia.org/wiki/Crooner",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
         "name": "Throat Singing",
         "description": "Also known as Overtone Singing, a style used in many traditional cultures",
         "image": "images/instruments/throatsinging.png",
@@ -40,6 +55,21 @@
             "category": "vocal",
             "family": "vocal",
             "voices": "monophonic",
+            "origin": "Mongolia",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Throat Singing Choir",
+        "description": "A choir of throat singers",
+        "image": "images/instruments/throatsingingchoir.png",
+        "youtube": "https://www.youtube.com/watch?v=58c6QZHfgTc",
+        "wikipedia": "https://en.wikipedia.org/wiki/Overtone_singing",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "polyphonic",
             "origin": "Mongolia",
             "timeframe": "n/a"
         }
@@ -70,7 +100,7 @@
             "hornbostelsachs": "aerophone",
             "category": "vocal",
             "family": "vocal",
-            "voices": "polyphomic",
+            "voices": "polyphonic",
             "origin": "n/a",
             "timeframe": "n/a"
         }
@@ -86,7 +116,7 @@
             "hornbostelsachs": "aerophone",
             "category": "vocal",
             "family": "vocal",
-            "voices": "polyphomic",
+            "voices": "polyphonic",
             "origin": "n/a",
             "timeframe": "n/a"
         }
@@ -101,7 +131,22 @@
             "hornbostelsachs": "aerophone",
             "category": "vocal",
             "family": "vocal",
-            "voices": "polyphomic",
+            "voices": "polyphonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Distorted Choir",
+        "description": "A choir of screamed, shouted, growled and pig squeal vocals",
+        "image": "images/instruments/distortedchoir.png",
+        "youtube": "https://www.youtube.com/watch?v=Zx55zOYnlEg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Choir",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "polyphonic",
             "origin": "n/a",
             "timeframe": "n/a"
         }
@@ -116,7 +161,7 @@
             "hornbostelsachs": "aerophone",
             "category": "vocal",
             "family": "vocal",
-            "voices": "polyphomic",
+            "voices": "polyphonic",
             "origin": "n/a",
             "timeframe": "n/a"
         }
@@ -164,7 +209,7 @@
             "hornbostelsachs": "aerophone",
             "category": "vocal",
             "family": "vocal",
-            "voices": "polyphomic",
+            "voices": "polyphonic",
             "origin": "n/a",
             "timeframe": "n/a"
         }
@@ -175,6 +220,36 @@
         "image": "images/instruments/rapping.png",
         "youtube": "https://www.youtube.com/watch?v=izgsppAKtjE",
         "wikipedia": "https://en.wikipedia.org/wiki/Rapping",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Beatboxing",
+        "description": "Vocal percussion involving the art of mimicking drum mahcines, such as the TR808 with one's lips, mouth, voice and tongue.",
+        "image": "images/instruments/rapping.png",
+        "youtube": "https://www.youtube.com/watch?v=LeBiXBic3sE",
+        "wikipedia": "https://en.wikipedia.org/wiki/Beatboxing",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Ad Libs",
+        "description": "Generally redundant, improvised or unrehearsed lines that are frequently used in rap music as background elements.",
+        "image": "images/instruments/rapping.png",
+        "youtube": "https://www.youtube.com/watch?v=EgMYxMpjQA4",
+        "wikipedia": "https://en.wikipedia.org/wiki/Ad_libitum",
         "tags": {
             "hornbostelsachs": "aerophone",
             "category": "vocal",
@@ -200,11 +275,26 @@
         }
     },
     {
-        "name": "Shouted Vocals",
+        "name": "Shouting",
         "description": "Musical yelling. Common in heavier rock fusion/subgenres. A middle ground between singing and distorted vocals and considered the least technically demanding.",
         "image": "images/instruments/shouting.png",
         "youtube": "https://www.youtube.com/watch?v=qRpTf27WtTMw",
         "wikipedia": "https://en.wikipedia.org/wiki/Screaming_(music)#Hardcore_and_punk_rock",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Raspy Singing",
+        "description": "Singing with a bit of grit on it, common in Rock and Rock Subgenres.",
+        "image": "images/instruments/shouting.png",
+        "youtube": "https://www.youtube.com/watch?v=kgGgDayLrdU",
+        "wikipedia": "https://en.wikipedia.org/wiki/Singing#Extended_vocal_technique",
         "tags": {
             "hornbostelsachs": "aerophone",
             "category": "vocal",
@@ -235,6 +325,156 @@
         "image": "images/instruments/yodelingchoir.png",
         "youtube": "https://www.youtube.com/watch?v=XFTu0YvXGoE",
         "wikipedia": "https://en.wikipedia.org/wiki/Yodeling",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "polyphonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Chanting",
+        "description": "Iterative singing of words/sounds, often on one or two main reciting tones and highly repetitive. Ranges from a simple melody involving limited notes to complex structures.",
+        "image": "images/instruments/chant.png",
+        "youtube": "https://www.youtube.com/watch?v=bZUa7tqhELU",
+        "wikipedia": "https://en.wikipedia.org/wiki/Chant",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Oktavist",
+        "description": "AKA Basso Profondo, or Deep Bass, is the lowest vocal range, sometimes singing a full octave below the bass parts. Common in Russian classical and religious music.",
+        "image": "images/instruments/chant.png",
+        "youtube": "https://www.youtube.com/watch?v=o8qu4OOQ_Dc",
+        "wikipedia": "https://en.wikipedia.org/wiki/Basso_profondo#Oktavist",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Choir Chanting",
+        "description": "A choir chanting",
+        "image": "images/instruments/chantchoir.png",
+        "youtube": "https://www.youtube.com/watch?v=4q77ZEr4aX4",
+        "wikipedia": "https://en.wikipedia.org/wiki/Chant",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Screaming",
+        "description": "Screamed vocals, typical of Metal and some heavier Rock and Punk genres",
+        "image": "images/instruments/distortedvocals.png",
+        "youtube": "https://www.youtube.com/watch?v=g6TN13Jebeg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Screaming_(music)",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Growling",
+        "description": "Vocals with a growled timbre. Abrasive and with usually unintelligable lyrics.",
+        "image": "images/instruments/distortedvocals.png",
+        "youtube": "https://www.youtube.com/watch?v=ZPF21coAh34",
+        "wikipedia": "https://en.wikipedia.org/wiki/Death_growl",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Pig Squealing",
+        "description": "Screamed vocals with a timbre resembling the squeal of a pig",
+        "image": "images/instruments/distortedvocals.png",
+        "youtube": "https://www.youtube.com/watch?v=SCMMz98SvGI",
+        "wikipedia": "https://en.wikipedia.org/wiki/Screaming_(music)",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Scatting",
+        "description": "Common in Jazz, vocal improvisation with wordless vocables, nonsense syllables or without words at all. The singer improvises melodies and rythyms without regard for lyrics.",
+        "image": "images/instruments/toasting.png",
+        "youtube": "https://www.youtube.com/watch?v=k0175vPMU7o",
+        "wikipedia": "https://en.wikipedia.org/wiki/Scat_singing",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Whispering",
+        "description": "A vocal style that is soft and dampered",
+        "image": "images/instruments/whispering.png",
+        "youtube": "https://www.youtube.com/watch?v=1pP5wRXkrgQ",
+        "wikipedia": "https://en.wikipedia.org/wiki/Whispering",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Humming",
+        "description": "A soft, worldess vocal tone",
+        "image": "images/instruments/whispering.png",
+        "youtube": "https://www.youtube.com/watch?v=kvd5Mrjq3jc",
+        "wikipedia": "https://en.wikipedia.org/wiki/Humming#Music",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "vocal",
+            "family": "vocal",
+            "voices": "monophonic",
+            "origin": "n/a",
+            "timeframe": "n/a"
+        }
+    },
+    {
+        "name": "Whistling",
+        "description": "An artificial whistle sound created by a small opening in one's lips",
+        "image": "images/instruments/whispering.png",
+        "youtube": "https://www.youtube.com/watch?v=ErvgV4P6Fzc",
+        "wikipedia": "https://en.wikipedia.org/wiki/Whistling",
         "tags": {
             "hornbostelsachs": "aerophone",
             "category": "vocal",

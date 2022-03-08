@@ -1,31 +1,3 @@
-[{
-        "name": "Rapping",
-        "description": "Spoken or chanted rhyming lyrics. The components of rap include lyrics, \"flow\" (rhythm, rhyme), and \"delivery\" (cadence, tone).",
-        "image": "images/instruments/rapping.png",
-        "youtube": "https://www.youtube.com/watch?v=izgsppAKtjE",
-        "wikipedia": "https://en.wikipedia.org/wiki/Rapping",
-        "tags": {
-            "hornbostelsachs": "aerophone",
-            "category": "vocal",
-            "family": "vocal",
-            "voices": "monophonic",
-            "origin": "n/a",
-            "timeframe": "n/a"
-        }
-    },
-    {
-        "name": "Toasting",
-        "description": "Stemming from African tradition, a vocal style popular in the Caribbean, usually in a monotone melody, over a rhythm or beat.",
-        "image": "images/instruments/toasting.png",
-        "youtube": "https://www.youtube.com/watch?v=m71w9ulZZRw",
-        "wikipedia": "https://en.wikipedia.org/wiki/Toasting_(Jamaican_music)",
-        "tags": {
-            "hornbostelsachs": "aerophone",
-            "category": "vocal",
-            "family": "vocal",
-            "voices": "monophonic",
-            "origin": "n/a",
-            "timeframe": "n/a"
-        }
-    }
+[
+
 ]

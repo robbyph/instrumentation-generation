@@ -7,7 +7,7 @@ import defaultVocalData from '../data/defaultVocals.json'
 import { useEffect, useState } from 'react'
 
 const LibraryInstrumentList = ({sortOption, categoryFilterOptions, familyFilterOptions}) => {
-    const [instruments, setInstruments] = useState([...instrumentData].concat(simpleVocalData).concat(defaultVocalData))
+    const [instruments, setInstruments] = useState([...instrumentData].concat(defaultVocalData))
     var sorting = sortOption;
     const [alreadyRandomized, setAlreadyRandomized] = useState(false);
     const [randomizedList, setRandomizedList] = useState([]);
@@ -35,7 +35,7 @@ const LibraryInstrumentList = ({sortOption, categoryFilterOptions, familyFilterO
         if (alreadyRandomized) {
             var newInstruments = [...randomizedList];
         }else{
-            var newInstruments = [...instrumentData].concat(simpleVocalData).concat(defaultVocalData);      
+            var newInstruments = [...instrumentData].concat(defaultVocalData);      
         }
         
 

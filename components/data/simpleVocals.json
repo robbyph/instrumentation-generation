@@ -15,7 +15,7 @@
     },
     {
         "name": "Distorted Choir",
-        "description": "A choir of screamed, growled and pig squeal vocals",
+        "description": "A choir of screamed, shouted, growled and pig squeal vocals",
         "image": "images/instruments/distortedchoir.png",
         "youtube": "https://www.youtube.com/watch?v=Zx55zOYnlEg",
         "wikipedia": "https://en.wikipedia.org/wiki/Choir",
@@ -23,14 +23,14 @@
             "hornbostelsachs": "aerophone",
             "category": "vocal",
             "family": "vocal",
-            "voices": "polyphomic",
+            "voices": "polyphonic",
             "origin": "n/a",
             "timeframe": "n/a"
         }
     },
     {
         "name": "Distorted Vocals",
-        "description": "Screamed/growled/pig squeal vocals",
+        "description": "Screamed/shouted/growled/pig squeal vocals",
         "image": "images/instruments/distortedvocals.png",
         "youtube": "https://www.youtube.com/watch?v=hCFBrQWYe3o",
         "wikipedia": "https://en.wikipedia.org/wiki/Screaming_(music)",
@@ -54,7 +54,7 @@
             "hornbostelsachs": "aerophone",
             "category": "vocal",
             "family": "vocal",
-            "voices": "polyphomic",
+            "voices": "polyphonic",
             "origin": "n/a",
             "timeframe": "n/a"
         }
