@@ -7,7 +7,6 @@ import { useState, useEffect } from 'react'
 import instrumentData from '../components/data/instruments.json'
 import simpleVocalData from '../components/data/simpleVocals.json'
 import defaultVocalData from '../components/data/defaultVocals.json'
-import complexGenerationData from '../components/data/complexGenData.json'
 import templateData from '../components/data/templates.json'
 import Alerts from '../components/Alerts'
 import InstrumentModal from '../components/Modals/InstrumentModal'
@@ -26,7 +25,6 @@ export default function Home({data}) {
     const allInstruments = instrumentData
     const basicVocalData = simpleVocalData
     const defVocalData = defaultVocalData
-    const complexGenData = complexGenerationData
     const templates = templateData
     const [myInstruments, setMyInstruments] = useState([])
     const [alerts, setAlerts] = useState([])
@@ -38,6 +36,8 @@ export default function Home({data}) {
     const [replacementInstrumentID, setReplacementInstrumentID] = useState(0)
     const [cookie, setCookie] = useCookies(["userInstrumentList"])
     const [vocalComplexityState, setVocalComplexityState] = useState('default')
+
+    console.log(defVocalData)
 
     //#endregion
 
@@ -219,7 +219,7 @@ export default function Home({data}) {
         var sex = ['Male', 'Female', 'Mixed Gender']
         var maleRange = ['Countertenor', 'Tenor', 'Baritone', 'Bass', 'Falsetto', 'Oktavist', 'Boy']
         var femaleRange = ['Soprano', 'Mezzo-Soprano', 'Contralto', 'Girl']
-        var articulations = ['Singing', 'Opera Singing', 'Screaming', 'Chanting', 'Humming', 'Growling', 'Shouting', 'Pig Squealling', 'Whistling', 'Raspy Singing', 'Throat Singing', 'Beatboxing', 'Rapping', 'Scatting', 'Toasting', 'Doing Vocal Percussion', 'Yodeling']
+        var articulations = ['Singing', 'Opera Singing', 'Screaming', 'Chanting', 'Humming', 'Growling', 'Shouting', 'Pig Squealing', 'Whistling', 'Raspy Singing', 'Throat Singing', 'Beatboxing', 'Rapping', 'Scatting', 'Toasting', 'Yodeling']
 
         const groupChanceOfMultipleRanges = .99
 
@@ -294,19 +294,104 @@ export default function Home({data}) {
             }
 
             //Articulation Gen
-            myArticulation = articulations[Math.round(Math.random() * 16)]
+            myArticulation = articulations[Math.round(Math.random() * 15)]
 
             results.push({
                 name: `${mySize} ${getRangesFormat(myRanges, mySize, false)} ${myArticulation}`,
                 description:`A ${mySize.toLowerCase()} ${mySex == 'Mixed Gender'?'men and women':mySex.toLowerCase()}${getVocalGenDescSuffix(mySize, mySex)} ${myArticulation.toLowerCase()} in the ${getRangesFormat(myRanges, mySize, true).toLowerCase()} range${myRanges.length <= 1 ?'.':'s.'}`
-                //, image: complexGenData.filter(x => x.name == `${mySize} ${myArticulation}`)[0].image
+                , image: getVocalGenImage(mySex, myArticulation)
+                , youtube: getVocalGenYoutubeLink(mySex, myArticulation)
+                , wikipedia: getVocalGenWikipediaLink(mySex, myArticulation)
+                , tags: getVocalGenTags(mySex, myArticulation)
             })
         }
 
-        
+
 
         return results
     }
+
+    function getVocalGenImage(sex, articulation){
+        var image;
+
+        //try and fetch the image
+        if (articulation == 'Singing' || articulation == 'Opera Singing') { //There are a couple special cases to check for
+            if (sex == 'Male') {
+                image = defVocalData.filter(x => x.name == 'Male Singing')[0].image
+            }else{
+                image = defVocalData.filter(x => x.name == 'Female Singing')[0].image
+            }
+        }else{ //If it's not a special case
+            image = defVocalData.filter(x => x.name == articulation)[0].image
+        }
+        
+
+        return image
+    }
+
+    function getVocalGenYoutubeLink(sex, articulation){
+        var youtube;
+        
+        try {
+            //try and fetch the image
+            if (articulation == 'Singing' || articulation == 'Opera Singing') { //There are a couple special cases to check for
+                if (sex == 'Male') {
+                    youtube = defVocalData.filter(x => x.name == 'Male Singing')[0].youtube
+                }else{
+                    youtube = defVocalData.filter(x => x.name == 'Female Singing')[0].youtube
+                }
+            }else{ //If it's not a special case
+                youtube = defVocalData.filter(x => x.name == articulation)[0].youtube
+            }
+        } catch (error) {
+            console.log(error)
+        }
+        
+        return youtube
+    }
+
+    function getVocalGenWikipediaLink(sex, articulation){
+        var wikipedia;
+        
+        try {
+            //try and fetch the image
+            if (articulation == 'Singing' || articulation == 'Opera Singing') { //There are a couple special cases to check for
+                if (sex == 'Male') {
+                    wikipedia = defVocalData.filter(x => x.name == 'Male Singing')[0].wikipedia
+                }else{
+                    wikipedia = defVocalData.filter(x => x.name == 'Female Singing')[0].wikipedia
+                }
+            }else{ //If it's not a special case
+                wikipedia = defVocalData.filter(x => x.name == articulation)[0].wikipedia
+            }
+        } catch (error) {
+            console.log(error)
+        }
+        
+        return wikipedia
+    }
+
+    function getVocalGenTags(sex, articulation){
+        var tags;
+        
+        try {
+            //try and fetch the image
+            if (articulation == 'Singing' || articulation == 'Opera Singing') { //There are a couple special cases to check for
+                if (sex == 'Male') {
+                    tags = defVocalData.filter(x => x.name == 'Male Singing')[0].tags
+                }else{
+                    tags = defVocalData.filter(x => x.name == 'Female Singing')[0].tags
+                }
+            }else{ //If it's not a special case
+                tags = defVocalData.filter(x => x.name == articulation)[0].tags
+            }
+        } catch (error) {
+            console.log(error)
+        }
+        
+        return tags
+    }
+
 
     function getVocalGenDescSuffix(size, sex){
         if (size == 'Solo') {
@@ -526,7 +611,7 @@ export default function Home({data}) {
         var newInstruments = []
 
         template.map(templateI =>{
-            getAllInstruments().map(masterI => {
+            allInstruments.concat(basicVocalData).concat(defVocalData).map(masterI => {
                 if (templateI.name === masterI.name) {
                     newInstruments.push(masterI)
                 }
@@ -676,7 +761,7 @@ export default function Home({data}) {
             />
         {showInstrumentModal ? <InstrumentModal onClose={closeInstrumentModal} instruments={getAllInstruments()} onConfirm={addModalInstrument} /> :  ''}
         {showReplacementModal ? <ReplacementModal onClose={closeReplacementModal} instruments={getAllInstruments()} onConfirm={replaceInstrument} ogInstId={replacementInstrumentID} /> :  ''}
-        {showTemplateModal ? <TemplateModal onClose={closeTemplateModal} templates={templates} onConfirm={addTemplate} allInstruments={getAllInstruments()}/> :  ''}
+        {showTemplateModal ? <TemplateModal onClose={closeTemplateModal} templates={templates} onConfirm={addTemplate} allInstruments={allInstruments.concat(basicVocalData).concat(defVocalData)}/> :  ''}
         {alerts.length > 0 ? <Alerts alerts={alerts} onClosing={closeAlert} /> : ''}
         <h1 className={styles.headingOne}>Parameters</h1>
         <ParameterList onRandomList={randomListOfInstruments} onNewList={addNewInstruments} onClear={checkClear} onDupesCheck={toggleDupesChecked} onInstrumentModal={openInstrumentModal} onTemplateModal={openTemplateModal} pushAlert={pushAlert} onTagGen={tagBasedGeneration} onExport={exportJSON} onImport={importJSON} onVocalComplexChange={setVocalComplexityState} vocalComplexityState={vocalComplexityState}></ParameterList>

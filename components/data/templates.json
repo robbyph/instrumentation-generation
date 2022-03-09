@@ -21,7 +21,7 @@
     {
         "name": "Bardcore",
         "description": "AKA Tavernwave, is a microgenre consisting of popular songs remade with medieval instruments, as well as original music that is played with medieval instruments with modern rythyms, harmonies and melodies",
-        "instruments": ["Lute", "Hurdy Gurdy", "Tambourine", "Sung Drum", "Flute", "Violin", "Piano", "Sharm"]
+        "instruments": ["Lute", "Hurdy Gurdy", "Tambourine", "Tenor Drum", "Wood Flute", "Violin", "Piano", "Shawm"]
     },
     {
         "name": "Symphony Orchestra",
