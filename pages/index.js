@@ -703,6 +703,7 @@ export default function Home({data}) {
     }
 
     function getAlInstrumentsTotal(){
+        console.log('total of all instruments', allInstruments.concat(basicVocalData).concat(defVocalData))
         return allInstruments.concat(basicVocalData).concat(defVocalData)
     }
 
@@ -715,7 +716,7 @@ export default function Home({data}) {
             var newInstruments = [];
 
             savedInstrumentData.map((instrument)=>{
-                getAllInstrumentsTotal().map((inst2)=>{
+                getAlInstrumentsTotal().map((inst2)=>{
                     if (instrument == inst2.name) {
                         var newInstr = inst2;
                         inst2.locked = false;
