@@ -37,7 +37,6 @@ export default function Home({data}) {
     const [cookie, setCookie] = useCookies(["userInstrumentList"])
     const [vocalComplexityState, setVocalComplexityState] = useState('default')
 
-    console.log(defVocalData)
 
     //#endregion
 
@@ -702,7 +701,7 @@ export default function Home({data}) {
         return finalList
     }
 
-    function getAlInstrumentsTotal(){
+    function getAllInstrumentsTotal(){
         console.log('total of all instruments', allInstruments.concat(basicVocalData).concat(defVocalData))
         return allInstruments.concat(basicVocalData).concat(defVocalData)
     }
@@ -716,7 +715,7 @@ export default function Home({data}) {
             var newInstruments = [];
 
             savedInstrumentData.map((instrument)=>{
-                getAlInstrumentsTotal().map((inst2)=>{
+                getAllInstrumentsTotal().map((inst2)=>{
                     if (instrument == inst2.name) {
                         var newInstr = inst2;
                         inst2.locked = false;
@@ -769,7 +768,7 @@ export default function Home({data}) {
             />
         {showInstrumentModal ? <InstrumentModal onClose={closeInstrumentModal} instruments={getAllInstrumentsCurrent()} onConfirm={addModalInstrument} /> :  ''}
         {showReplacementModal ? <ReplacementModal onClose={closeReplacementModal} instruments={getAllInstrumentsCurrent()} onConfirm={replaceInstrument} ogInstId={replacementInstrumentID} /> :  ''}
-        {showTemplateModal ? <TemplateModal onClose={closeTemplateModal} templates={templates} onConfirm={addTemplate} allInstruments={getAlInstrumentsTotal()}/> :  ''}
+        {showTemplateModal ? <TemplateModal onClose={closeTemplateModal} templates={templates} onConfirm={addTemplate} allInstruments={getAllInstrumentsTotal()}/> :  ''}
         {alerts.length > 0 ? <Alerts alerts={alerts} onClosing={closeAlert} /> : ''}
         <h1 className={styles.headingOne}>Parameters</h1>
         <ParameterList onRandomList={randomListOfInstruments} onNewList={addNewInstruments} onClear={checkClear} onDupesCheck={toggleDupesChecked} onInstrumentModal={openInstrumentModal} onTemplateModal={openTemplateModal} pushAlert={pushAlert} onTagGen={tagBasedGeneration} onExport={exportJSON} onImport={importJSON} onVocalComplexChange={setVocalComplexityState} vocalComplexityState={vocalComplexityState}></ParameterList>

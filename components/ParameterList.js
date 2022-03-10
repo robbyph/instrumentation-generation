@@ -38,7 +38,6 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
         var index = 0;
         var fams = []
 
-        console.log(cat)
 
         if (cat == 'contemporary'){
             index = Math.floor(Math.random() * 5);
@@ -51,7 +50,6 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
             fams = ['string', 'percussion', 'wind', 'keyboard']
         } 
 
-        console.log(fams[index])
         return fams[index]
     }
 
@@ -159,7 +157,7 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
                                                     <Form.Control disabled={!open} className={styles.formControlOverride} placeholder="Default" as="select" value={vocalComplexityState} onChange={(e) => onVocalComplexChange(e.target.value)}>
                                                         <option value='default'>Default</option>
                                                         <option value='basic'>Basic</option>
-                                                        <option value='complex'>Complex</option>
+                                                        <option value='complex'>Complex (In Dev)</option>
                                                     </Form.Control>
                                                 </div>
                                                 </Col>
