@@ -37,7 +37,6 @@ export default function Home({data}) {
     const [cookie, setCookie] = useCookies(["userInstrumentList"])
     const [vocalComplexityState, setVocalComplexityState] = useState('default')
 
-
     //#endregion
 
     //#region Instrument Generation Functions
@@ -215,7 +214,7 @@ export default function Home({data}) {
     //#endregion
     //#region complex vocal gen
 
-    function generateComplexVocalInstruments(){
+    function generateComplexVocalInstruments(amountOfInstruments){
         //Generation Options
         var instrumentSize = ['Solo', 'Small Group Of', 'Large Group of'] //maybe change gang to ensemble of
         var sex = ['Male', 'Female', 'Mixed Gender']
@@ -223,19 +222,20 @@ export default function Home({data}) {
         var femaleRange = ['Soprano', 'Mezzo-Soprano', 'Contralto', 'Girl']
         var articulations = ['Singing', 'Opera Singing', 'Screaming', 'Chanting', 'Humming', 'Growling', 'Shouting', 'Pig Squealing', 'Whistling', 'Raspy Singing', 'Throat Singing', 'Beatboxing', 'Rapping', 'Scatting', 'Toasting', 'Yodeling']
 
-        const groupChanceOfMultipleRanges = .99
+        const groupChanceOfMultipleRanges = .30
 
 
         var mySize = ''
         var mySex = ''
         var myRanges = []
         var myArticulation = ''
+        var myNameShort = []
 
         //Generation and shit
 
         var results = []
 
-        for (let index = 0; index < 31; index++) {
+        for (let index = 0; index < amountOfInstruments; index++) {
 
 
             mySize = ''
@@ -243,60 +243,98 @@ export default function Home({data}) {
             myRanges = []
             myArticulation = ''
 
+            //For cookie regeneration
+            myNameShort = []
+
 
             //Size Gen
-            mySize = instrumentSize[Math.round(Math.random() * 2)]
-           
+            var sizeNum = Math.round(Math.random() * 2)
+            mySize = instrumentSize[sizeNum]
+            myNameShort.push(sizeNum)
+
             //Sex Gen
             if (mySize == 'Solo'){
-                mySex = sex[round(Math.random() * 1)]
+                var sexNum = round(Math.random() * 1)
+                mySex = sex[sexNum]
+                myNameShort.push(sexNum)
             }else{
-                mySex = sex[round(Math.random() * 2)]
+                var sexNum = round(Math.random() * 2)
+                mySex = sex[sexNum]
+                myNameShort.push(sexNum)
             }
+
+            //Articulation Gen
+            var articulationNum = Math.round(Math.random() * 15)
+            myArticulation = articulations[articulationNum]
+            myNameShort.push(articulationNum)
             
             //Range Gen
             if (mySize == 'Solo'){ //If it's a soloist
                 if (mySex == 'Male') {
-                    myRanges.push(maleRange[Math.round(Math.random() * 6)])
+                    var rangeNum = Math.round(Math.random() * 6)
+                    myRanges.push(maleRange[rangeNum])
+                    myNameShort.push(rangeNum)
                 }else if (mySex == 'Female') {
-                    myRanges.push(femaleRange[Math.round(Math.random() * 3)])
+                    var rangeNum = Math.round(Math.random() * 3)
+                    myRanges.push(femaleRange[rangeNum])
+                    myNameShort.push(rangeNum)
             }}else { //If it's an ensemble of some kind
                 if (Math.random() < groupChanceOfMultipleRanges) {//random chance for multiple ranges
-                    if (mySex == 'Male') {
-                        var firstRange = maleRange[Math.round(Math.random() * 6)]
+                    if (mySex == 'Male') { //Gen Male group with multiple ranges
+                        var rangeNum1 = Math.round(Math.random() * 6)
+                        var firstRange = maleRange[rangeNum1]
                         myRanges.push(firstRange)
+                        myNameShort.push(rangeNum1)
                         var newRange = 0
+                        var rangeNum2 = 0
                         do{
-                            newRange = maleRange[Math.round(Math.random() * 6)]
-                        }while(newRange == firstRange)
+                            rangeNum2 = Math.round(Math.random() * 6)
+                        }while(rangeNum1 == rangeNum2)
+                        newRange = maleRange[rangeNum2]
                         myRanges.push(newRange)
-                    }else if (mySex == 'Female') {
-                        var firstRange = femaleRange[Math.round(Math.random() * 3)]
+                        myNameShort.push(rangeNum2)
+                    }else if (mySex == 'Female') { //female group
+                        var rangeNum1 = Math.round(Math.random() * 3)
+                        var firstRange = maleRange[rangeNum1]
                         myRanges.push(firstRange)
+                        myNameShort.push(rangeNum1)
                         var newRange = 0
+                        var rangeNum2 = 0
                         do{
-                            newRange = femaleRange[Math.round(Math.random() * 3)]
-                        }while(newRange == firstRange)
+                            rangeNum2 = Math.round(Math.random() * 3)
+                        }while(rangeNum1 == rangeNum2)
+                        newRange = maleRange[rangeNum2]
                         myRanges.push(newRange)
-                    }else{
-                        myRanges.push(maleRange[Math.round(Math.random() * 6)])
-                        myRanges.push(femaleRange[Math.round(Math.random() * 3)])
+                        myNameShort.push(rangeNum2)
+                    }else{ //mixed sex
+                        var rangeNum1 = Math.round(Math.random() * 6)
+                        var rangeNum2 = Math.round(Math.random() * 3)
+                        myRanges.push(maleRange[rangeNum1])
+                        myRanges.push(femaleRange[rangeNum2])
+                        myNameShort.push(rangeNum1)
+                        myNameShort.push(rangeNum2)
                     }
                 }else{//if we don't have multiple ranges, then just give it one of each, except for if it's a mixed choir, then it doesen't matter lol
                     if (mySex == 'Male') {
-                        myRanges.push(maleRange[Math.round(Math.random() * 6)])
+                        var rangeNum = Math.round(Math.random() * 6)
+                        myRanges.push(maleRange[rangeNum])
+                        myNameShort.push(rangeNum)
                     }else if (mySex == 'Female') {
-                        myRanges.push(femaleRange[Math.round(Math.random() * 3)])
+                        var rangeNum = Math.round(Math.random() * 3)
+                        myRanges.push(femaleRange[rangeNum])
+                        myNameShort.push(rangeNum)
                     }else{
-                        myRanges.push(maleRange[Math.round(Math.random() * 6)])
-                        myRanges.push(femaleRange[Math.round(Math.random() * 3)])
+                        var rangeNum1 = Math.round(Math.random() * 6)
+                        var rangeNum2 = Math.round(Math.random() * 3)
+                        myRanges.push(maleRange[rangeNum1])
+                        myRanges.push(femaleRange[rangeNum2])
+                        myNameShort.push(rangeNum1)
+                        myNameShort.push(rangeNum2)
                     }
                 }
                 
             }
 
-            //Articulation Gen
-            myArticulation = articulations[Math.round(Math.random() * 15)]
 
             results.push({
                 name: `${mySize} ${getRangesFormat(myRanges, mySize, false)} ${myArticulation}`,
@@ -305,6 +343,8 @@ export default function Home({data}) {
                 , youtube: getVocalGenYoutubeLink(mySex, myArticulation)
                 , wikipedia: getVocalGenWikipediaLink(mySex, myArticulation)
                 , tags: getVocalGenTags(mySex, myArticulation)
+                , generated : true,
+                shortName: myNameShort
             })
         }
 
@@ -635,7 +675,6 @@ export default function Home({data}) {
             pushAlert(closeAlert, 'Empty List Error', 'You cannot export an empty list!', 'warning', undefined, undefined, true)
         }else{
             download(Buffer.from(JSON.stringify(myInstruments)).toString('base64'), "MyInstrumentationGenerationList.instrgen")
-            //download(JSON.stringify(myInstruments), "MyInstrumentationGenerationList.instrgen")
         }
     }
 
@@ -691,7 +730,7 @@ export default function Home({data}) {
                 break;
             case 'complex':
                 var tempList = [...allInstruments]
-                var genList = generateComplexVocalInstruments()
+                var genList = generateComplexVocalInstruments(30)
                 tempList = tempList.concat(genList)
                 finalList = tempList;
                 break;
@@ -702,8 +741,89 @@ export default function Home({data}) {
     }
 
     function getAllInstrumentsTotal(){
-        console.log('total of all instruments', allInstruments.concat(basicVocalData).concat(defVocalData))
         return allInstruments.concat(basicVocalData).concat(defVocalData)
+    }
+
+    function regenerateVocals(instrumentName){
+        const instrumentSize = ['Solo', 'Small Group Of', 'Large Group of'] //maybe change gang to ensemble of
+        const sex = ['Male', 'Female', 'Mixed Gender']
+        const maleRange = ['Countertenor', 'Tenor', 'Baritone', 'Bass', 'Falsetto', 'Oktavist', 'Boy']
+        const femaleRange = ['Soprano', 'Mezzo-Soprano', 'Contralto', 'Girl']
+        const articulations = ['Singing', 'Opera Singing', 'Screaming', 'Chanting', 'Humming', 'Growling', 'Shouting', 'Pig Squealing', 'Whistling', 'Raspy Singing', 'Throat Singing', 'Beatboxing', 'Rapping', 'Scatting', 'Toasting', 'Yodeling']
+
+        var mySize = ''
+        var mySex = ''
+        var myRanges = []
+        var myArticulation = ''
+
+
+        //For cookie regeneration
+        var myNameShort = []
+        
+        var newInst = instrumentName
+        var params = newInst.split('.')
+
+        console.log(params)
+
+        for (let index = 0; index < params.length; index++) { //for each of our parameters
+            const element = params[index];
+
+            console.log('index ', index)
+            console.log('element ', element)
+
+            if (index == 0){ //if size
+                var sizeNum = parseInt(element, 10)
+                mySize = instrumentSize[sizeNum]
+                myNameShort.push(sizeNum)
+                console.log('size ', mySize)
+            }else if (index == 1){ //if sex
+                var sexNum = parseInt(element, 10)
+                mySex = sex[sexNum]
+                myNameShort.push(sexNum)
+                console.log('mySex ', mySex)
+            }else if(index == 2){ //if articulation
+                var articulationNum = parseInt(element, 10)
+                myArticulation = articulations[articulationNum]
+                myNameShort.push(articulationNum)
+                console.log(myArticulation)
+            }else{ //if range
+                if (mySex == 'Male') {
+                    var rangeNum = parseInt(element, 10)
+                    myRanges.push(maleRange[rangeNum])
+                    myNameShort.push(rangeNum)
+                    console.log(myRanges)
+                }else if(mySex == 'Female'){
+                    var rangeNum = parseInt(element, 10)
+                    myRanges.push(femaleRange[rangeNum])
+                    myNameShort.push(rangeNum)
+                    console.log(myRanges)
+                }else{ //Mixed Group
+                    if(myRanges.length > 0){
+                        var rangeNum = parseInt(element, 10)
+                        myRanges.push(maleRange[rangeNum])
+                        myNameShort.push(rangeNum)
+                        console.log(myRanges)
+                    }else{
+                        var rangeNum = parseInt(element, 10)
+                        myRanges.push(femaleRange[rangeNum])
+                        myNameShort.push(rangeNum)
+                        console.log(myRanges)
+                    }
+                }
+                console.log(myRanges)
+            }
+        }
+
+        return {
+            name: `${mySize} ${getRangesFormat(myRanges, mySize, false)} ${myArticulation}`,
+            description:`A ${mySize.toLowerCase()} ${mySex == 'Mixed Gender'?'men and women':mySex.toLowerCase()}${getVocalGenDescSuffix(mySize, mySex)} ${myArticulation.toLowerCase()} in the ${getRangesFormat(myRanges, mySize, true).toLowerCase()} range${myRanges.length <= 1 ?'.':'s.'}`
+            , image: getVocalGenImage(mySex, myArticulation)
+            , youtube: getVocalGenYoutubeLink(mySex, myArticulation)
+            , wikipedia: getVocalGenWikipediaLink(mySex, myArticulation)
+            , tags: getVocalGenTags(mySex, myArticulation)
+            , generated : true,
+            shortName: myNameShort
+        }
     }
 
 
@@ -714,16 +834,21 @@ export default function Home({data}) {
             var savedInstrumentData = data.userInstrumentList.split(',');
             var newInstruments = [];
 
-            savedInstrumentData.map((instrument)=>{
-                getAllInstrumentsTotal().map((inst2)=>{
-                    if (instrument == inst2.name) {
-                        var newInstr = inst2;
-                        inst2.locked = false;
-                        
-                        newInstruments.push(newInstr)
-                    }
-                })
-            })
+            console.log(savedInstrumentData)
+            
+            savedInstrumentData.map((instrumentName)=>{
+                if (instrumentName[0] == '0' || instrumentName[0] == '1' || instrumentName[0] == '2' ) {  //if generated
+                    newInstruments.push(regenerateVocals(instrumentName))
+                }else{
+                    getAllInstrumentsTotal().map((inst2)=>{
+                        if (instrumentName == inst2.name) {
+                            var newInstr = inst2;
+                            inst2.locked = false;
+                            
+                            newInstruments.push(newInstr)
+                        }
+                    })
+            }})
 
             setMyInstruments(newInstruments)
         }catch (err){
@@ -735,13 +860,20 @@ export default function Home({data}) {
     //anytime myInstruments is changed, we set the cookie properly
     useEffect(()=>{
         var instrList = []
-
+        
         myInstruments.map((instrument) =>{
-            instrList.push(instrument.name)
+            if (instrument.generated == true) {
+                var newInst = instrument
+                newInst.shortName = newInst.shortName.join('.')
+                instrList.push(newInst.shortName)
+            }else{
+                instrList.push(instrument.name)
+            }
         })
         
         try{
             setCookie("userInstrumentList", instrList.join(), {path: "/", maxAge: 36000, sameSite: true})
+            console.log(instrList)
         }catch (err){
             console.log(err)
         }
