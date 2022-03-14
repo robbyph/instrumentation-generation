@@ -335,6 +335,7 @@ export default function Home({data}) {
                 
             }
 
+            console.log(myNameShort)
 
             results.push({
                 name: `${mySize} ${getRangesFormat(myRanges, mySize, false)} ${myArticulation}`,
@@ -344,7 +345,8 @@ export default function Home({data}) {
                 , wikipedia: getVocalGenWikipediaLink(mySex, myArticulation)
                 , tags: getVocalGenTags(mySex, myArticulation)
                 , generated : true,
-                shortName: myNameShort
+                shortName: myNameShort,
+                locked: false
             })
         }
 
@@ -694,18 +696,21 @@ export default function Home({data}) {
             for (let i = 0; i < input.length; i++) { //For each imported instrument
                 const importedInstrument = input[i];
                 var thisElementValid = false;
-                for (let j = 0; j < getAllInstrumentsTotal().length; j++) { //For each instrument in our database
-                    const allInstrumentsInstrument = getAllInstrumentsTotal()[j];
-
-                    //If our data from our imported instrument matches atleast one instrument from the data
-                    var _ = require('lodash');
-                    if (_.isEqual(_.omit(importedInstrument, ['locked', 'id']), allInstrumentsInstrument)) {
-                        thisElementValid = true;
-                    } 
-                }
-                if (!thisElementValid) {
-                   isValid = false; 
-                }
+                if(importedInstrument.generated == true){
+                    //skip database validation
+                }else{
+                    for (let j = 0; j < getAllInstrumentsTotal().length; j++) { //For each instrument in our database
+                        const allInstrumentsInstrument = getAllInstrumentsTotal()[j];
+                        //If our data from our imported instrument matches atleast one instrument from the data
+                        var _ = require('lodash');
+                        if (_.isEqual(_.omit(importedInstrument, ['locked', 'id']), allInstrumentsInstrument)) {
+                            thisElementValid = true;
+                        } 
+                    }
+                    if (!thisElementValid) {
+                    isValid = false; 
+                    }
+            }
             }
             }
 
@@ -822,7 +827,8 @@ export default function Home({data}) {
             , wikipedia: getVocalGenWikipediaLink(mySex, myArticulation)
             , tags: getVocalGenTags(mySex, myArticulation)
             , generated : true,
-            shortName: myNameShort
+            shortName: myNameShort,
+            locked: false
         }
     }
 
@@ -861,10 +867,16 @@ export default function Home({data}) {
     useEffect(()=>{
         var instrList = []
         
+        //If it's generated, then convert it's shortname into a string
         myInstruments.map((instrument) =>{
             if (instrument.generated == true) {
                 var newInst = instrument
-                newInst.shortName = newInst.shortName.join('.')
+                console.log(newInst.shortName)
+                if (typeof newInst.shortName == "string") {
+                    //don't do anything
+                }else{
+                    newInst.shortName = newInst.shortName.join('.')
+                }
                 instrList.push(newInst.shortName)
             }else{
                 instrList.push(instrument.name)
