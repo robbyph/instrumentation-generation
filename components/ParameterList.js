@@ -2,7 +2,7 @@ import { Button, Row, Col, Container, Form, ButtonGroup, Collapse } from 'react-
 import styles from "../styles/ParameterList.module.scss"
 import {useState, useEffect, useRef} from 'react'
 
-const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstrumentModal, onTemplateModal, onTagGen, onExport, onImport, onVocalComplexChange, vocalComplexityState}) => {
+const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstrumentModal, onTemplateModal, onTagGen, onExport, onImport, onVocalComplexChange, vocalComplexityState, onOrchComplexChange, orchComplexityState}) => {
     
     const [newListState, setNewListState] = useState('')
     const [minNumberState, setMinNumberState] = useState('')
@@ -157,7 +157,15 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
                                                     <Form.Control disabled={!open} className={styles.formControlOverride} placeholder="Default" as="select" value={vocalComplexityState} onChange={(e) => onVocalComplexChange(e.target.value)}>
                                                         <option value='default'>Default</option>
                                                         <option value='basic'>Basic</option>
-                                                        <option value='complex'>Complex (In Dev)</option>
+                                                        <option value='complex'>Complex</option>
+                                                    </Form.Control>
+                                                </div>
+                                                <div>
+                                                    <Form.Label>Orchestral Gen Complexity</Form.Label>
+                                                    <Form.Control disabled={!open} className={styles.formControlOverride} placeholder="Default" as="select" value={orchComplexityState} onChange={(e) => onOrchComplexChange(e.target.value)}>
+                                                        <option value='all'>Default</option>
+                                                        <option value='instruments'>Individual Instruments and Families Only</option>
+                                                        <option value='sections'>Broad Sections Only</option>
                                                     </Form.Control>
                                                 </div>
                                                 </Col>

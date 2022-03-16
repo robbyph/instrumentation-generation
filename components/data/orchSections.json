@@ -1,0 +1,91 @@
+[{
+        "name": "Symphony Orchestra",
+        "description": "A large instrumental ensemble typical of classical and film music. Contains Strings, Brass, Wind, Percussion, Keys and Harp. Sometimes in tandem with choir. Usually 70 - 100 musicians.",
+        "image": "images/instruments/symphonyorch.png",
+        "youtube": "https://www.youtube.com/watch?v=6zTc2hD2npA",
+        "wikipedia": "https://en.wikipedia.org/wiki/Orchestra",
+        "tags": {
+            "hornbostelsachs": "multi",
+            "category": "orchestral",
+            "family": "multi",
+            "voices": "polyphonic",
+            "origin": "europe",
+            "timeframe": "renaissance"
+        }
+    },
+    {
+        "name": "Chamber Orchestra",
+        "description": "A medium sized instrumental ensemble typical of classical music. Contains Strings, Brass and Wind, with occasional auxillary instruments. Usually 20 - 50 members. The OG Orchestra.",
+        "image": "images/instruments/chamberorch.png",
+        "youtube": "https://www.youtube.com/watch?v=bKFLH-y6Ao0",
+        "wikipedia": "https://en.wikipedia.org/wiki/Orchestra",
+        "tags": {
+            "hornbostelsachs": "multi",
+            "category": "orchestral",
+            "family": "multi",
+            "voices": "polyphonic",
+            "origin": "europe",
+            "timeframe": "renaissance"
+        }
+    },
+    {
+        "name": "Wind Section",
+        "description": "A section of instruments usually consisting of flutes, oboes, bassoons, clarinets and occasionally some auxlillary instruments",
+        "image": "images/instruments/windsection.png",
+        "youtube": "https://www.youtube.com/watch?v=KEt1Mm8sSkA",
+        "wikipedia": "https://en.wikipedia.org/wiki/Woodwind_section",
+        "tags": {
+            "hornbostelsachs": "aerophone",
+            "category": "orchestral",
+            "family": "wind",
+            "voices": "polyphonic",
+            "origin": "europe",
+            "timeframe": "renaissance"
+        }
+    },
+    {
+        "name": "String Section",
+        "description": "A section of instruments usually consisting of first and second violins, violas, cellos, and double basses",
+        "image": "images/instruments/stringsection.png",
+        "youtube": "https://www.youtube.com/watch?v=MP2_6OLummA",
+        "wikipedia": "https://en.wikipedia.org/wiki/Double_bass",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "orchestral",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "europe",
+            "timeframe": "renaissance"
+        }
+    },
+    {
+        "name": "Brass Section",
+        "description": "A section of brass instruments usually consisting of trumpets, horns, trombones, and tubas",
+        "image": "images/instruments/brasssection.png",
+        "youtube": "https://www.youtube.com/watch?v=yE0aSxziNdY",
+        "wikipedia": "https://en.wikipedia.org/wiki/Brass_section",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "orchestral",
+            "family": "brass",
+            "voices": "polyphonic",
+            "origin": "europe",
+            "timeframe": "renaissance"
+        }
+    },
+    {
+        "name": "Percussion Section",
+        "description": "A section of instruments consisting of timpani as well as various pitched and unpitched percussion",
+        "image": "images/instruments/percsection.png",
+        "youtube": "https://www.youtube.com/watch?v=LaXgEHBYT3c",
+        "wikipedia": "https://en.wikipedia.org/wiki/Percussion_section",
+        "tags": {
+            "hornbostelsachs": "membranophone",
+            "category": "orchestral",
+            "family": "percussion",
+            "voices": "polyphonic",
+            "origin": "europe",
+            "timeframe": "renaissance"
+        }
+    }
+]

@@ -7,6 +7,8 @@ import { useState, useEffect } from 'react'
 import instrumentData from '../components/data/instruments.json'
 import simpleVocalData from '../components/data/simpleVocals.json'
 import defaultVocalData from '../components/data/defaultVocals.json'
+import orchInstrumentData from '../components/data/orchInstruments.json'
+import orchSectionData from '../components/data/orchSections.json'
 import templateData from '../components/data/templates.json'
 import Alerts from '../components/Alerts'
 import InstrumentModal from '../components/Modals/InstrumentModal'
@@ -25,6 +27,8 @@ export default function Home({data}) {
     const allInstruments = instrumentData
     const basicVocalData = simpleVocalData
     const defVocalData = defaultVocalData
+    const orchInstData = orchInstrumentData
+    const orchSecData = orchSectionData
     const templates = templateData
     const [myInstruments, setMyInstruments] = useState([])
     const [alerts, setAlerts] = useState([])
@@ -36,6 +40,7 @@ export default function Home({data}) {
     const [replacementInstrumentID, setReplacementInstrumentID] = useState(0)
     const [cookie, setCookie] = useCookies(["userInstrumentList"])
     const [vocalComplexityState, setVocalComplexityState] = useState('default')
+    const [orchComplexityState, setOrchComplexityState] = useState('all')
 
     //#endregion
 
@@ -655,7 +660,7 @@ export default function Home({data}) {
         var newInstruments = []
 
         template.map(templateI =>{
-            allInstruments.concat(basicVocalData).concat(defVocalData).map(masterI => {
+            allInstruments.concat(basicVocalData).concat(defVocalData).concat(orchInstData).concat(orchSecData).map(masterI => {
                 if (templateI.name === masterI.name) {
                     newInstruments.push(masterI)
                 }
@@ -726,6 +731,7 @@ export default function Home({data}) {
 
     function getAllInstrumentsCurrent(){
         var finalList = []
+        //check for vocal complexity
         switch (vocalComplexityState) {
             case 'default':
                 finalList = allInstruments.concat(defVocalData)
@@ -739,14 +745,24 @@ export default function Home({data}) {
                 tempList = tempList.concat(genList)
                 finalList = tempList;
                 break;
-            default: finalList = allInstruments
+        }
+        switch (orchComplexityState) {
+            case 'all':
+                finalList = finalList.concat(orchInstData).concat(orchSecData)
+                break;
+            case 'instruments':
+            finalList = finalList.concat(orchInstData)
+                break;
+            case 'sections':
+            finalList = finalList.concat(orchSecData)
                 break;
         }
+
         return finalList
     }
 
     function getAllInstrumentsTotal(){
-        return allInstruments.concat(basicVocalData).concat(defVocalData)
+        return allInstruments.concat(basicVocalData).concat(defVocalData).concat(orchInstData).concat(orchSecData)
     }
 
     function regenerateVocals(instrumentName){
@@ -915,7 +931,7 @@ export default function Home({data}) {
         {showTemplateModal ? <TemplateModal onClose={closeTemplateModal} templates={templates} onConfirm={addTemplate} allInstruments={getAllInstrumentsTotal()}/> :  ''}
         {alerts.length > 0 ? <Alerts alerts={alerts} onClosing={closeAlert} /> : ''}
         <h1 className={styles.headingOne}>Parameters</h1>
-        <ParameterList onRandomList={randomListOfInstruments} onNewList={addNewInstruments} onClear={checkClear} onDupesCheck={toggleDupesChecked} onInstrumentModal={openInstrumentModal} onTemplateModal={openTemplateModal} pushAlert={pushAlert} onTagGen={tagBasedGeneration} onExport={exportJSON} onImport={importJSON} onVocalComplexChange={setVocalComplexityState} vocalComplexityState={vocalComplexityState}></ParameterList>
+        <ParameterList onRandomList={randomListOfInstruments} onNewList={addNewInstruments} onClear={checkClear} onDupesCheck={toggleDupesChecked} onInstrumentModal={openInstrumentModal} onTemplateModal={openTemplateModal} pushAlert={pushAlert} onTagGen={tagBasedGeneration} onExport={exportJSON} onImport={importJSON} onVocalComplexChange={setVocalComplexityState} vocalComplexityState={vocalComplexityState} onOrchComplexChange={setOrchComplexityState} orchComplexityState={orchComplexityState}></ParameterList>
         <h1 className={styles.headingOne}>Instrument List</h1>
         <InstrumentList instruments = {myInstruments} onDel= {deleteInstrument} onLoc={toggleInstrumentLock} onShuf={instrumentShuffle} onRepButClick={openReplacementModal} setRepInstrumentID={setReplacementInstrumentID} ></InstrumentList>
         
