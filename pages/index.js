@@ -500,7 +500,7 @@ export default function Home({data}) {
 
     //#endregion
 
-     //#region complex guitar gen
+    //#region complex guitar gen
 
      function generateComplexGuitarInstruments(amountOfInstruments){
         //Generation Options
