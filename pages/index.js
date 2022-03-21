@@ -1,5 +1,3 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import ParameterList from '../components/ParameterList'
 import InstrumentList from '../components/InstrumentList'
@@ -15,11 +13,10 @@ import Alerts from '../components/Alerts'
 import InstrumentModal from '../components/Modals/InstrumentModal'
 import ReplacementModal from '../components/Modals/ReplacementModal'
 import TemplateModal from '../components/Modals/TemplateModal'
-import { NextSeo, SoftwareAppJsonLd } from 'next-seo'
+import { NextSeo } from 'next-seo'
 import { useCookies } from "react-cookie"
 import { parseCookies } from "../helpers/index"
 import download from 'downloadjs'
-import NewsletterSubscribe from '../components/NewsletterSubscribe'
 import { round } from 'lodash'
 
 export default function Home({data}) {
