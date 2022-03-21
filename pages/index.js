@@ -905,7 +905,6 @@ export default function Home({data}) {
 
     //#endregion
 
-
     //#region regeneration
     function regenerateVocals(instrumentName){
         const instrumentSize = ['Solo', 'Small Group Of', 'Large Group of'] //maybe change gang to ensemble of
@@ -1048,6 +1047,8 @@ export default function Home({data}) {
     }
     //#endregion
 
+    //#region cookie stuff
+
     function isNumeric(str) {
         if (typeof str != "string") return false // we only process strings!  
         return !isNaN(str) && // use type coercion to parse the _entirety_ of the string (`parseFloat` alone does not do this)...
@@ -1115,7 +1116,7 @@ export default function Home({data}) {
         }
     }, [myInstruments])
 
-
+    //#endregion
 
     return (
     <div>
