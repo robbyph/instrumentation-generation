@@ -2,7 +2,7 @@ import { Button, Row, Col, Container, Form, ButtonGroup, Collapse } from 'react-
 import styles from "../styles/ParameterList.module.scss"
 import {useState, useEffect, useRef} from 'react'
 
-const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstrumentModal, onTemplateModal, onTagGen, onExport, onImport, onVocalComplexChange, vocalComplexityState, onOrchComplexChange, orchComplexityState}) => {
+const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstrumentModal, onTemplateModal, onTagGen, onExport, onImport, onVocalComplexChange, vocalComplexityState, onOrchComplexChange, orchComplexityState, onGuitarComplexChange, guitarComplexityState}) => {
     
     const [newListState, setNewListState] = useState('')
     const [minNumberState, setMinNumberState] = useState('')
@@ -166,6 +166,13 @@ const ParameterList = ({onRandomList, onNewList, onClear, onDupesCheck, onInstru
                                                         <option value='all'>Default</option>
                                                         <option value='instruments'>Individual Instruments and Families Only</option>
                                                         <option value='sections'>Broad Sections Only</option>
+                                                    </Form.Control>
+                                                </div>
+                                                <div>
+                                                    <Form.Label>Guitar Gen Complexity</Form.Label>
+                                                    <Form.Control disabled={!open} className={styles.formControlOverride} placeholder="Default" as="select" value={guitarComplexityState} onChange={(e) => onGuitarComplexChange(e.target.value)}>
+                                                        <option value='default'>Default</option>
+                                                        <option value='complex'>Complex (In Dev)</option>
                                                     </Form.Control>
                                                 </div>
                                                 </Col>

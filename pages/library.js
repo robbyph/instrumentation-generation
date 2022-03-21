@@ -5,10 +5,11 @@ import { useEffect, useState } from 'react'
 import {Form, Container, Col, Row, Collapse, Button} from 'react-bootstrap'
 import DropdownChecklist from '../components/DropdownChecklist'
 import instrumentData from '../components/data/instruments.json'
-import simpleVocalData from '../components/data/simpleVocals.json'
 import defaultVocalData from '../components/data/defaultVocals.json'
 import orchInstrumentData from '../components/data/orchInstruments.json'
 import orchSectionData from '../components/data/orchSections.json'
+import defaultGuitarData from '../components/data/defaultGuitars.json'
+
 
 const DEFAULT_FAMILY_CHECKS = [{label: 'String', checked: true}, {label: 'Percussion', checked: true}, {label: 'Brass', checked: true}, {label: 'Wind', checked: true}, {label: 'Electronic', checked: true}, {label: 'Keyboard', checked: true}]
 const DEFAULT_CATEGORY_CHECKS = [{label: 'Contemporary', checked: true}, {label: 'Orchestral', checked: true}, {label: 'Traditional', checked: true}, {label: 'Vocal', checked: true}]
@@ -64,7 +65,7 @@ const library = () => {
                     <Row>
                         <Col>
                             <h5 className={styles.headingFive}>Browse all instruments included in Instrumentation Generation</h5>
-                            <h5 className={styles.headingFive}>There are currently <strong>{instrumentData.length + defaultVocalData.length + orchInstrumentData.length + orchSectionData.length}</strong> instruments in the library</h5>
+                            <h5 className={styles.headingFive}>There are currently <strong>{instrumentData.length + defaultVocalData.length + orchInstrumentData.length + orchSectionData.length + defaultGuitarData.length}</strong> instruments in the library</h5>
                         </Col>
                     </Row>
 

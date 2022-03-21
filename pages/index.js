@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react'
 import instrumentData from '../components/data/instruments.json'
 import simpleVocalData from '../components/data/simpleVocals.json'
 import defaultVocalData from '../components/data/defaultVocals.json'
+import defaultGuitarData from '../components/data/defaultGuitars.json'
 import orchInstrumentData from '../components/data/orchInstruments.json'
 import orchSectionData from '../components/data/orchSections.json'
 import templateData from '../components/data/templates.json'
@@ -27,6 +28,7 @@ export default function Home({data}) {
     const allInstruments = instrumentData
     const basicVocalData = simpleVocalData
     const defVocalData = defaultVocalData
+    const defGuitarData = defaultGuitarData
     const orchInstData = orchInstrumentData
     const orchSecData = orchSectionData
     const templates = templateData
@@ -41,6 +43,7 @@ export default function Home({data}) {
     const [cookie, setCookie] = useCookies(["userInstrumentList"])
     const [vocalComplexityState, setVocalComplexityState] = useState('default')
     const [orchComplexityState, setOrchComplexityState] = useState('all')
+    const [guitarComplexityState, setGuitarComplexityState] = useState('default')
 
     //#endregion
 
@@ -217,6 +220,7 @@ export default function Home({data}) {
     }
 
     //#endregion
+
     //#region complex vocal gen
 
     function generateComplexVocalInstruments(amountOfInstruments){
@@ -249,7 +253,7 @@ export default function Home({data}) {
             myArticulation = ''
 
             //For cookie regeneration
-            myNameShort = []
+            myNameShort = ['0']
 
 
             //Size Gen
@@ -495,7 +499,130 @@ export default function Home({data}) {
     }
 
     //#endregion
+
+     //#region complex guitar gen
+
+     function generateComplexGuitarInstruments(amountOfInstruments){
+        //Generation Options
+        var distortionLevel = ['Clean', 'Boosted', 'Overdriven', 'Distorted', 'Fuzz', 'Bitcrushed'] 
+        var stringAmount = ['4', '6', '7', '8', '9']
+        var effects = ['Reverb', 'Delay', 'Tremolo', 'Vibrato', 'Chorus', 'Flanger', 'Phaser', 'Whammy', 'Wah', 'Ring Mod', 'Autofilter', 'Volume Pedal', 'Auto Wah', 'Talk Box', 'Harmonizer', 'Feedbacker', 'Auto Pan', 'Echo', 'Octaver', 'Sustainer']
+
+        var myDistortionLevel = ''
+        var myStringAmount = ''
+        var myEffects = []
+        var myNameShort = []
+        var amountOfEffects = 0
+
+        //Generation and shit
+
+        var results = []
+
+        for (let index = 0; index < amountOfInstruments; index++) {
+            //reset any values that may be applied
+            myDistortionLevel = ''
+            myStringAmount = ''
+            myEffects = []
+            amountOfEffects = Math.round(Math.random() * 5) + 1
+
+
+            //For cookie regeneration
+            myNameShort = ['1']
+
+            //Distortion Gen
+            var distNum = Math.round(Math.random() * (distortionLevel.length - 1))
+            myDistortionLevel = distortionLevel[distNum]
+            myNameShort.push(distNum)
+
+            //String Gen
+            var weightNum = Math.random()
+
+            if (weightNum <= 0.05) {
+                myStringAmount = stringAmount[0]
+                myNameShort.push(0)
+            }else if(weightNum <= 0.10){
+                myStringAmount = stringAmount[4]
+                myNameShort.push(4)
+            }else if(weightNum <= 0.20){
+                myStringAmount = stringAmount[3]
+                myNameShort.push(3)
+            }else if(weightNum <= 0.35){
+                myStringAmount = stringAmount[2]
+                myNameShort.push(2)
+            }else if(weightNum <= 1){
+                myStringAmount = stringAmount[1]
+                myNameShort.push(1)
+            }
+
+            //Effects Gen
+            for (let index = 0; index < amountOfEffects; index++) {
+                var effectsNum = null
+                do {
+                    effectsNum = Math.round(Math.random() * (effects.length - 1))
+                } while (!(guitarEffectsNoDupes(effects[effectsNum], myEffects)));
+                myEffects.push(effects[effectsNum])
+                myNameShort.push(effectsNum)
+            }
+
+            results.push({
+                name: `${myStringAmount} String ${myDistortionLevel} Electric Guitar`,
+                description:`Effects: ${myEffects.join(', ')}`
+                , image: getGuitarGenImage(myDistortionLevel)
+                , youtube: "https://www.youtube.com/watch?v=Pg6QaQpSoUc"
+                , wikipedia: "https://en.wikipedia.org/wiki/Electric_guitar"
+                , tags: defGuitarData.filter(x => x.name == 'Clean Electric Guitar')[0].tags
+                , generated : true,
+                shortName: myNameShort,
+                locked: false
+            })
+        }
+
+        return results
+    }
+
+    function guitarEffectsNoDupes(newEffect, effects){
+        var result = true
+        effects.map((effect)=>{
+            if (newEffect == effect) {
+                result = false
+            }
+        })
+        return result
+    }
+
+    function getGuitarGenImage(distortionLevel){
+        var image;
+
+        switch (distortionLevel) {
+            case 'Clean':
+                image = defGuitarData.filter(x => x.name == 'Clean Electric Guitar')[0].image
+                break;
+            case 'Boosted':
+                image = defGuitarData.filter(x => x.name == 'Overdriven Electric Guitar')[0].image
+                break;
+            case 'Overdriven':
+                image = defGuitarData.filter(x => x.name == 'Overdriven Electric Guitar')[0].image
+                break;
+            case 'Distorted':
+                image = defGuitarData.filter(x => x.name == 'Distorted Electric Guitar')[0].image
+                break;
+            case 'Fuzz':
+                image = defGuitarData.filter(x => x.name == 'Fuzz Electric Guitar')[0].image
+                break;
+            case 'Bitcrushed':
+                image = defGuitarData.filter(x => x.name == 'Fuzz Electric Guitar')[0].image
+                break;
+            default:
+                Console.Log("ERROR 346: IMAGE NOT FOUND")
+                break;
+        }
+        
+        return image
+    }
     
+
+    //#endregion
+
     //#region Instrument Deletion/Clearing
 
     function deleteInstrument(instrID) {
@@ -660,7 +787,7 @@ export default function Home({data}) {
         var newInstruments = []
 
         template.map(templateI =>{
-            allInstruments.concat(basicVocalData).concat(defVocalData).concat(orchInstData).concat(orchSecData).map(masterI => {
+            allInstruments.concat(basicVocalData).concat(defVocalData).concat(orchInstData).concat(orchSecData).concat(defGuitarData).map(masterI => {
                 if (templateI.name === masterI.name) {
                     newInstruments.push(masterI)
                 }
@@ -729,6 +856,7 @@ export default function Home({data}) {
     }
     //#endregion
 
+    //#region getInstruments
     function getAllInstrumentsCurrent(){
         var finalList = []
         //check for vocal complexity
@@ -757,14 +885,28 @@ export default function Home({data}) {
             finalList = finalList.concat(orchSecData)
                 break;
         }
-
+        switch(guitarComplexityState){
+            case 'default':
+            finalList = finalList.concat(defGuitarData)
+                break;
+            case 'complex':
+                var tempList = [...finalList]
+                var genList = generateComplexGuitarInstruments(10)
+                tempList = tempList.concat(genList)
+                finalList = tempList;
+                break;
+        }
         return finalList
     }
 
     function getAllInstrumentsTotal(){
-        return allInstruments.concat(basicVocalData).concat(defVocalData).concat(orchInstData).concat(orchSecData)
+        return allInstruments.concat(basicVocalData).concat(defVocalData).concat(orchInstData).concat(orchSecData).concat(defGuitarData)
     }
 
+    //#endregion
+
+
+    //#region regeneration
     function regenerateVocals(instrumentName){
         const instrumentSize = ['Solo', 'Small Group Of', 'Large Group of'] //maybe change gang to ensemble of
         const sex = ['Male', 'Female', 'Mixed Gender']
@@ -779,30 +921,30 @@ export default function Home({data}) {
 
 
         //For cookie regeneration
-        var myNameShort = []
+        var myNameShort = [0]
         
         var newInst = instrumentName
         var params = newInst.split('.')
 
         console.log(params)
 
-        for (let index = 0; index < params.length; index++) { //for each of our parameters
+        for (let index = 1; index < params.length; index++) { //for each of our parameters
             const element = params[index];
 
             console.log('index ', index)
             console.log('element ', element)
 
-            if (index == 0){ //if size
+            if (index == 1){ //if size
                 var sizeNum = parseInt(element, 10)
                 mySize = instrumentSize[sizeNum]
                 myNameShort.push(sizeNum)
                 console.log('size ', mySize)
-            }else if (index == 1){ //if sex
+            }else if (index == 2){ //if sex
                 var sexNum = parseInt(element, 10)
                 mySex = sex[sexNum]
                 myNameShort.push(sexNum)
                 console.log('mySex ', mySex)
-            }else if(index == 2){ //if articulation
+            }else if(index == 3){ //if articulation
                 var articulationNum = parseInt(element, 10)
                 myArticulation = articulations[articulationNum]
                 myNameShort.push(articulationNum)
@@ -835,6 +977,7 @@ export default function Home({data}) {
             }
         }
 
+
         return {
             name: `${mySize} ${getRangesFormat(myRanges, mySize, false)} ${myArticulation}`,
             description:`A ${mySize.toLowerCase()} ${mySex == 'Mixed Gender'?'men and women':mySex.toLowerCase()}${getVocalGenDescSuffix(mySize, mySex)} ${myArticulation.toLowerCase()} in the ${getRangesFormat(myRanges, mySize, true).toLowerCase()} range${myRanges.length <= 1 ?'.':'s.'}`
@@ -848,7 +991,68 @@ export default function Home({data}) {
         }
     }
 
+    function regenerateGuitar(instrumentName){
+        var distortionLevel = ['Clean', 'Boosted', 'Overdriven', 'Distorted', 'Fuzz', 'Bitcrushed'] 
+        var stringAmount = ['4', '6', '7', '8', '9']
+        var effects = ['Reverb', 'Delay', 'Tremolo', 'Vibrato', 'Chorus', 'Flanger', 'Phaser', 'Whammy', 'Wah', 'Ring Mod', 'Autofilter', 'Volume Pedal', 'Auto Wah', 'Talk Box', 'Harmonizer', 'Feedbacker', 'Auto Pan', 'Echo', 'Octaver', 'Sustainer']
 
+        var myDistortionLevel = ''
+        var myStringAmount = ''
+        var myEffects = []
+
+        //For cookie regeneration
+        var myNameShort = [1]
+        
+        var newInst = instrumentName
+        var params = newInst.split('.')
+
+        console.log(params)
+
+        for (let index = 1; index < params.length; index++) { //for each of our parameters
+            const element = params[index];
+
+            console.log('index ', index)
+            console.log('element ', element)
+
+            if (index == 1){ //if distortion
+                var distortionNum = parseInt(element, 10)
+                myDistortionLevel = distortionLevel[distortionNum]
+                myNameShort.push(distortionNum)
+                console.log('distortion ', distortionNum)
+            }else if (index == 2){ //if strings
+                var stringNum = parseInt(element, 10)
+                myStringAmount = stringAmount[stringNum]
+                myNameShort.push(stringNum)
+                console.log('myStringAmount ', myStringAmount)
+            }else{ //if effect
+                var effectNum = parseInt(element, 10)
+                myEffects.push(effects[effectNum])
+                myNameShort.push(effectNum)
+                console.log('effect ', effects[effectNum])
+            }
+        }
+
+        
+
+        return{
+            name: `${myStringAmount} String ${myDistortionLevel} Electric Guitar`,
+            description:`Effects: ${myEffects.join(', ')}`
+            , image: getGuitarGenImage(myDistortionLevel)
+            , youtube: "https://www.youtube.com/watch?v=Pg6QaQpSoUc"
+            , wikipedia: "https://en.wikipedia.org/wiki/Electric_guitar"
+            , tags: defGuitarData.filter(x => x.name == 'Clean Electric Guitar')[0].tags
+            , generated : true,
+            shortName: myNameShort,
+            locked: false
+        }
+    }
+    //#endregion
+
+    function isNumeric(str) {
+        if (typeof str != "string") return false // we only process strings!  
+        return !isNaN(str) && // use type coercion to parse the _entirety_ of the string (`parseFloat` alone does not do this)...
+               !isNaN(parseFloat(str)) // ...and ensure strings of whitespace fail
+      }
 
     //on load, if a cookie is present, use those instruments to pre populate the instrument list
     useEffect(()=>{
@@ -859,8 +1063,12 @@ export default function Home({data}) {
             console.log(savedInstrumentData)
             
             savedInstrumentData.map((instrumentName)=>{
-                if (instrumentName[0] == '0' || instrumentName[0] == '1' || instrumentName[0] == '2' ) {  //if generated
-                    newInstruments.push(regenerateVocals(instrumentName))
+                if (isNumeric(instrumentName[0])) {  //if generated
+                    if (instrumentName[0] == '0') { // '0' means it's vocal
+                        newInstruments.push(regenerateVocals(instrumentName))
+                    } else if (instrumentName[0] == '1') { // '1' means it's a guitar
+                        newInstruments.push(regenerateGuitar(instrumentName))
+                    }
                 }else{
                     getAllInstrumentsTotal().map((inst2)=>{
                         if (instrumentName == inst2.name) {
@@ -931,7 +1139,7 @@ export default function Home({data}) {
         {showTemplateModal ? <TemplateModal onClose={closeTemplateModal} templates={templates} onConfirm={addTemplate} allInstruments={getAllInstrumentsTotal()}/> :  ''}
         {alerts.length > 0 ? <Alerts alerts={alerts} onClosing={closeAlert} /> : ''}
         <h1 className={styles.headingOne}>Parameters</h1>
-        <ParameterList onRandomList={randomListOfInstruments} onNewList={addNewInstruments} onClear={checkClear} onDupesCheck={toggleDupesChecked} onInstrumentModal={openInstrumentModal} onTemplateModal={openTemplateModal} pushAlert={pushAlert} onTagGen={tagBasedGeneration} onExport={exportJSON} onImport={importJSON} onVocalComplexChange={setVocalComplexityState} vocalComplexityState={vocalComplexityState} onOrchComplexChange={setOrchComplexityState} orchComplexityState={orchComplexityState}></ParameterList>
+        <ParameterList onRandomList={randomListOfInstruments} onNewList={addNewInstruments} onClear={checkClear} onDupesCheck={toggleDupesChecked} onInstrumentModal={openInstrumentModal} onTemplateModal={openTemplateModal} pushAlert={pushAlert} onTagGen={tagBasedGeneration} onExport={exportJSON} onImport={importJSON} onVocalComplexChange={setVocalComplexityState} vocalComplexityState={vocalComplexityState} onOrchComplexChange={setOrchComplexityState} orchComplexityState={orchComplexityState} onGuitarComplexChange={setGuitarComplexityState} guitarComplexityState={guitarComplexityState}></ParameterList>
         <h1 className={styles.headingOne}>Instrument List</h1>
         <InstrumentList instruments = {myInstruments} onDel= {deleteInstrument} onLoc={toggleInstrumentLock} onShuf={instrumentShuffle} onRepButClick={openReplacementModal} setRepInstrumentID={setReplacementInstrumentID} ></InstrumentList>
         

@@ -1,0 +1,142 @@
+[{
+        "name": "Clean Electric Guitar",
+        "description": "An electric guitar with a clean tone",
+        "image": "images/instruments/cleanguitar.png",
+        "youtube": "https://www.youtube.com/watch?v=pB1lotlwago",
+        "wikipedia": "https://en.wikipedia.org/wiki/Electric_guitar",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "contemporary",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "north america",
+            "timeframe": "modern"
+        }
+    },
+
+    {
+        "name": "Overdriven Electric Guitar",
+        "description": "An electric guitar with a slightly dirty overdriven tone",
+        "image": "images/instruments/overdriveguitar.png",
+        "youtube": "https://www.youtube.com/watch?v=VWOunsplyz0",
+        "wikipedia": "https://en.wikipedia.org/wiki/Electric_guitar",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "contemporary",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "north america",
+            "timeframe": "modern"
+        }
+    },
+
+    {
+        "name": "Distorted Electric Guitar",
+        "description": "An electric guitar with a very crunchy and distorted tone",
+        "image": "images/instruments/distortedguitar.png",
+        "youtube": "https://www.youtube.com/watch?v=JKSvAdl-TCA",
+        "wikipedia": "https://en.wikipedia.org/wiki/Electric_guitar",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "contemporary",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "north america",
+            "timeframe": "modern"
+        }
+    },
+
+    {
+        "name": "Fuzz Electric Guitar",
+        "description": "An electric guitar with a fuzzy tone",
+        "image": "images/instruments/fuzzguitar.png",
+        "youtube": "https://www.youtube.com/watch?v=dLlyZpe8vbY",
+        "wikipedia": "https://en.wikipedia.org/wiki/Electric_guitar",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "contemporary",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "north america",
+            "timeframe": "modern"
+        }
+    },
+
+    {
+        "name": "7 String Electric Guitar",
+        "description": "An electric guitar with 7 strings, typically played with a distorted tone, but not exclusively",
+        "image": "images/instruments/7stringguitar.png",
+        "youtube": "https://www.youtube.com/watch?v=CxGnANYHcK0",
+        "wikipedia": "https://en.wikipedia.org/wiki/Seven-string_guitar",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "contemporary",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "north america",
+            "timeframe": "modern"
+        }
+    },
+
+    {
+        "name": "8 String Electric Guitar",
+        "description": "An electric guitar with 8 strings, typically played with a distorted tone, but not exclusively",
+        "image": "images/instruments/8stringguitar.png",
+        "youtube": "https://www.youtube.com/watch?v=PPpbekTXC2M",
+        "wikipedia": "https://en.wikipedia.org/wiki/Eight-string_guitar",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "contemporary",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "north america",
+            "timeframe": "modern"
+        }
+    },
+
+    {
+        "name": "9 String Electric Guitar",
+        "description": "An electric guitar with 9 strings, typically played with a distorted tone, but not exclusively",
+        "image": "images/instruments/9stringguitar.png",
+        "youtube": "https://www.youtube.com/watch?v=B2CwyU4zsdw",
+        "wikipedia": "https://en.wikipedia.org/wiki/Nine-string_guitar",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "contemporary",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "north america",
+            "timeframe": "modern"
+        }
+    },
+    {
+        "name": "Wah Wah Guitar",
+        "description": "An electric guitar using a wah wah effect",
+        "image": "images/instruments/fuzzguitar.png",
+        "youtube": "https://www.youtube.com/watch?v=qTbuDObjZoA",
+        "wikipedia": "https://en.wikipedia.org/wiki/Wah-wah_pedal",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "contemporary",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "north america",
+            "timeframe": "modern"
+        }
+    },
+    {
+        "name": "Ambient Guitar",
+        "description": "Ambient Music done on a guitar, with ethereal drones, long delays, huge reverbs and lots of layering",
+        "image": "images/instruments/overdriveguitar.png",
+        "youtube": "https://www.youtube.com/watch?v=gTjg5pweOaQ",
+        "wikipedia": "https://en.wikipedia.org/wiki/Electric_guitar",
+        "tags": {
+            "hornbostelsachs": "chordophone",
+            "category": "contemporary",
+            "family": "string",
+            "voices": "polyphonic",
+            "origin": "north america",
+            "timeframe": "modern"
+        }
+    }
+]
