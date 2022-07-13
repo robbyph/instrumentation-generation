@@ -1117,8 +1117,7 @@ export default function Home({data}) {
 
     return (
     <div>
-        <NextSeo 
-            title="Instrumentation Generation" 
+        <NextSeo
             description="A tool for composers to randomly generate groups of instruments to help jumpstart creativity, as well as learn about new instruments."
             openGraph={{
                 images: [
@@ -1126,7 +1125,7 @@ export default function Home({data}) {
                         url: '/images/header.jpg',
                         width: 800,
                         height: 600,
-                        alt: 'Og Image Alt',
+                        alt: "Robby's instrumentation generation",
                     }
                 ],
                 site_name: "Instrumentation Generation"
