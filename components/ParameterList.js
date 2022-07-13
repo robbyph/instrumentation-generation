@@ -393,8 +393,11 @@ const ParameterList = ({
                       <Row style={{ marginTop: "1rem" }}>
                         <Col>
                           <div>
-                            <Form.Label>Vocal Gen Complexity</Form.Label>
+                            <Form.Label htmlFor="vocalGenComplexity">
+                              Vocal Gen Complexity
+                            </Form.Label>
                             <Form.Control
+                              id="vocalGenComplexity"
                               disabled={!open}
                               className={styles.formControlOverride}
                               placeholder="Default"
@@ -410,8 +413,11 @@ const ParameterList = ({
                             </Form.Control>
                           </div>
                           <div>
-                            <Form.Label>Orchestral Gen Complexity</Form.Label>
+                            <Form.Label htmlFor="orchGenComplexity">
+                              Orchestral Gen Complexity
+                            </Form.Label>
                             <Form.Control
+                              id="orchGenComplexity"
                               disabled={!open}
                               className={styles.formControlOverride}
                               placeholder="Default"
@@ -431,8 +437,11 @@ const ParameterList = ({
                             </Form.Control>
                           </div>
                           <div>
-                            <Form.Label>Guitar Gen Complexity</Form.Label>
+                            <Form.Label htmlFor="guitarGenComplexity">
+                              Guitar Gen Complexity
+                            </Form.Label>
                             <Form.Control
+                              id="guitarGenComplexity"
                               disabled={!open}
                               className={styles.formControlOverride}
                               placeholder="Default"
