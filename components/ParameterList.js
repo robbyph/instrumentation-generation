@@ -361,8 +361,8 @@ const ParameterList = ({
                         hiddenFileInput.current.click();
                       }}
                     >
-                      <label for="fileUpload">
-                        <span class="screenreader" hidden>
+                      <label htmlFor="fileUpload">
+                        <span className="screenreader" hidden>
                           Upload your .instrgen file
                         </span>
                       </label>
