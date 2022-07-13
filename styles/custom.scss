@@ -1,25 +1,21 @@
     @import "../node_modules/bootstrap/scss/bootstrap";
-
     //Theme colors
-    $theme-colors:( "dark": #000, "light": #fff, "primary": #11a8ff, "secondary": #839796, "info": #325b72, "success": #4db482, "warning": #ffcf5f, "danger": #f44336);
+    $theme-colors:( "dark": #000, "light": #fff, "primary": #007BC2, "secondary": #5D6F6E, "info": #325b72, "success": #4db482, "warning": #ffcf5f, "danger": #f44336);
     //Navbar stuff
     $navbar-dark-color: #fff;
     $dropdown-padding-y: 0;
     $dropdown-border-radius:0;
     $navbar-dark-active-color: rgb(153, 153, 153);
     //Body
-    $body-bg: $primary;
+    $body-bg: #007BC2 !important;
     //Buttons
     .btn:focus {
         box-shadow: none !important;
     }
-
-
+    
     select option:disabled {
         color: rgb(238, 211, 211);
     }
-
-    
     
     //Keep at bottom
     @import '~bootstrap/scss/bootstrap.scss'
