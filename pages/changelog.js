@@ -12,6 +12,13 @@ const changelog = () => {
             <h1 className={styles.headingOne} style={{marginBottom: '1rem'}}>Changelog</h1>
                 <div id={styles.changeList} className={styles.container} style={{paddingTop: '.5rem'}}>
                 <div className={styles.changeItem} style={{paddingTop: 0}}>
+                        <h4 className={styles.headingFour}><strong>Beta: </strong>Version 0.81</h4>
+                        <p className={styles.itemDate}>July 13th 2022</p>
+                        <ul className={styles.changes}>
+                            <li className={styles.listItem}>Overhauled Accessibility</li>
+                        </ul>
+                    </div>
+                <div className={styles.changeItem} style={{paddingTop: 0}}>
                         <h4 className={styles.headingFour}><strong>Beta: </strong>Version 0.8</h4>
                         <p className={styles.itemDate}>February 16th 2022</p>
                         <ul className={styles.changes}>
@@ -51,8 +58,6 @@ const changelog = () => {
                             <li className={styles.listItem}>Dozens of Templates</li>
                         </ul>
                     </div>
-                    
-                    
                 </div>
 
         </div>
