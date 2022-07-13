@@ -1396,8 +1396,6 @@ export default function Home({ data }) {
       var savedInstrumentData = data.userInstrumentList.split(",");
       var newInstruments = [];
 
-      console.log(savedInstrumentData);
-
       savedInstrumentData.map((instrumentName) => {
         if (isNumeric(instrumentName[0])) {
           //if generated
@@ -1452,7 +1450,6 @@ export default function Home({ data }) {
         maxAge: 36000,
         sameSite: true,
       });
-      console.log(instrList);
     } catch (err) {
       console.log(err);
     }
