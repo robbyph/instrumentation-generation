@@ -9,6 +9,10 @@
     //Body
     $body-bg: #007BC2 !important;
     //Buttons
+    .btn {
+        font-weight: 510 !important;
+    }
+    
     .btn:focus {
         box-shadow: none !important;
     }
