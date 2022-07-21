@@ -86,10 +86,10 @@ const library = () => {
 
         <Row>
           <Col>
-            <h5 className={styles.headingFive}>
+            <h5 className={styles.headingFive} style={{ color: "#D9D9D9" }}>
               Browse all instruments included in Instrumentation Generation
             </h5>
-            <h5 className={styles.headingFive}>
+            <h5 className={styles.headingFive} style={{ color: "#D9D9D9" }}>
               There are currently{" "}
               <strong>
                 {instrumentData.length +
