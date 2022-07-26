@@ -95,7 +95,7 @@ const Navigation = ({ currentPage }) => {
               )}
             </Link>
             <div
-              href onClick={(e) => {
+              onClick={(e) => {
                 e.preventDefault();
               }}
               className={styles.naviDropdown}
