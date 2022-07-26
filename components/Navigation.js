@@ -95,6 +95,7 @@ const Navigation = ({ currentPage }) => {
               )}
             </Link>
             <div
+              href="true"
               onClick={(e) => {
                 e.preventDefault();
               }}
