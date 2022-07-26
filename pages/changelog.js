@@ -18,6 +18,18 @@ const changelog = () => {
       >
         <div className={styles.changeItem} style={{ paddingTop: 0 }}>
           <h4 className={styles.headingFour}>
+            <strong>Beta: </strong>Version 0.82
+          </h4>
+          <p className={styles.itemDate}>July 26th 2022</p>
+          <ul className={styles.changes}>
+            <li className={styles.listItem}>
+              Fixed an error that caused the 'Feedback' page not to work. If you
+              sent an email before this change, please resend it!
+            </li>
+          </ul>
+        </div>
+        <div className={styles.changeItem} style={{ paddingTop: 0 }}>
+          <h4 className={styles.headingFour}>
             <strong>Beta: </strong>Version 0.81
           </h4>
           <p className={styles.itemDate}>July 13th 2022</p>
