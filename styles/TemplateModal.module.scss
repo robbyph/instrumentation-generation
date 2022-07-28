@@ -1,15 +1,15 @@
 .column {
-    height: 80vh !important;
+    height: 80vmax !important;
     overflow-y: scroll;
     padding: 0;
 }
 
 @media (max-width: 767px) {
     .column {
-        height: 25vh !important;
+        height: 25vmax !important;
     }
     #instrumentPanel {
-        height: 45vh !important;
+        height: 45vmax !important;
     }
 }
 
