@@ -36,6 +36,15 @@ const changelog = () => {
           <ul className={styles.changes}>
             <li className={styles.listItem}>Overhauled Accessibility</li>
             <li className={styles.listItem}>Color Scheme Change</li>
+            <li className={styles.listItem}>
+              Added Complex Vocal Generation Option
+            </li>
+            <li className={styles.listItem}>
+              Added Complex Orchestra Generation Option
+            </li>
+            <li className={styles.listItem}>
+              Laid groundwork for Complex Guitar Generation Option
+            </li>
           </ul>
         </div>
         <div className={styles.changeItem} style={{ paddingTop: 0 }}>
